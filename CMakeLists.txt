@@ -3,4 +3,4 @@ project(Scrabble)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Scrabble main.cpp DataStructures/AVLTree.hpp DataStructures/AVLNode.hpp)
+add_executable(Scrabble main.cpp DataStructures/AVLTree.hpp DataStructures/AVLNode.hpp Dictionary.hpp)

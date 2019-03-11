@@ -1,12 +1,9 @@
 #include <iostream>
-#include "DataStructures/AVLTree.hpp"
+#include "DataStructures/List.hpp"
+#include "Dictionary.hpp"
 
 int main() {
-    AVLTree *tree = new AVLTree();
-    tree->insertNode("a");
-    tree->insertNode("b");
-    tree->insertNode("c");
-    tree->insertNode("d");
-    tree->insertNode("e");
-    tree->infixPrint();
+    Dictionary *dictionary = new Dictionary();
+    if(dictionary->searchInDictionary("zutano")) cout<<"Found.";
+    else cout << "Not Found.";
 }
