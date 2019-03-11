@@ -2,11 +2,12 @@
 #define NODE_HPP
 
 #include "Collector.hpp"
+#include "LetterTile.hpp"
 #include <string>
 using namespace std;
 class Node{
 private:
-    string data;
+    LetterTile *letterTile;
     Node *nextNode;
 
 public:
@@ -23,17 +24,17 @@ public:
         return node;
     }
 
-    Node(string data) {
-        this->data = data;
+    Node(LetterTile *letterTile) {
+        this->letterTile = letterTile;
         nextNode = nullptr;
     }
 
-    string getData(){
-        return data;
+    LetterTile *getLetterTile(){
+        return letterTile;
     }
 
-    void setData(string data) {
-        this->data = data;
+    void setLetterTile(LetterTile *letterTile) {
+        this->letterTile = letterTile;
     }
 
     Node *getNextNode(){

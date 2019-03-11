@@ -1,5 +1,5 @@
-#ifndef LINKEDLIST_HPP
-#define LINKEDLIST_HPP
+#ifndef LIST_HPP
+#define LIST_HPP
 
 #include <iostream>
 #include "Node.hpp"
@@ -15,20 +15,20 @@ public:
         head = nullptr;
     }
 
-    void addHead(string data) {
-        Node *newHead = new Node(data);
+    void addHead(LetterTile *letterTile) {
+        Node *newHead = new Node(letterTile);
         newHead->setNextNode(head);
         head = newHead;
     }
 
-    void deleteNode(string data) {
+    void deleteNode(LetterTile *letterTile) {
         Node* node = head;
-        if(!searchNode(data)) return;
-        if(node->getData() == data){
+        if(!searchNode(letterTile)) return;
+        if(node->getLetterTile()->getLetter() == letterTile->getLetter()){
             head = node->getNextNode();
             delete(node);
         }else{
-            while(node->getNextNode()->getData() != data)
+            while(node->getNextNode()->getLetterTile()->getLetter() != letterTile->getLetter())
                 node = node->getNextNode();
             Node *nodeToDelete = node->getNextNode();
             node->setNextNode(nodeToDelete->getNextNode());
@@ -36,18 +36,26 @@ public:
         }
     }
 
-    Node *searchNode(string data) {
+    Node *searchNode(LetterTile *letterTile) {
         for(Node *node = head; node; node = node->getNextNode()) {
-            if (node->getData().compare(data) == 0) return node;
+            if (node->getLetterTile()->getLetter().compare(letterTile->getLetter()) == 0) return node;
         }return nullptr;
+    }
+
+    Node *getHead(){
+        return head;
+    }
+
+    void setHead(Node *head) {
+        this->head = head;
     }
 
     void printList() {
         cout << "List ([Data | Memory Address]): ";
         for(Node *node = head; node != nullptr; node = node->getNextNode())
-            cout<<node->getData()<<endl;
+            cout<<node->getLetterTile()->getLetter()<<endl;
         cout << "NULL" << endl;
     }
 };
 
-#endif LINKEDLIST_HPP
+#endif LIST_HPP

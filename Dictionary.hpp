@@ -8,22 +8,21 @@ using namespace std;
 class Dictionary{
 private:
 
-    string fileAddress;
+    string filePath;
 
 public:
 
     Dictionary(){
-        fileAddress = "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/TextFiles/dictionary.txt";
+        filePath = "../TextFiles/dictionary.txt";
     }
 
     bool searchInDictionary(string word){
         string line;
-        ifstream dictionaryFile = ifstream(fileAddress);
+        ifstream dictionaryFile = ifstream(filePath);
         if(dictionaryFile.is_open()) {
             while (getline(dictionaryFile, line)) {
                 line.erase(line.end() - 1);
-                if(line.compare(word) == 0)
-                    return true;
+                if(line.compare(word) == 0) return true;
             }
             dictionaryFile.close();
         }else{

@@ -1,9 +1,14 @@
 #include <iostream>
-#include "DataStructures/List.hpp"
 #include "Dictionary.hpp"
+#include "DataStructures/List.hpp"
+#include "GameDeck.hpp"
 
 int main() {
     Dictionary *dictionary = new Dictionary();
-    if(dictionary->searchInDictionary("zutano")) cout<<"Found.";
-    else cout << "Not Found.";
+    cout<<"Searching for zutano: ";
+    if(dictionary->searchInDictionary("zutano")) cout<<"Found."<<endl;
+    else cout << "Not Found."<<endl;
+
+    GameDeck *gd = new GameDeck();
+    cout << "GameDeck [letter, amount, score]: ";gd->printDeck();
 }
