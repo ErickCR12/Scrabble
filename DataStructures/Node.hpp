@@ -2,7 +2,7 @@
 #define NODE_HPP
 
 #include "Collector.hpp"
-#include "LetterTile.hpp"
+#include "../Objects/LetterTile.hpp"
 #include <string>
 using namespace std;
 class Node{

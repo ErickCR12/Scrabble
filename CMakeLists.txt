@@ -3,4 +3,4 @@ project(Scrabble)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Scrabble main.cpp Dictionary.hpp GameDeck.hpp DataStructures/LetterTile.hpp)
+add_executable(Scrabble main.cpp Objects/Dictionary.hpp Objects/GameDeck.hpp Objects/LetterTile.hpp)

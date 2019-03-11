@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <boost/algorithm/string.hpp>
-#include "DataStructures/LetterTile.hpp"
 
 class GameDeck{
 private:
@@ -30,6 +29,30 @@ public:
             }
             file.close();
         }else cout << "CSV not opened.";
+    }
+
+    LetterTile *giveRandomLetter(){
+        int amountOfLettersRemaining = deckList->getAmountOfLetters();
+        if(amountOfLettersRemaining == 0) return nullptr;
+        srand (time(NULL));
+        int randomPosition = rand() % amountOfLettersRemaining + 1;
+        cout << "Pos: " << randomPosition << endl;
+        int counter = 0;
+        Node *node = deckList->getHead();
+        LetterTile *letterTile;
+        bool letterFound = false;
+        while(!letterFound) {
+            counter += node->getLetterTile()->getAmountRemaining();
+            if (counter >= randomPosition) {
+                if (node->getLetterTile()->getAmountRemaining() != 0) {
+                    letterTile = node->getLetterTile();
+                    letterTile->decreaseAmountRemaining();
+                    letterFound = true;
+                }
+            }
+            if(!letterFound) node=node->getNextNode();
+        }deckList->decreaseAmountOfLetters();
+        return letterTile;
     }
 
     void printDeck(){

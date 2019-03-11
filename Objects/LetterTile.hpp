@@ -30,6 +30,10 @@ public:
         this->amountRemaining = amountRemaining;
     }
 
+    void decreaseAmountRemaining(){
+        amountRemaining--;
+    }
+
     int getScore(){
         return score;
     }
