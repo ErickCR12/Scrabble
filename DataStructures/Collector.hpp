@@ -4,37 +4,46 @@
 #include "Node.hpp"
 
 using namespace std;
-class Node;
-class Collector {
+class Node; // Forward Declaration
+
+/// @brief Class responsible for recycling the memory released in List.
+class Collector{
+
+    static Collector* collector; //!< @brief Self referencing attribute (Singleton pattern).
+    Node* firstReference; //!< @brief First reference of pointer to be reused.
 
 private:
-    Node* firstReference;
-    static Collector* collector;
 
-    Collector() {
-        firstReference = nullptr;
+    //! @brief Private constructor, following the Singleton Pattern.
+    Collector(){
+        this->firstReference = nullptr;
     }
 
 public:
+    // These methods will be implemented as members by the class Node.h
+
+    /// @brief It is responsible for creating a single instance of Collector.
+    /// @brief ** Implements the Singleton design pattern.
+    /// @return An instance of Collector.
     static Collector* getCollector();
 
-    void* getMemoryReference();
+    /// @brief It is responsible for adding the pointer to the list to be recycled.
+    /// @param memory Memory address to be recycled
+    void addMemoryReference(void* memory);
 
-    void addMemoryReference(void* voidPointer);
+    /// @brief Returns a recycled memory address.
+    /// @brief If there is none, it returns null.
+    /// @return A memory address available
+    Node* getMemoryReference();
 
-    Node* getFirstReference() {
-        return firstReference;
-    }
-
+    /// @brief Method responsible for displaying the recycled memory locations stored in the collector list.
     void printCollector();
 };
 
 Collector* Collector::collector = nullptr;
-
 Collector* Collector::getCollector() {
-    if (!collector) {
-        collector = new Collector();
-    }return collector;
+    if(!collector) collector = new Collector();
+    return collector;
 }
 
 #endif COLLECTOR_HPP
