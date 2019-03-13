@@ -46,4 +46,4 @@ Collector* Collector::getCollector() {
     return collector;
 }
 
-#endif COLLECTOR_HPP
+#endif //COLLECTOR_HPP

@@ -1,0 +1,8 @@
+//
+// Created by esteban on 13/03/19.
+//
+
+#ifndef SCRABBLE_CLIENTBOARD_HPP
+#define SCRABBLE_CLIENTBOARD_HPP
+
+#endif //SCRABBLE_CLIENTBOARD_HPP

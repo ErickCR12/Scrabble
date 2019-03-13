@@ -2,7 +2,7 @@
 #define GAMEDECK_HPP
 
 #include <vector>
-#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/string.hpp> // Where is it allocated?
 
 //! It contains a list where each node stores an instance of LetterTile for each available letter, in total it has
 //! 29 nodes.
@@ -82,4 +82,4 @@ public:
     }
 };
 
-#endif GAMEDECK_HPP
+#endif //GAMEDECK_HPP

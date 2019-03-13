@@ -44,4 +44,4 @@ public:
     }
 };
 
-#endif LETTERTILE_HPP
+#endif //LETTERTILE_HPP

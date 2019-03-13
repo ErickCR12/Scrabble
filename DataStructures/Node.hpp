@@ -98,4 +98,4 @@ void Collector::printCollector() {
 }
 
 
-#endif NODE_HPP
+#endif //NODE_HPP

@@ -37,4 +37,4 @@ public:
     }
 };
 
-#endif DICTIONARY_HPP
+#endif //DICTIONARY_HPP
