@@ -1,3 +1,0 @@
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles/Scrabble.dir
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
