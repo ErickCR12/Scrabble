@@ -30,4 +30,16 @@ void LetterTile::toString(){
     cout<<this->letter;
 }
 
+void LetterTile::setLetter(string letter) {
+    LetterTile::letter = letter;
+}
+
+void LetterTile::setAmountRemaining(int amountRemaining) {
+    LetterTile::amountRemaining = amountRemaining;
+}
+
+void LetterTile::setScore(int score) {
+    LetterTile::score = score;
+}
+
 #endif LETTERTILE_CPP

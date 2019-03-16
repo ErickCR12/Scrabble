@@ -35,6 +35,12 @@ public:
     int getScore();
 
     void toString();
+
+    void setLetter(string letter);
+
+    void setAmountRemaining(int amountRemaining);
+
+    void setScore(int score);
 };
 
 #endif LETTERTILE_HPP

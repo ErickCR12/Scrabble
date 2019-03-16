@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a401ea7979fe321026d011e2ffa3e3a86"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGameDeck.html" title="Represents the deck of the game with the full amount of LetterTiles. ">GameDeck</a> constructor.  <a href="#a401ea7979fe321026d011e2ffa3e3a86">More...</a><br /></td></tr>
 <tr class="separator:a401ea7979fe321026d011e2ffa3e3a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b46c90ad8bb75b820e425745ef190b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameDeck.html#a42b46c90ad8bb75b820e425745ef190b">createLetterTiles</a> ()</td></tr>
-<tr class="memdesc:a42b46c90ad8bb75b820e425745ef190b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads tiles.csv, creates every instance of <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and adds them to deckList.  <a href="#a42b46c90ad8bb75b820e425745ef190b">More...</a><br /></td></tr>
+<tr class="memdesc:a42b46c90ad8bb75b820e425745ef190b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads tiles.csv, creates every instance of <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and adds them to deckArray.  <a href="#a42b46c90ad8bb75b820e425745ef190b">More...</a><br /></td></tr>
 <tr class="separator:a42b46c90ad8bb75b820e425745ef190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51937706680241aca06a5f8f3b03bd44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLetterTile.html">LetterTile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameDeck.html#a51937706680241aca06a5f8f3b03bd44">giveRandomLetter</a> ()</td></tr>
 <tr class="memdesc:a51937706680241aca06a5f8f3b03bd44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in consideration all the amount of letters remaining to randomly return a referecence of a <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> with at least a letter remaining.  <a href="#a51937706680241aca06a5f8f3b03bd44">More...</a><br /></td></tr>
@@ -107,7 +107,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printDeck</b> ()</td>
 </div><div class="memdoc">
 
 <p><a class="el" href="classGameDeck.html" title="Represents the deck of the game with the full amount of LetterTiles. ">GameDeck</a> constructor. </p>
-<p>Initializes <a class="el" href="classList.html" title="Implementation of a simple linked list formed by Node objects. ">List</a>, amountOfLetters, tilesPath and calls <a class="el" href="classGameDeck.html#a42b46c90ad8bb75b820e425745ef190b" title="Reads tiles.csv, creates every instance of LetterTile and adds them to deckList. ">createLetterTiles()</a> method to instance every <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and insert them to deckList. </p>
+<p>Initializes <a class="el" href="classList.html" title="Implementation of a simple linked list formed by Node objects. ">List</a>, amountOfLetters, tilesPath and calls <a class="el" href="classGameDeck.html#a42b46c90ad8bb75b820e425745ef190b" title="Reads tiles.csv, creates every instance of LetterTile and adds them to deckArray. ">createLetterTiles()</a> method to instance every <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and insert them to deckArray. </p>
 
 </div>
 </div>
@@ -127,7 +127,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printDeck</b> ()</td>
       </table>
 </div><div class="memdoc">
 
-<p>Reads tiles.csv, creates every instance of <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and adds them to deckList. </p>
+<p>Reads tiles.csv, creates every instance of <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> and adds them to deckArray. </p>
 <p>This method reads a CSV text file, that follows this format: Letter,Amount,Score. Reads line by line and adds the value of every column to a vector structure. </p>
 <p>Uses ifstream class to read filesPath.csv and stores it in variable file.</p>
 <p>Creates a vector called row.</p>
@@ -136,7 +136,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printDeck</b> ()</td>
 <p>Clears row values with every loop</p>
 <p>Splits line when a "," is found every column in vector</p>
 <p>Creates new <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> with the information read from csv.</p>
-<p>Adds new <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> to deckList.</p>
+<p>Adds new <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> to deckArray.</p>
 <p>Closes file. </p>
 
 </div>
@@ -160,7 +160,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printDeck</b> ()</td>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> obtained randomly. </dd></dl>
 <p>Checks if theres any letters remaining.</p>
 <p>randomPosition is a random int value from 1 to amountOfLetters.</p>
-<p>while that loops until the letter in randomPosition is found, starting in the head of deckList.</p>
+<p>while that loops until the letter in randomPosition is found, starting in the head of deckArray.</p>
 <p>Adds to a counter the amount of letters in actual <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a></p>
 <p>if counter is &gt;= to the randomPosition, the letter is found.</p>
 <p>decreases by one the amount of letter in actual <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a>.</p>

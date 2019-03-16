@@ -114,6 +114,9 @@
 		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Player.hpp">
+			<Option target="Scrabble"/>
+		</Unit>
 		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp">
 			<Option target="Scrabble"/>
 		</Unit>

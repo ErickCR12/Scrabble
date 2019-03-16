@@ -13,7 +13,7 @@
 class GameDeck{
 private:
 
-    List *deckList; //!< @brief List with all the LetterTile instances of the game.
+    LetterTile **deckArray; //!< @brief List with all the LetterTile instances of the game.
     int amountOfLetters; //!< @brief int value with total amount of letters available. Starts as a 100.
     string tilesPath; //!< @brief Path to file in csv format that contains attributes to instance LetterTile.
 
@@ -22,7 +22,10 @@ public:
     //! and insert them to deckList.
     //! @brief GameDeck constructor.
     GameDeck(){
-        deckList = new List();
+        deckArray = (LetterTile**) malloc(29*sizeof(LetterTile*));
+        for(int i = 0; i < 29; i++){
+            deckArray[i] = nullptr;
+        }
         amountOfLetters = 100;
         tilesPath = "../TextFiles/tiles.csv";
         createLetterTiles();
@@ -38,14 +41,15 @@ public:
         vector<string> row;
         string line, temp;
         LetterTile *tile;
-        int position = 0;
+        int index = 0;
         if(file.is_open()) { //! Verifies if file was opened.
             while (getline(file, line)) { //! stores the string of a whole line of the csv to line variable.
                 row.clear(); //! Clears row values with every loop
                 boost::split(row, line, boost::is_any_of(",")); //! Splits line when a "," is found every column in vector
                 //! Creates new LetterTile with the information read from csv.
                 tile = new LetterTile(row[0], stoi(row[1]), stoi(row[2])); // stoi a.k.a. string to int
-                deckList->addNode(tile); //! Adds new LetterTile to deckList.
+                deckArray[index] = tile; //! Adds new LetterTile to deckList.
+                index++;
             }
             file.close();//! Closes file.
         }else cout << "CSV not opened.";
@@ -61,19 +65,16 @@ public:
         int randomPosition =
                 rand() % amountOfLetters + 1; //! randomPosition is a random  int value from 1 to amountOfLetters.
         int counter = 0;
-        Node *node = deckList->getHead();
+        int index = 0;
         LetterTile *letterTile = nullptr;
-        bool letterFound = false;
         //! while that loops until the letter in randomPosition is found, starting in the head of deckList.
-        while (!letterFound) {
-            counter += node->getLetterTile()->getAmountRemaining(); //! Adds to a counter the amount of letters in actual LetterTile
-            if (counter >= randomPosition) { //! if counter is >= to the randomPosition, the letter is found.
-                letterTile = node->getLetterTile();
-                letterTile->decreaseAmountRemaining(); //! decreases by one the amount of letter in actual LetterTile.
-                letterFound = true;
-            }
-            node = node->getNextNode(); //! Travels to nextNode with every loop.
+        while (counter < randomPosition) { //! if counter is >= to the randomPosition, the letter is found.
+            counter += deckArray[index]->getAmountRemaining(); //! Adds to a counter the amount of letters in actual LetterTile
+            index++;
         }
+        index--;
+        letterTile = deckArray[index];
+        letterTile->decreaseAmountRemaining(); //! decreases by one the amount of letter in actual LetterTile.
         amountOfLetters--; //! Decreases amountOfLetters by one.
         return letterTile;
     }
@@ -81,10 +82,10 @@ public:
 
     void printDeck(){
         LetterTile *tile;
-        for(Node *node = deckList->getHead(); node; node = node->getNextNode()){
-            tile = node->getLetterTile();
+        for(int i = 0; i < 29; i++){
+            tile = deckArray[i];
             cout << "[" << tile->getLetter() << ", " << tile->getAmountRemaining() << ", " << tile->getScore() << "] -> ";
-        }cout << "NULL";
+        }cout << "NULL"<<endl;
     }
 };
 

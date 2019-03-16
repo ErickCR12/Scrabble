@@ -22,18 +22,6 @@ Collector.hpp
 string
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.cpp
-iostream
--
-vector
--
-fstream
--
-boost/algorithm/string.hpp
--
-Board.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
-
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
 LetterTile.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
@@ -53,10 +41,6 @@ LetterTile.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 ../DataStructures/List.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
-
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.cpp
-LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 string
