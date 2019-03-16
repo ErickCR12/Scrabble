@@ -48,10 +48,10 @@ RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code"
+CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ Scrabble/fast:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 .PHONY : Scrabble/fast
 
+Objects/Board.o: Objects/Board.cpp.o
+
+.PHONY : Objects/Board.o
+
+# target to build an object file
+Objects/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.o
+.PHONY : Objects/Board.cpp.o
+
+Objects/Board.i: Objects/Board.cpp.i
+
+.PHONY : Objects/Board.i
+
+# target to preprocess a source file
+Objects/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.i
+.PHONY : Objects/Board.cpp.i
+
+Objects/Board.s: Objects/Board.cpp.s
+
+.PHONY : Objects/Board.s
+
+# target to generate assembly for a file
+Objects/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.s
+.PHONY : Objects/Board.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Scrabble"
 	@echo "... edit_cache"
+	@echo "... Objects/Board.o"
+	@echo "... Objects/Board.i"
+	@echo "... Objects/Board.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

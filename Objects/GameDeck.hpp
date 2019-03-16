@@ -2,7 +2,7 @@
 #define GAMEDECK_HPP
 
 #include <vector>
-#include <boost/algorithm/string.hpp> // Where is it allocated?
+#include <boost/algorithm/string.hpp>
 
 //! It contains a list where each node stores an instance of LetterTile for each available letter, in total it has
 //! 29 nodes.
@@ -39,7 +39,7 @@ public:
                 row.clear(); //! Clears row values with every loop
                 boost::split(row, line, boost::is_any_of(",")); //! Splits line when a "," is found every column in vector
                 //! Creates new LetterTile with the information read from csv.
-                LetterTile *tile = new LetterTile(row[0], stoi(row[1]), stoi(row[2]));
+                LetterTile *tile = new LetterTile(row[0], stoi(row[1]), stoi(row[2])); // stoi a.ka. string to int
                 deckList->addNode(tile); //! Adds new LetterTile to deckList.
             }
             file.close();//! Closes file.

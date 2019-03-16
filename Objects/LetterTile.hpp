@@ -1,6 +1,8 @@
 #ifndef LETTERTILE_HPP
 #define LETTERTILE_HPP
 
+using namespace std;
+
 //! @brief This class represents each letter tile used in Scrabble.
 class LetterTile{
 private:
@@ -41,6 +43,10 @@ public:
     //! @return int value stored in score
     int getScore(){
         return score;
+    }
+
+    void toString(){
+        std::cout<<this->letter;
     }
 };
 

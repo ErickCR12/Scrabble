@@ -1,6 +1,4 @@
-/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/esteban/Documentos/TEC/Algoritmos y estructuras de datos/Proyecto Scrabble"
-CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
-CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
-CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
--- Configuring incomplete, errors occurred!
-See also "/home/esteban/Documentos/TEC/Algoritmos y estructuras de datos/Proyecto Scrabble/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug

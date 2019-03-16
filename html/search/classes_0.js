@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['collector',['Collector',['../classCollector.html',1,'']]]
+  ['board',['Board',['../classBoard.html',1,'']]]
 ];

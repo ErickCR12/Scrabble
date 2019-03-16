@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Scrabble.dir/main.cpp.o CMakeFiles/Scrabble.dir/Objects/Board.cpp.o  -o Scrabble 

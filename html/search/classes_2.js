@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamedeck',['GameDeck',['../classGameDeck.html',1,'']]]
+  ['dictionary',['Dictionary',['../classDictionary.html',1,'']]]
 ];

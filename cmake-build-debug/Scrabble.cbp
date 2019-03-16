@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"/>
+				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"/>
+				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Scrabble">
-				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/Scrabble" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"/>
+				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/Scrabble" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scrabble"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scrabble"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Scrabble/fast">
-				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug/Scrabble" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"/>
+				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/Scrabble" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,54 +67,51 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scrabble/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scrabble/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/cmake-build-debug"/>
+				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/DataStructures/CircularList.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/CircularList.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/DataStructures/Queue.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Queue.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/DataStructures/Stack.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Stack.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/ClientBoard.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Board.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/Dictionary.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Board.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/GameDeck.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Dictionary.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/LetterTile.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/GameDeck.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/Player.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/LetterTile.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/Objects/ServerBoard.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/main.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/main.cpp">
-			<Option target="Scrabble"/>
-		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Code/CMakeLists.txt">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
