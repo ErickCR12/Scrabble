@@ -204,6 +204,33 @@ Objects/LetterTile.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.s
 .PHONY : Objects/LetterTile.cpp.s
 
+Objects/Player.o: Objects/Player.cpp.o
+
+.PHONY : Objects/Player.o
+
+# target to build an object file
+Objects/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.o
+.PHONY : Objects/Player.cpp.o
+
+Objects/Player.i: Objects/Player.cpp.i
+
+.PHONY : Objects/Player.i
+
+# target to preprocess a source file
+Objects/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.i
+.PHONY : Objects/Player.cpp.i
+
+Objects/Player.s: Objects/Player.cpp.s
+
+.PHONY : Objects/Player.s
+
+# target to generate assembly for a file
+Objects/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.s
+.PHONY : Objects/Player.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +276,9 @@ help:
 	@echo "... Objects/LetterTile.o"
 	@echo "... Objects/LetterTile.i"
 	@echo "... Objects/LetterTile.s"
+	@echo "... Objects/Player.o"
+	@echo "... Objects/Player.i"
+	@echo "... Objects/Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
