@@ -1,18 +1,19 @@
 #include <iostream>
-#include "Objects/Dictionary.hpp"
-#include "Objects/GameDeck.hpp"
-#include "Objects/Board.hpp"
-
+#include "gamelogic/Dictionary.hpp"
+#include "gamelogic/GameDeck.hpp"
+#include "gamelogic/Board.hpp"
+#include "gamelogic/Player.hpp"
 
 void dictionaryTest();
 void boardTest1();
 void boardTest2();
+void playerTest1();
 
 int main() {
-
     dictionaryTest();
     boardTest1();
     boardTest2();
+    playerTest1();
 }
 
 void dictionaryTest(){
@@ -52,5 +53,28 @@ void boardTest2(){
     cout<<myBoard->getScore(0,0)<<endl;
     cout<<myBoard->getScore(1,0)<<endl;
     cout<<myBoard->getScore(7,7)<<endl;
+}
+
+void playerTest1(){
+    GameDeck *gameDeck = new GameDeck();
+
+    cout<<"\nCreando player1..."<<endl;
+    Player *player1 = new Player();
+    cout<<"Creando player2..."<<endl;
+    Player *player2 = new Player();
+
+    cout<<"Llenando deck de player1..."<<endl;
+    while(player1->getAmountOfLetterTiles() != 7){
+        LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
+        player1->addLetterTile(randomLetterTile);
+    }
+    cout<<"Deck player1: "; player1->printPlayerDeck();
+
+    cout<<"Llenando deck de player1..."<<endl;
+    while(player2->getAmountOfLetterTiles() != 7){
+        LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
+        player2->addLetterTile(randomLetterTile);
+    }
+    cout<<"Deck player2: "; player2->printPlayerDeck();
 }
 
