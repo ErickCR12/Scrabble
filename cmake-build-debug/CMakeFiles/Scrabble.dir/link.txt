@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Scrabble.dir/main.cpp.o CMakeFiles/Scrabble.dir/Objects/Board.cpp.o  -o Scrabble 
+/usr/bin/c++  -g   CMakeFiles/Scrabble.dir/main.cpp.o CMakeFiles/Scrabble.dir/Objects/Board.cpp.o CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.o  -o Scrabble 

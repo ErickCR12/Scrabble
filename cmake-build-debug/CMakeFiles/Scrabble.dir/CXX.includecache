@@ -6,51 +6,63 @@
 
 #IncludeRegexTransform: 
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Collector.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
 Node.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Node.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/List.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
 iostream
 -
 Node.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Node.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Node.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
 Collector.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/Collector.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
 ../Objects/LetterTile.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 string
 -
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Board.hpp
-LetterTile.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.cpp
+iostream
+-
+vector
+-
+fstream
+-
+boost/algorithm/string.hpp
+-
+Board.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
+LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
 fstream
 -
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
 vector
 -
 boost/algorithm/string.hpp
 -
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/main.cpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp
 iostream
 -
 Objects/Dictionary.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
 DataStructures/List.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/DataStructures/List.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
 Objects/GameDeck.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
 Objects/Board.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/Board.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
 Objects/LetterTile.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 

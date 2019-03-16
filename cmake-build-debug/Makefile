@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble"
+CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,87 @@ Objects/Board.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.s
 .PHONY : Objects/Board.cpp.s
 
+Objects/Dictionary.o: Objects/Dictionary.cpp.o
+
+.PHONY : Objects/Dictionary.o
+
+# target to build an object file
+Objects/Dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o
+.PHONY : Objects/Dictionary.cpp.o
+
+Objects/Dictionary.i: Objects/Dictionary.cpp.i
+
+.PHONY : Objects/Dictionary.i
+
+# target to preprocess a source file
+Objects/Dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.i
+.PHONY : Objects/Dictionary.cpp.i
+
+Objects/Dictionary.s: Objects/Dictionary.cpp.s
+
+.PHONY : Objects/Dictionary.s
+
+# target to generate assembly for a file
+Objects/Dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.s
+.PHONY : Objects/Dictionary.cpp.s
+
+Objects/GameDeck.o: Objects/GameDeck.cpp.o
+
+.PHONY : Objects/GameDeck.o
+
+# target to build an object file
+Objects/GameDeck.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.o
+.PHONY : Objects/GameDeck.cpp.o
+
+Objects/GameDeck.i: Objects/GameDeck.cpp.i
+
+.PHONY : Objects/GameDeck.i
+
+# target to preprocess a source file
+Objects/GameDeck.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.i
+.PHONY : Objects/GameDeck.cpp.i
+
+Objects/GameDeck.s: Objects/GameDeck.cpp.s
+
+.PHONY : Objects/GameDeck.s
+
+# target to generate assembly for a file
+Objects/GameDeck.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.s
+.PHONY : Objects/GameDeck.cpp.s
+
+Objects/LetterTile.o: Objects/LetterTile.cpp.o
+
+.PHONY : Objects/LetterTile.o
+
+# target to build an object file
+Objects/LetterTile.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o
+.PHONY : Objects/LetterTile.cpp.o
+
+Objects/LetterTile.i: Objects/LetterTile.cpp.i
+
+.PHONY : Objects/LetterTile.i
+
+# target to preprocess a source file
+Objects/LetterTile.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.i
+.PHONY : Objects/LetterTile.cpp.i
+
+Objects/LetterTile.s: Objects/LetterTile.cpp.s
+
+.PHONY : Objects/LetterTile.s
+
+# target to generate assembly for a file
+Objects/LetterTile.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.s
+.PHONY : Objects/LetterTile.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +270,15 @@ help:
 	@echo "... Objects/Board.o"
 	@echo "... Objects/Board.i"
 	@echo "... Objects/Board.s"
+	@echo "... Objects/Dictionary.o"
+	@echo "... Objects/Dictionary.i"
+	@echo "... Objects/Dictionary.s"
+	@echo "... Objects/GameDeck.o"
+	@echo "... Objects/GameDeck.i"
+	@echo "... Objects/GameDeck.s"
+	@echo "... Objects/LetterTile.o"
+	@echo "... Objects/LetterTile.i"
+	@echo "... Objects/LetterTile.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

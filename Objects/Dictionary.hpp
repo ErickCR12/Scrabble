@@ -14,27 +14,12 @@ private:
 public:
 
     //! @brief Dictionary contructor. Initializes filePath attribute with correct attribute to dictionary.txt
-    Dictionary(){
-        filePath = "../TextFiles/dictionary.txt";
-    }
+    Dictionary();
 
     //! @brief Receives a word to search in the dictionary text file.
     //! @param word string to compare with the dictionary words.
     //! @return bool indicating if the word exists in the dictionary.
-    bool searchInDictionary(string word){
-        string line;
-        ifstream dictionaryFile = ifstream(filePath);
-        if(dictionaryFile.is_open()) {
-            while (getline(dictionaryFile, line)) {
-                line.erase(line.end() - 1);
-                if(line.compare(word) == 0) return true;
-            }
-            dictionaryFile.close();
-        }else{
-            cout << "File could not be opened.";
-        }
-        return false;
-    }
+    bool searchInDictionary(string word)z
 };
 
 #endif //DICTIONARY_HPP

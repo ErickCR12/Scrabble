@@ -1,6 +1,7 @@
 #ifndef LETTERTILE_HPP
 #define LETTERTILE_HPP
 
+#include <string>
 using namespace std;
 
 //! @brief This class represents each letter tile used in Scrabble.
@@ -16,38 +17,24 @@ public:
     /// @param letter String with letter to store.
     /// @param amountRemaining Amount of letter available.
     /// @param score Score awarded for this letter.
-    LetterTile(string letter, int amountRemaining, int score){
-        this->letter = letter;
-        this->amountRemaining = amountRemaining;
-        this->score = score;
-    }
+    LetterTile(string letter, int amountRemaining, int score);
 
     //! @brief Returns the letter attribute
     //! @return string value stored in letter
-    string getLetter(){
-        return letter;
-    }
+    string getLetter();
 
     //! @brief Returns the amountRemaining attribute
     //! @return int value stored in amountRemaining
-    int getAmountRemaining(){
-        return amountRemaining;
-    }
+    int getAmountRemaining();
 
     //! @brief Decreases by one the attribute amountRemaining
-    void decreaseAmountRemaining(){
-        amountRemaining--;
-    }
+    void decreaseAmountRemaining();
 
     //! @brief Returns the score attribute
     //! @return int value stored in score
-    int getScore(){
-        return score;
-    }
+    int getScore();
 
-    void toString(){
-        std::cout<<this->letter;
-    }
+    void toString();
 };
 
-#endif //LETTERTILE_HPP
+#endif LETTERTILE_HPP
