@@ -68,13 +68,13 @@ void playerTest1(){
         LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
         player1->addLetterTile(randomLetterTile);
     }
-    cout<<"Deck player1: "; player1->printPlayerDeck();
 
     cout<<"Llenando deck de player1..."<<endl;
     while(player2->getAmountOfLetterTiles() != 7){
         LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
         player2->addLetterTile(randomLetterTile);
     }
+    cout<<"Deck player1: "; player1->printPlayerDeck();
     cout<<"Deck player2: "; player2->printPlayerDeck();
 }
 

@@ -123,113 +123,113 @@ Scrabble/fast:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 .PHONY : Scrabble/fast
 
-Objects/Board.o: Objects/Board.cpp.o
+gamelogic/Board.o: gamelogic/Board.cpp.o
 
-.PHONY : Objects/Board.o
-
-# target to build an object file
-Objects/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.o
-.PHONY : Objects/Board.cpp.o
-
-Objects/Board.i: Objects/Board.cpp.i
-
-.PHONY : Objects/Board.i
-
-# target to preprocess a source file
-Objects/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.i
-.PHONY : Objects/Board.cpp.i
-
-Objects/Board.s: Objects/Board.cpp.s
-
-.PHONY : Objects/Board.s
-
-# target to generate assembly for a file
-Objects/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Board.cpp.s
-.PHONY : Objects/Board.cpp.s
-
-Objects/Dictionary.o: Objects/Dictionary.cpp.o
-
-.PHONY : Objects/Dictionary.o
+.PHONY : gamelogic/Board.o
 
 # target to build an object file
-Objects/Dictionary.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o
-.PHONY : Objects/Dictionary.cpp.o
+gamelogic/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o
+.PHONY : gamelogic/Board.cpp.o
 
-Objects/Dictionary.i: Objects/Dictionary.cpp.i
+gamelogic/Board.i: gamelogic/Board.cpp.i
 
-.PHONY : Objects/Dictionary.i
+.PHONY : gamelogic/Board.i
 
 # target to preprocess a source file
-Objects/Dictionary.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.i
-.PHONY : Objects/Dictionary.cpp.i
+gamelogic/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.i
+.PHONY : gamelogic/Board.cpp.i
 
-Objects/Dictionary.s: Objects/Dictionary.cpp.s
+gamelogic/Board.s: gamelogic/Board.cpp.s
 
-.PHONY : Objects/Dictionary.s
+.PHONY : gamelogic/Board.s
 
 # target to generate assembly for a file
-Objects/Dictionary.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.s
-.PHONY : Objects/Dictionary.cpp.s
+gamelogic/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.s
+.PHONY : gamelogic/Board.cpp.s
 
-Objects/LetterTile.o: Objects/LetterTile.cpp.o
+gamelogic/Dictionary.o: gamelogic/Dictionary.cpp.o
 
-.PHONY : Objects/LetterTile.o
+.PHONY : gamelogic/Dictionary.o
 
 # target to build an object file
-Objects/LetterTile.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o
-.PHONY : Objects/LetterTile.cpp.o
+gamelogic/Dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o
+.PHONY : gamelogic/Dictionary.cpp.o
 
-Objects/LetterTile.i: Objects/LetterTile.cpp.i
+gamelogic/Dictionary.i: gamelogic/Dictionary.cpp.i
 
-.PHONY : Objects/LetterTile.i
+.PHONY : gamelogic/Dictionary.i
 
 # target to preprocess a source file
-Objects/LetterTile.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.i
-.PHONY : Objects/LetterTile.cpp.i
+gamelogic/Dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.i
+.PHONY : gamelogic/Dictionary.cpp.i
 
-Objects/LetterTile.s: Objects/LetterTile.cpp.s
+gamelogic/Dictionary.s: gamelogic/Dictionary.cpp.s
 
-.PHONY : Objects/LetterTile.s
+.PHONY : gamelogic/Dictionary.s
 
 # target to generate assembly for a file
-Objects/LetterTile.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.s
-.PHONY : Objects/LetterTile.cpp.s
+gamelogic/Dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.s
+.PHONY : gamelogic/Dictionary.cpp.s
 
-Objects/Player.o: Objects/Player.cpp.o
+gamelogic/LetterTile.o: gamelogic/LetterTile.cpp.o
 
-.PHONY : Objects/Player.o
+.PHONY : gamelogic/LetterTile.o
 
 # target to build an object file
-Objects/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.o
-.PHONY : Objects/Player.cpp.o
+gamelogic/LetterTile.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o
+.PHONY : gamelogic/LetterTile.cpp.o
 
-Objects/Player.i: Objects/Player.cpp.i
+gamelogic/LetterTile.i: gamelogic/LetterTile.cpp.i
 
-.PHONY : Objects/Player.i
+.PHONY : gamelogic/LetterTile.i
 
 # target to preprocess a source file
-Objects/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.i
-.PHONY : Objects/Player.cpp.i
+gamelogic/LetterTile.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.i
+.PHONY : gamelogic/LetterTile.cpp.i
 
-Objects/Player.s: Objects/Player.cpp.s
+gamelogic/LetterTile.s: gamelogic/LetterTile.cpp.s
 
-.PHONY : Objects/Player.s
+.PHONY : gamelogic/LetterTile.s
 
 # target to generate assembly for a file
-Objects/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Player.cpp.s
-.PHONY : Objects/Player.cpp.s
+gamelogic/LetterTile.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.s
+.PHONY : gamelogic/LetterTile.cpp.s
+
+gamelogic/Player.o: gamelogic/Player.cpp.o
+
+.PHONY : gamelogic/Player.o
+
+# target to build an object file
+gamelogic/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o
+.PHONY : gamelogic/Player.cpp.o
+
+gamelogic/Player.i: gamelogic/Player.cpp.i
+
+.PHONY : gamelogic/Player.i
+
+# target to preprocess a source file
+gamelogic/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.i
+.PHONY : gamelogic/Player.cpp.i
+
+gamelogic/Player.s: gamelogic/Player.cpp.s
+
+.PHONY : gamelogic/Player.s
+
+# target to generate assembly for a file
+gamelogic/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.s
+.PHONY : gamelogic/Player.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Scrabble"
 	@echo "... edit_cache"
-	@echo "... Objects/Board.o"
-	@echo "... Objects/Board.i"
-	@echo "... Objects/Board.s"
-	@echo "... Objects/Dictionary.o"
-	@echo "... Objects/Dictionary.i"
-	@echo "... Objects/Dictionary.s"
-	@echo "... Objects/LetterTile.o"
-	@echo "... Objects/LetterTile.i"
-	@echo "... Objects/LetterTile.s"
-	@echo "... Objects/Player.o"
-	@echo "... Objects/Player.i"
-	@echo "... Objects/Player.s"
+	@echo "... gamelogic/Board.o"
+	@echo "... gamelogic/Board.i"
+	@echo "... gamelogic/Board.s"
+	@echo "... gamelogic/Dictionary.o"
+	@echo "... gamelogic/Dictionary.i"
+	@echo "... gamelogic/Dictionary.s"
+	@echo "... gamelogic/LetterTile.o"
+	@echo "... gamelogic/LetterTile.i"
+	@echo "... gamelogic/LetterTile.s"
+	@echo "... gamelogic/Player.o"
+	@echo "... gamelogic/Player.i"
+	@echo "... gamelogic/Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

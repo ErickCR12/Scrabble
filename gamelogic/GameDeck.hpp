@@ -5,7 +5,6 @@
 #include <vector>
 #include <boost/algorithm/string.hpp>
 #include "LetterTile.hpp"
-#include "../DataStructures/List.hpp"
 
 //! It contains a list where each node stores an instance of LetterTile for each available letter, in total it has
 //! 29 nodes.

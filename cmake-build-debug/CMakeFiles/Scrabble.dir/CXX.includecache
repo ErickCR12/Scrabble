@@ -6,31 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
-Node.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
-
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
-iostream
--
-Node.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
-
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
-Collector.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
-string
--
-
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.hpp
 LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
+GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.hpp
 string
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
 fstream
 -
 vector
@@ -38,23 +24,27 @@ vector
 boost/algorithm/string.hpp
 -
 LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
-../DataStructures/List.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
 string
 -
 iostream
 -
 
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.hpp
+LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
+
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp
 iostream
 -
-Objects/Dictionary.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
-Objects/Board.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
-Objects/GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
+gamelogic/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.hpp
+gamelogic/GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
+gamelogic/Board.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.hpp
+gamelogic/Player.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.hpp
 

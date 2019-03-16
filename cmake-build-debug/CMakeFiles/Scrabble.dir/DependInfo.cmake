@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Objects/Board.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Player.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Objects/Player.cpp.o"
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o"
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o"
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o"
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o"
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

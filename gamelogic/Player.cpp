@@ -50,4 +50,12 @@ int Player::getAmountOfLetterTiles(){
     return amountOfLetterTiles;
 }
 
+void Player::printPlayerDeck() {
+    LetterTile *tile;
+    for(int index = 0; index < totalLetterTiles; index++){
+        tile = playerDeck[index];
+        cout << "[" << tile->getLetter() << ", " << tile->getAmountRemaining() << ", " << tile->getScore() << "] -> ";
+    }cout << "NULL"<<endl;
+}
+
 #endif PLAYER_CPP

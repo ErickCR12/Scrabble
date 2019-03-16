@@ -84,40 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/CircularList.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/datastructures/CircularList.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Queue.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/datastructures/Queue.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Stack.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/datastructures/Stack.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.cpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.cpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.cpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Player.cpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Player.hpp">
+		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
 		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp">

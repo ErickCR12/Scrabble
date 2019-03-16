@@ -28,6 +28,8 @@ public:
     void addScore(int scoreToAdd);
 
     int getAmountOfLetterTiles();
+
+    void printPlayerDeck();
 };
 
 #endif PLAYER_HPP
