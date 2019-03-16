@@ -1,12 +1,14 @@
+#ifndef LETTERTILE_CPP
+#define LETTERTILE_CPP
+
 #include "LetterTile.hpp"
-#include <iostream>
-using namespace std;
 
 LetterTile::LetterTile(string letter, int amountRemaining, int score){
 this->letter = letter;
 this->amountRemaining = amountRemaining;
 this->score = score;
 }
+
 
 string LetterTile::getLetter(){
     return letter;
@@ -25,5 +27,7 @@ int LetterTile::getScore(){
 }
 
 void LetterTile::toString(){
-    std::cout<<this->letter;
+    cout<<this->letter;
 }
+
+#endif LETTERTILE_CPP

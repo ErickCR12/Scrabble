@@ -52,4 +52,4 @@ public:
     int getScore(int row, int col);
 };
 
-#endif //SCRABBLE_BOARD_HPP
+#endif SCRABBLE_BOARD_HPP

@@ -105,9 +105,6 @@
 		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.cpp">
-			<Option target="Scrabble"/>
-		</Unit>
 		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp">
 			<Option target="Scrabble"/>
 		</Unit>

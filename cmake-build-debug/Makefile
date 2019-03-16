@@ -177,33 +177,6 @@ Objects/Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.s
 .PHONY : Objects/Dictionary.cpp.s
 
-Objects/GameDeck.o: Objects/GameDeck.cpp.o
-
-.PHONY : Objects/GameDeck.o
-
-# target to build an object file
-Objects/GameDeck.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.o
-.PHONY : Objects/GameDeck.cpp.o
-
-Objects/GameDeck.i: Objects/GameDeck.cpp.i
-
-.PHONY : Objects/GameDeck.i
-
-# target to preprocess a source file
-Objects/GameDeck.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.i
-.PHONY : Objects/GameDeck.cpp.i
-
-Objects/GameDeck.s: Objects/GameDeck.cpp.s
-
-.PHONY : Objects/GameDeck.s
-
-# target to generate assembly for a file
-Objects/GameDeck.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.s
-.PHONY : Objects/GameDeck.cpp.s
-
 Objects/LetterTile.o: Objects/LetterTile.cpp.o
 
 .PHONY : Objects/LetterTile.o
@@ -273,9 +246,6 @@ help:
 	@echo "... Objects/Dictionary.o"
 	@echo "... Objects/Dictionary.i"
 	@echo "... Objects/Dictionary.s"
-	@echo "... Objects/GameDeck.o"
-	@echo "... Objects/GameDeck.i"
-	@echo "... Objects/GameDeck.s"
 	@echo "... Objects/LetterTile.o"
 	@echo "... Objects/LetterTile.i"
 	@echo "... Objects/LetterTile.s"

@@ -3,7 +3,6 @@
 
 #include "Node.hpp"
 
-using namespace std;
 class Node; // Forward Declaration
 
 /// @brief Class responsible for recycling the memory released in List.
@@ -46,4 +45,4 @@ Collector* Collector::getCollector() {
     return collector;
 }
 
-#endif //COLLECTOR_HPP
+#endif COLLECTOR_HPP

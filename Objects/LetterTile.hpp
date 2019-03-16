@@ -1,7 +1,7 @@
 #ifndef LETTERTILE_HPP
 #define LETTERTILE_HPP
-
 #include <string>
+#include <iostream>
 using namespace std;
 
 //! @brief This class represents each letter tile used in Scrabble.

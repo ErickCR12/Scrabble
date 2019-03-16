@@ -19,8 +19,6 @@ Node.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Node.hpp
 Collector.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
-../Objects/LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 string
 -
 
@@ -41,28 +39,38 @@ LetterTile.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
-fstream
+string
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
+fstream
+-
 vector
 -
 boost/algorithm/string.hpp
 -
+LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+../DataStructures/List.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
+
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.cpp
+LetterTile.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+string
+-
+iostream
+-
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp
 iostream
 -
 Objects/Dictionary.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
-DataStructures/List.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp
-Objects/GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
 Objects/Board.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
-Objects/LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+Objects/GameDeck.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/GameDeck.hpp
 

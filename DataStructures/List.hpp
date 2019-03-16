@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include "Node.hpp"
-using namespace std;
 
 /// @brief Implementation of a simple linked list formed by Node objects.
 /// @note ** This list has a memory manager called collector.
@@ -92,4 +91,4 @@ public:
     }
 };
 
-#endif //LIST_HPP
+#endif LIST_HPP

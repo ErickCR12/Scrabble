@@ -1,7 +1,11 @@
-#include <iostream>
-#include "Dictionary.hpp"
+#ifndef DICTIONARY_CPP
+#define DICTIONARY_CPP
 
+#include "Dictionary.hpp"
+#include <fstream>
+#include <iostream>
 using namespace std;
+
 Dictionary::Dictionary(){
     filePath = "../TextFiles/dictionary.txt";
 }
@@ -11,8 +15,8 @@ bool Dictionary::searchInDictionary(string word){
     ifstream dictionaryFile = ifstream(filePath);
     if(dictionaryFile.is_open()) {
         while (getline(dictionaryFile, line)) {
-            line.erase(line.end() - 1);
-            if(line.compare(word) == 0) return true;
+            if(line.compare(word) == 0)
+                return true;
         }
         dictionaryFile.close();
     }else{
@@ -20,3 +24,5 @@ bool Dictionary::searchInDictionary(string word){
     }
     return false;
 }
+
+#endif DICTIONARY_CPP

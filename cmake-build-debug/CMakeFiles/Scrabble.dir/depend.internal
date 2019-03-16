@@ -5,6 +5,12 @@ CMakeFiles/Scrabble.dir/Objects/Board.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.cpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Board.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
+CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.cpp
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/Dictionary.hpp
+CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.cpp
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Objects/LetterTile.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/Collector.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/DataStructures/List.hpp

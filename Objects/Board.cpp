@@ -3,6 +3,8 @@
 //
 
 // Libraries
+#ifndef BOARD_CPP
+#define BOARD_CPP
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -124,3 +126,5 @@ void Board::printScoreBoard() {
 int Board::getScore(int row, int col) {
     return scoreBoard[row][col];
 }
+
+#endif BOARD_CPP

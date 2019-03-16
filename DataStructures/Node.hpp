@@ -2,9 +2,7 @@
 #define NODE_HPP
 
 #include "Collector.hpp"
-#include "../Objects/LetterTile.hpp"
 #include <string>
-using namespace std;
 
 //! @brief Structure that stores a LetterTile type attribute and a pointer to the next node.
 class Node{
@@ -98,4 +96,4 @@ void Collector::printCollector() {
 }
 
 
-#endif //NODE_HPP
+#endif NODE_HPP

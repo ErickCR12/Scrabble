@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/Objects/Board.cpp.o"
   "CMakeFiles/Scrabble.dir/Objects/Dictionary.cpp.o"
   "CMakeFiles/Scrabble.dir/Objects/LetterTile.cpp.o"
-  "CMakeFiles/Scrabble.dir/Objects/GameDeck.cpp.o"
   "Scrabble.pdb"
   "Scrabble"
 )
