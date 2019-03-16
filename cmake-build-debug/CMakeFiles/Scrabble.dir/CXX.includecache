@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.hpp
-LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
-GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.cpp
+iostream
+-
+vector
+-
+fstream
+-
+boost/algorithm/string.hpp
+-
+Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.hpp
+LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
+GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.cpp
+Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.hpp
+fstream
+-
+iostream
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.hpp
 string
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.hpp
 fstream
 -
 vector
@@ -24,27 +44,35 @@ vector
 boost/algorithm/string.hpp
 -
 LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.cpp
+LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
 string
 -
 iostream
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.hpp
-LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.cpp
+Player.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.hpp
+LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/main.cpp
 iostream
 -
 gamelogic/Dictionary.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.hpp
 gamelogic/GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.hpp
 gamelogic/Board.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.hpp
 gamelogic/Player.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gamelogic/Player.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.hpp
 
