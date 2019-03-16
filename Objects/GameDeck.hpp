@@ -10,6 +10,7 @@
 //! It contains a list where each node stores an instance of LetterTile for each available letter, in total it has
 //! 29 nodes.
 //! @brief Represents the deck of the game with the full amount of LetterTiles.
+int const totalTiles = 29;
 class GameDeck{
 private:
 
@@ -22,10 +23,7 @@ public:
     //! and insert them to deckList.
     //! @brief GameDeck constructor.
     GameDeck(){
-        deckArray = (LetterTile**) malloc(29*sizeof(LetterTile*));
-        for(int i = 0; i < 29; i++){
-            deckArray[i] = nullptr;
-        }
+        deckArray = (LetterTile**) malloc(totalTiles*sizeof(LetterTile*));
         amountOfLetters = 100;
         tilesPath = "../TextFiles/tiles.csv";
         createLetterTiles();
@@ -43,7 +41,8 @@ public:
         LetterTile *tile;
         int index = 0;
         if(file.is_open()) { //! Verifies if file was opened.
-            while (getline(file, line)) { //! stores the string of a whole line of the csv to line variable.
+            while (index != totalTiles){
+                getline(file, line); //! stores the string of a whole line of the csv to line variable.
                 row.clear(); //! Clears row values with every loop
                 boost::split(row, line, boost::is_any_of(",")); //! Splits line when a "," is found every column in vector
                 //! Creates new LetterTile with the information read from csv.
@@ -62,18 +61,13 @@ public:
         //! Checks if theres any letters remaining.
         if (amountOfLetters == 0) return nullptr;
         srand(time(NULL));
-        int randomPosition =
-                rand() % amountOfLetters + 1; //! randomPosition is a random  int value from 1 to amountOfLetters.
-        int counter = 0;
-        int index = 0;
-        LetterTile *letterTile = nullptr;
-        //! while that loops until the letter in randomPosition is found, starting in the head of deckList.
-        while (counter < randomPosition) { //! if counter is >= to the randomPosition, the letter is found.
+        int randomPosition = rand() % amountOfLetters + 1; //! randomPosition is a random  int value from 1 to amountOfLetters.
+        int counter = 0, index = 0;
+        while (counter < randomPosition) { //! start while and continue as long as counter < randomPosition.
             counter += deckArray[index]->getAmountRemaining(); //! Adds to a counter the amount of letters in actual LetterTile
             index++;
-        }
-        index--;
-        letterTile = deckArray[index];
+        }index--;
+        LetterTile *letterTile = deckArray[index];
         letterTile->decreaseAmountRemaining(); //! decreases by one the amount of letter in actual LetterTile.
         amountOfLetters--; //! Decreases amountOfLetters by one.
         return letterTile;
