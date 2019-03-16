@@ -20,11 +20,15 @@ public:
 
     LetterTile** getPlayerDeck();
 
-    bool hasAvailableSpace();
+    LetterTile* playLetterTile(int position);
 
     int getScore();
 
     void setScore(int score);
+
+    void addScore(int scoreToAdd);
+
+    int getAmountOfLetterTiles();
 };
 
 int const totalLetterTiles = 7;
@@ -42,12 +46,16 @@ void Player::initializePlayerDeck(){
 }
 
 void Player::addLetterTile(LetterTile *letterTile) {
-    for(int index = 0; index < totalLetterTiles; index++){
-        if(playerDeck[index] == nullptr) {
-            playerDeck[index] = letterTile;
-            break;
-        }
-    }amountOfLetterTiles++;
+    int index = 0;
+    while(playerDeck[index] != nullptr) index++;
+    playerDeck[index] = letterTile;
+    amountOfLetterTiles++;
+}
+
+LetterTile* Player::playLetterTile(int position){
+    LetterTile *letterToPlay = playerDeck[position];
+    playerDeck[position] = nullptr;
+    return letterToPlay;
 }
 
 LetterTile** Player::getPlayerDeck(){
@@ -60,6 +68,14 @@ int Player::getScore(){
 
 void Player::setScore(int score) {
     Player::score = score;
+}
+
+void Player::addScore(int scoreToAdd) {
+    Player::score += scoreToAdd;
+}
+
+int Player::getAmountOfLetterTiles(){
+    return amountOfLetterTiles;
 }
 
 #endif PLAYER_HPP
