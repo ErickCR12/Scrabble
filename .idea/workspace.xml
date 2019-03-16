@@ -11,21 +11,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="Created Player.hpp and its basic methods and attributes.">
-      <change afterPath="$PROJECT_DIR$/Objects/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Player.hpp" afterDir="false" />
+    <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="Player methods are now in player.cpp">
+      <change beforePath="$PROJECT_DIR$/Objects/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/GameDeck.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/GameDeck.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextFiles/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/GameDeck_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/GameDeck_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classGameDeck.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGameDeck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +44,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Objects/Player.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -63,8 +56,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Objects/Player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-294">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Objects/Board.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <element signature="e#119#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Objects/Board.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="e#100#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Objects/GameDeck.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="270">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="e#43#61#0" expanded="true" />
               </folding>
@@ -84,11 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -132,8 +146,6 @@
         <option value="$PROJECT_DIR$/GameDeck.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/DataStructures/CircularList.hpp" />
-        <option value="$PROJECT_DIR$/Objects/Board.cpp" />
-        <option value="$PROJECT_DIR$/Objects/Board.hpp" />
         <option value="$PROJECT_DIR$/DataStructures/Collector.hpp" />
         <option value="$PROJECT_DIR$/DataStructures/List.hpp" />
         <option value="$PROJECT_DIR$/DataStructures/Queue.hpp" />
@@ -144,10 +156,12 @@
         <option value="$PROJECT_DIR$/DataStructures/Node.hpp" />
         <option value="$PROJECT_DIR$/Objects/LetterTile.cpp" />
         <option value="$PROJECT_DIR$/Objects/LetterTile.hpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Objects/GameDeck.hpp" />
         <option value="$PROJECT_DIR$/Objects/Player.cpp" />
         <option value="$PROJECT_DIR$/Objects/Player.hpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Objects/GameDeck.hpp" />
+        <option value="$PROJECT_DIR$/Objects/Board.cpp" />
+        <option value="$PROJECT_DIR$/Objects/Board.hpp" />
       </list>
     </option>
   </component>
@@ -237,7 +251,7 @@
       <workItem from="1552364061077" duration="189000" />
       <workItem from="1552624131496" duration="639000" />
       <workItem from="1552696883841" duration="220000" />
-      <workItem from="1552697123557" duration="13334000" />
+      <workItem from="1552697123557" duration="13658000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1552247329625</created>
@@ -323,11 +337,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552710292971</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Player methods are now in player.cpp">
+      <created>1552710523038</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1552710523038</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56845000" />
+    <option name="totallyTimeSpent" value="57169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="31" width="1368" height="691" extended-state="6" />
@@ -394,7 +415,8 @@
     <MESSAGE value="GameDeck now contains an array of LetterTiles instead of a Linked List." />
     <MESSAGE value="Created Player.hpp and its basic methods and attributes." />
     <MESSAGE value="Added methods to add and delete LetterTiles from playerDeck" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods to add and delete LetterTiles from playerDeck" />
+    <MESSAGE value="Player methods are now in player.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player methods are now in player.cpp" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/example.txt" />
@@ -553,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/Board.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Objects/Dictionary.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -567,47 +582,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/Board.cpp">
+    <entry file="file://$PROJECT_DIR$/Objects/Player.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#100#119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Objects/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Objects/GameDeck.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/Player.cpp">
+    <entry file="file://$PROJECT_DIR$/Objects/Board.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="195">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#119#144#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/Player.hpp">
+    <entry file="file://$PROJECT_DIR$/Objects/Board.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="180">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#100#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

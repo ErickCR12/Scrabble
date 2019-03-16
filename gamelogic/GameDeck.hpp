@@ -16,7 +16,7 @@ private:
 
     LetterTile **deckArray; //!< @brief List with all the LetterTile instances of the game.
     int amountOfLetters; //!< @brief int value with total amount of letters available. Starts as a 100.
-    string tilesPath; //!< @brief Path to file in csv format that contains attributes to instance LetterTile.
+    string tilesCSVPath; //!< @brief Path to file in csv format that contains attributes to instance LetterTile.
 
 public:
     //! Initializes List, amountOfLetters, tilesPath and calls createLetterTiles() method to instance every LetterTile
@@ -25,7 +25,7 @@ public:
     GameDeck(){
         deckArray = (LetterTile**) malloc(totalTiles*sizeof(LetterTile*));
         amountOfLetters = 100;
-        tilesPath = "../TextFiles/tiles.csv";
+        tilesCSVPath = "../TextFiles/tiles.csv";
         createLetterTiles();
     }
 
@@ -34,7 +34,7 @@ public:
     //! @brief Reads tiles.csv, creates every instance of LetterTile and adds them to deckList.
     void createLetterTiles(){
         //! Uses ifstream class to read filesPath.csv and stores it in variable file.
-        ifstream file(tilesPath);
+        ifstream file(tilesCSVPath);
         //! Creates a vector called row.
         vector<string> row;
         string line, temp;

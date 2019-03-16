@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Objects/Dictionary.hpp"
-#include "Objects/Board.hpp"
 #include "Objects/GameDeck.hpp"
+#include "Objects/Board.hpp"
 
 
 void dictionaryTest();

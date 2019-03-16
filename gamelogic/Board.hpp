@@ -7,6 +7,7 @@
 
 // Libraries
 #include "LetterTile.hpp"
+#include "GameDeck.hpp"
 
 //! @brief
 class Board {
@@ -16,6 +17,7 @@ private:
     LetterTile* (*gameBoard)[15]; //!< @brief
     int (*scoreBoard)[15]; //! @brief
     string scorePath = "../TextFiles/scoreBoard.csv";
+    GameDeck *gameDeck;
 
     //! @brief
     void initGameBoard();

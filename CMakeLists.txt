@@ -3,6 +3,6 @@ project(Scrabble)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Scrabble main.cpp Objects/Dictionary.hpp Objects/GameDeck.hpp Objects/LetterTile.hpp
-        DataStructures/Stack.hpp DataStructures/Queue.hpp DataStructures/CircularList.hpp Objects/Board.cpp
-        Objects/Board.hpp Objects/Dictionary.cpp Objects/LetterTile.cpp Objects/Player.hpp Objects/Player.cpp)
+add_executable(Scrabble main.cpp gamelogic/Dictionary.hpp gamelogic/GameDeck.hpp gamelogic/LetterTile.hpp
+        datastructures/Stack.hpp datastructures/Queue.hpp datastructures/CircularList.hpp gamelogic/Board.cpp
+        gamelogic/Board.hpp gamelogic/Dictionary.cpp gamelogic/LetterTile.cpp gamelogic/Player.hpp gamelogic/Player.cpp)
