@@ -9,6 +9,13 @@ CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o: ../gamelogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o: ../gamelogic/Dictionary.cpp
 CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o: ../gamelogic/Dictionary.hpp
 
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o: ../gamelogic/Game.cpp
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o: ../gamelogic/Game.hpp
+
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o: ../gamelogic/GameDeck.cpp
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o: ../gamelogic/GameDeck.hpp
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o: ../gamelogic/LetterTile.hpp
+
 CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o: ../gamelogic/LetterTile.cpp
 CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o: ../gamelogic/LetterTile.hpp
 

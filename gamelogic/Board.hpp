@@ -16,8 +16,7 @@ private:
 
     LetterTile* (*gameBoard)[15]; //!< @brief
     int (*scoreBoard)[15]; //! @brief
-    string scorePath = "../TextFiles/scoreBoard.csv";
-    GameDeck *gameDeck;
+    string scorePath;
 
     //! @brief
     void initGameBoard();

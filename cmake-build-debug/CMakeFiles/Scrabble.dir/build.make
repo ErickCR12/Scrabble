@@ -122,13 +122,41 @@ CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.cpp" -o CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.s
 
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o: CMakeFiles/Scrabble.dir/flags.make
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o: ../gamelogic/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.cpp"
+
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.cpp" > CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.i
+
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.cpp" -o CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.s
+
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o: CMakeFiles/Scrabble.dir/flags.make
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o: ../gamelogic/GameDeck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.cpp"
+
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.cpp" > CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.i
+
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.cpp" -o CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.s
+
 # Object files for target Scrabble
 Scrabble_OBJECTS = \
 "CMakeFiles/Scrabble.dir/main.cpp.o" \
 "CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o" \
 "CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o" \
 "CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o" \
-"CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o"
+"CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o" \
+"CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o" \
+"CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o"
 
 # External object files for target Scrabble
 Scrabble_EXTERNAL_OBJECTS =
@@ -138,9 +166,11 @@ Scrabble: CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o
+Scrabble: CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o
+Scrabble: CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/build.make
 Scrabble: CMakeFiles/Scrabble.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Scrabble"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Scrabble"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scrabble.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

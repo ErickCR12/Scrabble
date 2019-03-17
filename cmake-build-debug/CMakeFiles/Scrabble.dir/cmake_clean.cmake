@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o"
   "CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o"
   "CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o"
+  "CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o"
+  "CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o"
   "Scrabble.pdb"
   "Scrabble"
 )

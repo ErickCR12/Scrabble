@@ -177,6 +177,60 @@ gamelogic/Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.s
 .PHONY : gamelogic/Dictionary.cpp.s
 
+gamelogic/Game.o: gamelogic/Game.cpp.o
+
+.PHONY : gamelogic/Game.o
+
+# target to build an object file
+gamelogic/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o
+.PHONY : gamelogic/Game.cpp.o
+
+gamelogic/Game.i: gamelogic/Game.cpp.i
+
+.PHONY : gamelogic/Game.i
+
+# target to preprocess a source file
+gamelogic/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.i
+.PHONY : gamelogic/Game.cpp.i
+
+gamelogic/Game.s: gamelogic/Game.cpp.s
+
+.PHONY : gamelogic/Game.s
+
+# target to generate assembly for a file
+gamelogic/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.s
+.PHONY : gamelogic/Game.cpp.s
+
+gamelogic/GameDeck.o: gamelogic/GameDeck.cpp.o
+
+.PHONY : gamelogic/GameDeck.o
+
+# target to build an object file
+gamelogic/GameDeck.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o
+.PHONY : gamelogic/GameDeck.cpp.o
+
+gamelogic/GameDeck.i: gamelogic/GameDeck.cpp.i
+
+.PHONY : gamelogic/GameDeck.i
+
+# target to preprocess a source file
+gamelogic/GameDeck.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.i
+.PHONY : gamelogic/GameDeck.cpp.i
+
+gamelogic/GameDeck.s: gamelogic/GameDeck.cpp.s
+
+.PHONY : gamelogic/GameDeck.s
+
+# target to generate assembly for a file
+gamelogic/GameDeck.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.s
+.PHONY : gamelogic/GameDeck.cpp.s
+
 gamelogic/LetterTile.o: gamelogic/LetterTile.cpp.o
 
 .PHONY : gamelogic/LetterTile.o
@@ -273,6 +327,12 @@ help:
 	@echo "... gamelogic/Dictionary.o"
 	@echo "... gamelogic/Dictionary.i"
 	@echo "... gamelogic/Dictionary.s"
+	@echo "... gamelogic/Game.o"
+	@echo "... gamelogic/Game.i"
+	@echo "... gamelogic/Game.s"
+	@echo "... gamelogic/GameDeck.o"
+	@echo "... gamelogic/GameDeck.i"
+	@echo "... gamelogic/GameDeck.s"
 	@echo "... gamelogic/LetterTile.o"
 	@echo "... gamelogic/LetterTile.i"
 	@echo "... gamelogic/LetterTile.s"

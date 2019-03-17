@@ -19,12 +19,12 @@ int const row = 15; int const col = 15;
 
 // Constructor
 Board::Board() {
-    gameDeck = new GameDeck();
     // Memory allocation
     gameBoard = (LetterTile* (*)[15]) malloc(sizeof((*gameBoard))*15);
     scoreBoard = (int (*)[15]) malloc(sizeof(*scoreBoard)*15);
 
     // Initialize both Boards
+    scorePath = "../TextFiles/scoreBoard.csv";
     initGameBoard();
     initScoreBoard();
 }

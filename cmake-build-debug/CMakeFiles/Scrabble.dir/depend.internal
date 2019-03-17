@@ -9,6 +9,13 @@ CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o
 CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.cpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.hpp
+CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.cpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.hpp
+CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.cpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.hpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.cpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp
