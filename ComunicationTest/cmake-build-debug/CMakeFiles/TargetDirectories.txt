@@ -1,3 +1,0 @@
-/home/oscararayalaptop/CLionProjects/ComunicationTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/oscararayalaptop/CLionProjects/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir
-/home/oscararayalaptop/CLionProjects/ComunicationTest/cmake-build-debug/CMakeFiles/edit_cache.dir

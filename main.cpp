@@ -1,13 +1,19 @@
 #include <iostream>
+#include <pthread.h>
+
 #include "gamelogic/Dictionary.hpp"
 #include "gamelogic/GameDeck.hpp"
 #include "gamelogic/Board.hpp"
 #include "gamelogic/Player.hpp"
+//#include "SocketComunication/socketClient.hpp"
+//#include "SocketComunication/socketServer.hpp"
 
 void dictionaryTest();
 void boardTest1();
 void boardTest2();
 void playerTest1();
+void socketTest();
+void* startServer(void*);
 
 int main() {
     dictionaryTest();
@@ -77,4 +83,34 @@ void playerTest1(){
     cout<<"Deck player1: "; player1->printPlayerDeck();
     cout<<"Deck player2: "; player2->printPlayerDeck();
 }
+
+/*socketServer *server; // Esta variable debe ser global... para el ejemplo
+
+void* startServer(void *){
+    try {
+        server->runServer();
+    }catch(string exception){
+        cout << exception <<endl;
+    }
+    pthread_exit(nullptr);
+
+}
+
+void socketTest(){
+
+    server = new socketServer;
+
+    pthread_t serverThread;
+    pthread_create(&serverThread, 0, startServer, nullptr);
+    pthread_detach(serverThread);
+
+    while (true) {
+        string message;
+        cin >> message;
+        server->sendMessage(message.c_str());
+    }
+
+}*/
+
+
 

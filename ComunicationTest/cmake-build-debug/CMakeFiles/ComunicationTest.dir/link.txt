@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ComunicationTest.dir/ConnectionTest/main.cpp.o CMakeFiles/ComunicationTest.dir/ConnectionTest/socketServer.cpp.o CMakeFiles/ComunicationTest.dir/ConnectionTest/socketClient.cpp.o  -o ComunicationTest 
