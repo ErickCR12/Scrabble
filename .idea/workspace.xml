@@ -36,63 +36,29 @@
     <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/.idea/ComunicationTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/socketClient.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/ComunicationTest.dir/socketServer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/ComunicationTest.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/socketClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketClient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/socketClient.h" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketClient.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/socketServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComunicationTest/socketServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketServer.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/CircularList.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/CircularList.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/Collector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/Collector.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/List.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/List.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/Node.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/Node.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/Queue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/Queue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructures/Stack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructures/Stack.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Dictionary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Dictionary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Dictionary.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Dictionary.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/GameDeck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/GameDeck.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/GameDeck.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/GameDeck.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/LetterTile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/LetterTile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/LetterTile.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/LetterTile.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Player.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -122,29 +88,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="133">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="217" column="47" selection-start-line="217" selection-start-column="47" selection-end-line="217" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -215,8 +163,8 @@
         <option value="$PROJECT_DIR$/gamelogic/Board.cpp" />
         <option value="$PROJECT_DIR$/gamelogic/GameDeck.cpp" />
         <option value="$PROJECT_DIR$/ComunicationTest/SocketTest.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -232,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,13 +191,12 @@
             <path>
               <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="gameLogic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,7 +261,8 @@
       <workItem from="1552770302741" duration="4584000" />
       <workItem from="1552795884690" duration="2967000" />
       <workItem from="1552867275862" duration="780000" />
-      <workItem from="1552929487001" duration="5437000" />
+      <workItem from="1552929487001" duration="5784000" />
+      <workItem from="1552955290375" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1552247329625</created>
@@ -424,18 +373,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72603000" />
+    <option name="totallyTimeSpent" value="73430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.25214198" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.25214198" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.3128788" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32685512" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41202185" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32677597" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41202185" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39929327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,14 +480,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Objects/GameDeck.cpp" />
-    <entry file="file://$PROJECT_DIR$/datastructures/CircularList.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/CircularList.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructures/List.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/List.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
@@ -548,21 +497,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructures/Stack.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/Stack.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructures/Queue.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/Queue.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Dictionary.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Dictionary.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
@@ -578,7 +527,7 @@
       </provider>
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructures/Node.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/Node.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1349">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
@@ -588,24 +537,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datastructures/Collector.hpp">
+    <entry file="file://$PROJECT_DIR$/dataStructures/Collector.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Dictionary.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Dictionary.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/LetterTile.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -645,32 +587,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Game.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Player.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/LetterTile.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TextFiles/scoreBoard.csv" />
-    <entry file="file://$PROJECT_DIR$/gamelogic/Board.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Board.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
@@ -680,7 +612,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Board.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Board.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="15" column="88" lean-forward="true" selection-start-line="15" selection-end-line="15" selection-end-column="88" />
@@ -690,7 +622,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/GameDeck.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
@@ -700,21 +632,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/GameDeck.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Player.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Player.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/Game.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
@@ -727,28 +659,8 @@
         <state relative-caret-position="-244" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketComunication/socketClient.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SocketComunication/SocketTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socketServer">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3021" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SocketComunication/SocketTest.cpp" />
+    <entry file="file://$PROJECT_DIR$/socketServer" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -769,17 +681,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SocketComunication/socketClient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SocketComunication/socketClient.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#81#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        <state relative-caret-position="171">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameLogic/LetterTile.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="e#46#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameLogic/LetterTile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="133">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -7,5 +7,7 @@ var searchData=
   ['setlength',['setLength',['../classList.html#afaef5cfaa1fed8379afb2c6254cc2b70',1,'List']]],
   ['setlettertile',['setLetterTile',['../classNode.html#ae1084401731f84d33b651e3fbc174b49',1,'Node']]],
   ['setnextnode',['setNextNode',['../classNode.html#a4eb69d2828ce0f8f26f87ea12eb9d3ef',1,'Node']]],
-  ['setscore',['setScore',['../classPlayer.html#a23c9b25aeb8dd1ff86d03d993e07a73d',1,'Player']]]
+  ['setscore',['setScore',['../classPlayer.html#a23c9b25aeb8dd1ff86d03d993e07a73d',1,'Player']]],
+  ['socketclient',['socketClient',['../classsocketClient.html',1,'']]],
+  ['socketserver',['socketServer',['../classsocketServer.html',1,'']]]
 ];

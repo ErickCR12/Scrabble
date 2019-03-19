@@ -1,5 +1,5 @@
 //
-// Created by Esteban Alvarado on 16/03/19.
+// Created by Esteban Alvarado on 18/03/19.
 //
 
 #ifndef SCRABBLE_GAME_HPP

@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/main.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/Board.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/Dictionary.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/LetterTile.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/Player.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/Game.cpp.o"
-  "CMakeFiles/Scrabble.dir/gamelogic/GameDeck.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
   "Scrabble.pdb"
   "Scrabble"
 )

@@ -90,49 +90,49 @@
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/SocketComunication/socketServer.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/datastructures/CircularList.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/dataStructures/CircularList.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/datastructures/Queue.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/dataStructures/Queue.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/datastructures/Stack.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/dataStructures/Stack.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Board.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Dictionary.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Game.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/GameDeck.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/LetterTile.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Player.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gamelogic/Player.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Player.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/main.cpp">
