@@ -13,7 +13,7 @@ private:
     string myWord;
     int amountOfLetterTiles; //!< @brief
     int score; //!< @brief
-    PlayerMessage* currentWord;
+    PlayerMessage* currentWord; //!< @brief
 
 public:
 
@@ -49,11 +49,6 @@ public:
 
     //! @brief
     void printPlayerDeck();
-
-    //! @brief
-    void addTileToMyWord();
-
-    LetterTile* isInDeck(string letter);
 
     //! @brief
     bool sendMyWord();

@@ -4,11 +4,16 @@
 #include "Player.hpp"
 int const totalLetterTiles = 7;
 
+// Constructor
 Player::Player() {
     initializePlayerDeck();
     score = 0;
     amountOfLetterTiles = 0;
 }
+
+/* -------------------------------------------------------------------------
+ *                      INITIALIZATION FUNCTIONS
+ * -------------------------------------------------------------------------*/
 
 void Player::initializePlayerDeck(){
     playerDeck = (LetterTile**) malloc(totalLetterTiles * sizeof(LetterTile*));
@@ -23,32 +28,43 @@ void Player::addLetterTile(LetterTile *letterTile) {
     amountOfLetterTiles++;
 }
 
+/* -------------------------------------------------------------------------
+ *                      PLAYING FUNCTIONS
+ * -------------------------------------------------------------------------*/
+
+// Selecciona una letra para jugarla
 LetterTile* Player::playLetterTile(int position){
     LetterTile *letterToPlay = playerDeck[position];
     playerDeck[position] = nullptr;
     return letterToPlay;
 }
 
+// Retorna el Deck del jugador
 LetterTile** Player::getPlayerDeck(){
     return playerDeck;
 }
 
+// Retorna la puntuacion del jugador
 int Player::getScore(){
     return score;
 }
 
+// Configurar el puntaje
 void Player::setScore(int score) {
     Player::score = score;
 }
 
+// Sumar puntos al jugador
 void Player::addScore(int scoreToAdd) {
     Player::score += scoreToAdd;
 }
 
+// Obtiene la cantidad de fichas del jugador
 int Player::getAmountOfLetterTiles(){
     return amountOfLetterTiles;
 }
 
+// Muestra el Deck en consola
 void Player::printPlayerDeck() {
     LetterTile *tile;
     for(int index = 0; index < totalLetterTiles; index++){
@@ -57,21 +73,5 @@ void Player::printPlayerDeck() {
     }cout << "NULL"<<endl;
 }
 
-void Player::addTileToMyWord() {
-    string request;
-    cout<<"* Ingresa la letra que desea agregar a su palabra: ";
-    cin>>request;
-
-    if(isInDeck(request)){
-
-    }
-}
-
-LetterTile* Player::isInDeck(string letter){
-    for(int i= 0; i<totalLetterTiles;i++){
-
-
-    }
-}
 
 #endif PLAYER_CPP
