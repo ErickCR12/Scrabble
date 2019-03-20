@@ -1,12 +1,22 @@
+
+// Libraries
 #include <iostream>
 #include <pthread.h>
 
+// Game Logic
 #include "gameLogic/Dictionary.hpp"
 #include "gameLogic/GameDeck.hpp"
 #include "gameLogic/Board.hpp"
 #include "gameLogic/Player.hpp"
+
+// Sockets
 #include "SocketComunication/socketClient.hpp"
 #include "SocketComunication/socketServer.hpp"
+
+// JSON
+#include "ScrabbleTest/JsonTest/JSON_Test.hpp"
+
+// Forward Declaration :: Methods
 
 void dictionaryTest();
 void boardTest1();
@@ -15,12 +25,20 @@ void playerTest1();
 void socketTest();
 void* startServer(void*);
 
+
 int main() {
-    dictionaryTest();
+
+    /*dictionaryTest();
     boardTest1();
     boardTest2();
-    playerTest1();
+    playerTest1();*/
+
+    JSON_Test::test1();
 }
+
+/* -----------------------------
+ *          TEST METHODS
+ * ----------------------------*/
 
 void dictionaryTest(){
     Dictionary *dictionary = new Dictionary();
@@ -30,15 +48,15 @@ void dictionaryTest(){
 
     GameDeck *gd = new GameDeck();
     gd->printDeck();
-//
-//    cout<<"Randomly extracting all letter tiles: "<<endl;
-//    LetterTile* l;
-//    for(int i = 0; i < 100; i++) {
-//        cout << "GameDeck [letter, amount, score]: ";
-//        gd->printDeck();
-//        l = gd->giveRandomLetter();
-//        cout << l->getLetter() << "\n\n";
-//    }
+
+    cout<<"Randomly extracting all letter tiles: "<<endl;
+    LetterTile* l;
+    for(int i = 0; i < 100; i++) {
+        cout << "GameDeck [letter, amount, score]: ";
+        gd->printDeck();
+        l = gd->giveRandomLetter();
+        cout << l->getLetter() << "\n\n";
+    }
 }
 
 void boardTest1(){
