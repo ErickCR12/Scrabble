@@ -7,7 +7,8 @@
 
 
 class PlayerTest {
-
+public:
+    static void test();
 };
 
 

@@ -2,7 +2,6 @@
 #define PLAYER_CPP
 
 #include "Player.hpp"
-
 int const totalLetterTiles = 7;
 
 Player::Player() {

@@ -5,9 +5,10 @@
 #ifndef SCRABBLE_DICTIONARYTEST_HPP
 #define SCRABBLE_DICTIONARYTEST_HPP
 
-
 class DictionaryTest {
+public:
 
+    static void test1();
 };
 
 

@@ -9,6 +9,5 @@ var searchData=
   ['setnextnode',['setNextNode',['../classNode.html#a4eb69d2828ce0f8f26f87ea12eb9d3ef',1,'Node']]],
   ['setscore',['setScore',['../classPlayer.html#a23c9b25aeb8dd1ff86d03d993e07a73d',1,'Player']]],
   ['socketclient',['socketClient',['../classsocketClient.html',1,'']]],
-  ['socketserver',['socketServer',['../classsocketServer.html',1,'']]],
-  ['sockettest1',['socketTest1',['../classsocketTest1.html',1,'']]]
+  ['socketserver',['socketServer',['../classsocketServer.html',1,'']]]
 ];
