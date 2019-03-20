@@ -8,6 +8,6 @@ add_executable(Scrabble main.cpp gameLogic/Dictionary.hpp gameLogic/GameDeck.hpp
         gameLogic/Board.hpp gameLogic/Dictionary.cpp gameLogic/LetterTile.cpp gameLogic/Player.hpp gameLogic/Player.cpp
         gameLogic/Game.cpp gameLogic/Game.hpp gameLogic/GameDeck.cpp SocketComunication/socketClient.hpp
         SocketComunication/socketServer.hpp ScrabbleTest/JsonTest/JSON_Test.cpp ScrabbleTest/JsonTest/JSON_Test.hpp
-        ScrabbleTest/GameLogicTest/DictionaryTest.cpp ScrabbleTest/GameLogicTest/DictionaryTest.hpp JSON/JsonMessage.cpp JSON/JsonMessage.hpp
+        ScrabbleTest/GameLogicTest/DictionaryTest.cpp ScrabbleTest/GameLogicTest/DictionaryTest.hpp
         ScrabbleTest/GameLogicTest/BoardTest.cpp ScrabbleTest/GameLogicTest/BoardTest.hpp
-        ScrabbleTest/GameLogicTest/PlayerTest.hpp ScrabbleTest/GameLogicTest/PlayerTest.cpp ScrabbleTest/SocketsTest/socketTest1.cpp ScrabbleTest/SocketsTest/socketTest1.hpp)
+        ScrabbleTest/GameLogicTest/PlayerTest.hpp ScrabbleTest/GameLogicTest/PlayerTest.cpp ScrabbleTest/SocketsTest/socketTest1.cpp ScrabbleTest/SocketsTest/socketTest1.hpp JSON/PlayerMessage.cpp JSON/PlayerMessage.hpp JSON/ServerMessage.cpp JSON/ServerMessage.hpp)

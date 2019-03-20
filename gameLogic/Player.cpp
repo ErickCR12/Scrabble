@@ -57,4 +57,21 @@ void Player::printPlayerDeck() {
     }cout << "NULL"<<endl;
 }
 
+void Player::addTileToMyWord() {
+    string request;
+    cout<<"* Ingresa la letra que desea agregar a su palabra: ";
+    cin>>request;
+
+    if(isInDeck(request)){
+
+    }
+}
+
+LetterTile* Player::isInDeck(string letter){
+    for(int i= 0; i<totalLetterTiles;i++){
+
+
+    }
+}
+
 #endif PLAYER_CPP

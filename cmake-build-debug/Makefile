@@ -123,32 +123,59 @@ Scrabble/fast:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 .PHONY : Scrabble/fast
 
-JSON/JsonMessage.o: JSON/JsonMessage.cpp.o
+JSON/PlayerMessage.o: JSON/PlayerMessage.cpp.o
 
-.PHONY : JSON/JsonMessage.o
+.PHONY : JSON/PlayerMessage.o
 
 # target to build an object file
-JSON/JsonMessage.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/JsonMessage.cpp.o
-.PHONY : JSON/JsonMessage.cpp.o
+JSON/PlayerMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o
+.PHONY : JSON/PlayerMessage.cpp.o
 
-JSON/JsonMessage.i: JSON/JsonMessage.cpp.i
+JSON/PlayerMessage.i: JSON/PlayerMessage.cpp.i
 
-.PHONY : JSON/JsonMessage.i
+.PHONY : JSON/PlayerMessage.i
 
 # target to preprocess a source file
-JSON/JsonMessage.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/JsonMessage.cpp.i
-.PHONY : JSON/JsonMessage.cpp.i
+JSON/PlayerMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.i
+.PHONY : JSON/PlayerMessage.cpp.i
 
-JSON/JsonMessage.s: JSON/JsonMessage.cpp.s
+JSON/PlayerMessage.s: JSON/PlayerMessage.cpp.s
 
-.PHONY : JSON/JsonMessage.s
+.PHONY : JSON/PlayerMessage.s
 
 # target to generate assembly for a file
-JSON/JsonMessage.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/JsonMessage.cpp.s
-.PHONY : JSON/JsonMessage.cpp.s
+JSON/PlayerMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.s
+.PHONY : JSON/PlayerMessage.cpp.s
+
+JSON/ServerMessage.o: JSON/ServerMessage.cpp.o
+
+.PHONY : JSON/ServerMessage.o
+
+# target to build an object file
+JSON/ServerMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o
+.PHONY : JSON/ServerMessage.cpp.o
+
+JSON/ServerMessage.i: JSON/ServerMessage.cpp.i
+
+.PHONY : JSON/ServerMessage.i
+
+# target to preprocess a source file
+JSON/ServerMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.i
+.PHONY : JSON/ServerMessage.cpp.i
+
+JSON/ServerMessage.s: JSON/ServerMessage.cpp.s
+
+.PHONY : JSON/ServerMessage.s
+
+# target to generate assembly for a file
+JSON/ServerMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
+.PHONY : JSON/ServerMessage.cpp.s
 
 ScrabbleTest/GameLogicTest/BoardTest.o: ScrabbleTest/GameLogicTest/BoardTest.cpp.o
 
@@ -483,9 +510,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Scrabble"
 	@echo "... edit_cache"
-	@echo "... JSON/JsonMessage.o"
-	@echo "... JSON/JsonMessage.i"
-	@echo "... JSON/JsonMessage.s"
+	@echo "... JSON/PlayerMessage.o"
+	@echo "... JSON/PlayerMessage.i"
+	@echo "... JSON/PlayerMessage.s"
+	@echo "... JSON/ServerMessage.o"
+	@echo "... JSON/ServerMessage.i"
+	@echo "... JSON/ServerMessage.s"
 	@echo "... ScrabbleTest/GameLogicTest/BoardTest.o"
 	@echo "... ScrabbleTest/GameLogicTest/BoardTest.i"
 	@echo "... ScrabbleTest/GameLogicTest/BoardTest.s"

@@ -60,8 +60,12 @@ CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o: ../gameLogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o: ../gameLogic/Dictionary.cpp
 CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o: ../gameLogic/Dictionary.hpp
 
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Board.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.cpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/GameDeck.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/LetterTile.hpp
 
 CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o: ../gameLogic/GameDeck.cpp
 CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o: ../gameLogic/GameDeck.hpp

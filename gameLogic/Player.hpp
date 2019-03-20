@@ -3,14 +3,17 @@
 
 // Libraries
 #include "LetterTile.hpp"
+#include "../JSON/PlayerMessage.hpp"
 
 //! @brief
 class Player{
 
 private:
     LetterTile **playerDeck; //!< @brief
+    string myWord;
     int amountOfLetterTiles; //!< @brief
     int score; //!< @brief
+    PlayerMessage* currentWord;
 
 public:
 
@@ -46,6 +49,14 @@ public:
 
     //! @brief
     void printPlayerDeck();
+
+    //! @brief
+    void addTileToMyWord();
+
+    LetterTile* isInDeck(string letter);
+
+    //! @brief
+    bool sendMyWord();
 };
 
 #endif PLAYER_HPP
