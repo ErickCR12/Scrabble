@@ -15,6 +15,7 @@ bool Dictionary::searchInDictionary(string word){
     ifstream dictionaryFile = ifstream(filePath);
     if(dictionaryFile.is_open()) {
         while (getline(dictionaryFile, line)) {
+            line = line.substr(0, line.length()-1);
             if(line.compare(word) == 0)
                 return true;
         }

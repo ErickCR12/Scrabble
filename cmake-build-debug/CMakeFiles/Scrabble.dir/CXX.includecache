@@ -6,59 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ScrabbleTest/GameLogicTest/DictionaryTest.cpp
-DictionaryTest.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ScrabbleTest/GameLogicTest/DictionaryTest.hpp
-../../gameLogic/Dictionary.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.hpp
-../../gameLogic/GameDeck.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ScrabbleTest/GameLogicTest/DictionaryTest.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp
-LetterTile.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp
-GameDeck.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.cpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Dictionary.cpp
 Dictionary.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Dictionary.hpp
 fstream
 -
 iostream
 -
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.hpp
+/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Dictionary.hpp
 string
--
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.cpp
-Game.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.hpp
-GameDeck.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
-Dictionary.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.hpp
-Board.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
-fstream
--
-vector
--
-boost/algorithm/string.hpp
--
-LetterTile.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp
-string
--
-iostream
 -
 
