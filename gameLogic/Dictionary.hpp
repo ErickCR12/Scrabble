@@ -18,6 +18,8 @@ public:
     //! @param word string to compare with the dictionary words.
     //! @return bool indicating if the word exists in the dictionary.
     bool searchInDictionary(std::string word);
+
+    void writeInDictionary(std::string word);
 };
 
 #endif DICTIONARY_HPP
