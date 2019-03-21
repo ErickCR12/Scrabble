@@ -8,7 +8,8 @@
 
 class PlayerTest {
 public:
-    static void test();
+    static void test1();
+    static void test2();
 };
 
 

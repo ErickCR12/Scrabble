@@ -16,14 +16,15 @@
 
 int main() {
 
-    DictionaryTest::test1();
+    //DictionaryTest::test1();
 
-    BoardTest::test1();
-    BoardTest::test2();
+    //BoardTest::test1();
+    //BoardTest::test2();
 
-    PlayerTest::test();
+    //PlayerTest::test1();
+    PlayerTest::test2();
 
-    JSON_Test::test1();
+    //JSON_Test::test1();
 }
 
 

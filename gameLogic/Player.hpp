@@ -3,35 +3,57 @@
 
 // Libraries
 #include "LetterTile.hpp"
-#include "../JSON/PlayerMessage.hpp"
+#include "Board.hpp"
 
 //! @brief
 class Player{
 
 private:
+
     LetterTile **playerDeck; //!< @brief
+    Board* playerBoard; //!< @brief
     string myWord;
+
     int amountOfLetterTiles; //!< @brief
     int score; //!< @brief
-    PlayerMessage* currentWord; //!< @brief
+    int *positions;
+
+    //! @brief
+    void initializePlayerDeck();
+
+    //! @brief
+    //! \param position
+    //! \return
+    LetterTile* playLetterTile(int position);
 
 public:
 
     //! @brief
     Player();
 
+    // --------------------------------------
+
     //! @brief
     //! @param letterTile
     void addLetterTile(LetterTile *letterTile);
 
     //! @brief
-    void initializePlayerDeck();
+    //! @param position
+    //! @param row
+    //! @param col
+    //! @return
+    void addLetterToWord(int position,int row,int col);
+
+    //! @brief
+    void resetPositions();
+
+    //! @brief
+    bool sendMyWord();
+
+    // ---------------------------------------
 
     //! @brief
     LetterTile** getPlayerDeck();
-
-    //! @brief
-    LetterTile* playLetterTile(int position);
 
     //! @brief
     int getScore();
@@ -51,7 +73,9 @@ public:
     void printPlayerDeck();
 
     //! @brief
-    bool sendMyWord();
+    void printPositions();
+
+
 };
 
 #endif PLAYER_HPP
