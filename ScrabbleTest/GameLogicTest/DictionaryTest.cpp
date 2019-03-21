@@ -13,6 +13,7 @@ void DictionaryTest::test1(){
     cout<<"Searching for zutano: ";
     if(dictionary->searchInDictionary("zutano")) cout<<"Found."<<endl;
     else cout << "Not Found.\n\n\n";
+    //dictionary->writeInDictionary("palabraPrueba");
 
     cout<< "------------ ALSO GAME DECK TEST ------------"<<endl;
     GameDeck *gd = new GameDeck();
