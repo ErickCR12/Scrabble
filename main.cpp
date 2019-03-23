@@ -5,7 +5,6 @@
 
 // Game Logic
 #include "Tests/GameLogicTest/DictionaryTest.hpp"
-#include "Tests/GameLogicTest/BoardTest.hpp"
 #include "Tests/GameLogicTest/PlayerTest.hpp"
 
 // Sockets
@@ -23,9 +22,6 @@ int main(int argc,char* argv[]) {
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
     //DictionaryTest::test1();
-
-    //BoardTest::test1();
-    //BoardTest::test2();
 
     //PlayerTest::test1();
     //PlayerTest::test2();

@@ -213,18 +213,18 @@ CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/SocketsTest/socketTest1.cpp" -o CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.s
 
-CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o: CMakeFiles/Scrabble.dir/flags.make
-CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o: ../Tests/Board_gtest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/Board_gtest.cpp"
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: CMakeFiles/Scrabble.dir/flags.make
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../Tests/GameLogicTest/Board_gtest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp"
 
-CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/Board_gtest.cpp" > CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.i
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp" > CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.i
 
-CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/Board_gtest.cpp" -o CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.s
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp" -o CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.s
 
 CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: CMakeFiles/Scrabble.dir/flags.make
 CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: ../JSON/PlayerMessage.cpp
@@ -266,7 +266,7 @@ Scrabble_OBJECTS = \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o" \
-"CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o" \
+"CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" \
 "CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" \
 "CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
 
@@ -285,7 +285,7 @@ Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o
-Scrabble: CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o
+Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/build.make

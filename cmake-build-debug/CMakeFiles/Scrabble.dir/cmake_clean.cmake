@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o"
-  "CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o"
+  "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
   "CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
   "Scrabble.pdb"

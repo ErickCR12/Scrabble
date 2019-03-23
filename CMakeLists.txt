@@ -23,7 +23,6 @@ add_executable(
 
         Tests/JsonTest/JSON_Test.cpp Tests/JsonTest/JSON_Test.hpp
         Tests/GameLogicTest/DictionaryTest.cpp Tests/GameLogicTest/DictionaryTest.hpp
-        Tests/GameLogicTest/BoardTest.cpp Tests/GameLogicTest/BoardTest.hpp
         Tests/GameLogicTest/PlayerTest.hpp Tests/GameLogicTest/PlayerTest.cpp
         Tests/SocketsTest/socketTest1.cpp Tests/SocketsTest/socketTest1.hpp
         Tests/GameLogicTest/Board_gtest.cpp

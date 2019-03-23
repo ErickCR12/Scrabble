@@ -32,7 +32,33 @@ CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/JSON/ServerMessage.cpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/JSON/ServerMessage.hpp
-CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o
+ ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.cpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.hpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp
+CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o
  ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
  ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
  ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
@@ -71,33 +97,7 @@ CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/Board_gtest.cpp
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o
- ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
- ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
- ../lib/googletest-master/googletest/include/gtest/gtest-message.h
- ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
- ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
- ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
- ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
- ../lib/googletest-master/googletest/include/gtest/gtest.h
- ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
- ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
- ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
- ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
- ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.cpp
- /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.hpp
+ /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.hpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.hpp
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.hpp

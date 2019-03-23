@@ -275,33 +275,6 @@ JSON/ServerMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 .PHONY : JSON/ServerMessage.cpp.s
 
-Tests/Board_gtest.o: Tests/Board_gtest.cpp.o
-
-.PHONY : Tests/Board_gtest.o
-
-# target to build an object file
-Tests/Board_gtest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o
-.PHONY : Tests/Board_gtest.cpp.o
-
-Tests/Board_gtest.i: Tests/Board_gtest.cpp.i
-
-.PHONY : Tests/Board_gtest.i
-
-# target to preprocess a source file
-Tests/Board_gtest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.i
-.PHONY : Tests/Board_gtest.cpp.i
-
-Tests/Board_gtest.s: Tests/Board_gtest.cpp.s
-
-.PHONY : Tests/Board_gtest.s
-
-# target to generate assembly for a file
-Tests/Board_gtest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.s
-.PHONY : Tests/Board_gtest.cpp.s
-
 Tests/GameLogicTest/BoardTest.o: Tests/GameLogicTest/BoardTest.cpp.o
 
 .PHONY : Tests/GameLogicTest/BoardTest.o
@@ -328,6 +301,33 @@ Tests/GameLogicTest/BoardTest.s: Tests/GameLogicTest/BoardTest.cpp.s
 Tests/GameLogicTest/BoardTest.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.s
 .PHONY : Tests/GameLogicTest/BoardTest.cpp.s
+
+Tests/GameLogicTest/Board_gtest.o: Tests/GameLogicTest/Board_gtest.cpp.o
+
+.PHONY : Tests/GameLogicTest/Board_gtest.o
+
+# target to build an object file
+Tests/GameLogicTest/Board_gtest.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o
+.PHONY : Tests/GameLogicTest/Board_gtest.cpp.o
+
+Tests/GameLogicTest/Board_gtest.i: Tests/GameLogicTest/Board_gtest.cpp.i
+
+.PHONY : Tests/GameLogicTest/Board_gtest.i
+
+# target to preprocess a source file
+Tests/GameLogicTest/Board_gtest.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.i
+.PHONY : Tests/GameLogicTest/Board_gtest.cpp.i
+
+Tests/GameLogicTest/Board_gtest.s: Tests/GameLogicTest/Board_gtest.cpp.s
+
+.PHONY : Tests/GameLogicTest/Board_gtest.s
+
+# target to generate assembly for a file
+Tests/GameLogicTest/Board_gtest.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.s
+.PHONY : Tests/GameLogicTest/Board_gtest.cpp.s
 
 Tests/GameLogicTest/DictionaryTest.o: Tests/GameLogicTest/DictionaryTest.cpp.o
 
@@ -649,12 +649,12 @@ help:
 	@echo "... JSON/ServerMessage.o"
 	@echo "... JSON/ServerMessage.i"
 	@echo "... JSON/ServerMessage.s"
-	@echo "... Tests/Board_gtest.o"
-	@echo "... Tests/Board_gtest.i"
-	@echo "... Tests/Board_gtest.s"
 	@echo "... Tests/GameLogicTest/BoardTest.o"
 	@echo "... Tests/GameLogicTest/BoardTest.i"
 	@echo "... Tests/GameLogicTest/BoardTest.s"
+	@echo "... Tests/GameLogicTest/Board_gtest.o"
+	@echo "... Tests/GameLogicTest/Board_gtest.i"
+	@echo "... Tests/GameLogicTest/Board_gtest.s"
 	@echo "... Tests/GameLogicTest/DictionaryTest.o"
 	@echo "... Tests/GameLogicTest/DictionaryTest.i"
 	@echo "... Tests/GameLogicTest/DictionaryTest.s"
