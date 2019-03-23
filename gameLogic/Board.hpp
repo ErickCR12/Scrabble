@@ -8,6 +8,7 @@
 // Libraries
 #include "LetterTile.hpp"
 #include "GameDeck.hpp"
+#include "gtest/gtest.h"
 
 //! @brief
 class Board {

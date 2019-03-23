@@ -4,27 +4,35 @@
 #include <pthread.h>
 
 // Game Logic
-#include "ScrabbleTest/GameLogicTest/DictionaryTest.hpp"
-#include "ScrabbleTest/GameLogicTest/BoardTest.hpp"
-#include "ScrabbleTest/GameLogicTest/PlayerTest.hpp"
+#include "Tests/GameLogicTest/DictionaryTest.hpp"
+#include "Tests/GameLogicTest/BoardTest.hpp"
+#include "Tests/GameLogicTest/PlayerTest.hpp"
 
 // Sockets
-#include "ScrabbleTest/SocketsTest/socketTest1.hpp"
+#include "Tests/SocketsTest/socketTest1.hpp"
 
 // JSON
-#include "ScrabbleTest/JsonTest/JSON_Test.hpp"
+#include "Tests/JsonTest/JSON_Test.hpp"
 
-int main() {
+// gtest
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
+int main(int argc,char* argv[]) {
+
+    testing::InitGoogleTest(&argc,argv);
+    RUN_ALL_TESTS();
     //DictionaryTest::test1();
 
     //BoardTest::test1();
     //BoardTest::test2();
 
     //PlayerTest::test1();
-    PlayerTest::test2();
+    //PlayerTest::test2();
 
     //JSON_Test::test1();
+
+    return 0;
 }
 
 

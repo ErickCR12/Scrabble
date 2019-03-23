@@ -56,16 +56,17 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +78,51 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +168,58 @@ Scrabble: cmake_check_build_system
 Scrabble/fast:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 .PHONY : Scrabble/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 JSON/PlayerMessage.o: JSON/PlayerMessage.cpp.o
 
@@ -177,140 +275,167 @@ JSON/ServerMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 .PHONY : JSON/ServerMessage.cpp.s
 
-ScrabbleTest/GameLogicTest/BoardTest.o: ScrabbleTest/GameLogicTest/BoardTest.cpp.o
+Tests/Board_gtest.o: Tests/Board_gtest.cpp.o
 
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.o
-
-# target to build an object file
-ScrabbleTest/GameLogicTest/BoardTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/BoardTest.cpp.o
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.cpp.o
-
-ScrabbleTest/GameLogicTest/BoardTest.i: ScrabbleTest/GameLogicTest/BoardTest.cpp.i
-
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.i
-
-# target to preprocess a source file
-ScrabbleTest/GameLogicTest/BoardTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/BoardTest.cpp.i
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.cpp.i
-
-ScrabbleTest/GameLogicTest/BoardTest.s: ScrabbleTest/GameLogicTest/BoardTest.cpp.s
-
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.s
-
-# target to generate assembly for a file
-ScrabbleTest/GameLogicTest/BoardTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/BoardTest.cpp.s
-.PHONY : ScrabbleTest/GameLogicTest/BoardTest.cpp.s
-
-ScrabbleTest/GameLogicTest/DictionaryTest.o: ScrabbleTest/GameLogicTest/DictionaryTest.cpp.o
-
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.o
+.PHONY : Tests/Board_gtest.o
 
 # target to build an object file
-ScrabbleTest/GameLogicTest/DictionaryTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/DictionaryTest.cpp.o
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.cpp.o
+Tests/Board_gtest.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.o
+.PHONY : Tests/Board_gtest.cpp.o
 
-ScrabbleTest/GameLogicTest/DictionaryTest.i: ScrabbleTest/GameLogicTest/DictionaryTest.cpp.i
+Tests/Board_gtest.i: Tests/Board_gtest.cpp.i
 
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.i
+.PHONY : Tests/Board_gtest.i
 
 # target to preprocess a source file
-ScrabbleTest/GameLogicTest/DictionaryTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/DictionaryTest.cpp.i
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.cpp.i
+Tests/Board_gtest.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.i
+.PHONY : Tests/Board_gtest.cpp.i
 
-ScrabbleTest/GameLogicTest/DictionaryTest.s: ScrabbleTest/GameLogicTest/DictionaryTest.cpp.s
+Tests/Board_gtest.s: Tests/Board_gtest.cpp.s
 
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.s
+.PHONY : Tests/Board_gtest.s
 
 # target to generate assembly for a file
-ScrabbleTest/GameLogicTest/DictionaryTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/DictionaryTest.cpp.s
-.PHONY : ScrabbleTest/GameLogicTest/DictionaryTest.cpp.s
+Tests/Board_gtest.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/Board_gtest.cpp.s
+.PHONY : Tests/Board_gtest.cpp.s
 
-ScrabbleTest/GameLogicTest/PlayerTest.o: ScrabbleTest/GameLogicTest/PlayerTest.cpp.o
+Tests/GameLogicTest/BoardTest.o: Tests/GameLogicTest/BoardTest.cpp.o
 
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.o
+.PHONY : Tests/GameLogicTest/BoardTest.o
 
 # target to build an object file
-ScrabbleTest/GameLogicTest/PlayerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/PlayerTest.cpp.o
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.cpp.o
+Tests/GameLogicTest/BoardTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o
+.PHONY : Tests/GameLogicTest/BoardTest.cpp.o
 
-ScrabbleTest/GameLogicTest/PlayerTest.i: ScrabbleTest/GameLogicTest/PlayerTest.cpp.i
+Tests/GameLogicTest/BoardTest.i: Tests/GameLogicTest/BoardTest.cpp.i
 
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.i
+.PHONY : Tests/GameLogicTest/BoardTest.i
 
 # target to preprocess a source file
-ScrabbleTest/GameLogicTest/PlayerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/PlayerTest.cpp.i
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.cpp.i
+Tests/GameLogicTest/BoardTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.i
+.PHONY : Tests/GameLogicTest/BoardTest.cpp.i
 
-ScrabbleTest/GameLogicTest/PlayerTest.s: ScrabbleTest/GameLogicTest/PlayerTest.cpp.s
+Tests/GameLogicTest/BoardTest.s: Tests/GameLogicTest/BoardTest.cpp.s
 
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.s
+.PHONY : Tests/GameLogicTest/BoardTest.s
 
 # target to generate assembly for a file
-ScrabbleTest/GameLogicTest/PlayerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/GameLogicTest/PlayerTest.cpp.s
-.PHONY : ScrabbleTest/GameLogicTest/PlayerTest.cpp.s
+Tests/GameLogicTest/BoardTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.s
+.PHONY : Tests/GameLogicTest/BoardTest.cpp.s
 
-ScrabbleTest/JsonTest/JSON_Test.o: ScrabbleTest/JsonTest/JSON_Test.cpp.o
+Tests/GameLogicTest/DictionaryTest.o: Tests/GameLogicTest/DictionaryTest.cpp.o
 
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.o
+.PHONY : Tests/GameLogicTest/DictionaryTest.o
 
 # target to build an object file
-ScrabbleTest/JsonTest/JSON_Test.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/JsonTest/JSON_Test.cpp.o
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.cpp.o
+Tests/GameLogicTest/DictionaryTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o
+.PHONY : Tests/GameLogicTest/DictionaryTest.cpp.o
 
-ScrabbleTest/JsonTest/JSON_Test.i: ScrabbleTest/JsonTest/JSON_Test.cpp.i
+Tests/GameLogicTest/DictionaryTest.i: Tests/GameLogicTest/DictionaryTest.cpp.i
 
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.i
+.PHONY : Tests/GameLogicTest/DictionaryTest.i
 
 # target to preprocess a source file
-ScrabbleTest/JsonTest/JSON_Test.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/JsonTest/JSON_Test.cpp.i
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.cpp.i
+Tests/GameLogicTest/DictionaryTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.i
+.PHONY : Tests/GameLogicTest/DictionaryTest.cpp.i
 
-ScrabbleTest/JsonTest/JSON_Test.s: ScrabbleTest/JsonTest/JSON_Test.cpp.s
+Tests/GameLogicTest/DictionaryTest.s: Tests/GameLogicTest/DictionaryTest.cpp.s
 
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.s
+.PHONY : Tests/GameLogicTest/DictionaryTest.s
 
 # target to generate assembly for a file
-ScrabbleTest/JsonTest/JSON_Test.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/JsonTest/JSON_Test.cpp.s
-.PHONY : ScrabbleTest/JsonTest/JSON_Test.cpp.s
+Tests/GameLogicTest/DictionaryTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.s
+.PHONY : Tests/GameLogicTest/DictionaryTest.cpp.s
 
-ScrabbleTest/SocketsTest/socketTest1.o: ScrabbleTest/SocketsTest/socketTest1.cpp.o
+Tests/GameLogicTest/PlayerTest.o: Tests/GameLogicTest/PlayerTest.cpp.o
 
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.o
+.PHONY : Tests/GameLogicTest/PlayerTest.o
 
 # target to build an object file
-ScrabbleTest/SocketsTest/socketTest1.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/SocketsTest/socketTest1.cpp.o
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.cpp.o
+Tests/GameLogicTest/PlayerTest.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o
+.PHONY : Tests/GameLogicTest/PlayerTest.cpp.o
 
-ScrabbleTest/SocketsTest/socketTest1.i: ScrabbleTest/SocketsTest/socketTest1.cpp.i
+Tests/GameLogicTest/PlayerTest.i: Tests/GameLogicTest/PlayerTest.cpp.i
 
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.i
+.PHONY : Tests/GameLogicTest/PlayerTest.i
 
 # target to preprocess a source file
-ScrabbleTest/SocketsTest/socketTest1.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/SocketsTest/socketTest1.cpp.i
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.cpp.i
+Tests/GameLogicTest/PlayerTest.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.i
+.PHONY : Tests/GameLogicTest/PlayerTest.cpp.i
 
-ScrabbleTest/SocketsTest/socketTest1.s: ScrabbleTest/SocketsTest/socketTest1.cpp.s
+Tests/GameLogicTest/PlayerTest.s: Tests/GameLogicTest/PlayerTest.cpp.s
 
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.s
+.PHONY : Tests/GameLogicTest/PlayerTest.s
 
 # target to generate assembly for a file
-ScrabbleTest/SocketsTest/socketTest1.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/ScrabbleTest/SocketsTest/socketTest1.cpp.s
-.PHONY : ScrabbleTest/SocketsTest/socketTest1.cpp.s
+Tests/GameLogicTest/PlayerTest.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.s
+.PHONY : Tests/GameLogicTest/PlayerTest.cpp.s
+
+Tests/JsonTest/JSON_Test.o: Tests/JsonTest/JSON_Test.cpp.o
+
+.PHONY : Tests/JsonTest/JSON_Test.o
+
+# target to build an object file
+Tests/JsonTest/JSON_Test.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o
+.PHONY : Tests/JsonTest/JSON_Test.cpp.o
+
+Tests/JsonTest/JSON_Test.i: Tests/JsonTest/JSON_Test.cpp.i
+
+.PHONY : Tests/JsonTest/JSON_Test.i
+
+# target to preprocess a source file
+Tests/JsonTest/JSON_Test.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.i
+.PHONY : Tests/JsonTest/JSON_Test.cpp.i
+
+Tests/JsonTest/JSON_Test.s: Tests/JsonTest/JSON_Test.cpp.s
+
+.PHONY : Tests/JsonTest/JSON_Test.s
+
+# target to generate assembly for a file
+Tests/JsonTest/JSON_Test.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.s
+.PHONY : Tests/JsonTest/JSON_Test.cpp.s
+
+Tests/SocketsTest/socketTest1.o: Tests/SocketsTest/socketTest1.cpp.o
+
+.PHONY : Tests/SocketsTest/socketTest1.o
+
+# target to build an object file
+Tests/SocketsTest/socketTest1.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o
+.PHONY : Tests/SocketsTest/socketTest1.cpp.o
+
+Tests/SocketsTest/socketTest1.i: Tests/SocketsTest/socketTest1.cpp.i
+
+.PHONY : Tests/SocketsTest/socketTest1.i
+
+# target to preprocess a source file
+Tests/SocketsTest/socketTest1.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.i
+.PHONY : Tests/SocketsTest/socketTest1.cpp.i
+
+Tests/SocketsTest/socketTest1.s: Tests/SocketsTest/socketTest1.cpp.s
+
+.PHONY : Tests/SocketsTest/socketTest1.s
+
+# target to generate assembly for a file
+Tests/SocketsTest/socketTest1.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.s
+.PHONY : Tests/SocketsTest/socketTest1.cpp.s
 
 gameLogic/Board.o: gameLogic/Board.cpp.o
 
@@ -507,30 +632,41 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... Scrabble"
+	@echo "... install/strip"
 	@echo "... edit_cache"
+	@echo "... Scrabble"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... JSON/PlayerMessage.o"
 	@echo "... JSON/PlayerMessage.i"
 	@echo "... JSON/PlayerMessage.s"
 	@echo "... JSON/ServerMessage.o"
 	@echo "... JSON/ServerMessage.i"
 	@echo "... JSON/ServerMessage.s"
-	@echo "... ScrabbleTest/GameLogicTest/BoardTest.o"
-	@echo "... ScrabbleTest/GameLogicTest/BoardTest.i"
-	@echo "... ScrabbleTest/GameLogicTest/BoardTest.s"
-	@echo "... ScrabbleTest/GameLogicTest/DictionaryTest.o"
-	@echo "... ScrabbleTest/GameLogicTest/DictionaryTest.i"
-	@echo "... ScrabbleTest/GameLogicTest/DictionaryTest.s"
-	@echo "... ScrabbleTest/GameLogicTest/PlayerTest.o"
-	@echo "... ScrabbleTest/GameLogicTest/PlayerTest.i"
-	@echo "... ScrabbleTest/GameLogicTest/PlayerTest.s"
-	@echo "... ScrabbleTest/JsonTest/JSON_Test.o"
-	@echo "... ScrabbleTest/JsonTest/JSON_Test.i"
-	@echo "... ScrabbleTest/JsonTest/JSON_Test.s"
-	@echo "... ScrabbleTest/SocketsTest/socketTest1.o"
-	@echo "... ScrabbleTest/SocketsTest/socketTest1.i"
-	@echo "... ScrabbleTest/SocketsTest/socketTest1.s"
+	@echo "... Tests/Board_gtest.o"
+	@echo "... Tests/Board_gtest.i"
+	@echo "... Tests/Board_gtest.s"
+	@echo "... Tests/GameLogicTest/BoardTest.o"
+	@echo "... Tests/GameLogicTest/BoardTest.i"
+	@echo "... Tests/GameLogicTest/BoardTest.s"
+	@echo "... Tests/GameLogicTest/DictionaryTest.o"
+	@echo "... Tests/GameLogicTest/DictionaryTest.i"
+	@echo "... Tests/GameLogicTest/DictionaryTest.s"
+	@echo "... Tests/GameLogicTest/PlayerTest.o"
+	@echo "... Tests/GameLogicTest/PlayerTest.i"
+	@echo "... Tests/GameLogicTest/PlayerTest.s"
+	@echo "... Tests/JsonTest/JSON_Test.o"
+	@echo "... Tests/JsonTest/JSON_Test.i"
+	@echo "... Tests/JsonTest/JSON_Test.s"
+	@echo "... Tests/SocketsTest/socketTest1.o"
+	@echo "... Tests/SocketsTest/socketTest1.i"
+	@echo "... Tests/SocketsTest/socketTest1.s"
 	@echo "... gameLogic/Board.o"
 	@echo "... gameLogic/Board.i"
 	@echo "... gameLogic/Board.s"
