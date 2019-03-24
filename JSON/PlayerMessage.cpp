@@ -36,6 +36,7 @@ void PlayerMessage::Serializer(Writer &writer) const {
     writer.Int(firstCol);
     writer.String("is_Vertical");
     writer.Bool(isVertical);
+    writer.EndObject();
 
 }
 

@@ -43,7 +43,14 @@ void Player::addLetterTile(LetterTile *letterTile) {
 void Player::addLetterToWord(int position, int row, int col) {
 
     if (position < 7) {
-        this->myWord += playLetterTile(position)->getLetter();
+        string currentTile = playLetterTile(position)->getLetter();
+
+        // En el caso de que al jugador quiera utilizar el comodin debe asignarle la letra que desea!
+        if(currentTile == "blank"){
+            cout<<"*Ingrese el valor que desea al blank: ";
+            cin>>currentTile;
+        }
+        this->myWord += currentTile;
 
         // Almacena la primera y ultima posicion de las fichas de la palabra
         if(positions[0] == 100){

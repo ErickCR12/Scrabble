@@ -23,8 +23,8 @@ int main(int argc,char* argv[]) {
     RUN_ALL_TESTS();
     //DictionaryTest::test1();
 
-    //PlayerTest::test1();
-    //PlayerTest::test2();
+    PlayerTest::test1();
+    PlayerTest::test2();
 
     //JSON_Test::test1();
 

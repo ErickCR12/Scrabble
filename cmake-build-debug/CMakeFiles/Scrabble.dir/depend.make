@@ -32,32 +32,6 @@ CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: ../lib/rapidjson/writer.h
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.cpp
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.hpp
 
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../Tests/GameLogicTest/BoardTest.cpp
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../Tests/GameLogicTest/BoardTest.hpp
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../gameLogic/Board.hpp
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../gameLogic/GameDeck.hpp
-CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o: ../gameLogic/LetterTile.hpp
-
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
@@ -308,13 +282,9 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/BoardTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/DictionaryTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/PlayerTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/JsonTest/JSON_Test.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/SocketsTest/socketTest1.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/GameDeck.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../main.cpp
 
