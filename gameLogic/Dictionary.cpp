@@ -15,16 +15,16 @@ Dictionary::Dictionary(){
 
 bool Dictionary::searchInDictionary(string word) {
     string line;
+    vector<string> row;
     ifstream dictionaryFile = ifstream(filePath);
     if (dictionaryFile.is_open()) {
         while (getline(dictionaryFile, line)) {
-            if (line.compare(word) == 0)
-                return true;
-        }
-        dictionaryFile.close();
-    } else {
-        cout << "File could not be opened.";
-    }
+            if(line.substr(0, 1) == word.substr(0, 1)){
+                boost::split(row, line, boost::is_any_of(","));
+                return binary_search(row.begin(), row.end(), word);
+            }
+        }dictionaryFile.close();
+    } else cout << "File could not be opened.";
     return false;
 }
 
@@ -35,21 +35,5 @@ void Dictionary::writeInDictionary(string word) {
         dictionaryFile.close();
     }else cout << "Couldn't write in file";
 }
-
-//    string line;
-//    getline(dictionaryFile, line);
-//    if(dictionaryFile.is_open()){
-//        while(line < word) {
-//            getline(dictionaryFile, line);
-//        }
-//        long position = dictionaryFile.tellg();
-//        dictionaryFile.seekp(position - line.length() - 1);
-//        word += "\n";
-//        char wordArray[word.length()];
-//        strcpy(wordArray, word.c_str());
-//        dictionaryFile.write(wordArray, word.length());
-//        dictionaryFile.close();
-//    }else cout << "File couldn't be opened.";
-
 
 #endif DICTIONARY_CPP
