@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
-  "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"

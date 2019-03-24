@@ -13,12 +13,11 @@ PlayerMessage::PlayerMessage(){
     word = "";
 };
 
-void PlayerMessage::setMessage(string word, int fRow,int fCol,int lRow, int lCol) {
+void PlayerMessage::setMessage(string word, int fRow,int fCol,bool is_vertical) {
     this-> word = word;
     this-> firstRow = fRow;
     this-> firstCol = fCol;
-    this-> lastRow = lRow;
-    this-> lastCol = lCol;
+    this-> isVertical = is_vertical;
 }
 
 /* -------------------------------------------
@@ -35,11 +34,9 @@ void PlayerMessage::Serializer(Writer &writer) const {
     writer.Int(firstRow);
     writer.String("firstCol");
     writer.Int(firstCol);
-    writer.String("lastRow");
-    writer.Int(lastRow);
-    writer.String("lastCol");
-    writer.Int(lastCol);
-    writer.EndObject();
+    writer.String("is_Vertical");
+    writer.Bool(isVertical);
+
 }
 
 string PlayerMessage::serialize() {
@@ -61,10 +58,9 @@ string PlayerMessage::serialize() {
         string pWord = doc["word"].GetString();
         int pFirstRow = doc["firstRow"].GetInt();
         int pFirstCol = doc["firstCol"].GetInt();
-        int pLastRow = doc["lastRow"].GetInt();
-        int pLastCol = doc["lastCol"].GetInt();
+        bool pVertical = doc["is_Vertical"].GetBool();
 
-        parsedPlayer->setMessage(pWord,pFirstRow,pFirstCol,pLastRow,pLastCol);
+        parsedPlayer->setMessage(pWord,pFirstRow,pFirstCol,pVertical);
         return parsedPlayer;
     }
 
@@ -72,5 +68,5 @@ string PlayerMessage::serialize() {
 
 string PlayerMessage::toString(){
     cout<<"Player[\n word: "<<word<<endl;
-    printf(" fr: %d\n fc: %d\n lr: %d\n lc: %d\n]\n",firstRow,firstCol,lastRow,lastCol);
+    printf(" fr: %d\n fc: %d\n vertical: %c ]\n",firstRow,firstCol,isVertical);
 }

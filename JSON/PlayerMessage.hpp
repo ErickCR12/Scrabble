@@ -19,8 +19,7 @@ private:
     string word;
     int firstRow;
     int firstCol;
-    int lastRow;
-    int lastCol;
+    bool isVertical;
 
     //! @brief Method responsible for serializing the object to JSON
     //! \tparam Writer
@@ -41,9 +40,7 @@ public:
     //! @param [in]word : Player word
     //! @param [in]fRow : Row of the first LetterTile
     //! @param [in]fCol : Column of the first LetterTile
-    //! @param [in]lRow : Row of the last LetterTile
-    //! @param [in]lCol : Column of the last LetterTile
-    void setMessage(string word,int fRow,int fCol, int lRow,int lCol);
+    void setMessage(string word,int fRow,int fCol,bool vertical);
 
     //! @brief Serializer Interface
     //! @return [out] :JSON of the object
@@ -73,12 +70,8 @@ public:
         return firstCol;
     }
 
-    int getLastRow() const {
-        return lastRow;
-    }
-
-    int getLastCol() const {
-        return lastCol;
+    bool getIsVertical() const {
+        return isVertical;
     }
 
     //! @brief Gives a way to visualize the message in the console

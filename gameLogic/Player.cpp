@@ -78,8 +78,12 @@ void Player::resetPositions() {
 
 // Prepara y envia el mensaje con la palabra construida
 bool Player::sendMyWord() {
+
     PlayerMessage* myMessage = new PlayerMessage();
-    myMessage->setMessage(myWord,positions[0],positions[1],positions[2],positions[3]);
+
+    // Envia como cuarto parametro la igual de las columnas, si estas son iguales, entonces la palabra es vertical
+    myMessage->setMessage(myWord,positions[0],positions[1],positions[1]==positions[3]);
+
     string myJSON = myMessage->serialize();
     cout<<"* JSON: "<<myJSON<<endl;
 

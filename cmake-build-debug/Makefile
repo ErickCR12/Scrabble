@@ -275,33 +275,6 @@ JSON/ServerMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 .PHONY : JSON/ServerMessage.cpp.s
 
-Tests/GameLogicTest/BoardTest.o: Tests/GameLogicTest/BoardTest.cpp.o
-
-.PHONY : Tests/GameLogicTest/BoardTest.o
-
-# target to build an object file
-Tests/GameLogicTest/BoardTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.o
-.PHONY : Tests/GameLogicTest/BoardTest.cpp.o
-
-Tests/GameLogicTest/BoardTest.i: Tests/GameLogicTest/BoardTest.cpp.i
-
-.PHONY : Tests/GameLogicTest/BoardTest.i
-
-# target to preprocess a source file
-Tests/GameLogicTest/BoardTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.i
-.PHONY : Tests/GameLogicTest/BoardTest.cpp.i
-
-Tests/GameLogicTest/BoardTest.s: Tests/GameLogicTest/BoardTest.cpp.s
-
-.PHONY : Tests/GameLogicTest/BoardTest.s
-
-# target to generate assembly for a file
-Tests/GameLogicTest/BoardTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/BoardTest.cpp.s
-.PHONY : Tests/GameLogicTest/BoardTest.cpp.s
-
 Tests/GameLogicTest/Board_gtest.o: Tests/GameLogicTest/Board_gtest.cpp.o
 
 .PHONY : Tests/GameLogicTest/Board_gtest.o
@@ -649,9 +622,6 @@ help:
 	@echo "... JSON/ServerMessage.o"
 	@echo "... JSON/ServerMessage.i"
 	@echo "... JSON/ServerMessage.s"
-	@echo "... Tests/GameLogicTest/BoardTest.o"
-	@echo "... Tests/GameLogicTest/BoardTest.i"
-	@echo "... Tests/GameLogicTest/BoardTest.s"
 	@echo "... Tests/GameLogicTest/Board_gtest.o"
 	@echo "... Tests/GameLogicTest/Board_gtest.i"
 	@echo "... Tests/GameLogicTest/Board_gtest.s"

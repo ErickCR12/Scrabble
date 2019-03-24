@@ -356,12 +356,6 @@
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/SocketComunication/socketServer.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.cpp">
-			<Option target="Scrabble"/>
-		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/BoardTest.hpp">
-			<Option target="Scrabble"/>
-		</Unit>
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp">
 			<Option target="Scrabble"/>
 		</Unit>

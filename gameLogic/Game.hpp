@@ -37,7 +37,9 @@ public:
     //! @brief
     int getCurrentTurn();
 
-    bool addWord(LetterTile**  );
+    //!
+    //! \return
+    bool addWord(string word,int frow,int fcol,bool vertical);
 
 };
 
