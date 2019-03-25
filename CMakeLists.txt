@@ -11,7 +11,6 @@ include_directories(lib/googletest-master/googlemock/include)
 include_directories(lib/rapidjson-master/include)
 
 find_package(Threads) # <- This line allows CLion to enable Threads
-find_package(Qt5Widgets REQUIRED)
 
 add_executable(
         Scrabble main.cpp
@@ -40,4 +39,3 @@ add_executable(
 target_link_libraries(Scrabble gtest gtest_main)
 target_link_libraries(Scrabble rapidjson)
 target_link_libraries(Scrabble ${CMAKE_THREAD_LIBS_INIT}) # <- This line allows CLion to enable Threads
-#target_link_libraries(Scrabble Qt5::Widgets)
