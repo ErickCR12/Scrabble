@@ -2,10 +2,16 @@ cmake_minimum_required(VERSION 3.13)
 project(Scrabble)
 
 set(CMAKE_CXX_STANDARD 17)
+set(THREADS_PREFER_PTHREAD_FLAG_ON) # <- This line allows CLion to enable Threads
 
 add_subdirectory(lib/googletest-master)
+
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
+include_directories(lib/rapidjson-master/include)
+
+find_package(Threads) # <- This line allows CLion to enable Threads
+find_package(Qt5Widgets REQUIRED)
 
 add_executable(
         Scrabble main.cpp
@@ -27,6 +33,11 @@ add_executable(
         Tests/SocketsTest/socketTest1.cpp Tests/SocketsTest/socketTest1.hpp
         Tests/GameLogicTest/Board_gtest.cpp
 
-        JSON/PlayerMessage.cpp JSON/PlayerMessage.hpp JSON/ServerMessage.cpp JSON/ServerMessage.hpp)
+        JSON/PlayerMessage.cpp JSON/PlayerMessage.hpp
+        JSON/ServerMessage.cpp JSON/ServerMessage.hpp)
+
 
 target_link_libraries(Scrabble gtest gtest_main)
+target_link_libraries(Scrabble rapidjson)
+target_link_libraries(Scrabble ${CMAKE_THREAD_LIBS_INIT}) # <- This line allows CLion to enable Threads
+#target_link_libraries(Scrabble Qt5::Widgets)

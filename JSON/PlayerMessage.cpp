@@ -3,9 +3,9 @@
 //
 
 #include "PlayerMessage.hpp"
-#include "../lib/rapidjson/prettywriter.h"
-#include "../lib/rapidjson/stringbuffer.h"
-#include "../lib/rapidjson/document.h"
+#include <rapidjson/prettywriter.h>
+#include <rapidjson/stringbuffer.h>
+#include <rapidjson/document.h>
 
 using namespace rapidjson;
 

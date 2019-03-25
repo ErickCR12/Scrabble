@@ -4,34 +4,35 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/JSON/PlayerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/JSON/ServerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Tests/GameLogicTest/Board_gtest.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Tests/GameLogicTest/DictionaryTest.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Tests/GameLogicTest/PlayerTest.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Tests/JsonTest/JSON_Test.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/Tests/SocketsTest/socketTest1.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Board.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Dictionary.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Game.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/GameDeck.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/LetterTile.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/gameLogic/Player.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/main.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/JSON/PlayerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/JSON/ServerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/Board_gtest.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/DictionaryTest.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/GameLogicTest/PlayerTest.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/JsonTest/JSON_Test.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/Tests/SocketsTest/socketTest1.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Board.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Dictionary.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Game.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/GameDeck.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/LetterTile.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/gameLogic/Player.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/main.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/googletest-master/googlemock/include"
+  "../lib/rapidjson-master/include"
   "../lib/googletest-master/googletest/include"
   "../lib/googletest-master/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
