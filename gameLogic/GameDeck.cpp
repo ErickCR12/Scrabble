@@ -52,6 +52,14 @@ LetterTile* GameDeck::giveRandomLetter() {
     return letterTile;
 }
 
+LetterTile* GameDeck::getLetterFromDeck(string letter){
+    LetterTile *letterTile;
+    for(int index = 0; index < totalTiles; index++){
+        letterTile = deckArray[index];
+        if(letterTile->getLetter() == letter) return letterTile;
+    }return nullptr;
+}
+
 void GameDeck::printDeck(){
     LetterTile *tile;
     for(int i = 0; i < 29; i++){

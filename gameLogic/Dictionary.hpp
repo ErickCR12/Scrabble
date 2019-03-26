@@ -8,11 +8,15 @@ class Dictionary{
 private:
 
     std::string filePath; //!< @brief Path to file that contains dictionary in spanish.
-
-public:
+    static Dictionary* dictionarySingleton;
 
     //! @brief Dictionary constructor. Initializes filePath attribute with correct attribute to dictionary.txt
     Dictionary();
+
+public:
+
+
+    static Dictionary *getDictionaryInstance();
 
     //! @brief Receives a word to search in the dictionary text file.
     //! @param word string to compare with the dictionary words.
@@ -20,6 +24,7 @@ public:
     bool searchInDictionary(std::string word);
 
     void writeInDictionary(std::string word);
+
 };
 
 #endif DICTIONARY_HPP

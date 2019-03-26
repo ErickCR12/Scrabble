@@ -36,6 +36,8 @@ public:
     //! @return LetterTile obtained randomly.
     LetterTile* giveRandomLetter();
 
+    LetterTile* getLetterFromDeck(string letter);
+
     //! @brief Prints the Deck on console.
     void printDeck();
 };

@@ -13,6 +13,12 @@ Dictionary::Dictionary(){
     filePath = "../TextFiles/dictionary.txt";
 }
 
+Dictionary* Dictionary::dictionarySingleton = nullptr;
+Dictionary* Dictionary::getDictionaryInstance(){
+    if(!dictionarySingleton) dictionarySingleton = new Dictionary();
+    return dictionarySingleton;
+}
+
 bool Dictionary::searchInDictionary(string word) {
     string line;
     vector<string> row;

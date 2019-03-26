@@ -9,9 +9,9 @@
 void DictionaryTest::test1(){
 
     cout<< "-------------- DICTIONATY TEST --------------"<<endl;
-    Dictionary *dictionary = new Dictionary();
-    cout<<"Searching for zutano: ";
-    if(dictionary->searchInDictionary("zutano")) cout<<"Found."<<endl;
+    Dictionary *dictionary = Dictionary::getDictionaryInstance();
+    cout<<"Searching for hola: ";
+    if(dictionary->searchInDictionary("hola")) cout<<"Found."<<endl;
     else cout << "Not Found.\n\n\n";
     //dictionary->writeInDictionary("palabraPrueba");
 
