@@ -6,8 +6,9 @@
 
 Game::Game(int players){
     gameCode = codeGenerator();
-    gameDictionary = new Dictionary();
+    gameDictionary = Dictionary::getDictionaryInstance();
     gameBoard = new Board();
+    gameDeck = new GameDeck();
 }
 
 string Game::codeGenerator() {
@@ -50,13 +51,22 @@ bool Game::recieveMessage(string json) {
 
 bool Game::addWord(string word, int row, int col, bool isVertical) {
     if(gameDictionary->searchInDictionary(word)){
-        if(isVertical){
-            int index = 0;
-            const char* cWord = word.c_str();
-            for(int j = col;j < word.length();j++){
-                cout<<cWord[j]<<endl;
-                //gameBoard->addLetterTile();
-            }
+        cout<<"palabra encontrada"<<endl;
+        int index = 0;
+        cout<<word.length()<<endl;
+        for(int j = (isVertical)? row:col;index < word.length();j++) {
+
+            string letter = "";
+            letter += word[index];
+            cout<<letter<<endl;
+            cout<<"Añadiendo ficha en:"<<((isVertical)? j:row)<<((isVertical)?col:j )<<endl;
+            LetterTile *wLetter = gameDeck->getLetterFromDeck(letter);
+            cout<<wLetter->getLetter()<<endl;
+            gameBoard->addLetterTile((isVertical)? j:row,(isVertical)? col:j,wLetter);
+            index++;
+
         }
+
+        gameBoard->printGameBoard();
     } else cout<<"No encontrada"<<endl;
 }

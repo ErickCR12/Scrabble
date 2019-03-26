@@ -49,6 +49,7 @@ private:
     //! \return
     bool addWord(string word,int row,int col,bool isVertical);
 
+
 public:
 
     //! @brief

@@ -31,8 +31,11 @@ int main(int argc,char* argv[]) {
     cout<<"Code : "<<g1->getGameCode()<<endl;
 
     PlayerMessage* sms = new PlayerMessage();
-    sms->setMessage("hola",0,0,true);
+    sms->setMessage("camaron",0,0,true);
     string json = sms->serialize();
+    g1->recieveMessage(json);
+    sms->setMessage("omedor",0,1,false);
+    json = sms->serialize();
     g1->recieveMessage(json);
 
     //DictionaryTest::test1();

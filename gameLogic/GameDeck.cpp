@@ -56,7 +56,7 @@ LetterTile* GameDeck::getLetterFromDeck(string letter){
     LetterTile *letterTile;
     for(int index = 0; index < totalTiles; index++){
         letterTile = deckArray[index];
-        if(letterTile->getLetter() == letter) return letterTile;
+        if(letterTile->getLetter() == letter) {cout<<"Match"<<endl; return letterTile;}
     }return nullptr;
 }
 

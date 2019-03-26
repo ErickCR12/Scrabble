@@ -24,11 +24,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Scrabble" targetName="Scrabble" />
-      <config projectName="Scrabble" targetName="gmock_main" />
-      <config projectName="Scrabble" targetName="gtest" />
-      <config projectName="Scrabble" targetName="gmock" />
       <config projectName="Scrabble" targetName="gtest_main" />
+      <config projectName="Scrabble" targetName="gtest" />
+      <config projectName="Scrabble" targetName="Scrabble" />
+      <config projectName="Scrabble" targetName="gmock" />
+      <config projectName="Scrabble" targetName="gmock_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -38,448 +38,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="Fixed minor bug in Dictionary.">
-      <change afterPath="$PROJECT_DIR$/TextFiles/alphanum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameLogic/Server.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameLogic/Server.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/GameLogicTest/PlayerTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/GameLogicTest/PlayerTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libgtestd.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameLogic/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameLogic/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gameLogic/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Board_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Board_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/DictionaryTest_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/DictionaryTest_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Dictionary_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Dictionary_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Game_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Game_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/JSON__Test_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/JSON__Test_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PlayerTest_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PlayerTest_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Player_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Player_8hpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classDictionary-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDictionary-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classDictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDictionary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classDictionaryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDictionaryTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classJSON__Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classJSON__Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classPlayer-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPlayer-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPlayer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classPlayerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPlayerTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classsocketTest1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classsocketTest1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dir_95e29a8b8ee7c54052c171a88bb95675.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dir_95e29a8b8ee7c54052c171a88bb95675.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/hierarchy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_0.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_0.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_0.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_1.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_1.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_1.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_1.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_10.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_10.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_10.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_10.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_100.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_100.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_100.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_100.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_100.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_101.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_101.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_101.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_101.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_101.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_102.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_102.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_102.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_102.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_102.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_102.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_103.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_103.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_103.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_103.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_103.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_103.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_104.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_104.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_104.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_104.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_104.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_104.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_105.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_105.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_105.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_105.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_105.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_105.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_106.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_106.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_106.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_106.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_106.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_106.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_107.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_107.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_107.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_107.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_107.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_107.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_108.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_108.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_108.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_108.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_108.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_108.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_109.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_109.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_109.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_109.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_109.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_109.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_11.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_11.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_11.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_11.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_110.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_110.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_110.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_110.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_110.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_110.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_111.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_111.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_111.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_111.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_111.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_111.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_12.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_12.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_12.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_12.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_13.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_13.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_13.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_13.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_14.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_14.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_14.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_14.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_15.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_15.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_15.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_15.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_16.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_16.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_16.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_16.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_17.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_17.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_17.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_17.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_17.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_18.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_18.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_18.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_18.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_18.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_19.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_19.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_19.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_19.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_19.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_2.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_2.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_2.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_2.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_20.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_20.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_20.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_20.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_20.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_21.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_21.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_21.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_21.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_21.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_22.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_22.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_22.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_22.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_22.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_23.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_23.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_23.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_23.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_23.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_23.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_24.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_24.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_24.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_24.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_24.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_24.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_25.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_25.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_25.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_25.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_25.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_25.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_26.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_26.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_26.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_26.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_26.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_26.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_27.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_27.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_27.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_27.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_27.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_27.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_28.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_28.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_28.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_28.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_28.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_29.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_29.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_29.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_29.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_29.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_29.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_3.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_3.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_3.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_30.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_30.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_30.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_30.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_30.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_31.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_31.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_31.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_31.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_31.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_32.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_32.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_32.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_32.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_32.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_33.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_33.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_33.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_33.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_33.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_33.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_34.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_34.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_34.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_34.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_34.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_34.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_35.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_35.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_35.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_35.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_35.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_35.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_36.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_36.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_36.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_36.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_36.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_36.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_37.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_37.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_37.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_37.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_37.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_37.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_38.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_38.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_38.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_38.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_38.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_38.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_39.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_39.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_39.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_39.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_39.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_39.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_4.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_4.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_4.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_4.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_40.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_40.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_40.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_40.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_40.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_40.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_41.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_41.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_41.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_41.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_41.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_41.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_42.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_42.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_42.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_42.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_42.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_43.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_43.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_43.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_43.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_43.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_43.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_44.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_44.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_44.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_44.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_44.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_44.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_45.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_45.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_45.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_45.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_45.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_45.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_46.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_46.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_46.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_46.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_46.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_46.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_47.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_47.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_47.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_47.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_47.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_47.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_48.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_48.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_48.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_48.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_48.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_49.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_49.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_49.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_49.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_49.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_49.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_5.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_5.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_5.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_5.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_50.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_50.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_50.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_50.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_50.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_51.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_51.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_51.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_51.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_51.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_51.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_52.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_52.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_52.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_52.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_52.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_52.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_53.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_53.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_53.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_53.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_53.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_53.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_54.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_54.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_54.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_54.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_54.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_54.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_55.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_55.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_55.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_55.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_55.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_55.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_56.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_56.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_56.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_56.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_56.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_56.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_57.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_57.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_57.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_57.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_57.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_57.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_58.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_58.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_58.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_58.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_58.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_58.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_59.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_59.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_59.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_59.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_59.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_59.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_6.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_6.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_6.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_6.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_60.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_60.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_60.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_60.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_60.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_61.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_61.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_61.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_61.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_61.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_61.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_62.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_62.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_62.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_62.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_62.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_62.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_63.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_63.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_63.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_63.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_63.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_63.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_64.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_64.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_64.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_64.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_65.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_65.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_65.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_65.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_65.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_65.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_66.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_66.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_66.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_66.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_66.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_66.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_67.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_67.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_67.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_67.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_67.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_67.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_68.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_68.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_68.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_68.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_68.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_68.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_69.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_69.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_69.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_69.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_69.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_69.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_7.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_7.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_7.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_70.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_70.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_70.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_70.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_70.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_70.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_71.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_71.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_71.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_71.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_71.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_71.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_72.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_72.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_72.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_72.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_72.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_73.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_73.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_73.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_73.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_73.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_73.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_74.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_74.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_74.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_74.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_74.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_74.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_75.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_75.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_75.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_75.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_75.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_75.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_76.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_76.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_76.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_76.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_76.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_76.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_77.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_77.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_77.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_77.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_77.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_77.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_78.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_78.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_78.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_78.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_78.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_78.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_79.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_79.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_79.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_79.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_79.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_79.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_8.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_8.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_8.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_8.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_80.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_80.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_80.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_80.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_80.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_80.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_81.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_81.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_81.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_81.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_81.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_81.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_82.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_82.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_82.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_82.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_82.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_82.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_83.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_83.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_83.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_83.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_83.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_83.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_84.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_84.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_84.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_84.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_84.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_84.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_85.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_85.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_85.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_85.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_85.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_85.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_86.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_86.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_86.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_86.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_86.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_86.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_87.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_87.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_87.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_87.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_87.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_87.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_88.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_88.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_88.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_88.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_88.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_88.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_89.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_89.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_89.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_89.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_89.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_89.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_9.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_9.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_9.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_90.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_90.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_90.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_90.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_90.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_90.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_91.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_91.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_91.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_91.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_91.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_91.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_92.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_92.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_92.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_92.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_92.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_92.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_93.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_93.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_93.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_93.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_93.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_93.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_94.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_94.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_94.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_94.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_94.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_94.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_95.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_95.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_95.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_95.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_95.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_95.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_96.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_96.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_96.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_96.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_96.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_97.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_97.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_97.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_97.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_97.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_97.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_98.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_98.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_98.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_98.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_98.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_98.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_99.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_99.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_99.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_99.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherit_graph_99.png" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherit_graph_99.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/inherits.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/inherits.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/namespaces.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/namespaces.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_13.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_13.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_14.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_14.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_15.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_15.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_16.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_16.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/namespaces_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/namespaces_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/socketTest1_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/socketTest1_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gameLogic/GameDeck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/GameDeck.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -509,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="324">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
                 <element signature="e#70#119#0" expanded="true" />
@@ -523,8 +152,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="47" column="87" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="87" />
+            <state relative-caret-position="521">
+              <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#116#134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameLogic/Board.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+              <folding>
+                <element signature="e#100#119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -536,30 +189,6 @@
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#135#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSON/PlayerMessage.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-770">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="e#51#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-              <folding>
-                <element signature="e#116#134#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -587,6 +216,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameLogic/Player.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
@@ -596,22 +237,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="131">
+              <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -655,7 +284,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Objects/Player.cpp" />
         <option value="$PROJECT_DIR$/Objects/Player.hpp" />
         <option value="$PROJECT_DIR$/Objects/GameDeck.hpp" />
         <option value="$PROJECT_DIR$/Objects/Board.cpp" />
@@ -700,11 +328,12 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Tests/GameLogicTest/PlayerTest.cpp" />
         <option value="$PROJECT_DIR$/TextFiles/alphanum.txt" />
-        <option value="$PROJECT_DIR$/gameLogic/Game.hpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/gameLogic/Player.hpp" />
         <option value="$PROJECT_DIR$/gameLogic/Player.hpp" />
         <option value="$PROJECT_DIR$/gameLogic/Player.cpp" />
+        <option value="$PROJECT_DIR$/gameLogic/Game.hpp" />
+        <option value="$PROJECT_DIR$/gameLogic/GameDeck.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/gameLogic/Game.cpp" />
       </list>
     </option>
@@ -719,27 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
-              <item name="JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
-              <item name="TextFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Source Files'; set:Project Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$SourceFilesScope">
           <expand>
@@ -751,6 +359,27 @@
               <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
               <item name="gameLogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
+              <item name="gameLogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scrabble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scrabble" type="462c0819:PsiDirectoryNode" />
+              <item name="TextFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -871,6 +500,7 @@
       <workItem from="1553525037704" duration="4140000" />
       <workItem from="1553531744391" duration="4444000" />
       <workItem from="1553577244331" duration="4658000" />
+      <workItem from="1553582514591" duration="3156000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1552247329625</created>
@@ -988,7 +618,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139525000" />
+    <option name="totallyTimeSpent" value="142681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1141,16 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#100#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/GameLogicTest/Board_gtest.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -1207,13 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/GameLogicTest/DictionaryTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1299,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/Server.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TextFiles/alphanum.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1313,41 +919,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
+    <entry file="file://$PROJECT_DIR$/JSON/PlayerMessage.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        <state relative-caret-position="264">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
-            <element signature="e#116#134#0" expanded="true" />
+            <element signature="e#51#79#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameLogic/Server.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/GameLogicTest/DictionaryTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="65" />
+          <folding>
+            <element signature="e#42#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/PlayerMessage.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#135#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameLogic/Player.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="287">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-            <element signature="e#70#119#0" expanded="true" />
-            <element signature="e#262#301#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1362,37 +983,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/Player.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/PlayerMessage.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="462">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#135#154#0" expanded="true" />
+            <element signature="e#116#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSON/PlayerMessage.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Board.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="176">
+          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding>
-            <element signature="e#51#79#0" expanded="true" />
+            <element signature="e#100#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+            <element signature="e#70#119#0" expanded="true" />
+            <element signature="e#262#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameLogic/GameDeck.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="47" column="87" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="87" />
+        <state relative-caret-position="521">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
         </state>
       </provider>
     </entry>
