@@ -6,9 +6,14 @@
 #define SCRABBLE_GAME_HPP
 
 //Libraries
+#include <fstream>
+#include <vector>
+#include <boost/algorithm/string.hpp>
+
 #include "GameDeck.hpp"
 #include "Dictionary.hpp"
 #include "Board.hpp"
+#include "../JSON/PlayerMessage.hpp"
 
 using namespace std;
 
@@ -16,20 +21,40 @@ using namespace std;
 class Game {
 private:
 
-    string gameCode; //!<
-    int* players; //!<
-    int currentTurn; //!<
+    string gameCode; //!< Game code to connect whit current game
+    int* players; //!< Array whit player ID
+    int currentTurn; //!< Current player turn
 
-    GameDeck* gameDeck; //!<
-    Board* gameBoard; //!<
-    Dictionary* gameDictionary; //!<
+    /*
+     {
+        "letterTile": 'a-e-f-g-e-e-q',
+        arrayletras[0].jpg <-- esto se puede hacer!
+     }
+
+     */
+
+    GameDeck* gameDeck; //!< game LetterTile deck
+    Board* gameBoard; //!< game Board
+    Dictionary* gameDictionary; //!< Reference to dictionary
+
+    //! @brief
+    //! \return
+    string codeGenerator();
+
+    //! @brief
+    //! \param word
+    //! \param row
+    //! \param col
+    //! \param isVertical
+    //! \return
+    bool addWord(string word,int row,int col,bool isVertical);
 
 public:
 
     //! @brief
     //! @param players
     //! @param code
-    Game(int players,string code);
+    Game(int players);
 
     //! @brief
     void nextTurn();
@@ -39,7 +64,11 @@ public:
 
     //!
     //! \return
-    bool addWord(string word,int frow,int fcol,bool vertical);
+    bool recieveMessage(string json);
+
+    //!
+    //! \return
+    string getGameCode();
 
 };
 

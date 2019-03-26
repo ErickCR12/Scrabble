@@ -71,15 +71,17 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e0fcdf4cb41f5f24a1d84830c131365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a1e0fcdf4cb41f5f24a1d84830c131365">addLetterTile</a> (<a class="el" href="classLetterTile.html">LetterTile</a> *letterTile)</td></tr>
 <tr class="separator:a1e0fcdf4cb41f5f24a1d84830c131365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa691391b69bdb2005b6163b7d517ee91"><td class="memItemLeft" align="right" valign="top"><a id="aa691391b69bdb2005b6163b7d517ee91"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initializePlayerDeck</b> ()</td></tr>
-<tr class="separator:aa691391b69bdb2005b6163b7d517ee91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00109f5897bcddd84c17d891e51125d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#ad00109f5897bcddd84c17d891e51125d">addLetterToWord</a> (int position, int row, int col)</td></tr>
+<tr class="separator:ad00109f5897bcddd84c17d891e51125d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec7b1e9ce2561ae372bdfa4dab5c9cc"><td class="memItemLeft" align="right" valign="top"><a id="a2ec7b1e9ce2561ae372bdfa4dab5c9cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetPositions</b> ()</td></tr>
+<tr class="separator:a2ec7b1e9ce2561ae372bdfa4dab5c9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aaa4f2e0936b9667c74148abfafe4c4"><td class="memItemLeft" align="right" valign="top"><a id="a4aaa4f2e0936b9667c74148abfafe4c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sendMyWord</b> ()</td></tr>
+<tr class="separator:a4aaa4f2e0936b9667c74148abfafe4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa297c9c5fddcc5d8dbe4e2e7783423"><td class="memItemLeft" align="right" valign="top"><a id="a5fa297c9c5fddcc5d8dbe4e2e7783423"></a>
 <a class="el" href="classLetterTile.html">LetterTile</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>getPlayerDeck</b> ()</td></tr>
 <tr class="separator:a5fa297c9c5fddcc5d8dbe4e2e7783423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a855f4b9545fe362624ca47ebbeda1d"><td class="memItemLeft" align="right" valign="top"><a id="a1a855f4b9545fe362624ca47ebbeda1d"></a>
-<a class="el" href="classLetterTile.html">LetterTile</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>playLetterTile</b> (int position)</td></tr>
-<tr class="separator:a1a855f4b9545fe362624ca47ebbeda1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97e5447778ae6c384eedc532dcd8431d"><td class="memItemLeft" align="right" valign="top"><a id="a97e5447778ae6c384eedc532dcd8431d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getScore</b> ()</td></tr>
 <tr class="separator:a97e5447778ae6c384eedc532dcd8431d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,6 +95,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getAmountOfLetterTiles
 <tr class="memitem:a55920b663e518e2208bcf75991c41899"><td class="memItemLeft" align="right" valign="top"><a id="a55920b663e518e2208bcf75991c41899"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>printPlayerDeck</b> ()</td></tr>
 <tr class="separator:a55920b663e518e2208bcf75991c41899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d33e4e1a0bc161e2b5afa5de0ff88cf"><td class="memItemLeft" align="right" valign="top"><a id="a0d33e4e1a0bc161e2b5afa5de0ff88cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printPositions</b> ()</td></tr>
+<tr class="separator:a0d33e4e1a0bc161e2b5afa5de0ff88cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1e0fcdf4cb41f5f24a1d84830c131365"></a>
@@ -116,6 +121,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printPlayerDeck</b> (
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad00109f5897bcddd84c17d891e51125d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00109f5897bcddd84c17d891e51125d">&#9670;&nbsp;</a></span>addLetterToWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::addLetterToWord </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td></td></tr>
+    <tr><td class="paramname">row</td><td></td></tr>
+    <tr><td class="paramname">col</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>

@@ -20,13 +20,13 @@ void PlayerTest::test1() {
 
     cout<<"Llenando deck de player1..."<<endl;
     while(player1->getAmountOfLetterTiles() != 7){
-        LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
+        LetterTile* randomLetterTile = gameDeck->giveRandomLetter();
         player1->addLetterTile(randomLetterTile);
     }
 
     cout<<"Llenando deck de player1..."<<endl;
     while(player2->getAmountOfLetterTiles() != 7){
-        LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
+        LetterTile* randomLetterTile = gameDeck->giveRandomLetter();
         player2->addLetterTile(randomLetterTile);
     }
     cout<<"Deck player1: ";
@@ -45,7 +45,7 @@ void PlayerTest::test2() {
 
     cout<<"Llenando deck de player1..."<<endl;
     while(player1->getAmountOfLetterTiles() != 7){
-        LetterTile *randomLetterTile = gameDeck->giveRandomLetter();
+        LetterTile* randomLetterTile = gameDeck->giveRandomLetter();
         player1->addLetterTile(randomLetterTile);
     }
 

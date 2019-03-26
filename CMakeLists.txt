@@ -23,6 +23,7 @@ add_executable(
         gameLogic/Player.hpp gameLogic/Player.cpp
         gameLogic/Game.cpp gameLogic/Game.hpp
         gameLogic/GameDeck.cpp  gameLogic/GameDeck.hpp
+        gameLogic/Server.cpp gameLogic/Server.hpp
 
         SocketComunication/socketClient.hpp SocketComunication/socketServer.hpp
 
@@ -33,7 +34,9 @@ add_executable(
         Tests/GameLogicTest/Board_gtest.cpp
 
         JSON/PlayerMessage.cpp JSON/PlayerMessage.hpp
-        JSON/ServerMessage.cpp JSON/ServerMessage.hpp)
+        JSON/ServerMessage.cpp JSON/ServerMessage.hpp
+
+)
 
 
 target_link_libraries(Scrabble gtest gtest_main)

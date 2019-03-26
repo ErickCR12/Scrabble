@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['test1',['test1',['../classJSON__Test.html#a505ee7da63d2aa058a40541ff7180bdb',1,'JSON_Test']]]
+  ['kindof',['KindOf',['../structtesting_1_1internal_1_1KindOf.html',1,'testing::internal']]],
+  ['knownissues',['KnownIssues',['../md_lib_googletest-master_googlemock_docs_KnownIssues.html',1,'']]]
 ];

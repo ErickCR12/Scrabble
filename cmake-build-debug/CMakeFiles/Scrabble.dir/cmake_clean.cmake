@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o"
   "CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
   "CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o"
