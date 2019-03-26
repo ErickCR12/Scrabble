@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['game',['Game',['../classGame.html#af2aadd61e100d3bf0116e61d26dabca4',1,'Game']]],
   ['gamedeck',['GameDeck',['../classGameDeck.html#a401ea7979fe321026d011e2ffa3e3a86',1,'GameDeck']]],
   ['getamountremaining',['getAmountRemaining',['../classLetterTile.html#af2b742215c25db6a56a6b8d9df557ff3',1,'LetterTile']]],
   ['getcollector',['getCollector',['../classCollector.html#aa48cae445c3eaa541df38d2792729fac',1,'Collector']]],

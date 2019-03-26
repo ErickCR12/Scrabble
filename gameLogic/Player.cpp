@@ -88,7 +88,8 @@ bool Player::sendMyWord() {
 
     PlayerMessage* myMessage = new PlayerMessage();
 
-    // Envia como cuarto parametro la igual de las columnas, si estas son iguales, entonces la palabra es vertical
+    // Envia como cuarto parametro la igual de las columnas, si estas son iguales,
+    // entonces la palabra es vertical
     myMessage->setMessage(myWord,positions[0],positions[1],positions[1]==positions[3]);
 
     string myJSON = myMessage->serialize();
@@ -99,7 +100,6 @@ bool Player::sendMyWord() {
     // Reinicia los atributos
     resetPositions();
     myWord = "";
-
 }
 
 /* -------------------------------------------------------------------------

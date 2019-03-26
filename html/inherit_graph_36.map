@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$unionGenericValue_1_1Data.html" title="GenericValue\&lt; Encoding,\l Allocator \&gt;::Data" alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" href="$classInterface.html" title="Interface" alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node2" href="$classMock.html" title="Mock" alt="" coords="127,5,181,32"/>
 </map>

@@ -572,6 +572,33 @@ gameLogic/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.s
 .PHONY : gameLogic/Player.cpp.s
 
+gameLogic/Server.o: gameLogic/Server.cpp.o
+
+.PHONY : gameLogic/Server.o
+
+# target to build an object file
+gameLogic/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o
+.PHONY : gameLogic/Server.cpp.o
+
+gameLogic/Server.i: gameLogic/Server.cpp.i
+
+.PHONY : gameLogic/Server.i
+
+# target to preprocess a source file
+gameLogic/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.i
+.PHONY : gameLogic/Server.cpp.i
+
+gameLogic/Server.s: gameLogic/Server.cpp.s
+
+.PHONY : gameLogic/Server.s
+
+# target to generate assembly for a file
+gameLogic/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.s
+.PHONY : gameLogic/Server.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -655,6 +682,9 @@ help:
 	@echo "... gameLogic/Player.o"
 	@echo "... gameLogic/Player.i"
 	@echo "... gameLogic/Player.s"
+	@echo "... gameLogic/Server.o"
+	@echo "... gameLogic/Server.i"
+	@echo "... gameLogic/Server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

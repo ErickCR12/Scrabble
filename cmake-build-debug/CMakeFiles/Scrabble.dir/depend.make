@@ -211,12 +211,30 @@ CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletes
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.cpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/GameDeck.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/LetterTile.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/allocators.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/encodings.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/diyfp.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/dtoa.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/ieee754.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/itoa.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/meta.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/stack.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/strfunc.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/internal/swap.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/msinttypes/inttypes.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/msinttypes/stdint.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/prettywriter.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/rapidjson.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/stream.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/stringbuffer.h
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/rapidjson/writer.h
 
 CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o: ../gameLogic/GameDeck.cpp
 CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o: ../gameLogic/GameDeck.hpp
@@ -269,6 +287,9 @@ CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o: ../lib/rapidjson/stream.h
 CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o: ../lib/rapidjson/stringbuffer.h
 CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o: ../lib/rapidjson/writer.h
 
+CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Server.cpp
+CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Server.hpp
+
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
@@ -307,9 +328,32 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/DictionaryTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/PlayerTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/JsonTest/JSON_Test.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/SocketsTest/socketTest1.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Game.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/GameDeck.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/LetterTile.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/allocators.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/encodings.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/diyfp.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/dtoa.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/ieee754.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/itoa.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/meta.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/stack.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/strfunc.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/internal/swap.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/msinttypes/inttypes.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/msinttypes/stdint.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/prettywriter.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/rapidjson.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/stream.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/stringbuffer.h
+CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/rapidjson/writer.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../main.cpp
 
