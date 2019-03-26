@@ -108,6 +108,7 @@ CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o: ../gameLogic/GameD
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o: ../gameLogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o: ../gameLogic/Player.hpp
 
+CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/stringbuffer.h
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../Tests/JsonTest/JSON_Test.cpp
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../Tests/JsonTest/JSON_Test.hpp
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/allocators.h

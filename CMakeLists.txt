@@ -8,7 +8,7 @@ add_subdirectory(lib/googletest-master)
 
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
-include_directories(lib/rapidjson-master/include)
+
 
 find_package(Threads) # <- This line allows CLion to enable Threads
 
@@ -37,5 +37,4 @@ add_executable(
 
 
 target_link_libraries(Scrabble gtest gtest_main)
-target_link_libraries(Scrabble rapidjson)
 target_link_libraries(Scrabble ${CMAKE_THREAD_LIBS_INIT}) # <- This line allows CLion to enable Threads

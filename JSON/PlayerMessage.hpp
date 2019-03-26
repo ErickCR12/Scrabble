@@ -7,7 +7,7 @@
 
 // Libraries
 #include <iostream>
-#include <rapidjson/prettywriter.h>
+#include "../lib/rapidjson/prettywriter.h"
 
 using namespace std;
 
