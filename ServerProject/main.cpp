@@ -35,6 +35,9 @@ void * serverRun(void *)
 
 int main(int argc,char* argv[]) {
 
+    testing::InitGoogleTest(&argc,argv);
+    RUN_ALL_TESTS();
+
     server = new socketServer;
     pthread_t hiloServer;
     pthread_create(&hiloServer,0,serverRun,NULL);
@@ -48,10 +51,13 @@ int main(int argc,char* argv[]) {
 
     delete server;
 
-    /*testing::InitGoogleTest(&argc,argv);
-    RUN_ALL_TESTS();
 
-    //PlayerTest::test2();
+
+
+    return 0;
+}
+
+     /*PlayerTest::test2();
 
     Game* g1 = new Game(2);
     cout<<"Code : "<<g1->getGameCode()<<endl;
@@ -63,16 +69,6 @@ int main(int argc,char* argv[]) {
     sms->setMessage("omedor",0,1,false);
     json = sms->serialize();
     g1->recieveMessage(json);*/
-
-    //DictionaryTest::test1();
-
-    //PlayerTest::test1();
-    //
-
-    //JSON_Test::test1();
-
-    return 0;
-}
 
 
 
