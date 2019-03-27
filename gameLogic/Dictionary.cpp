@@ -27,7 +27,7 @@ bool Dictionary::searchInDictionary(string word) {
         while (getline(dictionaryFile, line)) {
             if(line.substr(0, 1) == word.substr(0, 1)){
                 boost::split(row, line, boost::is_any_of(","));
-                return binary_search(row.begin(), row.end(), word);
+                return find(row.begin(), row.end(), word) != row.end();
             }
         }dictionaryFile.close();
     } else cout << "File could not be opened.";
