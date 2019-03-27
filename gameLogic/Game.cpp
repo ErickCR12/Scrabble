@@ -4,6 +4,7 @@
 
 #include "Game.hpp"
 
+// Constructor de juego: Inicializa los parametros
 Game::Game(int players){
     gameCode = codeGenerator();
     gameDictionary = Dictionary::getDictionaryInstance();
@@ -11,32 +12,46 @@ Game::Game(int players){
     gameDeck = new GameDeck();
 }
 
+
+/* ---------------------------------------------------------------------
+ *
+ *                      METODOS DE INICIALIZACION
+ *
+ * ---------------------------------------------------------------------*/
+
+// Genera el codigo alfanumerico para unirse a este juego
 string Game::codeGenerator() {
 
     string codePath = "../TextFiles/alphanum.txt";
-    // Uses ifstream class to read filesPath.csv and stores it in variable file.
     ifstream file(codePath);
-    // Creates a vector called row.
-    vector<string> row;
+
+    vector<string> fileInfo;
     string line,code;
 
     if (file.is_open()) {
-        srand(time(NULL));
+
+        srand(time(NULL)); // Esto se debe realizar para poder generar numeros aleatorios
+
         getline(file, line);
-        boost::split(row, line, boost::is_any_of(","));
+        boost::split(fileInfo, line, boost::is_any_of(",")); // Hace split sobre el texto
 
         for (int i= 0; i < 6; i++) {
-            code+=row[rand()%row.size()];
+            code+=fileInfo[rand()%fileInfo.size()];
         }
-        file.close();// Closes file.
+
+        file.close();
+
     } else cout << "txt not opened.";
 
     return code;
 }
 
-string Game::getGameCode() {
-    return gameCode;
-}
+
+/* ---------------------------------------------------------------------
+ *
+ *                      METODOS DE JUEGO
+ *
+ * ---------------------------------------------------------------------*/
 
 bool Game::recieveMessage(string json) {
 
@@ -69,4 +84,16 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
 
         gameBoard->printGameBoard();
     } else cout<<"No encontrada"<<endl;
+}
+
+
+/* ---------------------------------------------------------------------
+ *
+ *                          GETTERS & SETTERS
+ *
+ * ---------------------------------------------------------------------*/
+
+
+string Game::getGameCode() {
+    return this->gameCode;
 }
