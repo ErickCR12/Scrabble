@@ -30,20 +30,24 @@ bool socketServer::connectWithClients() {
         return false;
     }
     //The 4 is the number of clients that we are going to listen from the server
-    //listen(descriptor,4);
-    //return true;
+    listen(descriptor,4);
+    return true;
 }
 
 
 void socketServer::runServer() {
+    cout<<"Exc"<<endl;
     if(!createSocket()){
+        cout<<"Error al crear el socket"<<endl;
         throw string("Error al crear el socket");
     }
     if (!connectWithClients()){
+        cout<<"Error al conectar con el kernel"<<endl;
         throw string("Error al conectar con el kernel");
     }
 
     while (true){
+        cout<<"Esperando Cliente!"<<endl;
         dataSocketServer data;
         socklen_t structureSize = sizeof(data.socketInformation);
 
@@ -55,13 +59,14 @@ void socketServer::runServer() {
             cout<<"Error al aceptar al cliente"<<endl;
         }else {
             clients.push_back(data.descriptor);
+            sendMessage("Te has unido al chat!");
             pthread_t thread;
             pthread_create(&thread,0,socketServer::clientController, (void *) &data);
             pthread_detach(thread);
 
         }
     }
-    //close(descriptor);
+    close(descriptor);
 
 }
 
@@ -71,29 +76,32 @@ void* socketServer::clientController(void *object) {
     while (true) {
         string message;
         while (true) {
-            char buffer[10] = {0};
+            char buffer[100] = {0};
             //Another "blocking function". The while stops until the server receives a new message.
-            int bytes = recv(data->descriptor, buffer, 10, 0);
+            int bytes = recv(data->descriptor, buffer, 100, 0);
             message.append(buffer, bytes);
 
             if (bytes <= 0){
                 close(data->descriptor);
                 pthread_exit(NULL);
             }
-            if (bytes < 10) {
+            if (bytes < 100) {
                 break;
             }
-
+            //cout <<">> "<<message <<endl;
         }
-        cout <<message <<endl;
+        cout<<message<<endl;
+
     }
-    //close(data->descriptor);
-    //pthread_exit(NULL);
+
+    close(data->descriptor);
+    pthread_exit(NULL);
 }
 
 
 void socketServer::sendMessage(const char *message) {
     for (int i = 0; i < clients.size(); i++) {
+        string msgToSend = (i == 1)? "Aa":message;
         cout << "bytes enviados " << send(clients[i], message, strlen(message), 0);
     }
 }

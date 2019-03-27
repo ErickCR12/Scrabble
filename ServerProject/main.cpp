@@ -9,7 +9,7 @@
 #include "gameLogic/Game.hpp"
 
 // Sockets
-#include "Tests/SocketsTest/socketTest1.hpp"
+#include "SocketComunication/socketServer.hpp"
 
 // JSON
 #include "Tests/JsonTest/JSON_Test.hpp"
@@ -19,10 +19,36 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+socketServer *server;
+
+void * serverRun(void *)
+{
+    try{
+        server->runServer();
+    }catch(string ex)
+    {
+        cout << ex;
+    }
+
+    pthread_exit(NULL);
+}
+
 int main(int argc,char* argv[]) {
 
+    server = new socketServer;
+    pthread_t hiloServer;
+    pthread_create(&hiloServer,0,serverRun,NULL);
+    pthread_detach(hiloServer);
 
-    testing::InitGoogleTest(&argc,argv);
+    while (1) {
+        string mensaje;
+        cin >> mensaje;
+        server->sendMessage(mensaje.c_str());
+    }
+
+    delete server;
+
+    /*testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
 
     //PlayerTest::test2();
@@ -36,7 +62,7 @@ int main(int argc,char* argv[]) {
     g1->recieveMessage(json);
     sms->setMessage("omedor",0,1,false);
     json = sms->serialize();
-    g1->recieveMessage(json);
+    g1->recieveMessage(json);*/
 
     //DictionaryTest::test1();
 

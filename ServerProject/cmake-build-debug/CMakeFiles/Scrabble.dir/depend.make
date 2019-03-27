@@ -32,6 +32,12 @@ CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: ../lib/rapidjson/writer.h
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.cpp
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.hpp
 
+CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.o: ../SocketComunication/socketClient.cpp
+CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.o: ../SocketComunication/socketClient.hpp
+
+CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o: ../SocketComunication/socketServer.cpp
+CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o: ../SocketComunication/socketServer.hpp
+
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
 CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o: ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
@@ -329,10 +335,10 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/PlayerMessage.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../SocketComunication/socketServer.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/DictionaryTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/PlayerTest.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/JsonTest/JSON_Test.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/SocketsTest/socketTest1.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Game.hpp

@@ -25,6 +25,11 @@ public:
     socketServer();
     void runServer();
     void sendMessage(const char *message);
+    //string getCurrentMessage();
+
+    static string currentMessage;
+    string clientCurrentMsg = "";
+
 private:
     //Attribute that the system returns when a new socket port is assigned
     int descriptor;
