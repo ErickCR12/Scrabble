@@ -275,32 +275,32 @@ JSON/ServerMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 .PHONY : JSON/ServerMessage.cpp.s
 
-SocketComunication/socketServer.o: SocketComunication/socketServer.cpp.o
+SocketComunication/serverSocket.o: SocketComunication/serverSocket.cpp.o
 
-.PHONY : SocketComunication/socketServer.o
+.PHONY : SocketComunication/serverSocket.o
 
 # target to build an object file
-SocketComunication/socketServer.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o
-.PHONY : SocketComunication/socketServer.cpp.o
+SocketComunication/serverSocket.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o
+.PHONY : SocketComunication/serverSocket.cpp.o
 
-SocketComunication/socketServer.i: SocketComunication/socketServer.cpp.i
+SocketComunication/serverSocket.i: SocketComunication/serverSocket.cpp.i
 
-.PHONY : SocketComunication/socketServer.i
+.PHONY : SocketComunication/serverSocket.i
 
 # target to preprocess a source file
-SocketComunication/socketServer.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.i
-.PHONY : SocketComunication/socketServer.cpp.i
+SocketComunication/serverSocket.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.i
+.PHONY : SocketComunication/serverSocket.cpp.i
 
-SocketComunication/socketServer.s: SocketComunication/socketServer.cpp.s
+SocketComunication/serverSocket.s: SocketComunication/serverSocket.cpp.s
 
-.PHONY : SocketComunication/socketServer.s
+.PHONY : SocketComunication/serverSocket.s
 
 # target to generate assembly for a file
-SocketComunication/socketServer.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.s
-.PHONY : SocketComunication/socketServer.cpp.s
+SocketComunication/serverSocket.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.s
+.PHONY : SocketComunication/serverSocket.cpp.s
 
 Tests/GameLogicTest/Board_gtest.o: Tests/GameLogicTest/Board_gtest.cpp.o
 
@@ -595,9 +595,9 @@ help:
 	@echo "... JSON/ServerMessage.o"
 	@echo "... JSON/ServerMessage.i"
 	@echo "... JSON/ServerMessage.s"
-	@echo "... SocketComunication/socketServer.o"
-	@echo "... SocketComunication/socketServer.i"
-	@echo "... SocketComunication/socketServer.s"
+	@echo "... SocketComunication/serverSocket.o"
+	@echo "... SocketComunication/serverSocket.i"
+	@echo "... SocketComunication/serverSocket.s"
 	@echo "... Tests/GameLogicTest/Board_gtest.o"
 	@echo "... Tests/GameLogicTest/Board_gtest.i"
 	@echo "... Tests/GameLogicTest/Board_gtest.s"

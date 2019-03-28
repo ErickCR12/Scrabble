@@ -20,11 +20,11 @@ struct dataSocketServer{
 };
 
 //! @brief
-class socketServer {
+class serverSocket {
 
 public:
     //! @brief Constructor
-    socketServer();
+    serverSocket();
 
     //! @brief Run the socket on the Server
     //! Create a thread for the listening of each client. [REDIRECT TO socketServer::clientController()]

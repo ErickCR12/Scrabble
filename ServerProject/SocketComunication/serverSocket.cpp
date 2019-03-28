@@ -1,7 +1,7 @@
-#include "socketServer.hpp"
+#include "serverSocket.hpp"
 
 // Constructor
-socketServer::socketServer() {
+serverSocket::serverSocket() {
 }
 
 /* ----------------------------------------
@@ -9,7 +9,7 @@ socketServer::socketServer() {
  * ---------------------------------------*/
 
 // Configure the port, IP address and protocols for the connection.
-bool socketServer::createSocket() {
+bool serverSocket::createSocket() {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
 
     if(descriptor < 0){
@@ -35,7 +35,7 @@ bool socketServer::createSocket() {
  * ---------------------------------------*/
 
 // Method that makes the acceptance of clients to the connection. He adds them to the customer vector.
-bool socketServer::connectWithClients() {
+bool serverSocket::connectWithClients() {
     if((bind(descriptor, (sockaddr *)&socketInformation , (socklen_t) sizeof(socketInformation))) <0){
         return false;
     }
@@ -45,9 +45,9 @@ bool socketServer::connectWithClients() {
 }
 
 
-// Listen to your connection (This method runs on a thread created by socketServer :: run ())
+// Listen to your connection (This method runs on a thread created by serverSocket :: run ())
 // and receives the messages from the client through the input buffer.
-void* socketServer::clientController(void *object) {
+void* serverSocket::clientController(void *object) {
     dataSocketServer *data = (dataSocketServer*)object;
 
     while (true) {
@@ -75,7 +75,7 @@ void* socketServer::clientController(void *object) {
 
 
 // Method that is responsible for sending messages to all connected clients.
-void socketServer::sendMessage(const char *message) {
+void serverSocket::sendMessage(const char *message) {
     for (int i = 0; i < clients.size(); i++) {
 
         cout << "bytes enviados " << send(clients[i], message, strlen(message), 0);
@@ -83,8 +83,8 @@ void socketServer::sendMessage(const char *message) {
 }
 
 // Run the socket on the Server
-// Create a thread for the listening of each client. [REDIRECT TO socketServer::clientController()]
-void socketServer::runServer() {
+// Create a thread for the listening of each client. [REDIRECT TO serverSocket::clientController()]
+void serverSocket::runServer() {
     cout<<"Exc"<<endl;
     if(!createSocket()){
         cout<<"Error al crear el socket"<<endl;
@@ -115,7 +115,7 @@ void socketServer::runServer() {
             // [ES] Esta parte del codigo crea hilos para la interaccion
             //      del server con los clientes.
             pthread_t thread;
-            pthread_create(&thread,0,socketServer::clientController, (void *) &data);  // Crea el Thread
+            pthread_create(&thread,0,serverSocket::clientController, (void *) &data);  // Crea el Thread
             pthread_detach(thread); // Pone a correr el Thread de manera independiente (Daemon)
 
         }

@@ -8,7 +8,7 @@
 #include "gameLogic/Game.hpp"
 
 // Sockets
-#include "SocketComunication/socketServer.hpp"
+#include "SocketComunication/serverSocket.hpp"
 
 // JSON
 #include "Tests/JsonTest/JSON_Test.hpp"
@@ -18,7 +18,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-socketServer *server;
+serverSocket *server;
 
 void * serverRun(void *)
 {
@@ -37,7 +37,7 @@ int main(int argc,char* argv[]) {
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
 
-    server = new socketServer;
+    server = new serverSocket;
     pthread_t hiloServer;
     pthread_create(&hiloServer,0,serverRun,NULL);
     pthread_detach(hiloServer);

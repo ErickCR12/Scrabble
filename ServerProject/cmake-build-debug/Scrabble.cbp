@@ -350,10 +350,10 @@
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/socketServer.cpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/serverSocket.cpp">
 			<Option target="Scrabble"/>
 		</Unit>
-		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/socketServer.hpp">
+		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/serverSocket.hpp">
 			<Option target="Scrabble"/>
 		</Unit>
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp">
