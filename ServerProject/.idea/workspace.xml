@@ -24,11 +24,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Scrabble" targetName="gtest_main" />
-      <config projectName="Scrabble" targetName="gtest" />
       <config projectName="Scrabble" targetName="Scrabble" />
-      <config projectName="Scrabble" targetName="gmock" />
       <config projectName="Scrabble" targetName="gmock_main" />
+      <config projectName="Scrabble" targetName="gtest" />
+      <config projectName="Scrabble" targetName="gmock" />
+      <config projectName="Scrabble" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -38,6 +38,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8716716-771a-4017-bde7-9923b636f71b" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../ClientProject/PlayerTest.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ClientProject/PlayerTest.hpp" afterDir="false" />
@@ -59,8 +60,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Scrabble.cbp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/SocketComunication/serverSocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/serverSocket.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocketComunication/serverSocket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/serverSocket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o" beforeDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/gameLogic/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gameLogic/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameLogic/Game.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
 >>>>>>> master
     </list>
@@ -91,6 +96,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             <state relative-caret-position="15">
               <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
@@ -98,9 +104,12 @@
             <state relative-caret-position="514">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
 >>>>>>> master
+=======
+            <state relative-caret-position="210">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#70#119#0" expanded="true" />
-                <element signature="e#264#303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,9 +125,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SocketComunication/serverSocket.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="272">
               <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
 >>>>>>> master
+=======
+            <state relative-caret-position="631">
+              <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -149,8 +163,11 @@
 =======
         <entry file="file://$PROJECT_DIR$/SocketComunication/serverSocket.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="660">
+              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+              <folding>
+                <element signature="e#81#104#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,9 +212,14 @@
 =======
         <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="96">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="50" />
 >>>>>>> master
+=======
+            <state relative-caret-position="360">
+              <caret line="100" lean-forward="true" selection-start-line="6" selection-end-line="107" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -211,13 +233,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/SocketComunication/socketServer.hpp" />
         <option value="$PROJECT_DIR$/SocketComunication/socketServer.cpp" />
         <option value="$PROJECT_DIR$/Doxyfile" />
-        <option value="$PROJECT_DIR$/gameLogic/Game.cpp" />
-        <option value="$PROJECT_DIR$/SocketComunication/serverSocket.hpp" />
         <option value="$PROJECT_DIR$/gameLogic/Game.hpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/gameLogic/Game.cpp" />
+        <option value="$PROJECT_DIR$/SocketComunication/serverSocket.cpp" />
+        <option value="$PROJECT_DIR$/SocketComunication/serverSocket.hpp" />
       </list>
     </option>
   </component>
@@ -315,37 +338,46 @@
       <updated>1553723185542</updated>
       <workItem from="1553723187469" duration="5611000" />
       <workItem from="1553732812175" duration="5211000" />
+      <workItem from="1553746079121" duration="1777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="9446000" />
 =======
     <option name="totallyTimeSpent" value="11056000" />
 >>>>>>> master
+=======
+    <option name="totallyTimeSpent" value="12833000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25336596" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32840723" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32840723" />
       <window_info anchor="bottom" id="TeamCity" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32840723" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.32840723" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32786885" />
       <window_info anchor="bottom" id="Message" order="6" />
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32685512" />
 =======
       <window_info anchor="bottom" id="Find" order="7" weight="0.32840723" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Run" order="8" weight="0.4679803" />
 >>>>>>> master
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.06666667" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
@@ -393,12 +425,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.hpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.cpp" />
+    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.hpp" />
     <entry file="file://$PROJECT_DIR$/Doxyfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -413,10 +441,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="50" />
+        <state relative-caret-position="210">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#70#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -430,13 +461,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketComunication/serverSocket.hpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="100" lean-forward="true" selection-start-line="6" selection-end-line="107" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/gameLogic/Dictionary.cpp">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -464,6 +496,14 @@
             <element signature="e#70#119#0" expanded="true" />
             <element signature="e#264#303#0" expanded="true" />
 >>>>>>> master
+=======
+    <entry file="file://$PROJECT_DIR$/SocketComunication/serverSocket.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="e#81#104#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -500,9 +540,14 @@
 =======
     <entry file="file://$PROJECT_DIR$/SocketComunication/serverSocket.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="272">
           <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
 >>>>>>> master
+=======
+        <state relative-caret-position="631">
+          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

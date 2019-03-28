@@ -4,6 +4,7 @@
 
 #include "Game.hpp"
 
+/*
 // Constructor de juego: Inicializa los parametros
 Game::Game(int players){
     gameCode = codeGenerator();
@@ -13,11 +14,13 @@ Game::Game(int players){
 }
 
 
+*/
 /* ---------------------------------------------------------------------
  *
  *                      METODOS DE INICIALIZACION
  *
- * ---------------------------------------------------------------------*/
+ * ---------------------------------------------------------------------*//*
+
 
 // Genera el codigo alfanumerico para unirse a este juego
 string Game::codeGenerator() {
@@ -47,11 +50,13 @@ string Game::codeGenerator() {
 }
 
 
+*/
 /* ---------------------------------------------------------------------
  *
  *                      METODOS DE JUEGO
  *
- * ---------------------------------------------------------------------*/
+ * ---------------------------------------------------------------------*//*
+
 
 bool Game::recieveMessage(string json) {
 
@@ -87,13 +92,16 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
 }
 
 
+*/
 /* ---------------------------------------------------------------------
  *
  *                          GETTERS & SETTERS
  *
- * ---------------------------------------------------------------------*/
+ * ---------------------------------------------------------------------*//*
+
 
 
 string Game::getGameCode() {
     return this->gameCode;
 }
+*/

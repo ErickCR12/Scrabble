@@ -8,6 +8,7 @@
 #include <string>
 #include <iostream>
 #include <pthread.h>
+#include <thread>
 #include <vector>
 #include <unistd.h>
 
@@ -26,19 +27,30 @@ public:
     //! @brief Constructor
     serverSocket();
 
+    //! @brief Is an interface that calls createSocket() and connectWithClients()
+    bool initSocket();
+
     //! @brief Run the socket on the Server
     //! Create a thread for the listening of each client. [REDIRECT TO socketServer::clientController()]
-    void runServer();
+    //! @param n[in]: Maximun amount of clients that socket can manage
+    void runServer(int n);
+
+    void messageHandler(string message);
 
     //! @brief Method that is responsible for sending messages to all connected clients.
     //! \param message [in]: Messages that the server must send to clients
     void sendMessage(const char *message);
+
+    int getClients(){
+        return clients.size();
+    }
 
 private:
 
     int descriptor; //!< Attribute that the system returns when a new socket port is assigned
     sockaddr_in socketInformation; //!< Information of the socket type and the type of connection made with the other socket port (clients)
     vector<int> clients; //!< Vector that stores all the descriptors that are connected to this socket.
+    vector<thread> cThreads; // La uso para correr los procesos
 
     /* ------------------------------------
      *      SOCKET PUBLIC METHODS
@@ -56,7 +68,7 @@ private:
     //! and receives the messages from the client through the input buffer.
     //! \param object [in]: socket of that specific connection
     //! \return [out]: void
-    static void *clientController(void *object);
+    void* clientController(void *object);
 };
 
 

@@ -23,13 +23,32 @@ serverSocket *server;
 void * serverRun(void *)
 {
     try{
-        server->runServer();
+        server->initSocket();
+        server->runServer(4);
     }catch(string ex)
     {
         cout << ex;
     }
 
     pthread_exit(NULL);
+}
+
+void* writer(void *){
+    while (1) {
+        string mensaje;
+        cin >> mensaje;
+        if(mensaje == "EXIT") break;
+        server->sendMessage(mensaje.c_str());
+    }
+    delete server;
+}
+
+void GameMock(){
+
+     while(true){
+
+     }
+
 }
 
 int main(int argc,char* argv[]) {
@@ -42,18 +61,21 @@ int main(int argc,char* argv[]) {
     pthread_create(&hiloServer,0,serverRun,NULL);
     pthread_detach(hiloServer);
 
-    while (1) {
-        string mensaje;
-        cin >> mensaje;
-        server->sendMessage(mensaje.c_str());
+    pthread_t hiloServer2;
+    pthread_create(&hiloServer2,0,writer,NULL);
+    pthread_detach(hiloServer2);
+
+
+    while(!server->getClients()<4) {
+        GameMock();
     }
 
-    delete server;
 
+    //return 0;
+}
 
-
-
-    return 0;
+void serverSocket::messageHandler(string message) {
+    cout<<":: "<<message<<endl;
 }
 
      /*PlayerTest::test2();

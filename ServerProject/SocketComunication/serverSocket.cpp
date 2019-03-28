@@ -8,6 +8,20 @@ serverSocket::serverSocket() {
  *          SOCKET HANDLE METHODS
  * ---------------------------------------*/
 
+// An interface to create the socket and add clients
+bool serverSocket::initSocket() {
+    if(!createSocket()){
+        cout<<"Error al crear el socket"<<endl;
+        throw string("Error al crear el socket");
+    }
+    if (!connectWithClients()){
+        cout<<"Error al conectar con el kernel"<<endl;
+        throw string("Error al conectar con el kernel");
+    }
+
+    return true;
+}
+
 // Configure the port, IP address and protocols for the connection.
 bool serverSocket::createSocket() {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
@@ -22,7 +36,7 @@ bool serverSocket::createSocket() {
     socketInformation.sin_addr.s_addr = INADDR_ANY;
 
     //Indicates the server socket port. The htons only allows "small" socket ports. htonl for "big" socket port.
-    socketInformation.sin_port = htons(4050);
+    socketInformation.sin_port = htons(9050);
 
     //Optional: clean the structure before connecting to the clients. IDK why
     memset(&socketInformation.sin_zero,0, sizeof(socketInformation.sin_zero));
@@ -47,6 +61,7 @@ bool serverSocket::connectWithClients() {
 
 // Listen to your connection (This method runs on a thread created by serverSocket :: run ())
 // and receives the messages from the client through the input buffer.
+// [ESTE METODO ES MEJOR REESCRIBIRLO]
 void* serverSocket::clientController(void *object) {
     dataSocketServer *data = (dataSocketServer*)object;
 
@@ -66,11 +81,12 @@ void* serverSocket::clientController(void *object) {
                 break;
             }
         }
-        cout<<message<<endl;
+        //cout<<message<<endl;
+        messageHandler(message);
     }
 
     close(data->descriptor);
-    pthread_exit(NULL);
+    terminate();
 }
 
 
@@ -78,22 +94,17 @@ void* serverSocket::clientController(void *object) {
 void serverSocket::sendMessage(const char *message) {
     for (int i = 0; i < clients.size(); i++) {
 
-        cout << "bytes enviados " << send(clients[i], message, strlen(message), 0);
+        cout << "bytes enviados " << send(clients[i], message, strlen(message), 0)<<endl;
     }
 }
 
+
+
+
 // Run the socket on the Server
 // Create a thread for the listening of each client. [REDIRECT TO serverSocket::clientController()]
-void serverSocket::runServer() {
-    cout<<"Exc"<<endl;
-    if(!createSocket()){
-        cout<<"Error al crear el socket"<<endl;
-        throw string("Error al crear el socket");
-    }
-    if (!connectWithClients()){
-        cout<<"Error al conectar con el kernel"<<endl;
-        throw string("Error al conectar con el kernel");
-    }
+void serverSocket::runServer(int n) {
+
 
     while (true){
         cout<<"Esperando Cliente!"<<endl;
@@ -107,18 +118,22 @@ void serverSocket::runServer() {
         if(data.descriptor < 0){
             cout<<"Error al aceptar al cliente"<<endl;
         }else {
-            clients.push_back(data.descriptor);
+            if (clients.size() < n) {
+                clients.push_back(data.descriptor);
+                cout<<"Clientes conectados: "<<clients.size()<<endl;
+            } else {
+                cout<<"Juego lleno! Intenta crear tu propio juego!"<<endl;
+            }
 
             // An inicial message for each client that try to connect
             //sendMessage("Te has unido al chat!");
 
             // [ES] Esta parte del codigo crea hilos para la interaccion
-            //      del server con los clientes.
-            pthread_t thread;
-            pthread_create(&thread,0,serverSocket::clientController, (void *) &data);  // Crea el Thread
-            pthread_detach(thread); // Pone a correr el Thread de manera independiente (Daemon)
-
+            //      del server con los clientes
+            thread clientThread(&serverSocket::clientController,this,(void*) &data);  // Crea el Thread
+            clientThread.detach(); // Pone a correr el Thread de manera independiente (Daemon)
         }
     }
     close(descriptor);
 }
+
