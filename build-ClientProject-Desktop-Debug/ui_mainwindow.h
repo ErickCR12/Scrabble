@@ -13,11 +13,10 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,28 +24,47 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
     QWidget *centralWidget;
-    QStatusBar *statusBar;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *createGameButton;
+    QPushButton *joinGameButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(400, 300);
-        menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(mainToolBar);
+        MainWindow->resize(400, 400);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        horizontalLayoutWidget = new QWidget(centralWidget);
+        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(QRect(80, 250, 248, 61));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        createGameButton = new QPushButton(horizontalLayoutWidget);
+        createGameButton->setObjectName(QStringLiteral("createGameButton"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(createGameButton->sizePolicy().hasHeightForWidth());
+        createGameButton->setSizePolicy(sizePolicy);
+        createGameButton->setMinimumSize(QSize(120, 40));
+
+        horizontalLayout->addWidget(createGameButton);
+
+        joinGameButton = new QPushButton(horizontalLayoutWidget);
+        joinGameButton->setObjectName(QStringLiteral("joinGameButton"));
+        sizePolicy.setHeightForWidth(joinGameButton->sizePolicy().hasHeightForWidth());
+        joinGameButton->setSizePolicy(sizePolicy);
+        joinGameButton->setMinimumSize(QSize(120, 40));
+
+        horizontalLayout->addWidget(joinGameButton);
+
         MainWindow->setCentralWidget(centralWidget);
-        statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
-        MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
 
@@ -56,6 +74,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        createGameButton->setText(QApplication::translate("MainWindow", "Crear juego", Q_NULLPTR));
+        joinGameButton->setText(QApplication::translate("MainWindow", "Unirse a un juego", Q_NULLPTR));
     } // retranslateUi
 
 };

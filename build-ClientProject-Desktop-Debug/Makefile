@@ -49,16 +49,30 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../ClientProject/main.cpp \
-		../ClientProject/mainwindow.cpp \
-		../ClientProject/Player.cpp \
-		../ClientProject/PlayerMessage.cpp \
-		../ClientProject/PlayerTest.cpp moc_mainwindow.cpp
+		../ClientProject/clientlogic/Player.cpp \
+		../ClientProject/json/PlayerMessage.cpp \
+		../ClientProject/tests/PlayerTest.cpp \
+		../ClientProject/gui/MainWindow.cpp \
+		../ClientProject/gui/JoinGameWindow.cpp \
+		../ClientProject/gui/CreateGameWindow.cpp \
+		../ClientProject/gui/DraggableTile.cpp \
+		../ClientProject/gui/ScrabbleWindow.cpp moc_MainWindow.cpp \
+		moc_JoinGameWindow.cpp \
+		moc_CreateGameWindow.cpp \
+		moc_ScrabbleWindow.cpp
 OBJECTS       = main.o \
-		mainwindow.o \
 		Player.o \
 		PlayerMessage.o \
 		PlayerTest.o \
-		moc_mainwindow.o
+		MainWindow.o \
+		JoinGameWindow.o \
+		CreateGameWindow.o \
+		DraggableTile.o \
+		ScrabbleWindow.o \
+		moc_MainWindow.o \
+		moc_JoinGameWindow.o \
+		moc_CreateGameWindow.o \
+		moc_ScrabbleWindow.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -120,14 +134,22 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../ClientProject/ClientProject.pro ../ClientProject/mainwindow.h \
-		../ClientProject/Player.hpp \
-		../ClientProject/PlayerMessage.hpp \
-		../ClientProject/PlayerTest.hpp ../ClientProject/main.cpp \
-		../ClientProject/mainwindow.cpp \
-		../ClientProject/Player.cpp \
-		../ClientProject/PlayerMessage.cpp \
-		../ClientProject/PlayerTest.cpp
+		../ClientProject/ClientProject.pro ../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/tests/PlayerTest.hpp \
+		../ClientProject/gui/MainWindow.h \
+		../ClientProject/gui/JoinGameWindow.h \
+		../ClientProject/gui/CreateGameWindow.h \
+		../ClientProject/gui/DraggableTile.h \
+		../ClientProject/gui/ScrabbleWindow.h ../ClientProject/main.cpp \
+		../ClientProject/clientlogic/Player.cpp \
+		../ClientProject/json/PlayerMessage.cpp \
+		../ClientProject/tests/PlayerTest.cpp \
+		../ClientProject/gui/MainWindow.cpp \
+		../ClientProject/gui/JoinGameWindow.cpp \
+		../ClientProject/gui/CreateGameWindow.cpp \
+		../ClientProject/gui/DraggableTile.cpp \
+		../ClientProject/gui/ScrabbleWindow.cpp
 QMAKE_TARGET  = ClientProject
 DESTDIR       = 
 TARGET        = ClientProject
@@ -136,7 +158,7 @@ TARGET        = ClientProject
 first: all
 ####### Build rules
 
-$(TARGET): ui_mainwindow.h $(OBJECTS)  
+$(TARGET): ui_MainWindow.h ui_JoinGameWindow.h ui_CreateGameWindow.h ui_ScrabbleWindow.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: ../ClientProject/ClientProject.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -284,9 +306,9 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClientProject/mainwindow.h ../ClientProject/Player.hpp ../ClientProject/PlayerMessage.hpp ../ClientProject/PlayerTest.hpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClientProject/main.cpp ../ClientProject/mainwindow.cpp ../ClientProject/Player.cpp ../ClientProject/PlayerMessage.cpp ../ClientProject/PlayerTest.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClientProject/mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClientProject/clientlogic/Player.hpp ../ClientProject/json/PlayerMessage.hpp ../ClientProject/tests/PlayerTest.hpp ../ClientProject/gui/MainWindow.h ../ClientProject/gui/JoinGameWindow.h ../ClientProject/gui/CreateGameWindow.h ../ClientProject/gui/DraggableTile.h ../ClientProject/gui/ScrabbleWindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClientProject/main.cpp ../ClientProject/clientlogic/Player.cpp ../ClientProject/json/PlayerMessage.cpp ../ClientProject/tests/PlayerTest.cpp ../ClientProject/gui/MainWindow.cpp ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/CreateGameWindow.cpp ../ClientProject/gui/DraggableTile.cpp ../ClientProject/gui/ScrabbleWindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClientProject/gui/MainWindow.ui ../ClientProject/gui/JoinGameWindow.ui ../ClientProject/gui/CreateGameWindow.ui ../ClientProject/gui/ScrabbleWindow.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -312,21 +334,45 @@ benchmark: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp
-moc_mainwindow.cpp: ../ClientProject/mainwindow.h \
+	-$(DEL_FILE) moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp
+moc_MainWindow.cpp: ../ClientProject/gui/MainWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/MainWindow.h -o moc_MainWindow.cpp
+
+moc_JoinGameWindow.cpp: ../ClientProject/gui/JoinGameWindow.h \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/JoinGameWindow.h -o moc_JoinGameWindow.cpp
+
+moc_CreateGameWindow.cpp: ../ClientProject/gui/CreateGameWindow.h \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/CreateGameWindow.h -o moc_CreateGameWindow.cpp
+
+moc_ScrabbleWindow.cpp: ../ClientProject/gui/ScrabbleWindow.h \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/ScrabbleWindow.h -o moc_ScrabbleWindow.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_make_all: ui_MainWindow.h ui_JoinGameWindow.h ui_CreateGameWindow.h ui_ScrabbleWindow.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
-ui_mainwindow.h: ../ClientProject/mainwindow.ui \
+	-$(DEL_FILE) ui_MainWindow.h ui_JoinGameWindow.h ui_CreateGameWindow.h ui_ScrabbleWindow.h
+ui_MainWindow.h: ../ClientProject/gui/MainWindow.ui \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/uic
-	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../ClientProject/mainwindow.ui -o ui_mainwindow.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../ClientProject/gui/MainWindow.ui -o ui_MainWindow.h
+
+ui_JoinGameWindow.h: ../ClientProject/gui/JoinGameWindow.ui \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/uic
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../ClientProject/gui/JoinGameWindow.ui -o ui_JoinGameWindow.h
+
+ui_CreateGameWindow.h: ../ClientProject/gui/CreateGameWindow.ui \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/uic
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../ClientProject/gui/CreateGameWindow.ui -o ui_CreateGameWindow.h
+
+ui_ScrabbleWindow.h: ../ClientProject/gui/ScrabbleWindow.ui \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/uic
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic ../ClientProject/gui/ScrabbleWindow.ui -o ui_ScrabbleWindow.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -338,15 +384,11 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-main.o: ../ClientProject/main.cpp ../ClientProject/mainwindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../ClientProject/main.cpp
-
-mainwindow.o: ../ClientProject/mainwindow.cpp ../ClientProject/mainwindow.h \
-		ui_mainwindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../ClientProject/mainwindow.cpp
-
-Player.o: ../ClientProject/Player.cpp ../ClientProject/Player.hpp \
-		../ClientProject/PlayerMessage.hpp \
+main.o: ../ClientProject/main.cpp ../ClientProject/gui/MainWindow.h \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/tests/PlayerTest.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
 		../ClientProject/lib/rapidjson/prettywriter.h \
 		../ClientProject/lib/rapidjson/writer.h \
 		../ClientProject/lib/rapidjson/stream.h \
@@ -364,9 +406,30 @@ Player.o: ../ClientProject/Player.cpp ../ClientProject/Player.hpp \
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Player.o ../ClientProject/Player.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../ClientProject/main.cpp
 
-PlayerMessage.o: ../ClientProject/PlayerMessage.cpp ../ClientProject/PlayerMessage.hpp \
+Player.o: ../ClientProject/clientlogic/Player.cpp ../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Player.o ../ClientProject/clientlogic/Player.cpp
+
+PlayerMessage.o: ../ClientProject/json/PlayerMessage.cpp ../ClientProject/json/PlayerMessage.hpp \
 		../ClientProject/lib/rapidjson/prettywriter.h \
 		../ClientProject/lib/rapidjson/writer.h \
 		../ClientProject/lib/rapidjson/stream.h \
@@ -392,13 +455,62 @@ PlayerMessage.o: ../ClientProject/PlayerMessage.cpp ../ClientProject/PlayerMessa
 		../ClientProject/lib/rapidjson/internal/biginteger.h \
 		../ClientProject/lib/rapidjson/internal/pow10.h \
 		../ClientProject/lib/rapidjson/error/error.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerMessage.o ../ClientProject/PlayerMessage.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerMessage.o ../ClientProject/json/PlayerMessage.cpp
 
-PlayerTest.o: ../ClientProject/PlayerTest.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerTest.o ../ClientProject/PlayerTest.cpp
+PlayerTest.o: ../ClientProject/tests/PlayerTest.cpp ../ClientProject/tests/PlayerTest.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerTest.o ../ClientProject/tests/PlayerTest.cpp
 
-moc_mainwindow.o: moc_mainwindow.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
+MainWindow.o: ../ClientProject/gui/MainWindow.cpp ../ClientProject/gui/MainWindow.h \
+		ui_MainWindow.h \
+		../ClientProject/gui/JoinGameWindow.h \
+		../ClientProject/gui/CreateGameWindow.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o ../ClientProject/gui/MainWindow.cpp
+
+JoinGameWindow.o: ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/JoinGameWindow.h \
+		ui_JoinGameWindow.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o JoinGameWindow.o ../ClientProject/gui/JoinGameWindow.cpp
+
+CreateGameWindow.o: ../ClientProject/gui/CreateGameWindow.cpp ../ClientProject/gui/CreateGameWindow.h \
+		ui_CreateGameWindow.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CreateGameWindow.o ../ClientProject/gui/CreateGameWindow.cpp
+
+DraggableTile.o: ../ClientProject/gui/DraggableTile.cpp ../ClientProject/gui/DraggableTile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DraggableTile.o ../ClientProject/gui/DraggableTile.cpp
+
+ScrabbleWindow.o: ../ClientProject/gui/ScrabbleWindow.cpp ../ClientProject/gui/ScrabbleWindow.h \
+		ui_ScrabbleWindow.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ScrabbleWindow.o ../ClientProject/gui/ScrabbleWindow.cpp
+
+moc_MainWindow.o: moc_MainWindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_MainWindow.o moc_MainWindow.cpp
+
+moc_JoinGameWindow.o: moc_JoinGameWindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_JoinGameWindow.o moc_JoinGameWindow.cpp
+
+moc_CreateGameWindow.o: moc_CreateGameWindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CreateGameWindow.o moc_CreateGameWindow.cpp
+
+moc_ScrabbleWindow.o: moc_ScrabbleWindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ScrabbleWindow.o moc_ScrabbleWindow.cpp
 
 ####### Install
 

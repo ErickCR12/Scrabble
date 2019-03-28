@@ -2,7 +2,7 @@
 #define PLAYER_HPP
 #include <string>
 // Libraries
-#include "PlayerMessage.hpp"
+#include "json/PlayerMessage.hpp"
 #include <vector>
 #include <boost/algorithm/string.hpp>
 

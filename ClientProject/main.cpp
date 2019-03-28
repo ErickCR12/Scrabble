@@ -1,19 +1,21 @@
-#include "mainwindow.h"
 #include <string>
 #include <iostream>
 #include <vector>
 #include <QApplication>
-#include "PlayerTest.hpp"
+#include "gui/MainWindow.h"
+#include "gui/ScrabbleWindow.h"
+#include "tests/PlayerTest.hpp"
+#include <string>
+#include <iostream>
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-//    QApplication a(argc, argv);
-//    MainWindow w;
-//    w.show();
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-    PlayerTest::test1();
+    //PlayerTest::test2();
 
-    return 0;
-//    return a.exec();
+    return a.exec();
 }

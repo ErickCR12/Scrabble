@@ -23,17 +23,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
-SOURCES += main.cpp\
-           mainwindow.cpp\
-           Player.cpp\
-           PlayerMessage.cpp \
-    PlayerTest.cpp
+SOURCES  += main.cpp\
+            clientlogic/Player.cpp\
+            json/PlayerMessage.cpp \
+            tests/PlayerTest.cpp \
+            gui/MainWindow.cpp \
+            gui/JoinGameWindow.cpp \
+            gui/CreateGameWindow.cpp \
+            gui/DraggableTile.cpp \
+            gui/ScrabbleWindow.cpp
 
-HEADERS  += mainwindow.h\
-            Player.hpp\
-            PlayerMessage.hpp \
-    PlayerTest.hpp
+HEADERS  +=\
+            clientlogic/Player.hpp\
+            json/PlayerMessage.hpp \
+            tests/PlayerTest.hpp \
+            gui/MainWindow.h \
+            gui/JoinGameWindow.h \
+            gui/CreateGameWindow.h \
+            gui/DraggableTile.h \
+            gui/ScrabbleWindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+            gui/MainWindow.ui \
+            gui/JoinGameWindow.ui \
+            gui/CreateGameWindow.ui \
+            gui/ScrabbleWindow.ui
 
 LIBS += -L"$$_PRO_FILE_PWD_/lib/rapidjson"
