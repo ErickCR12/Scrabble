@@ -2,7 +2,6 @@
 #define DICTIONARY_CPP
 
 #include "Dictionary.hpp"
-#include "Player.hpp"
 #include "GameDeck.hpp"
 #include <fstream>
 #include <iostream>
