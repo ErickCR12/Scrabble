@@ -20,7 +20,6 @@ add_executable(
         gameLogic/Board.cpp gameLogic/Board.hpp
         gameLogic/Dictionary.cpp gameLogic/Dictionary.hpp
         gameLogic/LetterTile.cpp gameLogic/LetterTile.hpp
-        gameLogic/Player.hpp gameLogic/Player.cpp
         gameLogic/Game.cpp gameLogic/Game.hpp
         gameLogic/GameDeck.cpp  gameLogic/GameDeck.hpp
         gameLogic/Server.cpp gameLogic/Server.hpp
@@ -30,7 +29,6 @@ add_executable(
 
         Tests/JsonTest/JSON_Test.cpp Tests/JsonTest/JSON_Test.hpp
         Tests/GameLogicTest/DictionaryTest.cpp Tests/GameLogicTest/DictionaryTest.hpp
-        Tests/GameLogicTest/PlayerTest.hpp Tests/GameLogicTest/PlayerTest.cpp
         Tests/SocketsTest/socketTest1.cpp Tests/SocketsTest/socketTest1.hpp
         Tests/GameLogicTest/Board_gtest.cpp
 

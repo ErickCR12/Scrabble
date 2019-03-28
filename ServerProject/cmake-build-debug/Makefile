@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
+CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,19 +59,19 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -82,7 +82,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -103,32 +103,32 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -383,33 +383,6 @@ Tests/GameLogicTest/DictionaryTest.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.s
 .PHONY : Tests/GameLogicTest/DictionaryTest.cpp.s
 
-Tests/GameLogicTest/PlayerTest.o: Tests/GameLogicTest/PlayerTest.cpp.o
-
-.PHONY : Tests/GameLogicTest/PlayerTest.o
-
-# target to build an object file
-Tests/GameLogicTest/PlayerTest.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.o
-.PHONY : Tests/GameLogicTest/PlayerTest.cpp.o
-
-Tests/GameLogicTest/PlayerTest.i: Tests/GameLogicTest/PlayerTest.cpp.i
-
-.PHONY : Tests/GameLogicTest/PlayerTest.i
-
-# target to preprocess a source file
-Tests/GameLogicTest/PlayerTest.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.i
-.PHONY : Tests/GameLogicTest/PlayerTest.cpp.i
-
-Tests/GameLogicTest/PlayerTest.s: Tests/GameLogicTest/PlayerTest.cpp.s
-
-.PHONY : Tests/GameLogicTest/PlayerTest.s
-
-# target to generate assembly for a file
-Tests/GameLogicTest/PlayerTest.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/GameLogicTest/PlayerTest.cpp.s
-.PHONY : Tests/GameLogicTest/PlayerTest.cpp.s
-
 Tests/JsonTest/JSON_Test.o: Tests/JsonTest/JSON_Test.cpp.o
 
 .PHONY : Tests/JsonTest/JSON_Test.o
@@ -599,33 +572,6 @@ gameLogic/LetterTile.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.s
 .PHONY : gameLogic/LetterTile.cpp.s
 
-gameLogic/Player.o: gameLogic/Player.cpp.o
-
-.PHONY : gameLogic/Player.o
-
-# target to build an object file
-gameLogic/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.o
-.PHONY : gameLogic/Player.cpp.o
-
-gameLogic/Player.i: gameLogic/Player.cpp.i
-
-.PHONY : gameLogic/Player.i
-
-# target to preprocess a source file
-gameLogic/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.i
-.PHONY : gameLogic/Player.cpp.i
-
-gameLogic/Player.s: gameLogic/Player.cpp.s
-
-.PHONY : gameLogic/Player.s
-
-# target to generate assembly for a file
-gameLogic/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Player.cpp.s
-.PHONY : gameLogic/Player.cpp.s
-
 gameLogic/Server.o: gameLogic/Server.cpp.o
 
 .PHONY : gameLogic/Server.o
@@ -715,9 +661,6 @@ help:
 	@echo "... Tests/GameLogicTest/DictionaryTest.o"
 	@echo "... Tests/GameLogicTest/DictionaryTest.i"
 	@echo "... Tests/GameLogicTest/DictionaryTest.s"
-	@echo "... Tests/GameLogicTest/PlayerTest.o"
-	@echo "... Tests/GameLogicTest/PlayerTest.i"
-	@echo "... Tests/GameLogicTest/PlayerTest.s"
 	@echo "... Tests/JsonTest/JSON_Test.o"
 	@echo "... Tests/JsonTest/JSON_Test.i"
 	@echo "... Tests/JsonTest/JSON_Test.s"
@@ -739,9 +682,6 @@ help:
 	@echo "... gameLogic/LetterTile.o"
 	@echo "... gameLogic/LetterTile.i"
 	@echo "... gameLogic/LetterTile.s"
-	@echo "... gameLogic/Player.o"
-	@echo "... gameLogic/Player.i"
-	@echo "... gameLogic/Player.s"
 	@echo "... gameLogic/Server.o"
 	@echo "... gameLogic/Server.i"
 	@echo "... gameLogic/Server.s"
