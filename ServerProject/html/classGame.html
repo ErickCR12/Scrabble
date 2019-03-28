@@ -61,28 +61,77 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classGame-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Game Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for Game:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGame__coll__graph.png" border="0" usemap="#Game_coll__map" alt="Collaboration graph"/></div>
+<map name="Game_coll__map" id="Game_coll__map">
+<area shape="rect" id="node2" href="classBoard.html" title="Board" alt="" coords="5,95,61,121"/>
+<area shape="rect" id="node3" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. " alt="" coords="46,5,122,32"/>
+<area shape="rect" id="node4" href="classGameDeck.html" title="Represents the deck of the game with the full amount of LetterTiles. " alt="" coords="91,95,179,121"/>
+<area shape="rect" id="node5" href="classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file..." alt="" coords="203,95,285,121"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2aadd61e100d3bf0116e61d26dabca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#af2aadd61e100d3bf0116e61d26dabca4">Game</a> (int players, string code)</td></tr>
-<tr class="separator:af2aadd61e100d3bf0116e61d26dabca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae900ee3fb5ba0d83e84dd0a2029db704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae900ee3fb5ba0d83e84dd0a2029db704">Game</a> (int <a class="el" href="classGame.html#adf739965751cce3158f8757b3775a7a4">players</a>)</td></tr>
+<tr class="separator:ae900ee3fb5ba0d83e84dd0a2029db704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a801658c7cef474bc1d9a830f4a79034c"><td class="memItemLeft" align="right" valign="top"><a id="a801658c7cef474bc1d9a830f4a79034c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>nextTurn</b> ()</td></tr>
 <tr class="separator:a801658c7cef474bc1d9a830f4a79034c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae182d917809114f43da68294741a0844"><td class="memItemLeft" align="right" valign="top"><a id="ae182d917809114f43da68294741a0844"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentTurn</b> ()</td></tr>
 <tr class="separator:ae182d917809114f43da68294741a0844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf77e0511a2d341f086b7ead53c90ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a6cf77e0511a2d341f086b7ead53c90ea">addWord</a> (string word, int frow, int fcol, bool vertical)</td></tr>
-<tr class="separator:a6cf77e0511a2d341f086b7ead53c90ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b50fe60bc274f6b52358dfe9fb6a079"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a0b50fe60bc274f6b52358dfe9fb6a079">recieveMessage</a> (string json)</td></tr>
+<tr class="separator:a0b50fe60bc274f6b52358dfe9fb6a079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695048ed0ea77d791797d7620809429a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a695048ed0ea77d791797d7620809429a">getGameCode</a> ()</td></tr>
+<tr class="separator:a695048ed0ea77d791797d7620809429a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aaef1cd3d576da41896919a42b174f10d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aaef1cd3d576da41896919a42b174f10d">codeGenerator</a> ()</td></tr>
+<tr class="separator:aaef1cd3d576da41896919a42b174f10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22a657d92d29f4e1e0f6fedbd17f915"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#af22a657d92d29f4e1e0f6fedbd17f915">addWord</a> (string word, int row, int col, bool isVertical)</td></tr>
+<tr class="separator:af22a657d92d29f4e1e0f6fedbd17f915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac9e2ed0cb1aa969e10cf9e85af3ef1a5"><td class="memItemLeft" align="right" valign="top"><a id="ac9e2ed0cb1aa969e10cf9e85af3ef1a5"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ac9e2ed0cb1aa969e10cf9e85af3ef1a5">gameCode</a></td></tr>
+<tr class="memdesc:ac9e2ed0cb1aa969e10cf9e85af3ef1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html">Game</a> code to connect whit current game. <br /></td></tr>
+<tr class="separator:ac9e2ed0cb1aa969e10cf9e85af3ef1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf739965751cce3158f8757b3775a7a4"><td class="memItemLeft" align="right" valign="top"><a id="adf739965751cce3158f8757b3775a7a4"></a>
+int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#adf739965751cce3158f8757b3775a7a4">players</a></td></tr>
+<tr class="memdesc:adf739965751cce3158f8757b3775a7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array whit player ID. <br /></td></tr>
+<tr class="separator:adf739965751cce3158f8757b3775a7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab531d251551abf240c4351b41fe475b7"><td class="memItemLeft" align="right" valign="top"><a id="ab531d251551abf240c4351b41fe475b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab531d251551abf240c4351b41fe475b7">currentTurn</a></td></tr>
+<tr class="memdesc:ab531d251551abf240c4351b41fe475b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current player turn. <br /></td></tr>
+<tr class="separator:ab531d251551abf240c4351b41fe475b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a6e7953b58c694e082504562116627"><td class="memItemLeft" align="right" valign="top"><a id="a77a6e7953b58c694e082504562116627"></a>
+<a class="el" href="classGameDeck.html">GameDeck</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a77a6e7953b58c694e082504562116627">gameDeck</a></td></tr>
+<tr class="memdesc:a77a6e7953b58c694e082504562116627"><td class="mdescLeft">&#160;</td><td class="mdescRight">game <a class="el" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. ">LetterTile</a> deck <br /></td></tr>
+<tr class="separator:a77a6e7953b58c694e082504562116627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16386d68667706bb1822775c7db14c9d"><td class="memItemLeft" align="right" valign="top"><a id="a16386d68667706bb1822775c7db14c9d"></a>
+<a class="el" href="classBoard.html">Board</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a16386d68667706bb1822775c7db14c9d">gameBoard</a></td></tr>
+<tr class="memdesc:a16386d68667706bb1822775c7db14c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">game <a class="el" href="classBoard.html">Board</a> <br /></td></tr>
+<tr class="separator:a16386d68667706bb1822775c7db14c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a244ac256559dd68e232efc7d62c00"><td class="memItemLeft" align="right" valign="top"><a id="a10a244ac256559dd68e232efc7d62c00"></a>
+<a class="el" href="classDictionary.html">Dictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a10a244ac256559dd68e232efc7d62c00">gameDictionary</a></td></tr>
+<tr class="memdesc:a10a244ac256559dd68e232efc7d62c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to dictionary. <br /></td></tr>
+<tr class="separator:a10a244ac256559dd68e232efc7d62c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af2aadd61e100d3bf0116e61d26dabca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2aadd61e100d3bf0116e61d26dabca4">&#9670;&nbsp;</a></span>Game()</h2>
+<a id="ae900ee3fb5ba0d83e84dd0a2029db704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae900ee3fb5ba0d83e84dd0a2029db704">&#9670;&nbsp;</a></span>Game()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -91,18 +140,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentTurn</b> ()<
           <td class="memname">Game::Game </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>players</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>players</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -117,11 +156,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentTurn</b> ()<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6cf77e0511a2d341f086b7ead53c90ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cf77e0511a2d341f086b7ead53c90ea">&#9670;&nbsp;</a></span>addWord()</h2>
+<a id="af22a657d92d29f4e1e0f6fedbd17f915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22a657d92d29f4e1e0f6fedbd17f915">&#9670;&nbsp;</a></span>addWord()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Game::addWord </td>
@@ -133,19 +175,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentTurn</b> ()<
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frow</em>, </td>
+          <td class="paramname"><em>row</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fcol</em>, </td>
+          <td class="paramname"><em>col</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>vertical</em>&#160;</td>
+          <td class="paramname"><em>isVertical</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -153,13 +195,91 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentTurn</b> ()<
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td></td></tr>
+    <tr><td class="paramname">row</td><td></td></tr>
+    <tr><td class="paramname">col</td><td></td></tr>
+    <tr><td class="paramname">isVertical</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aaef1cd3d576da41896919a42b174f10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef1cd3d576da41896919a42b174f10d">&#9670;&nbsp;</a></span>codeGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game::codeGenerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a695048ed0ea77d791797d7620809429a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695048ed0ea77d791797d7620809429a">&#9670;&nbsp;</a></span>getGameCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Game::getGameCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a0b50fe60bc274f6b52358dfe9fb6a079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b50fe60bc274f6b52358dfe9fb6a079">&#9670;&nbsp;</a></span>recieveMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::recieveMessage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>gameLogic/<a class="el" href="Game_8hpp_source.html">Game.hpp</a></li>
+<li>gameLogic/Game.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

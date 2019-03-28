@@ -24,11 +24,11 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Scrabble" targetName="Scrabble" />
-      <config projectName="Scrabble" targetName="gmock_main" />
-      <config projectName="Scrabble" targetName="gtest" />
-      <config projectName="Scrabble" targetName="gmock" />
       <config projectName="Scrabble" targetName="gtest_main" />
+      <config projectName="Scrabble" targetName="gtest" />
+      <config projectName="Scrabble" targetName="Scrabble" />
+      <config projectName="Scrabble" targetName="gmock" />
+      <config projectName="Scrabble" targetName="gmock_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -38,9 +38,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8716716-771a-4017-bde7-9923b636f71b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SocketComunication/socketServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocketComunication/socketServer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SocketComunication/socketServer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Dictionary_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Dictionary_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/GameDeck_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/GameDeck_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Game_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Game_8hpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classDictionary-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDictionary-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classDictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDictionary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classGame-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGame-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classGameDeck-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGameDeck-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classGameDeck.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classGameDeck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classPlayerMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPlayerMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classsocketServer-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classsocketServer-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classsocketServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classsocketServer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/classes_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/classes_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/socketServer_8hpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/socketServer_8hpp_source.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,29 +112,21 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.cpp">
+        <entry file="file://$PROJECT_DIR$/Doxyfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="29" column="104" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="362">
+              <caret line="443" column="28" selection-start-line="443" selection-start-column="28" selection-end-line="443" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -118,6 +143,7 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/SocketComunication/socketServer.hpp" />
         <option value="$PROJECT_DIR$/SocketComunication/socketServer.cpp" />
+        <option value="$PROJECT_DIR$/Doxyfile" />
       </list>
     </option>
   </component>
@@ -209,23 +235,23 @@
       <option name="presentableId" value="Default" />
       <updated>1553723185542</updated>
       <workItem from="1553723187469" duration="5611000" />
-      <workItem from="1553732812175" duration="2288000" />
+      <workItem from="1553732812175" duration="3151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8133000" />
+    <option name="totallyTimeSpent" value="8996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32840723" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32840723" />
       <window_info anchor="bottom" id="TeamCity" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32840723" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.32840723" />
@@ -279,10 +305,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="29" column="104" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SocketsTest/socketTest1.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="10">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -297,17 +343,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="29" column="104" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="104" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketComunication/socketServer.cpp">
+    <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doxyfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
+        <state relative-caret-position="362">
+          <caret line="443" column="28" selection-start-line="443" selection-start-column="28" selection-end-line="443" selection-end-column="28" />
         </state>
       </provider>
     </entry>

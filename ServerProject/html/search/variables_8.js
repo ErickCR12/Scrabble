@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ownallocator_5f',['ownAllocator_',['../classGenericPointer.html#a99b51c07419ee17d57e97774d8ee63ab',1,'GenericPointer']]]
+  ['players',['players',['../classGame.html#adf739965751cce3158f8757b3775a7a4',1,'Game']]]
 ];
