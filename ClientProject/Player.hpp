@@ -1,20 +1,22 @@
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
-
+#include <string>
 // Libraries
-#include "LetterTile.hpp"
-#include "Board.hpp"
+#include "PlayerMessage.hpp"
+#include <vector>
+#include <boost/algorithm/string.hpp>
 
+using namespace std;
 //! @brief
 class Player{
 
 private:
 
-    LetterTile **playerDeck; //!< @brief
-    Board* playerBoard; //!< @brief
+    vector<string> playerDeck; //!< @brief
+    string** playerBoard; //!< @brief
     string myWord;
 
-    int amountOfLetterTiles; //!< @brief
+    int amountOfLetters; //!< @brief
     int score; //!< @brief
     int *positions;
 
@@ -24,7 +26,7 @@ private:
     //! @brief
     //! \param position
     //! \return
-    LetterTile* playLetterTile(int position);
+    string playLetter(int position);
 
 public:
 
@@ -35,7 +37,7 @@ public:
 
     //! @brief
     //! @param letterTile
-    void addLetterTile(LetterTile *letterTile);
+    void addLettersToPlayerDeck(string letters);
 
     //! @brief
     //! @param position
@@ -53,7 +55,7 @@ public:
     // ---------------------------------------
 
     //! @brief
-    LetterTile** getPlayerDeck();
+    vector<string> getPlayerDeck();
 
     //! @brief
     int getScore();
@@ -69,7 +71,7 @@ public:
     //! @brief
     int getAmountOfLetterTiles();
 
-    //! @brief
+//    //! @brief
     void printPlayerDeck();
 
     //! @brief

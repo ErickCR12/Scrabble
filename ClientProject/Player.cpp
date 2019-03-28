@@ -3,19 +3,18 @@
 
 // Libraries
 #include "Player.hpp"
-#include "../JSON/PlayerMessage.hpp"
-
+#include <iostream>
+using namespace std;
 int const totalLetterTiles = 7;
 
 // Constructor
 Player::Player() {
     initializePlayerDeck();
     score = 0;
-    amountOfLetterTiles = 0;
+    amountOfLetters = 0;
     myWord = "";
     positions = (int*) malloc(sizeof(int)*4);
     resetPositions();
-    playerBoard = new Board();
 }
 
 /* -------------------------------------------------------------------------
@@ -23,16 +22,23 @@ Player::Player() {
  * -------------------------------------------------------------------------*/
 
 void Player::initializePlayerDeck(){
-    playerDeck = (LetterTile**) malloc(totalLetterTiles * sizeof(LetterTile*));
     for(int index = 0; index < totalLetterTiles; index++)
-        playerDeck[index] = nullptr;
+        playerDeck.push_back("");
 }
 
-void Player::addLetterTile(LetterTile *letterTile) {
-    int index = 0;
-    while(playerDeck[index] != nullptr) index++;
-    playerDeck[index] = letterTile;
-    amountOfLetterTiles++;
+void Player::addLettersToPlayerDeck(string letters) {
+    vector<string> tempVector;
+    boost::split(tempVector, letters, boost::is_any_of(","));
+    int lettersToAdd = tempVector.size();
+    if(amountOfLetters + lettersToAdd > 7){
+        cout<<"ERROR: Cant add that amount of letters"<<endl;
+        return;
+    }
+    for(int i = 0; i < lettersToAdd; i++){
+        int playerDeckIndex = 0;
+        while(playerDeck[playerDeckIndex] != "") playerDeckIndex++;
+        playerDeck[playerDeckIndex] = tempVector[i];
+    }amountOfLetters += lettersToAdd;
 }
 
 /* -------------------------------------------------------------------------
@@ -43,7 +49,7 @@ void Player::addLetterTile(LetterTile *letterTile) {
 void Player::addLetterToWord(int position, int row, int col) {
 
     if (position < 7) {
-        string currentTile = playLetterTile(position)->getLetter();
+        string currentTile = playLetter(position);
 
         // En el caso de que al jugador quiera utilizar el comodin debe asignarle la letra que desea!
         if(currentTile == "blank"){
@@ -69,11 +75,11 @@ void Player::addLetterToWord(int position, int row, int col) {
 }
 
 // Selecciona una letra para jugarla
-LetterTile* Player::playLetterTile(int position){
-    LetterTile *letterToPlay = playerDeck[position];
-    playerDeck[position] = nullptr;
-    amountOfLetterTiles--;
-    return letterToPlay;
+string Player::playLetter(int position){
+    string letter = playerDeck[position];
+    playerDeck[position] = "";
+    amountOfLetters--;
+    return letter;
 }
 
 // Setea el array de posiciones en 100 [Termino por defuault]
@@ -107,7 +113,7 @@ bool Player::sendMyWord() {
  * -------------------------------------------------------------------------*/
 
 // Retorna el Deck del jugador
-LetterTile** Player::getPlayerDeck(){
+vector<string> Player::getPlayerDeck(){
     return playerDeck;
 }
 
@@ -128,26 +134,25 @@ void Player::addScore(int scoreToAdd) {
 
 // Obtiene la cantidad de fichas del jugador
 int Player::getAmountOfLetterTiles(){
-    return amountOfLetterTiles;
+    return amountOfLetters;
 }
 
 // Muestra el Deck en consola
 void Player::printPlayerDeck() {
-    LetterTile *tile;
+    string tile;
     for(int index = 0; index < totalLetterTiles; index++){
         tile = playerDeck[index];
         // When we get LetterTiles for play these then points to nullptr
-        if(tile){
-        cout << "[" << tile->getLetter() << ", " << tile->getAmountRemaining() << ", " << tile->getScore() << "] -> ";
-        } else cout<<"NULL -> ";
-    }cout << "NULL"<<endl;
+        if(tile != ""){
+        cout << "[" << tile << "] -> ";
+        } else cout<<"[EMPTY] -> ";
+    }cout<<" END" << endl;
 }
 
 void Player::printPositions() {
     for(int index = 0; index<4;index++){
         cout<<"[ "<<positions[index]<<"]-> ";
-    }
-    cout<<"NULL"<<endl;
+    }cout<<"NULL"<<endl;
 }
 
 #endif PLAYER_CPP

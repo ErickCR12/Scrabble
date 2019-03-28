@@ -25,9 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
            mainwindow.cpp\
-           Player.cpp
+           Player.cpp\
+           PlayerMessage.cpp \
+    PlayerTest.cpp
 
 HEADERS  += mainwindow.h\
-            Player.hpp
+            Player.hpp\
+            PlayerMessage.hpp \
+    PlayerTest.hpp
 
 FORMS    += mainwindow.ui
+
+LIBS += -L"$$_PRO_FILE_PWD_/lib/rapidjson"
