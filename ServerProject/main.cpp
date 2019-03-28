@@ -5,7 +5,6 @@
 
 // Game Logic
 #include "Tests/GameLogicTest/DictionaryTest.hpp"
-#include "Tests/GameLogicTest/PlayerTest.hpp"
 #include "gameLogic/Game.hpp"
 
 // Sockets

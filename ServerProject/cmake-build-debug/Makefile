@@ -275,33 +275,6 @@ JSON/ServerMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 .PHONY : JSON/ServerMessage.cpp.s
 
-SocketComunication/socketClient.o: SocketComunication/socketClient.cpp.o
-
-.PHONY : SocketComunication/socketClient.o
-
-# target to build an object file
-SocketComunication/socketClient.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.o
-.PHONY : SocketComunication/socketClient.cpp.o
-
-SocketComunication/socketClient.i: SocketComunication/socketClient.cpp.i
-
-.PHONY : SocketComunication/socketClient.i
-
-# target to preprocess a source file
-SocketComunication/socketClient.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.i
-.PHONY : SocketComunication/socketClient.cpp.i
-
-SocketComunication/socketClient.s: SocketComunication/socketClient.cpp.s
-
-.PHONY : SocketComunication/socketClient.s
-
-# target to generate assembly for a file
-SocketComunication/socketClient.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.s
-.PHONY : SocketComunication/socketClient.cpp.s
-
 SocketComunication/socketServer.o: SocketComunication/socketServer.cpp.o
 
 .PHONY : SocketComunication/socketServer.o
@@ -409,33 +382,6 @@ Tests/JsonTest/JSON_Test.s: Tests/JsonTest/JSON_Test.cpp.s
 Tests/JsonTest/JSON_Test.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.s
 .PHONY : Tests/JsonTest/JSON_Test.cpp.s
-
-Tests/SocketsTest/socketTest1.o: Tests/SocketsTest/socketTest1.cpp.o
-
-.PHONY : Tests/SocketsTest/socketTest1.o
-
-# target to build an object file
-Tests/SocketsTest/socketTest1.cpp.o:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o
-.PHONY : Tests/SocketsTest/socketTest1.cpp.o
-
-Tests/SocketsTest/socketTest1.i: Tests/SocketsTest/socketTest1.cpp.i
-
-.PHONY : Tests/SocketsTest/socketTest1.i
-
-# target to preprocess a source file
-Tests/SocketsTest/socketTest1.cpp.i:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.i
-.PHONY : Tests/SocketsTest/socketTest1.cpp.i
-
-Tests/SocketsTest/socketTest1.s: Tests/SocketsTest/socketTest1.cpp.s
-
-.PHONY : Tests/SocketsTest/socketTest1.s
-
-# target to generate assembly for a file
-Tests/SocketsTest/socketTest1.cpp.s:
-	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.s
-.PHONY : Tests/SocketsTest/socketTest1.cpp.s
 
 gameLogic/Board.o: gameLogic/Board.cpp.o
 
@@ -649,9 +595,6 @@ help:
 	@echo "... JSON/ServerMessage.o"
 	@echo "... JSON/ServerMessage.i"
 	@echo "... JSON/ServerMessage.s"
-	@echo "... SocketComunication/socketClient.o"
-	@echo "... SocketComunication/socketClient.i"
-	@echo "... SocketComunication/socketClient.s"
 	@echo "... SocketComunication/socketServer.o"
 	@echo "... SocketComunication/socketServer.i"
 	@echo "... SocketComunication/socketServer.s"
@@ -664,9 +607,6 @@ help:
 	@echo "... Tests/JsonTest/JSON_Test.o"
 	@echo "... Tests/JsonTest/JSON_Test.i"
 	@echo "... Tests/JsonTest/JSON_Test.s"
-	@echo "... Tests/SocketsTest/socketTest1.o"
-	@echo "... Tests/SocketsTest/socketTest1.i"
-	@echo "... Tests/SocketsTest/socketTest1.s"
 	@echo "... gameLogic/Board.o"
 	@echo "... gameLogic/Board.i"
 	@echo "... gameLogic/Board.s"
