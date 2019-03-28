@@ -148,18 +148,18 @@ CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.cpp" -o CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.s
 
-CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o: CMakeFiles/Scrabble.dir/flags.make
-CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o: ../SocketComunication/serverSocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/serverSocket.cpp"
+CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o: CMakeFiles/Scrabble.dir/flags.make
+CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o: ../SocketComunication/server_Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp"
 
-CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/serverSocket.cpp" > CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.i
+CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" > CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.i
 
-CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/serverSocket.cpp" -o CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.s
+CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" -o CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.s
 
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: CMakeFiles/Scrabble.dir/flags.make
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../Tests/JsonTest/JSON_Test.cpp
@@ -235,7 +235,7 @@ Scrabble_OBJECTS = \
 "CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o" \
 "CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o" \
 "CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o" \
-"CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o" \
+"CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" \
@@ -252,7 +252,7 @@ Scrabble: CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o
-Scrabble: CMakeFiles/Scrabble.dir/SocketComunication/serverSocket.cpp.o
+Scrabble: CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o

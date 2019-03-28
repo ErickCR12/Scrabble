@@ -22,7 +22,7 @@
 #include "GameDeck.hpp"
 #include "Dictionary.hpp"
 #include "Board.hpp"
-#include "../SocketComunication/serverSocket.hpp"
+//#include "../SocketComunication/serverSocket.hpp"
 #include "../JSON/PlayerMessage.hpp"
 
 using namespace std;
@@ -39,7 +39,7 @@ private:
     string gameCode; //!< Game code to connect whit current game
     int* playersID; //!< Array whit player ID
     int currentTurn; //!< Current player turn
-    serverSocket gameSocket; //!< Socket of the game
+    //serverSocket gameSocket; //!< Socket of the game
 
     GameDeck* gameDeck; //!< game LetterTile deck
     Board* gameBoard; //!< game Board
@@ -67,7 +67,7 @@ public:
     //! @brief Constructor
     //! @param players Amount of players of the game
     //! @param gameSocket A pointer
-    Game(int players, serverSocket *gameSocket);
+    Game(int players);
 
     //! @brief Change the turn by PlayerID
     void nextTurn();

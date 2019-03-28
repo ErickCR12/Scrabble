@@ -1,6 +1,7 @@
 <map id="Game" name="Game">
 <area shape="rect" id="node2" href="$classBoard.html" title="Board" alt="" coords="5,95,61,121"/>
-<area shape="rect" id="node3" href="$classLetterTile.html" title="This class represents each letter tile used in Scrabble. " alt="" coords="46,5,122,32"/>
-<area shape="rect" id="node4" href="$classGameDeck.html" title="Represents the deck of the game with the full amount of LetterTiles. " alt="" coords="91,95,179,121"/>
-<area shape="rect" id="node5" href="$classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file..." alt="" coords="203,95,285,121"/>
+<area shape="rect" id="node3" href="$classLetterTile.html" title="This class represents each letter tile used in Scrabble. " alt="" coords="43,5,119,32"/>
+<area shape="rect" id="node5" href="$classGameDeck.html" title="Represents the deck of the game with the full amount of LetterTiles. " alt="" coords="87,95,175,121"/>
+<area shape="rect" id="node4" href="$classserverSocket.html" title="serverSocket" alt="" coords="199,95,297,121"/>
+<area shape="rect" id="node6" href="$classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file..." alt="" coords="322,95,403,121"/>
 </map>

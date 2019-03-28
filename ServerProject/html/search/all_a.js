@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_20delete',['operator delete',['../classNode.html#a27edfac55ecfb7c439323bf04b4310a2',1,'Node']]],
-  ['operator_20new',['operator new',['../classNode.html#ae91e51181758ef32e1b41da9e6e87abe',1,'Node']]]
+  ['nextnode',['nextNode',['../classNode.html#ae64451cd6c118b6fe8369cb36bc9af06',1,'Node']]],
+  ['nextturn',['nextTurn',['../classGame.html#a801658c7cef474bc1d9a830f4a79034c',1,'Game']]],
+  ['node',['Node',['../classNode.html',1,'Node'],['../classNode.html#a8013619a49f5cfe6244f4afd18198561',1,'Node::Node()']]]
 ];

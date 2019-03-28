@@ -8,7 +8,8 @@
 #include "gameLogic/Game.hpp"
 
 // Sockets
-#include "SocketComunication/serverSocket.hpp"
+//#include "SocketComunication/serverSocket.hpp"
+#include "SocketComunication/server_Socket.hpp"
 
 // JSON
 #include "Tests/JsonTest/JSON_Test.hpp"
@@ -18,13 +19,15 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-serverSocket *server;
+server_Socket *server;
 
 void * serverRun(void *)
 {
     try{
         server->initSocket();
-        server->runServer(4);
+        server->addFirstClient();
+        while(server->getClientsAmt()<4) server->addClients();
+        server->runServer();
     }catch(string ex)
     {
         cout << ex;
@@ -33,48 +36,29 @@ void * serverRun(void *)
     pthread_exit(NULL);
 }
 
-void* writer(void *){
-    while (1) {
-        string mensaje;
-        cin >> mensaje;
-        if(mensaje == "EXIT") break;
-        server->sendMessage(mensaje.c_str());
-    }
-    delete server;
-}
-
-void GameMock(){
-
-     while(true){
-
-     }
-
-}
 
 int main(int argc,char* argv[]) {
 
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
 
-    server = new serverSocket;
+    server = new server_Socket();
     pthread_t hiloServer;
     pthread_create(&hiloServer,0,serverRun,NULL);
     pthread_detach(hiloServer);
 
-    pthread_t hiloServer2;
-    pthread_create(&hiloServer2,0,writer,NULL);
-    pthread_detach(hiloServer2);
-
-
-    while(!server->getClients()<4) {
-        GameMock();
+    while (1) {
+        string mensaje;
+        cin >> mensaje;
+        if(mensaje == "EXIT") break;
+        server->sendMessagetoAll(mensaje.c_str());
     }
+    delete server;
 
-
-    //return 0;
+    return 0;
 }
 
-void serverSocket::messageHandler(string message) {
+void server_Socket::msgHandler(const char* message) {
     cout<<":: "<<message<<endl;
 }
 

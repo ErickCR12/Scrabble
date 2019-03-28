@@ -24,7 +24,9 @@ add_executable(
         gameLogic/GameDeck.cpp  gameLogic/GameDeck.hpp
         gameLogic/Server.cpp gameLogic/Server.hpp
 
-        SocketComunication/serverSocket.hpp SocketComunication/serverSocket.cpp
+        #SocketComunication/serverSocket.hpp
+        #SocketComunication/serverSocket.cpp
+        SocketComunication/server_Socket.hpp SocketComunication/server_Socket.cpp
 
         Tests/JsonTest/JSON_Test.cpp Tests/JsonTest/JSON_Test.hpp
         Tests/GameLogicTest/DictionaryTest.cpp Tests/GameLogicTest/DictionaryTest.hpp
