@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['end_5f',['end_',['../structMemoryStream.html#a55fb302ba0492419757e3ba318c8c654',1,'MemoryStream']]]
+  ['deckarray',['deckArray',['../classGameDeck.html#a11f7930a7cdbbd4a814177cddf76d9ae',1,'GameDeck']]],
+  ['descriptor',['descriptor',['../classsocketServer.html#a0f7ffe89ce58263919e66b85e455dccd',1,'socketServer']]]
 ];

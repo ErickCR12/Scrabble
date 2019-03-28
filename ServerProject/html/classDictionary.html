@@ -61,6 +61,10 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classDictionary-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Dictionary Class Reference</div>  </div>
@@ -71,19 +75,48 @@ $(function() {
  <a href="classDictionary.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Dictionary_8hpp_source.html">Dictionary.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Dictionary:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDictionary__coll__graph.png" border="0" usemap="#Dictionary_coll__map" alt="Collaboration graph"/></div>
+<map name="Dictionary_coll__map" id="Dictionary_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aee8d612bc9d323c38faba045ba384b8b"><td class="memItemLeft" align="right" valign="top"><a id="aee8d612bc9d323c38faba045ba384b8b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aee8d612bc9d323c38faba045ba384b8b">Dictionary</a> ()</td></tr>
-<tr class="memdesc:aee8d612bc9d323c38faba045ba384b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file...">Dictionary</a> constructor. Initializes filePath attribute with correct attribute to dictionary.txt. <br /></td></tr>
-<tr class="separator:aee8d612bc9d323c38faba045ba384b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a062bf6ab741fea213e613f61473b59e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a062bf6ab741fea213e613f61473b59e0">searchInDictionary</a> (std::string word)</td></tr>
 <tr class="memdesc:a062bf6ab741fea213e613f61473b59e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a word to search in the dictionary text file.  <a href="#a062bf6ab741fea213e613f61473b59e0">More...</a><br /></td></tr>
 <tr class="separator:a062bf6ab741fea213e613f61473b59e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada7ea164a2f977656c717aa0fc035bed"><td class="memItemLeft" align="right" valign="top"><a id="ada7ea164a2f977656c717aa0fc035bed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>writeInDictionary</b> (std::string word)</td></tr>
 <tr class="separator:ada7ea164a2f977656c717aa0fc035bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6f3fc668c874b7dfdd7cba2f0cf74bd5"><td class="memItemLeft" align="right" valign="top"><a id="a6f3fc668c874b7dfdd7cba2f0cf74bd5"></a>
+static <a class="el" href="classDictionary.html">Dictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getDictionaryInstance</b> ()</td></tr>
+<tr class="separator:a6f3fc668c874b7dfdd7cba2f0cf74bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aee8d612bc9d323c38faba045ba384b8b"><td class="memItemLeft" align="right" valign="top"><a id="aee8d612bc9d323c38faba045ba384b8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aee8d612bc9d323c38faba045ba384b8b">Dictionary</a> ()</td></tr>
+<tr class="memdesc:aee8d612bc9d323c38faba045ba384b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file...">Dictionary</a> constructor. Initializes filePath attribute with correct attribute to dictionary.txt. <br /></td></tr>
+<tr class="separator:aee8d612bc9d323c38faba045ba384b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5ed5bf1912357b36406a14c271c3b95b"><td class="memItemLeft" align="right" valign="top"><a id="a5ed5bf1912357b36406a14c271c3b95b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a5ed5bf1912357b36406a14c271c3b95b">filePath</a></td></tr>
+<tr class="memdesc:a5ed5bf1912357b36406a14c271c3b95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to file that contains dictionary in spanish. <br /></td></tr>
+<tr class="separator:a5ed5bf1912357b36406a14c271c3b95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a82ce2e476f78f85ba675219253b841f0"><td class="memItemLeft" align="right" valign="top"><a id="a82ce2e476f78f85ba675219253b841f0"></a>
+static <a class="el" href="classDictionary.html">Dictionary</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dictionarySingleton</b> = nullptr</td></tr>
+<tr class="separator:a82ce2e476f78f85ba675219253b841f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="classDictionary.html" title="Class Dictionary responsible of accessing dictionary.txt and searching for words in this text file...">Dictionary</a> responsible of accessing dictionary.txt and searching for words in this text file. </p>

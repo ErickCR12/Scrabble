@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parseerrorcode_5f',['parseErrorCode_',['../classGenericPointer.html#a8898ec432dc40b28f79db78dc4ca83e0',1,'GenericPointer']]],
-  ['parseerroroffset_5f',['parseErrorOffset_',['../classGenericPointer.html#ad103ed62e206319f1f0f4aa271866e37',1,'GenericPointer']]]
+  ['score',['score',['../classLetterTile.html#a8e45987ecac940f650f52d84558b03f5',1,'LetterTile']]],
+  ['socketinformation',['socketInformation',['../classsocketServer.html#aee42fd7f73f8cbbaad0304c11d45a926',1,'socketServer']]]
 ];

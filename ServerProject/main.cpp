@@ -8,7 +8,7 @@
 #include "gameLogic/Game.hpp"
 
 // Sockets
-#include "SocketComunication/socketServer.hpp"
+#include "SocketComunication/serverSocket.hpp"
 
 // JSON
 #include "Tests/JsonTest/JSON_Test.hpp"
@@ -18,7 +18,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-socketServer *server;
+serverSocket *server;
 
 void * serverRun(void *)
 {
@@ -34,7 +34,10 @@ void * serverRun(void *)
 
 int main(int argc,char* argv[]) {
 
-    server = new socketServer;
+    testing::InitGoogleTest(&argc,argv);
+    RUN_ALL_TESTS();
+
+    server = new serverSocket;
     pthread_t hiloServer;
     pthread_create(&hiloServer,0,serverRun,NULL);
     pthread_detach(hiloServer);
@@ -47,26 +50,24 @@ int main(int argc,char* argv[]) {
 
     delete server;
 
-//    testing::InitGoogleTest(&argc,argv);
-//    RUN_ALL_TESTS();
-//
-//    Game* g1 = new Game(2);
-//    cout<<"Code : "<<g1->getGameCode()<<endl;
-//
-//    PlayerMessage* sms = new PlayerMessage();
-//    sms->setMessage("camaron",0,0,true);
-//    string json = sms->serialize();
-//    g1->recieveMessage(json);
-//    sms->setMessage("omedor",0,1,false);
-//    json = sms->serialize();
-//    g1->recieveMessage(json);
-//
-//    DictionaryTest::test1();
-//
-//    JSON_Test::test1();
+
+
 
     return 0;
 }
+
+     /*PlayerTest::test2();
+
+    Game* g1 = new Game(2);
+    cout<<"Code : "<<g1->getGameCode()<<endl;
+
+    PlayerMessage* sms = new PlayerMessage();
+    sms->setMessage("camaron",0,0,true);
+    string json = sms->serialize();
+    g1->recieveMessage(json);
+    sms->setMessage("omedor",0,1,false);
+    json = sms->serialize();
+    g1->recieveMessage(json);*/
 
 
 

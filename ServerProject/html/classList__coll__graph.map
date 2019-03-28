@@ -1,0 +1,4 @@
+<map id="List" name="List">
+<area shape="rect" id="node2" href="$classNode.html" title="Structure that stores a LetterTile type attribute and a pointer to the next node. ..." alt="" coords="17,95,70,121"/>
+<area shape="rect" id="node3" href="$classLetterTile.html" title="This class represents each letter tile used in Scrabble. " alt="" coords="5,5,81,32"/>
+</map>

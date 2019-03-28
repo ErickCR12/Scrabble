@@ -61,13 +61,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classPlayerMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlayerMessage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to <a class="el" href="classPlayer.html">Player</a> Massage.  
+<p>Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to Player Massage.  
  <a href="classPlayerMessage.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="PlayerMessage_8hpp_source.html">PlayerMessage.hpp</a>&gt;</code></p>
@@ -102,9 +104,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getIsVertical</b> () 
 <tr class="memitem:af50c5bdc9396fa0bd23448acffa27991"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#af50c5bdc9396fa0bd23448acffa27991">toString</a> ()</td></tr>
 <tr class="memdesc:af50c5bdc9396fa0bd23448acffa27991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a way to visualize the message in the console.  <a href="#af50c5bdc9396fa0bd23448acffa27991">More...</a><br /></td></tr>
 <tr class="separator:af50c5bdc9396fa0bd23448acffa27991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a640d325808d8ca76b73a16639c6ababd"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:a640d325808d8ca76b73a16639c6ababd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#a640d325808d8ca76b73a16639c6ababd">Serializer</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:a640d325808d8ca76b73a16639c6ababd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a640d325808d8ca76b73a16639c6ababd">More...</a><br /></td></tr>
+<tr class="separator:a640d325808d8ca76b73a16639c6ababd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afd357c37b5bda0acd9788eba6fc732df"><td class="memItemLeft" align="right" valign="top"><a id="afd357c37b5bda0acd9788eba6fc732df"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>word</b></td></tr>
+<tr class="separator:afd357c37b5bda0acd9788eba6fc732df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dae91792ae7c6d4131c46de048c1c3f"><td class="memItemLeft" align="right" valign="top"><a id="a2dae91792ae7c6d4131c46de048c1c3f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>firstRow</b></td></tr>
+<tr class="separator:a2dae91792ae7c6d4131c46de048c1c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc79f7aa37a9d2a1f44de4ea007597a6"><td class="memItemLeft" align="right" valign="top"><a id="afc79f7aa37a9d2a1f44de4ea007597a6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>firstCol</b></td></tr>
+<tr class="separator:afc79f7aa37a9d2a1f44de4ea007597a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625b0815b8c421b9c8e5b997e696e5c5"><td class="memItemLeft" align="right" valign="top"><a id="a625b0815b8c421b9c8e5b997e696e5c5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVertical</b></td></tr>
+<tr class="separator:a625b0815b8c421b9c8e5b997e696e5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to <a class="el" href="classPlayer.html">Player</a> Massage. </p>
+<div class="textblock"><p>Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to Player Massage. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2ba4a056572a1c785538e4e948687f3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ba4a056572a1c785538e4e948687f3f">&#9670;&nbsp;</a></span>deserealize()</h2>
@@ -149,6 +173,48 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getIsVertical</b> () 
 
 <p>Serializer Interface. </p>
 <dl class="section return"><dt>Returns</dt><dd>[out] :JSON of the object </dd></dl>
+
+</div>
+</div>
+<a id="a640d325808d8ca76b73a16639c6ababd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640d325808d8ca76b73a16639c6ababd">&#9670;&nbsp;</a></span>Serializer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMessage::Serializer </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

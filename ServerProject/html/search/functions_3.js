@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['game',['Game',['../classGame.html#af2aadd61e100d3bf0116e61d26dabca4',1,'Game']]],
+  ['game',['Game',['../classGame.html#ae900ee3fb5ba0d83e84dd0a2029db704',1,'Game']]],
   ['gamedeck',['GameDeck',['../classGameDeck.html#a401ea7979fe321026d011e2ffa3e3a86',1,'GameDeck']]],
   ['getamountremaining',['getAmountRemaining',['../classLetterTile.html#af2b742215c25db6a56a6b8d9df557ff3',1,'LetterTile']]],
   ['getcollector',['getCollector',['../classCollector.html#aa48cae445c3eaa541df38d2792729fac',1,'Collector']]],
+  ['getgamecode',['getGameCode',['../classGame.html#a695048ed0ea77d791797d7620809429a',1,'Game']]],
   ['gethead',['getHead',['../classList.html#a756d685e748112aed22cb754f7f8ae04',1,'List']]],
   ['getlength',['getLength',['../classList.html#a8d67f872fc17eb2f7e6d00dce343ce5a',1,'List']]],
   ['getletter',['getLetter',['../classLetterTile.html#a9c77014bbbaa2ec86576794de155c801',1,'LetterTile']]],

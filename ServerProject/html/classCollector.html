@@ -62,6 +62,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classCollector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Collector Class Reference</div>  </div>
@@ -72,6 +75,15 @@ $(function() {
  <a href="classCollector.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Collector_8hpp_source.html">Collector.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Collector:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCollector__coll__graph.png" border="0" usemap="#Collector_coll__map" alt="Collaboration graph"/></div>
+<map name="Collector_coll__map" id="Collector_coll__map">
+<area shape="rect" id="node2" href="classNode.html" title="Structure that stores a LetterTile type attribute and a pointer to the next node. ..." alt="" coords="17,95,70,121"/>
+<area shape="rect" id="node3" href="classLetterTile.html" title="This class represents each letter tile used in Scrabble. " alt="" coords="5,5,81,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -91,6 +103,27 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa48cae445c3eaa541df38d2792729fac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCollector.html">Collector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCollector.html#aa48cae445c3eaa541df38d2792729fac">getCollector</a> ()</td></tr>
 <tr class="memdesc:aa48cae445c3eaa541df38d2792729fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is responsible for creating a single instance of <a class="el" href="classCollector.html" title="Class responsible for recycling the memory released in List. ">Collector</a>.  <a href="#aa48cae445c3eaa541df38d2792729fac">More...</a><br /></td></tr>
 <tr class="separator:aa48cae445c3eaa541df38d2792729fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad60b06491094b8fddf25502cf162cdf6"><td class="memItemLeft" align="right" valign="top"><a id="ad60b06491094b8fddf25502cf162cdf6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCollector.html#ad60b06491094b8fddf25502cf162cdf6">Collector</a> ()</td></tr>
+<tr class="memdesc:ad60b06491094b8fddf25502cf162cdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor, following the Singleton Pattern. <br /></td></tr>
+<tr class="separator:ad60b06491094b8fddf25502cf162cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abbf1c76d2c51f8d45458359da0fdbf4f"><td class="memItemLeft" align="right" valign="top"><a id="abbf1c76d2c51f8d45458359da0fdbf4f"></a>
+<a class="el" href="classNode.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCollector.html#abbf1c76d2c51f8d45458359da0fdbf4f">firstReference</a></td></tr>
+<tr class="memdesc:abbf1c76d2c51f8d45458359da0fdbf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">First reference of pointer to be reused. <br /></td></tr>
+<tr class="separator:abbf1c76d2c51f8d45458359da0fdbf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af22193712ba45a4a86b71588178522db"><td class="memItemLeft" align="right" valign="top"><a id="af22193712ba45a4a86b71588178522db"></a>
+static <a class="el" href="classCollector.html">Collector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCollector.html#af22193712ba45a4a86b71588178522db">collector</a> = nullptr</td></tr>
+<tr class="memdesc:af22193712ba45a4a86b71588178522db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self referencing attribute (Singleton pattern). <br /></td></tr>
+<tr class="separator:af22193712ba45a4a86b71588178522db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class responsible for recycling the memory released in <a class="el" href="classList.html" title="Implementation of a simple linked list formed by Node objects. ">List</a>. </p>

@@ -32,9 +32,6 @@ CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: ../lib/rapidjson/writer.h
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.cpp
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.hpp
 
-CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.o: ../SocketComunication/socketClient.cpp
-CMakeFiles/Scrabble.dir/SocketComunication/socketClient.cpp.o: ../SocketComunication/socketClient.hpp
-
 CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o: ../SocketComunication/socketServer.cpp
 CMakeFiles/Scrabble.dir/SocketComunication/socketServer.cpp.o: ../SocketComunication/socketServer.hpp
 
@@ -114,9 +111,6 @@ CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/reader.
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/stream.h
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/stringbuffer.h
 CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o: ../lib/rapidjson/writer.h
-
-CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o: ../Tests/SocketsTest/socketTest1.cpp
-CMakeFiles/Scrabble.dir/Tests/SocketsTest/socketTest1.cpp.o: ../Tests/SocketsTest/socketTest1.hpp
 
 CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h

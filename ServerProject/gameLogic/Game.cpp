@@ -1,5 +1,5 @@
 //
-// Created by Esteban Alvarado on 25/03/19.
+// Created by Esteban Alvarado y Erick Barrantes on 25/03/19.
 //
 
 #include "Game.hpp"

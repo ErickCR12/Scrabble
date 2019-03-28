@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hashcode',['hashcode',['../structGenericValue_1_1String.html#a73631052aeb72fbabb6eaab0175f858e',1,'GenericValue::String']]],
-  ['head_5f',['head_',['../structGenericStringStream.html#a3c86ef1e1f0655028cb8a3afce11ee4f',1,'GenericStringStream']]]
+  ['filepath',['filePath',['../classDictionary.html#a5ed5bf1912357b36406a14c271c3b95b',1,'Dictionary']]],
+  ['firstreference',['firstReference',['../classCollector.html#abbf1c76d2c51f8d45458359da0fdbf4f',1,'Collector']]]
 ];
