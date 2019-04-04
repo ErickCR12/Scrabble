@@ -18,7 +18,7 @@ int main(int argc,char* argv[]) {
     RUN_ALL_TESTS();
 
     // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
-    //server_release();
+    // server_release();
 
     return 0;
 }
