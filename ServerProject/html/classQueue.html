@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classQueue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Queue&lt; E &gt; Class Template Reference</div>  </div>
@@ -69,37 +70,107 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acfdd5f9f7e936ca30dcf877370ef9510"><td class="memItemLeft" align="right" valign="top"><a id="acfdd5f9f7e936ca30dcf877370ef9510"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
-<tr class="separator:acfdd5f9f7e936ca30dcf877370ef9510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc4d78b5f66041011c5590bf703847b0"><td class="memItemLeft" align="right" valign="top"><a id="abc4d78b5f66041011c5590bf703847b0"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> () const</td></tr>
-<tr class="separator:abc4d78b5f66041011c5590bf703847b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71aa0154ef75bb87a53b6af1829fcd5e"><td class="memItemLeft" align="right" valign="top"><a id="a71aa0154ef75bb87a53b6af1829fcd5e"></a>
-<a class="el" href="classQueueNode.html">QueueNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>Head</b> ()</td></tr>
-<tr class="separator:a71aa0154ef75bb87a53b6af1829fcd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c906075e0ad2d1f0634990aa106395e"><td class="memItemLeft" align="right" valign="top"><a id="a6c906075e0ad2d1f0634990aa106395e"></a>
-const <a class="el" href="classQueueNode.html">QueueNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>Head</b> () const</td></tr>
-<tr class="separator:a6c906075e0ad2d1f0634990aa106395e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a430aca3d3b9f5fd588b215028d134b74"><td class="memItemLeft" align="right" valign="top"><a id="a430aca3d3b9f5fd588b215028d134b74"></a>
-<a class="el" href="classQueueNode.html">QueueNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>Last</b> ()</td></tr>
-<tr class="separator:a430aca3d3b9f5fd588b215028d134b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8c2c64700dfe1df8bf266572cf101a"><td class="memItemLeft" align="right" valign="top"><a id="a7c8c2c64700dfe1df8bf266572cf101a"></a>
-const <a class="el" href="classQueueNode.html">QueueNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>Last</b> () const</td></tr>
-<tr class="separator:a7c8c2c64700dfe1df8bf266572cf101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa2e7175457307bca74f5562cbdaaa9"><td class="memItemLeft" align="right" valign="top"><a id="abaa2e7175457307bca74f5562cbdaaa9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Enqueue</b> (const E &amp;element)</td></tr>
-<tr class="separator:abaa2e7175457307bca74f5562cbdaaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434d465001c3078e999f7a89a8af84c0"><td class="memItemLeft" align="right" valign="top"><a id="a434d465001c3078e999f7a89a8af84c0"></a>
-E *&#160;</td><td class="memItemRight" valign="bottom"><b>Dequeue</b> ()</td></tr>
-<tr class="separator:a434d465001c3078e999f7a89a8af84c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904a696292fc593adc6fd21fb229d760"><td class="memTemplParams" colspan="2"><a id="a904a696292fc593adc6fd21fb229d760"></a>
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a904a696292fc593adc6fd21fb229d760"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classQueue.html">Queue</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Map</b> (F function) const</td></tr>
-<tr class="separator:a904a696292fc593adc6fd21fb229d760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798d3d06c89cae6ef3134555d1163713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a798d3d06c89cae6ef3134555d1163713">Queue</a> (int <a class="el" href="classQueue.html#adbaf757a32051f63999c9ad946638818">size</a>=SIZE)</td></tr>
+<tr class="separator:a798d3d06c89cae6ef3134555d1163713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d22d091c1f553f372a2ffc20ea47c79"><td class="memItemLeft" align="right" valign="top"><a id="a9d22d091c1f553f372a2ffc20ea47c79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a9d22d091c1f553f372a2ffc20ea47c79">dequeue</a> ()</td></tr>
+<tr class="memdesc:a9d22d091c1f553f372a2ffc20ea47c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to remove front element from the queue. <br /></td></tr>
+<tr class="separator:a9d22d091c1f553f372a2ffc20ea47c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad751a5ab9f313291a85455542b12a184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#ad751a5ab9f313291a85455542b12a184">enqueue</a> (E data)</td></tr>
+<tr class="separator:ad751a5ab9f313291a85455542b12a184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c77fa429e8bf402a0f74e3c4a621e76"><td class="memItemLeft" align="right" valign="top"><a id="a7c77fa429e8bf402a0f74e3c4a621e76"></a>
+E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a7c77fa429e8bf402a0f74e3c4a621e76">peek</a> ()</td></tr>
+<tr class="memdesc:a7c77fa429e8bf402a0f74e3c4a621e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to return the first element in the queue. <br /></td></tr>
+<tr class="separator:a7c77fa429e8bf402a0f74e3c4a621e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3657b509bd9865f5b6bcc8314088b796"><td class="memItemLeft" align="right" valign="top"><a id="a3657b509bd9865f5b6bcc8314088b796"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr class="separator:a3657b509bd9865f5b6bcc8314088b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea980b5773a6afbc3b2ed89bad8e7c9"><td class="memItemLeft" align="right" valign="top"><a id="a4ea980b5773a6afbc3b2ed89bad8e7c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> ()</td></tr>
+<tr class="separator:a4ea980b5773a6afbc3b2ed89bad8e7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e1ec547f617e1cd0be823df8a094c5"><td class="memItemLeft" align="right" valign="top"><a id="a49e1ec547f617e1cd0be823df8a094c5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFuel</b> ()</td></tr>
+<tr class="separator:a49e1ec547f617e1cd0be823df8a094c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0ddb3ed198fb22189ffe1940f655b417"><td class="memItemLeft" align="right" valign="top"><a id="a0ddb3ed198fb22189ffe1940f655b417"></a>
+E *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a0ddb3ed198fb22189ffe1940f655b417">elements</a></td></tr>
+<tr class="memdesc:a0ddb3ed198fb22189ffe1940f655b417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to store queue elements. <br /></td></tr>
+<tr class="separator:a0ddb3ed198fb22189ffe1940f655b417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417a9dbe9709ed4ea85e20d04af0e7c0"><td class="memItemLeft" align="right" valign="top"><a id="a417a9dbe9709ed4ea85e20d04af0e7c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a417a9dbe9709ed4ea85e20d04af0e7c0">max_cap</a></td></tr>
+<tr class="memdesc:a417a9dbe9709ed4ea85e20d04af0e7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximun capacity of the queue. <br /></td></tr>
+<tr class="separator:a417a9dbe9709ed4ea85e20d04af0e7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44399622f7ebbf6285658d85d6b01fe6"><td class="memItemLeft" align="right" valign="top"><a id="a44399622f7ebbf6285658d85d6b01fe6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a44399622f7ebbf6285658d85d6b01fe6">top</a></td></tr>
+<tr class="memdesc:a44399622f7ebbf6285658d85d6b01fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current top of <a class="el" href="classQueue.html">Queue</a>. <br /></td></tr>
+<tr class="separator:a44399622f7ebbf6285658d85d6b01fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e74ea13a786b3b8d9c9a48df4322e1d"><td class="memItemLeft" align="right" valign="top"><a id="a7e74ea13a786b3b8d9c9a48df4322e1d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#a7e74ea13a786b3b8d9c9a48df4322e1d">bottom</a></td></tr>
+<tr class="memdesc:a7e74ea13a786b3b8d9c9a48df4322e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current bottom of <a class="el" href="classQueue.html">Queue</a>. <br /></td></tr>
+<tr class="separator:a7e74ea13a786b3b8d9c9a48df4322e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbaf757a32051f63999c9ad946638818"><td class="memItemLeft" align="right" valign="top"><a id="adbaf757a32051f63999c9ad946638818"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueue.html#adbaf757a32051f63999c9ad946638818">size</a></td></tr>
+<tr class="memdesc:adbaf757a32051f63999c9ad946638818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the queue. <br /></td></tr>
+<tr class="separator:adbaf757a32051f63999c9ad946638818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a798d3d06c89cae6ef3134555d1163713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798d3d06c89cae6ef3134555d1163713">&#9670;&nbsp;</a></span>Queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQueue.html">Queue</a>&lt; E &gt;::<a class="el" href="classQueue.html">Queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>SIZE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>[in]: Maximun size of the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad751a5ab9f313291a85455542b12a184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad751a5ab9f313291a85455542b12a184">&#9670;&nbsp;</a></span>enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classQueue.html">Queue</a>&lt; E &gt;::enqueue </td>
+          <td>(</td>
+          <td class="paramtype">E&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Utility function to add an element to the queue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>[in]: Item to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>lib/googletest-master/googletest/samples/<a class="el" href="sample3-inl_8h_source.html">sample3-inl.h</a></li>
+<li>dataStructures/<a class="el" href="Queue_8hpp_source.html">Queue.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

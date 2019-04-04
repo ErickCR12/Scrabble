@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['httprpcserver',['HttpRpcServer',['../classupload_1_1HttpRpcServer.html',1,'upload']]]
+  ['server',['Server',['../classServer.html',1,'']]],
+  ['server_5fsocket',['server_Socket',['../classserver__Socket.html',1,'']]],
+  ['servermessage',['ServerMessage',['../classServerMessage.html',1,'']]]
 ];

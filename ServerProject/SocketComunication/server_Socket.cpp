@@ -24,7 +24,7 @@ bool server_Socket::createSocket() {
     socketInfo.sin_addr.s_addr = inet_addr("127.0.0.1"); // To know this Ip in console: hostname -I | awk '{print $1}'
 
     //Indicates the server socket port. The htons only allows "small" socket ports. htonl for "big" socket port.
-    socketInfo.sin_port = htons(9050);
+    socketInfo.sin_port = htons(this->port);
 
     //Optional: clean the structure before connecting to the clients. IDK why
     memset(&socketInfo.sin_zero,0, sizeof(socketInfo.sin_zero));
@@ -69,6 +69,7 @@ void server_Socket::runThreads() {
         thread clientThread(&server_Socket::clientHandler,this,(void*) &cThreads[i]);  // Crea el Thread
         clientThread.detach(); // Pone a correr el Thread de manera independiente (Daemon)
     }
+    cout<<"Todos los clientes listos!"<<endl;
 }
 
 void* server_Socket::clientHandler(void *object) {
@@ -88,7 +89,8 @@ void* server_Socket::clientHandler(void *object) {
 
 server_Socket::server_Socket() {}
 
-bool server_Socket::initSocket() {
+bool server_Socket::initSocket(int port) {
+    this->port = port;
     if(!createSocket()){
         cout<<"Error al crear el socket"<<endl;
         throw string("Error al crear el socket");
@@ -112,9 +114,13 @@ void server_Socket::addFirstClient() {
     if(data.descriptor < 0){
         cout<<"Error al aceptar al cliente"<<endl;
     }else {
+        string p_Num;
+        listenClient(&p_Num,data);
+        setMaxCap(p_Num);
         clients.push_back(data.descriptor);
         cThreads.push_back(data);
         sendSingleMessage("Game Created succesfully",data.descriptor);
+        cout<<"Cantidad maxima de clientes:"<<max_cap<<endl;
         cout<<"Clientes conectados: "<<clients.size()<<endl;
     }
 }
@@ -130,16 +136,16 @@ void server_Socket::addClients() {
     if(data.descriptor < 0){
         cout<<"Error al aceptar al cliente"<<endl;
     }else {
-        string code;
-        listenClient(&code,data);
-        if (code == "12345") {
+        string recv_code;
+        listenClient(&recv_code,data);
+        if (recv_code == code) {
             clients.push_back(data.descriptor);
             cThreads.push_back(data);
 
             sendSingleMessage("Join to Game succesfully",data.descriptor);
             cout<<"Clientes conectados: "<<clients.size()<<endl;
         } else {
-            sendSingleMessage("Wrong code!",data.descriptor);
+            sendSingleMessage("Wrong recv_code!",data.descriptor);
         }
     }
 }
@@ -156,5 +162,14 @@ void server_Socket::sendMessagetoAll(string msg) {
     }
 }
 
+
+void server_Socket::setMaxCap(string info) {
+    this->max_cap = stoi(info);
+}
+
+
+void server_Socket::msgHandler(const char *msg) {
+    cout<<">> "<<msg<<endl;
+}
 
 

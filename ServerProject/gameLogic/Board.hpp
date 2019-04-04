@@ -15,7 +15,7 @@ class Board {
 
 private:
 
-    LetterTile* (*gameBoard)[15]; //!< @brief
+    LetterTile *(*gameBoard)[15]; //!< @brief
     int (*scoreBoard)[15]; //! @brief
     string scorePath;
 
@@ -39,13 +39,13 @@ public:
     //! @brief
     //! @param row
     //! @param col
-    void addLetterTile(int row, int col, LetterTile* newTile);
+    void addLetterTile(int row, int col, LetterTile *newTile);
 
     //! @brief
     //! @param row
     //! @param col
     //! @return
-    LetterTile* getLetterTile(int row,int col);
+    LetterTile *getLetterTile(int row, int col);
 
     //! @brief
     //! @param row
