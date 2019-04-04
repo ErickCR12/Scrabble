@@ -126,6 +126,7 @@ void Game::play(){
 
         }
     }
+    sendMessagetoAll(">> EL JUEGO HA TERMINADO");
     closeSocket();
 }
 
@@ -137,10 +138,24 @@ bool Game::recieveMessage(string json) {
     pJSON->deserealize(json.c_str());
     pJSON = pJSON->deserealize(json.c_str());
 
-    // Enviar la palabra
-    return addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+    int id_OPTION = pJSON->getID();
+    if (id_OPTION == 1){
+        // Mensaje de confirmacion
+        cout<<">> ID:1 --> CONFIRMACION"<<endl;
 
+    }else if(id_OPTION == 2) {
+        // Mensaje de enviar la palabra
+        cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
+        addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
 
+    }else if(id_OPTION == 3) {
+        // Mensaje de pasar turno o jugar de nuevo
+        cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
+    } else{
+        cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
+        // Mensaje de pedir experto
+    }
+    return true;
 }
 
 bool Game::addWord(string word, int row, int col, bool isVertical) {

@@ -84,7 +84,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9db15e0ac0cac3dda212fefc7dfa6b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure message attributes.  <a href="#a9db15e0ac0cac3dda212fefc7dfa6b9c">More...</a><br /></td></tr>
 <tr class="separator:a9db15e0ac0cac3dda212fefc7dfa6b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca02139e85c33475abdaacb90865e2cc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#aca02139e85c33475abdaacb90865e2cc">serialize</a> ()</td></tr>
-<tr class="memdesc:aca02139e85c33475abdaacb90865e2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializer Interface.  <a href="#aca02139e85c33475abdaacb90865e2cc">More...</a><br /></td></tr>
+<tr class="memdesc:aca02139e85c33475abdaacb90865e2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializer2_ Interface.  <a href="#aca02139e85c33475abdaacb90865e2cc">More...</a><br /></td></tr>
 <tr class="separator:aca02139e85c33475abdaacb90865e2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba4a056572a1c785538e4e948687f3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayerMessage.html">PlayerMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#a2ba4a056572a1c785538e4e948687f3f">deserealize</a> (const char *json)</td></tr>
 <tr class="memdesc:a2ba4a056572a1c785538e4e948687f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse JSON into <a class="el" href="classPlayerMessage.html" title="Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to Player Massage. ">PlayerMessage</a>.  <a href="#a2ba4a056572a1c785538e4e948687f3f">More...</a><br /></td></tr>
@@ -108,7 +108,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getIsVertical</b> () 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a640d325808d8ca76b73a16639c6ababd"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
-<tr class="memitem:a640d325808d8ca76b73a16639c6ababd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#a640d325808d8ca76b73a16639c6ababd">Serializer</a> (Writer &amp;writer) const</td></tr>
+<tr class="memitem:a640d325808d8ca76b73a16639c6ababd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPlayerMessage.html#a640d325808d8ca76b73a16639c6ababd">Serializer2_</a> (Writer &amp;writer) const</td></tr>
 <tr class="memdesc:a640d325808d8ca76b73a16639c6ababd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a640d325808d8ca76b73a16639c6ababd">More...</a><br /></td></tr>
 <tr class="separator:a640d325808d8ca76b73a16639c6ababd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -171,13 +171,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVertical</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Serializer Interface. </p>
+<p>Serializer2_ Interface. </p>
 <dl class="section return"><dt>Returns</dt><dd>[out] :JSON of the object </dd></dl>
 
 </div>
 </div>
 <a id="a640d325808d8ca76b73a16639c6ababd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a640d325808d8ca76b73a16639c6ababd">&#9670;&nbsp;</a></span>Serializer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a640d325808d8ca76b73a16639c6ababd">&#9670;&nbsp;</a></span>Serializer2_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,7 @@ template&lt;typename Writer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PlayerMessage::Serializer </td>
+          <td class="memname">void PlayerMessage::Serializer2_ </td>
           <td>(</td>
           <td class="paramtype">Writer &amp;&#160;</td>
           <td class="paramname"><em>writer</em></td><td>)</td>

@@ -13,7 +13,7 @@ PlayerMessage::PlayerMessage(){
     word = "";
 };
 
-void PlayerMessage::setMessage(string word, int fRow,int fCol,bool is_vertical) {
+void PlayerMessage::setMessage2_(int id,string word, int fRow,int fCol,bool is_vertical) {
     this-> word = word;
     this-> firstRow = fRow;
     this-> firstCol = fCol;
@@ -25,9 +25,14 @@ void PlayerMessage::setMessage(string word, int fRow,int fCol,bool is_vertical) 
  * -------------------------------------------*/
 
 template <typename Writer>
-void PlayerMessage::Serializer(Writer &writer) const {
+void PlayerMessage::Serializer1_(Writer &writer) const{}
+
+template <typename Writer>
+void PlayerMessage::Serializer2_(Writer &writer) const {
 
     writer.StartObject();
+    writer.String("id");
+    writer.Int(id);
     writer.String("word");
     writer.String(word.c_str());
     writer.String("firstRow");
@@ -43,7 +48,18 @@ void PlayerMessage::Serializer(Writer &writer) const {
 string PlayerMessage::serialize() {
     StringBuffer sB;
     Writer<StringBuffer> writer(sB);
-    Serializer(writer);
+    switch (this->id){
+        case 1:
+            Serializer1_(writer);
+            break;
+        case 2:
+            Serializer2_(writer);
+            break;
+        default:
+            cout<<">> NO HAY NINGUNA COINCIDENCIA"<<endl;
+            break;
+    }
+
     return sB.GetString();
 }
 
@@ -56,12 +72,13 @@ string PlayerMessage::serialize() {
         Document doc;
         doc.Parse(json);
 
+        int id = doc["id"].GetInt();
         string pWord = doc["word"].GetString();
         int pFirstRow = doc["firstRow"].GetInt();
         int pFirstCol = doc["firstCol"].GetInt();
         bool pVertical = doc["is_Vertical"].GetBool();
 
-        parsedPlayer->setMessage(pWord,pFirstRow,pFirstCol,pVertical);
+        parsedPlayer->setMessage2_(id,pWord,pFirstRow,pFirstCol,pVertical);
         return parsedPlayer;
     }
 

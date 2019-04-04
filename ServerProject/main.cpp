@@ -10,10 +10,20 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+int server_release();
+
 int main(int argc,char* argv[]) {
 
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
+
+    // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
+    // server_release();
+
+    return 0;
+}
+
+int server_release(){
 
     // Se crea un servidor
     Server* server1_ = new Server();
@@ -31,7 +41,6 @@ int main(int argc,char* argv[]) {
 
     return 0;
 }
-
 
 /*------------------------------------------------
  *                  END OF CODE ZONE

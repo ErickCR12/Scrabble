@@ -16,6 +16,7 @@ using namespace std;
 class PlayerMessage {
 
 private:
+    int id; // Indica el tipo de mensaje que se va a serializar
     string word;
     int firstRow;
     int firstCol;
@@ -25,7 +26,13 @@ private:
     //! \tparam Writer
     //! \param writer
     template<typename Writer>
-    void Serializer(Writer& writer) const;
+    void Serializer1_(Writer &writer) const;
+
+    //! @brief Method responsible for serializing the object to JSON
+    //! \tparam Writer
+    //! \param writer
+    template<typename Writer>
+    void Serializer2_(Writer &writer) const;
 
 public:
 
@@ -40,7 +47,8 @@ public:
     //! @param [in]word : Player word
     //! @param [in]fRow : Row of the first LetterTile
     //! @param [in]fCol : Column of the first LetterTile
-    void setMessage(string word,int fRow,int fCol,bool vertical);
+    void setMessage1_(int id,string word,int fRow,int fCol,bool vertical);
+    void setMessage2_(int id,string word,int fRow,int fCol,bool vertical);
 
     //! @brief Serializer Interface
     //! @return [out] :JSON of the object
@@ -72,6 +80,10 @@ public:
 
     bool getIsVertical() const {
         return isVertical;
+    }
+
+    int getID() const{
+        return id;
     }
 
     //! @brief Gives a way to visualize the message in the console

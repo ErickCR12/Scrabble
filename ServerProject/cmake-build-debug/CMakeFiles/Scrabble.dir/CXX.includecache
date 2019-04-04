@@ -516,10 +516,6 @@ iostream
 ../lib/rapidjson/prettywriter.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp
-server_Socket.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
-
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 sys/socket.h
 -
@@ -553,10 +549,6 @@ gtest/gtest.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 string
 -
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.cpp
-Game.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
 fstream
@@ -593,10 +585,6 @@ string
 -
 iostream
 -
-
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.cpp
-Server.hpp
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
 ../SocketComunication/server_Socket.hpp
