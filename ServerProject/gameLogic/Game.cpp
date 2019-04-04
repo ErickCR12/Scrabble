@@ -138,23 +138,29 @@ bool Game::recieveMessage(string json) {
     pJSON->deserealize(json.c_str());
     pJSON = pJSON->deserealize(json.c_str());
 
-    int id_OPTION = pJSON->getID();
-    if (id_OPTION == 1){
-        // Mensaje de confirmacion
-        cout<<">> ID:1 --> CONFIRMACION"<<endl;
-
-    }else if(id_OPTION == 2) {
-        // Mensaje de enviar la palabra
-        cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
-        addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
-
-    }else if(id_OPTION == 3) {
-        // Mensaje de pasar turno o jugar de nuevo
-        cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
-    } else{
-        cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
-        // Mensaje de pedir experto
+    switch(pJSON->getID()){
+        case 1:
+            // Mensaje de confirmacion
+            cout<<">> ID:1 --> CONFIRMACION"<<endl;
+            break;
+        case 2:
+            // Mensaje de enviar la palabra
+            cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
+            addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+            break;
+        case 3:
+            // Mensaje de pasar turno o jugar de nuevo
+            cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
+            break;
+        case 4:
+            cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
+            // Mensaje de pedir experto
+            break;
+        default:
+            cout<<">>ID NO IDENTIFICADO "<<endl;
+            break;
     }
+
     return true;
 }
 

@@ -10,10 +10,12 @@
 using namespace rapidjson;
 
 PlayerMessage::PlayerMessage(){
+    id = 1; // By default
     word = "";
 };
 
 void PlayerMessage::setMessage2_(int id,string word, int fRow,int fCol,bool is_vertical) {
+    this-> id = id,
     this-> word = word;
     this-> firstRow = fRow;
     this-> firstCol = fCol;

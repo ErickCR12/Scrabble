@@ -18,7 +18,7 @@ int main(int argc,char* argv[]) {
     RUN_ALL_TESTS();
 
     // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
-    // server_release();
+    //server_release();
 
     return 0;
 }
@@ -45,3 +45,5 @@ int server_release(){
 /*------------------------------------------------
  *                  END OF CODE ZONE
  * -----------------------------------------------*/
+
+// {"id":2,"word":"perro","firstRow":0,"firstCol":0,"is_Vertical":true}
