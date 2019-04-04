@@ -282,8 +282,6 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../SocketComunication/server_Socket.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/GameLogicTest/DictionaryTest.hpp
-CMakeFiles/Scrabble.dir/main.cpp.o: ../Tests/JsonTest/JSON_Test.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Game.hpp

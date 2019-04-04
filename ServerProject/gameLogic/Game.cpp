@@ -66,14 +66,20 @@ string Game::codeGenerator() {
  * ---------------------------------------------------------------------*/
 
 void Game::add_players() {
-    cout<<"Todo bien por ahora desde::"<<gameCode<<endl;
+
     try{
         addFirstClient();
+        cout<<">> TO JOIN THIS GAME, USE THIS CODE: "<<getGameCode()<<endl;
         while(getClientsAmt()<getMaxCap()){
             addClients();
         }
-        sendMessagetoAll("TODO_LISTO!");
-        cout<<"Todo bien agregando los clientes"<<endl;
+        /* ------------------------------------------------------
+         * En¡ esta parte seria bueno colocar un hilo que se mantenga
+         * escuchando pero que ya no acepte clientes sino que los
+         * meta en un cola de espera!
+         * ------------------------------------------------------*/
+        sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
+
     }catch(string ex)
     {
         cout << ex;
@@ -90,7 +96,6 @@ void Game::start_game(){
 }
 
 void Game::msgHandler(const char* msg) {
-    cout<<msg<<endl;
     string s_msg = msg;
     recieveMessage(s_msg);
 }
@@ -109,6 +114,7 @@ void Game::play(){
      * 3. Si totalTiles != 0 ->
      * 4. Recibe el JSON de el jugador -> lo deserializa
      */
+    currentTurn = 1;
     while (totalTiles >= 0) {
         if (totalTiles == 0) {
             // Esta parte realiza lo que sea que se haga en el ultimo turno
@@ -120,18 +126,19 @@ void Game::play(){
 
         }
     }
+    closeSocket();
 }
 
 bool Game::recieveMessage(string json) {
 
     cout<<"Entra bien a recieveMessage y el mensaje es: "<<json<<endl;
     // Deserializar el mensaje
-    //PlayerMessage *pJSON = new PlayerMessage();
-    // pJSON->deserealize(json.c_str());
-    //pJSON = pJSON->deserealize(json.c_str());
+    PlayerMessage *pJSON = new PlayerMessage();
+    pJSON->deserealize(json.c_str());
+    pJSON = pJSON->deserealize(json.c_str());
 
     // Enviar la palabra
-    //return addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+    return addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
 
 
 }
@@ -153,9 +160,14 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
             index++;
 
         }
-
+        sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));
+        nextTurn();
         gameBoard->printGameBoard();
-    } else cout<<"No encontrada"<<endl;
+    } else {
+        cout<<"No encontrada"<<endl;
+
+        sendSingleMessage("Palabra_incorrecta",getClient(currentTurn-1));
+    }
 }
 
 

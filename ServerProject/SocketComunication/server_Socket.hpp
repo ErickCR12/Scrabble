@@ -55,9 +55,6 @@ private:
     //! \return [out]: A bool that indicates if a new client could connect.
     bool connectWithClients();
 
-    //! Send a message to a specific customer
-    void sendSingleMessage(const char* msg,int descriptor);
-
     //! Method that handles a listening loop to the client for receiving messages
     void listenClient(string* bufferText,dataSocketServer data);
 
@@ -111,12 +108,24 @@ public:
     //! \param message [in]: Messages that the server must send to clients
     void sendMessagetoAll(string msg);
 
+    //! Send a message to a specific customer
+    void sendSingleMessage(const char* msg,int descriptor);
+
     int getClientsAmt(){
         return cThreads.size();
     }
 
     void setCode(string code){
         this->code = code;
+    }
+
+    int getClient(int index){
+        return clients[index];
+    }
+
+    void closeSocket(){
+        close(descriptor);
+        cout<<">> CERRANDO CONEXION...\n>> SOCKET TERMINADO"<<endl;
     }
 
 };
