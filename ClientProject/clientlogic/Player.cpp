@@ -3,12 +3,14 @@
 
 // Libraries
 #include "Player.hpp"
+#include "Board.hpp"
 #include <iostream>
 using namespace std;
 int const totalLetterTiles = 7;
 
 // Constructor
 Player::Player() {
+    playerBoard = Board::getBoardSingleton();
     initializePlayerDeck();
     score = 0;
     amountOfLetters = 0;
@@ -27,18 +29,14 @@ void Player::initializePlayerDeck(){
 }
 
 void Player::addLettersToPlayerDeck(string letters) {
-    vector<string> tempVector;
-    boost::split(tempVector, letters, boost::is_any_of(","));
-    int lettersToAdd = tempVector.size();
-    if(amountOfLetters + lettersToAdd > 7){
-        cout<<"ERROR: Cant add that amount of letters"<<endl;
-        return;
-    }
-    for(int i = 0; i < lettersToAdd; i++){
-        int playerDeckIndex = 0;
-        while(playerDeck[playerDeckIndex] != "") playerDeckIndex++;
-        playerDeck[playerDeckIndex] = tempVector[i];
-    }amountOfLetters += lettersToAdd;
+    boost::split(playerDeck, letters, boost::is_any_of(","));
+    int lettersToAdd = playerDeck.size();
+    amountOfLetters += lettersToAdd;
+}
+
+void Player::resetPlayerDeck(){
+    playerDeck.clear();
+    amountOfLetters = 0;
 }
 
 /* -------------------------------------------------------------------------
@@ -135,6 +133,34 @@ void Player::addScore(int scoreToAdd) {
 // Obtiene la cantidad de fichas del jugador
 int Player::getAmountOfLetterTiles(){
     return amountOfLetters;
+}
+
+void Player::setAmountOfLetterTiles(int amount){
+    amountOfLetters = 0;
+}
+
+void Player::setPlayerName(string name){
+    playerName = name;
+}
+
+string Player::getPlayerName(){
+    return playerName;
+}
+
+Board* Player::getBoard(){
+    return playerBoard;
+}
+
+vector<DraggableTile*> Player::getWidgetsPlayerDeck(){
+    return widgetsPlayerDeck;
+}
+
+void Player::addWidgetToDeck(DraggableTile* tile){
+    widgetsPlayerDeck.push_back(tile);
+}
+
+void Player::resetWidgetsDeck(){
+    widgetsPlayerDeck.clear();
 }
 
 // Muestra el Deck en consola

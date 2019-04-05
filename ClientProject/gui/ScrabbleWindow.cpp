@@ -7,91 +7,124 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui(new Ui::ScrabbleWindow)
 {
     ui->setupUi(this);
-    QGraphicsScene* scene = new QGraphicsScene(this);
-    scene->setSceneRect(0,0,775,675);
+    player = new Player();
+    scene = new QGraphicsScene(this);
+    scene->setSceneRect(-94,-84,775,675);
     QGraphicsView* view = new QGraphicsView(scene);
-    QVBoxLayout* verticalLayout = new QVBoxLayout(this);
+    QVBoxLayout* verticalLayout = new QVBoxLayout(ui->boardFrame);
     verticalLayout->addWidget(view);
-
-    createBoardFrame(scene, view);
-    createPlayerDeckFrame(scene, view);
+    view->setHorizontalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
+    view->setVerticalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
+    createBoardFrame(view);
+    createPlayerDeck("a,b,a,c,o,ll,s");
 }
 
-void ScrabbleWindow::createBoardFrame(QGraphicsScene* scene, QGraphicsView* view){
+void ScrabbleWindow::createBoardFrame(QGraphicsView* view){
 
     int rectangleSize = 34;
     QRectF rect(0,0,rectangleSize,rectangleSize);
     QBrush myBrush(Qt::darkGray, Qt::Dense5Pattern);
-    int initialPosition = 0;
-    int xPos = initialPosition;
-    int yPos = initialPosition;
+    int xPos = 0;
+    int yPos = 0;
     for(int i = 0; i < 15; i++){
         for(int j = 0; j < 15; j++){
-            QGraphicsRectItem *rItem1 = new QGraphicsRectItem(rect);
-            scene->addItem(rItem1);
-            rItem1->setPos(xPos,yPos);
-            rItem1->setBrush(myBrush);
+            QGraphicsRectItem *rItem = new QGraphicsRectItem(rect);
+            scene->addItem(rItem);
+            rItem->setPos(xPos,yPos);
+            rItem->setBrush(myBrush);
             xPos += rectangleSize;
         }
-        xPos = initialPosition;
+        xPos = 0;
         yPos += rectangleSize;
     }
 }
 
 
-void ScrabbleWindow::createPlayerDeckFrame(QGraphicsScene* scene, QGraphicsView* view){
-
+void ScrabbleWindow::createPlayerDeck(string letters){
+    player->addLettersToPlayerDeck(letters);
+    vector<string> playerDeck = player->getPlayerDeck();
     int rectangleSize = 34;
     QRectF rect(0,0,rectangleSize,rectangleSize);
-    QBrush myBrush(Qt::darkGray, Qt::Dense5Pattern);
-
     DraggableTile *dItem;
-    int yPos = 150;
-    for(int j = 0; j < 7; j++){
+    int yPos = 140;
+    QBrush q;
+    for(int j = 0; j < playerDeck.size(); j++){
+        string letter = playerDeck[j];
         dItem = new DraggableTile;
         scene->addItem(dItem);
         dItem->setRect(rect);
-        dItem->setPos(530,yPos);
-        dItem->setBrush(QBrush(QColor("#ffa07a")));
+        dItem->setPos(540,yPos);
+        QString imagePath = QCoreApplication::applicationDirPath() + QString::fromStdString("/images/tiles/"+letter+".png");
+        q.setTextureImage(QImage(imagePath));
+        dItem->setBrush(q);
         dItem->setAnchorPoint(dItem->pos());
+        dItem->setLetter(letter);
+        player->addWidgetToDeck(dItem);
         yPos += 38;
     }
-
 }
 
+void ScrabbleWindow::on_scrabbleButton_clicked(){
+    Board *board = player->getBoard();
+    vector<vector<int>> tilePositions = board->getWordPositions();
+    vector<string> wordVector;
+    string word = board->getWord();
+    word = word.substr(0, word.length()-1);
+    boost::split(wordVector, word, boost::is_any_of(","));
+    for(int i = 0; i < wordVector.size(); i++){
+        vector<int> position = tilePositions[i];
+        cout <<"{" << wordVector[i] ;
+        cout << ", [" << position[0];
+        cout << ", " << position[1] << "]}" << endl;
+    }
 
-//    QGraphicsScene *scene = new QGraphicsScene(this);
-//    scene->setSceneRect(0,0,280,240);
-//    QGraphicsView *view = new QGraphicsView(scene);
-//    setCentralWidget(view);
+    resetPlay();
+    createPlayerDeck("a,b,a,c,o,ll,s");
+}
 
-//    QRectF rect(0,0,80,40);
-//    QBrush myBrush(Qt::darkGray, Qt::Dense5Pattern);
+void ScrabbleWindow::resetPlay(){
+    Board *board = player->getBoard();
+    vector<DraggableTile*> tiles = player->getWidgetsPlayerDeck();
+    vector<vector<int>> tilePositions = board->getWordPositions();
+    vector<int> actualPosition;
+    tiles[0]->printGameBoard(board);
+    for(int i = 0; i < tiles.size(); i++){
+        if(i<tilePositions.size()){
+            actualPosition = tilePositions[i];
+            player->getBoard()->gameBoard[actualPosition[0]][actualPosition[1]] = "";
+        }
+        scene->removeItem(tiles[i]);
+        delete tiles[i];
+    }
+    tiles[0]->printGameBoard(board);
+    board->resetWordVector();
+    player->resetWidgetsDeck();
+    player->resetPlayerDeck();
+}
 
-//    QGraphicsRectItem *rItem1 = new QGraphicsRectItem(rect);
-//    scene->addItem(rItem1);
-//    rItem1->setPos(160,40);
-//    rItem1->setBrush(myBrush);
+void ScrabbleWindow::placeWordInBoard(string word, vector<vector<int>> wordPositions){
+    vector<string> wordVector;
+    DraggableTile *dItem;
+    Board *board = player->getBoard();
+    int rectangleSize = 34;
+    QRectF rect(0,0,rectangleSize,rectangleSize);
+    QBrush q;
+    boost::split(wordVector, word, boost::is_any_of(","));
+    for(int j = 0; j < wordPositions.size(); j++){
+        string letter = wordVector[j];
+        dItem = new DraggableTile;
+        scene->addItem(dItem);
+        dItem->setRect(rect);
+        dItem->setPos(wordPositions[j][1]*34,wordPositions[j][0]*34);
+        QString imagePath = QCoreApplication::applicationDirPath() + QString::fromStdString("/images/tiles/"+letter+".png");
+        q.setTextureImage(QImage(imagePath));
+        dItem->setBrush(q);
+        dItem->setAnchorPoint(dItem->pos());
+        dItem->setUndraggable();
+        board->gameBoard[wordPositions[j][0]][wordPositions[j][1]] = letter;
+    }
+}
 
-//    QGraphicsRectItem *rItem2 = new QGraphicsRectItem(rect);
-//    scene->addItem(rItem2);
-//    rItem2->setPos(160,100);
-//    rItem2->setBrush(myBrush);
-
-//    QGraphicsRectItem *rItem3 = new QGraphicsRectItem(rect);
-//    scene->addItem(rItem3);
-//    rItem3->setPos(160,160);
-//    rItem3->setBrush(myBrush);
-
-//    DraggableTile *dItem = new DraggableTile;
-//    scene->addItem(dItem);
-//    dItem->setRect(rect);
-//    dItem->setPos(30,100);
-//    dItem->setBrush(QBrush(QColor("#ffa07a")));
-//    dItem->setAnchorPoint(dItem->pos());
-//}
-
-ScrabbleWindow::~ScrabbleWindow()
-{
+ScrabbleWindow::~ScrabbleWindow(){
     delete ui;
 }
