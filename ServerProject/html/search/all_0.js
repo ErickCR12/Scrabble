@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['add_5fplayers',['add_players',['../classGame.html#ab9a377dedafdb099a52defca2d169d45',1,'Game']]],
   ['addclients',['addClients',['../classserver__Socket.html#a122a10ac0e5c57351f4cda3cce5719e2',1,'server_Socket']]],
   ['addfirstclient',['addFirstClient',['../classserver__Socket.html#a29e376a460e334960dee146ba3708326',1,'server_Socket']]],
   ['addlettertile',['addLetterTile',['../classBoard.html#a1368650aa544a210f7f46fa9c0a113a1',1,'Board']]],

@@ -5,11 +5,23 @@
 #include "Game.hpp"
 
 // Constructor de juego: Inicializa los parametros
-Game::Game(int players){
+Game::Game(){
+
+    // Inicializacion de los objetos del juego
     gameCode = codeGenerator();
     gameDictionary = Dictionary::getDictionaryInstance();
     gameBoard = new Board();
     gameDeck = new GameDeck();
+
+    // INICIALIZACION DEL SOCKET
+    setCode(getGameCode());
+    try {
+        initSocket();
+    }catch(string ex)
+    {
+        cout << ex;
+    }
+
 }
 
 
@@ -47,7 +59,46 @@ string Game::codeGenerator() {
     return code;
 }
 
+/* ---------------------------------------------------------------------
+ *
+ *                      METODOS DE SOCKET (HEREDADOS)
+ *
+ * ---------------------------------------------------------------------*/
 
+void Game::add_players() {
+
+    try{
+        addFirstClient();
+        cout<<">> TO JOIN THIS GAME, USE THIS CODE: "<<getGameCode()<<endl;
+        while(getClientsAmt()<getMaxCap()){
+            addClients();
+        }
+        /* ------------------------------------------------------
+         * En¡ esta parte seria bueno colocar un hilo que se mantenga
+         * escuchando pero que ya no acepte clientes sino que los
+         * meta en un cola de espera!
+         * ------------------------------------------------------*/
+        sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
+
+    }catch(string ex)
+    {
+        cout << ex;
+    }
+
+    start_game();
+}
+
+void Game::start_game(){
+
+    runServer();
+    thread play_t(&Game::play,this);
+    play_t.join();
+}
+
+void Game::msgHandler(const char* msg) {
+    string s_msg = msg;
+    recieveMessage(s_msg);
+}
 
 /* ---------------------------------------------------------------------
  *
@@ -55,16 +106,62 @@ string Game::codeGenerator() {
  *
  * ---------------------------------------------------------------------*/
 
+void Game::play(){
+
+    /*                  ESQUEMA DE EJECUCION DEL JUEGO
+     * 1. Una funcion que le envie sus fichas a c/jugador y el turno actual
+     * 2. Setear el turno = 1 y puntos = 0
+     * 3. Si totalTiles != 0 ->
+     * 4. Recibe el JSON de el jugador -> lo deserializa
+     */
+    currentTurn = 1;
+    while (totalTiles >= 0) {
+        if (totalTiles == 0) {
+            // Esta parte realiza lo que sea que se haga en el ultimo turno
+        } else {
+            string mensaje;
+            cin>>mensaje;
+            if (mensaje == "EXIT") break;
+            sendMessagetoAll(mensaje.c_str());
+
+        }
+    }
+    sendMessagetoAll(">> EL JUEGO HA TERMINADO");
+    closeSocket();
+}
 
 bool Game::recieveMessage(string json) {
 
+    cout<<"Entra bien a recieveMessage y el mensaje es: "<<json<<endl;
     // Deserializar el mensaje
-    PlayerMessage* pJSON = new PlayerMessage();
+    PlayerMessage *pJSON = new PlayerMessage();
     pJSON->deserealize(json.c_str());
     pJSON = pJSON->deserealize(json.c_str());
 
-    // Enviar la palabra
-    return addWord(pJSON->getWord(),pJSON->getFirstRow(),pJSON->getFirstCol(),pJSON->getIsVertical());
+    switch(pJSON->getID()){
+        case 1:
+            // Mensaje de confirmacion
+            cout<<">> ID:1 --> CONFIRMACION"<<endl;
+            break;
+        case 2:
+            // Mensaje de enviar la palabra
+            cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
+            addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+            break;
+        case 3:
+            // Mensaje de pasar turno o jugar de nuevo
+            cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
+            break;
+        case 4:
+            cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
+            // Mensaje de pedir experto
+            break;
+        default:
+            cout<<">>ID NO IDENTIFICADO "<<endl;
+            break;
+    }
+
+    return true;
 }
 
 bool Game::addWord(string word, int row, int col, bool isVertical) {
@@ -84,11 +181,15 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
             index++;
 
         }
-
+        sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));
+        nextTurn();
         gameBoard->printGameBoard();
-    } else cout<<"No encontrada"<<endl;
-}
+    } else {
+        cout<<"No encontrada"<<endl;
 
+        sendSingleMessage("Palabra_incorrecta",getClient(currentTurn-1));
+    }
+}
 
 
 /* ---------------------------------------------------------------------
@@ -96,7 +197,6 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
  *                          GETTERS & SETTERS
  *
  * ---------------------------------------------------------------------*/
-
 
 
 string Game::getGameCode() {

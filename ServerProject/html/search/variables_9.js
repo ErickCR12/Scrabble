@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['score',['score',['../classLetterTile.html#a8e45987ecac940f650f52d84558b03f5',1,'LetterTile']]],
-  ['socketinformation',['socketInformation',['../classserver__Socket.html#a70ee3c0c6f54118971f4d1c6d8be787f',1,'server_Socket::socketInformation()'],['../classserverSocket.html#a91898a4cc147304759801089547127fd',1,'serverSocket::socketInformation()']]]
+  ['max_5fcap',['max_cap',['../classQueue.html#a417a9dbe9709ed4ea85e20d04af0e7c0',1,'Queue::max_cap()'],['../classserver__Socket.html#afde1efdb4889c25050f440717cf66a34',1,'server_Socket::max_cap()']]]
 ];

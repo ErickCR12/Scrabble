@@ -15,7 +15,7 @@ find_package(Threads) # <- This line allows CLion to enable Threads
 add_executable(
         Scrabble main.cpp
 
-        dataStructures/Stack.hpp dataStructures/Queue.hpp dataStructures/CircularList.hpp
+        dataStructures/Queue.hpp
 
         gameLogic/Board.cpp gameLogic/Board.hpp
         gameLogic/Dictionary.cpp gameLogic/Dictionary.hpp

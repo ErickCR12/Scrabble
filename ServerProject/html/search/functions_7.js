@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['nextturn',['nextTurn',['../classGame.html#a801658c7cef474bc1d9a830f4a79034c',1,'Game']]],
-  ['node',['Node',['../classNode.html#a8013619a49f5cfe6244f4afd18198561',1,'Node']]]
+  ['msghandler',['msgHandler',['../classGame.html#acfa28bc2a23de21c9de832a6bb77e887',1,'Game::msgHandler()'],['../classserver__Socket.html#a997f97ecfb884cf5fa706f9623dbb2f8',1,'server_Socket::msgHandler()']]]
 ];

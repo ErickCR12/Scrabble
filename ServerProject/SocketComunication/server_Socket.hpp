@@ -19,6 +19,7 @@
 
 using namespace std;
 
+
 struct dataSocketServer{
     int descriptor;
     sockaddr_in socketInfo;
@@ -36,6 +37,10 @@ private:
     vector<int> clients; //!< Vector that stores all the descriptors that are connected to this socket.
     vector<dataSocketServer> cThreads; // vector that contains dataSocketServer. It is used to create the listenClient threads of each client.
 
+    string code; //!< It indicades the code of the game
+    int max_cap; //!< Maximun amount of clients
+    int port; //!< port of this connection
+
     /* ------------------------------------
      *
      *      SOCKET PRIVATE METHODS
@@ -49,9 +54,6 @@ private:
     //! Method that makes the acceptance of clients to the connection. He adds them to the customer vector.
     //! \return [out]: A bool that indicates if a new client could connect.
     bool connectWithClients();
-
-    //! Send a message to a specific customer
-    void sendSingleMessage(const char* msg,int descriptor);
 
     //! Method that handles a listening loop to the client for receiving messages
     void listenClient(string* bufferText,dataSocketServer data);
@@ -77,7 +79,7 @@ public:
     server_Socket();
 
     //! @brief Is an interface that calls createSocket() and connectWithClients()
-    bool initSocket();
+    bool initSocket(int port = PORT);
 
     //! Add the first customer. No need for game code
     void addFirstClient();
@@ -94,16 +96,37 @@ public:
     //! @note This class must be implemented according to the needs of the developer
     //! @brief Its purpose is to work with the message received from the client.
     //! \param msg
-    void msgHandler(const char* msg);
+    virtual void msgHandler(const char* msg);
+
+    void setMaxCap(string info);
+
+    int getMaxCap(){
+        return max_cap;
+    }
 
     //! @brief Method that is responsible for sending messages to all connected clients.
     //! \param message [in]: Messages that the server must send to clients
     void sendMessagetoAll(string msg);
 
+    //! Send a message to a specific customer
+    void sendSingleMessage(const char* msg,int descriptor);
+
     int getClientsAmt(){
         return cThreads.size();
     }
 
+    void setCode(string code){
+        this->code = code;
+    }
+
+    int getClient(int index){
+        return clients[index];
+    }
+
+    void closeSocket(){
+        close(descriptor);
+        cout<<">> CERRANDO CONEXION...\n>> SOCKET TERMINADO"<<endl;
+    }
 
 };
 

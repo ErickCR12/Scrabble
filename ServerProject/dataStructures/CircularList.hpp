@@ -1,8 +1,0 @@
-//
-// Created by esteban on 13/03/19.
-//
-
-#ifndef SCRABBLE_CIRCULARLIST_HPP
-#define SCRABBLE_CIRCULARLIST_HPP
-
-#endif SCRABBLE_CIRCULARLIST_HPP
