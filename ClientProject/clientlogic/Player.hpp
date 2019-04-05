@@ -5,6 +5,8 @@
 #include "json/PlayerMessage.hpp"
 #include <vector>
 #include <boost/algorithm/string.hpp>
+#include "Board.hpp"
+#include "gui/DraggableTile.h"
 
 using namespace std;
 //! @brief
@@ -12,9 +14,11 @@ class Player{
 
 private:
 
+    vector<DraggableTile*> widgetsPlayerDeck;
     vector<string> playerDeck; //!< @brief
-    string** playerBoard; //!< @brief
+    Board* playerBoard; //!< @brief
     string myWord;
+    string playerName;
 
     int amountOfLetters; //!< @brief
     int score; //!< @brief
@@ -70,6 +74,19 @@ public:
 
     //! @brief
     int getAmountOfLetterTiles();
+    void setAmountOfLetterTiles(int amount);
+
+    void setPlayerName(string name);
+
+    string getPlayerName();
+
+    Board* getBoard();
+
+    vector<DraggableTile*> getWidgetsPlayerDeck();
+
+    void addWidgetToDeck(DraggableTile* tile);
+    void resetPlayerDeck();
+    void resetWidgetsDeck();
 
 //    //! @brief
     void printPlayerDeck();

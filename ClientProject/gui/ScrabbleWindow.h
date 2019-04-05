@@ -10,6 +10,7 @@
 #include <QLabel>
 #include <string>
 #include "DraggableTile.h"
+#include "clientlogic/Player.hpp"
 using namespace std;
 
 namespace Ui {
@@ -23,11 +24,18 @@ class ScrabbleWindow : public QDialog
 public:
     explicit ScrabbleWindow(QWidget *parent = 0);
     ~ScrabbleWindow();
+    void createBoardFrame(QGraphicsView* view);
+    void createPlayerDeck(string letters);
+    void resetPlay();
+    void placeWordInBoard(string word, vector<vector<int>> wordPositions);
+
+private slots:
+    void on_scrabbleButton_clicked();
 
 private:
+    Player *player;
     Ui::ScrabbleWindow *ui;
-    void createBoardFrame(QGraphicsScene* scene, QGraphicsView* view);
-    void createPlayerDeckFrame(QGraphicsScene* scene, QGraphicsView* view);
+    QGraphicsScene* scene;
 };
 
 #endif // SCRABBLEWINDOW_H

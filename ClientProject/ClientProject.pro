@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES  += main.cpp\
             clientlogic/Player.cpp\
+            clientlogic/Board.cpp\
             json/PlayerMessage.cpp \
             tests/PlayerTest.cpp \
             gui/MainWindow.cpp \
@@ -35,6 +36,7 @@ SOURCES  += main.cpp\
 
 HEADERS  +=\
             clientlogic/Player.hpp\
+            clientlogic/Board.hpp\
             json/PlayerMessage.hpp \
             tests/PlayerTest.hpp \
             gui/MainWindow.h \
