@@ -30,24 +30,24 @@ public:
     {
         if (ScrabbleWindow->objectName().isEmpty())
             ScrabbleWindow->setObjectName(QStringLiteral("ScrabbleWindow"));
-        ScrabbleWindow->resize(800, 700);
+        ScrabbleWindow->resize(800, 600);
         QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ScrabbleWindow->sizePolicy().hasHeightForWidth());
         ScrabbleWindow->setSizePolicy(sizePolicy);
-        ScrabbleWindow->setMinimumSize(QSize(800, 700));
-        ScrabbleWindow->setMaximumSize(QSize(800, 700));
+        ScrabbleWindow->setMinimumSize(QSize(800, 600));
+        ScrabbleWindow->setMaximumSize(QSize(800, 600));
         boardFrame = new QFrame(ScrabbleWindow);
         boardFrame->setObjectName(QStringLiteral("boardFrame"));
         boardFrame->setGeometry(QRect(0, 0, 610, 540));
         boardFrame->setMinimumSize(QSize(610, 540));
         boardFrame->setMaximumSize(QSize(610, 540));
-        boardFrame->setFrameShape(QFrame::StyledPanel);
-        boardFrame->setFrameShadow(QFrame::Raised);
+        boardFrame->setFrameShape(QFrame::NoFrame);
+        boardFrame->setFrameShadow(QFrame::Plain);
         scrabbleButton = new QPushButton(ScrabbleWindow);
         scrabbleButton->setObjectName(QStringLiteral("scrabbleButton"));
-        scrabbleButton->setGeometry(QRect(470, 610, 141, 51));
+        scrabbleButton->setGeometry(QRect(640, 490, 141, 51));
 
         retranslateUi(ScrabbleWindow);
 

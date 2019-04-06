@@ -28,6 +28,7 @@ public:
     void createPlayerDeck(string letters);
     void resetPlay();
     void placeWordInBoard(string word, vector<vector<int>> wordPositions);
+    string getMultiplierFromCSV(int rowPos, int columnPos);
 
 private slots:
     void on_scrabbleButton_clicked();

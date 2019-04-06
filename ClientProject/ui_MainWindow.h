@@ -13,8 +13,8 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -25,47 +25,37 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
     QPushButton *createGameButton;
     QPushButton *joinGameButton;
+    QLabel *logoLabel;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(400, 400);
-        MainWindow->setMinimumSize(QSize(400, 400));
-        MainWindow->setMaximumSize(QSize(400, 400));
+        MainWindow->resize(800, 600);
+        MainWindow->setMinimumSize(QSize(800, 600));
+        MainWindow->setMaximumSize(QSize(800, 600));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        horizontalLayoutWidget = new QWidget(centralWidget);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(80, 250, 248, 61));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        createGameButton = new QPushButton(horizontalLayoutWidget);
+        createGameButton = new QPushButton(centralWidget);
         createGameButton->setObjectName(QStringLiteral("createGameButton"));
+        createGameButton->setGeometry(QRect(170, 480, 172, 40));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(createGameButton->sizePolicy().hasHeightForWidth());
         createGameButton->setSizePolicy(sizePolicy);
         createGameButton->setMinimumSize(QSize(120, 40));
-
-        horizontalLayout->addWidget(createGameButton);
-
-        joinGameButton = new QPushButton(horizontalLayoutWidget);
+        joinGameButton = new QPushButton(centralWidget);
         joinGameButton->setObjectName(QStringLiteral("joinGameButton"));
+        joinGameButton->setGeometry(QRect(430, 480, 171, 41));
         sizePolicy.setHeightForWidth(joinGameButton->sizePolicy().hasHeightForWidth());
         joinGameButton->setSizePolicy(sizePolicy);
         joinGameButton->setMinimumSize(QSize(120, 40));
-
-        horizontalLayout->addWidget(joinGameButton);
-
+        logoLabel = new QLabel(centralWidget);
+        logoLabel->setObjectName(QStringLiteral("logoLabel"));
+        logoLabel->setGeometry(QRect(310, 130, 221, 121));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
@@ -78,6 +68,7 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Scrabble!", Q_NULLPTR));
         createGameButton->setText(QApplication::translate("MainWindow", "Crear juego", Q_NULLPTR));
         joinGameButton->setText(QApplication::translate("MainWindow", "Unirse a un juego", Q_NULLPTR));
+        logoLabel->setText(QString());
     } // retranslateUi
 
 };

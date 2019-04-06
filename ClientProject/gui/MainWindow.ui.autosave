@@ -29,10 +29,10 @@
    <widget class="QPushButton" name="createGameButton">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>210</x>
       <y>480</y>
-      <width>172</width>
-      <height>40</height>
+      <width>181</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -56,8 +56,8 @@
      <rect>
       <x>430</x>
       <y>480</y>
-      <width>171</width>
-      <height>41</height>
+      <width>170</width>
+      <height>70</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -68,25 +68,18 @@
     </property>
     <property name="minimumSize">
      <size>
-      <width>120</width>
-      <height>40</height>
+      <width>170</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>170</width>
+      <height>70</height>
      </size>
     </property>
     <property name="text">
      <string>Unirse a un juego</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="logoLabel">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>130</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
   </widget>
