@@ -54,7 +54,7 @@ class ServerMessage {
 public:
 
     //! @brief Class Constructor
-    PlayerMessage();
+    ServerMessage();
 
     /* -------------------------------------------
      *              SERIALIZATION

@@ -67,6 +67,9 @@ private:
 
     bool validateWord(string word, int row, int col, bool isVertical);
 
+    string verticalIterator(string word, int row, int col,bool isVertical);
+    string horizontalIterator(string word, int row, int col,bool isVertical);
+
     //! Send the tiles to the players
     void send_LetterTiles();
 
@@ -76,13 +79,17 @@ private:
         else currentTurn=1;
     }
 
+
+
+    //! Resets the Board if word isnt accepted
+    //! \param position vector with recent positions added
+    void resetBoard(int word_len,int row,int col,bool vertical);
+
+public:
+
     //! Receive the message from the clients.
     //! \return
     //bool recieveMessage(string json);
-
-
-public:
-    void resetBoard(vector<vector<int>>position);
     bool recieveMessage(string json);
 
     /* -------------------

@@ -20,10 +20,15 @@ int main(int argc,char* argv[]) {
 
     Game *game = new Game();
 
-    string JSON = "{\"id\":2,\"word\":\"asfdsfs\",\"firstRow\":0,\"firstCol\":0,\"is_Vertical\":true}";
+    string JSON = "{\"id\":2,\"word\":\"perro\",\"firstRow\":0,\"firstCol\":0,\"is_Vertical\":false}";
 
     game->recieveMessage(JSON);
 
+    JSON =  "{\"id\":2,\"word\":\"ceano\",\"firstRow\":1,\"firstCol\":4,\"is_Vertical\":true}";
+    game->recieveMessage(JSON);
+
+    JSON =  "{\"id\":2,\"word\":\"scuela\",\"firstRow\":2,\"firstCol\":5,\"is_Vertical\":false}";
+    game->recieveMessage(JSON);
     // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
     // server_release();
 

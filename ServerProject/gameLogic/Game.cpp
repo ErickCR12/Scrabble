@@ -167,51 +167,137 @@ bool Game::recieveMessage(string json) {
 // Añade la palabra
 bool Game::addWord(string word, int row, int col, bool isVertical) {
 
-    cout<<"palabra encontrada"<<endl;
     int index = 0;
     cout<<word.length()<<endl;
+
+    // Se itera sobre la palabra para añadir cada letra al tablero
     for(int j = (isVertical)? row:col;index < word.length();j++) {
 
         string letter = "";
         letter += word[index];
         cout<<letter<<endl;
+
+        // Obteniendo referencias del deck
         cout<<"Añadiendo ficha en:"<<((isVertical)? j:row)<<((isVertical)?col:j )<<endl;
         LetterTile *wLetter = gameDeck->getLetterFromDeck(letter);
+
+        // Agregando al board
         cout<<wLetter->getLetter()<<endl;
         gameBoard->addLetterTile((isVertical)? j:row,(isVertical)? col:j,wLetter);
         index++;
-
     }
-    sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));
-    nextTurn();
-    gameBoard->printGameBoard();
-
 }
 
 // Este método valida las palabras
 bool Game::validateWord(string word, int row, int col, bool isVertical) {
     if(gameDictionary->searchInDictionary(word)){
-        addWord(word,row,col,isVertical);
+
+        addWord(word,row,col,isVertical); //Añadir la palabra
+        //sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));//Envia el mensaje de confirmacion
+        //nextTurn(); // Setea el sgte turno
+        gameBoard->printGameBoard();
 
     }else{
 
-        LetterTile* l = new LetterTile("a",1,1);
-        vector<vector<int>> p;
-        gameBoard->addLetterTile(2,2,l);
-        vector<int> pp;
-        pp.push_back(2);
-        pp.push_back(2);
-        p.push_back(pp);
-        gameBoard->printGameBoard();
-        resetBoard(p);
-        gameBoard->printGameBoard();
+        addWord(word,row,col,isVertical); // Añadir la palabra
+
+        // Iteracion vertical
+       string vert_word = verticalIterator(word,row,col,isVertical);
+
+       if(gameDictionary->searchInDictionary(vert_word)) {
+           gameBoard->printGameBoard();
+           return true;
+       }
+
+       // Iteracion Horizontal
+       string hor_word = horizontalIterator(word,row,col,isVertical);
+
+       if(gameDictionary->searchInDictionary(hor_word)) {
+            gameBoard->printGameBoard();
+            return true;
+       } else {
+           resetBoard(word.length(),row,col,isVertical);
+           cout<<"Palabra no encontrada"<<endl;
+           gameBoard->printGameBoard();
+       }
     }
 }
 
+// Itera la columna en la que se posicione la palabra buscando palabras que coincidan
+string Game::verticalIterator(string word, int row, int col,bool isVertical) {
 
-void Game::resetBoard(vector<vector<int>> position) {
-    for(int i=0;i<position.size();i++){
-        gameBoard->addLetterTile(position[i][0],position[i][1], nullptr);
+    cout<<"REVISION VERTICAL DOWN"<<endl;
+
+    string vert_coincidence = (isVertical)? word:"";
+    // Comienza a recorrer desde la casilla siguiente
+    for (int itr_row = (isVertical)? row + word.length():row; itr_row < 15; itr_row++) {
+
+        LetterTile* l = gameBoard->getLetterTile(itr_row,col);
+        if(l == nullptr) break;
+        else vert_coincidence+=l->getLetter(); cout<<l->getLetter()<<endl;
+    }
+
+    cout<<"Revision VD: "<<vert_coincidence<<endl;
+
+    cout<<"REVISION VERTICAL UP"<<endl;
+    // Comienza a recorrer desde la casilla anterior al inicio de la palabra
+    string up_words = "";
+    for (int itr_row_ = row-1; itr_row_ >= 0; itr_row_--) {
+
+        LetterTile* l = gameBoard->getLetterTile(itr_row_,col);
+        if(l == nullptr) break;
+        else {
+            up_words+=l->getLetter();
+            cout<<l->getLetter()<<endl;
+            vert_coincidence = up_words+vert_coincidence;
+        }
+    }
+
+    cout<<"* La palabra vertical formada es: "<<vert_coincidence<<endl;
+    return vert_coincidence;
+}
+
+string Game::horizontalIterator(string word, int row, int col, bool isVertical) {
+    cout<<"REVISION HORIZONTAL RIGTH"<<endl;
+
+    string hor_coincidence = (isVertical)? "":word;
+    // Comienza a recorrer desde la casilla siguiente
+    for (int itr_col = (!isVertical)? col + word.length():col; itr_col < 15; itr_col++) {
+
+        LetterTile* l = gameBoard->getLetterTile(row,itr_col);
+        if(l == nullptr) break;
+        else hor_coincidence+=l->getLetter(); cout<<l->getLetter()<<endl;
+    }
+
+    cout<<"Revision HR: "<<hor_coincidence<<endl;
+
+    cout<<"REVISION HORIZONTAL LEFT"<<endl;
+    // Comienza a recorrer desde la casilla anterior al inicio de la palabra
+    string left_words = "";
+    for (int itr_col_ = col-1; itr_col_ >= 0; itr_col_--) {
+
+        LetterTile* l = gameBoard->getLetterTile(row,itr_col_);
+        if(l == nullptr) break;
+        else {
+            left_words+=l->getLetter();
+            cout<<l->getLetter()<<endl;
+            hor_coincidence = left_words+hor_coincidence;
+        }
+    }
+
+    cout<<"* La palabra horizontal formada es: "<<hor_coincidence<<endl;
+    return hor_coincidence;
+}
+
+
+// Metodo que vuelve el Board a un estado previo si la palabra no es aceptada
+void Game::resetBoard(int size, int row, int col, bool vertical) {
+    int index = 0;
+    for(int j = (vertical)? row:col;index < size;j++) {
+
+        // Eliminando la letra
+        gameBoard->addLetterTile((vertical)? j:row,(vertical)? col:j, nullptr);
+        index++;
     }
 }
 
