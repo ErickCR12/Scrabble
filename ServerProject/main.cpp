@@ -2,9 +2,6 @@
 // Libraries
 #include <iostream>
 #include <pthread.h>
-#include <map>
-#include <string>
-#include <fstream>
 
 // Game Logic
 #include "gameLogic/Server.hpp"
@@ -17,7 +14,6 @@
 int server_release();
 
 using namespace std;
-typedef map<const string,string> CfgMap;
 
 int main(int argc,char* argv[]) {
 

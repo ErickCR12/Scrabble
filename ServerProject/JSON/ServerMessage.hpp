@@ -11,6 +11,7 @@
 using namespace std;
 
 class ServerMessage {
+
     int id; // Indica el tipo de mensaje que se va a serializar
 
     string word;
@@ -22,6 +23,14 @@ class ServerMessage {
     bool pass;
     bool exp_request;
 
+    int points;
+    string gameCode;
+    string letterTiles;
+    string msg;
+
+    int currentPlayer;
+    int winner;
+    int your_Player;
 
     //! @brief Method responsible for serializing the object to JSON
     //! @note CONFIRM
@@ -51,6 +60,13 @@ class ServerMessage {
     template<typename Writer>
     void Serializer4_(Writer &writer) const;
 
+    //! @brief Method responsible for serializing the object to JSON
+    //! @note EXPERT_REQUEST
+    //! \tparam Writer
+    //! \param writer
+    template<typename Writer>
+    void Serializer5_(Writer &writer) const;
+
 public:
 
     //! @brief Class Constructor
@@ -60,28 +76,35 @@ public:
      *              SERIALIZATION
      * -------------------------------------------*/
 
-    //! @brief Configure message attributes
-    //! \param [in]id : message identifier
-    //! \param [in]answer :  true/false
-    void setMessage1_(int id,bool answer);
+    //!
+    //! \param id
+    //! \param gameCode
+    //! \param msg
+    void setMessage1_(int id,string gameCode,string msg);
 
-    //! @brief Configure message attributes
-    //! \param [in]id : message identifier
-    //! @param [in]word : Player word
-    //! @param [in]fRow : Row of the first LetterTile
-    //! @param [in]fCol : Column of the first LetterTile
-    void setMessage2_(int id,string word,int fRow,int fCol,bool vertical);
+    //!
+    //! \param id
+    //! \param tiles
+    //! \param your_player
+    void setMessage2_(int id,string tiles,int your_player);
 
-    //! @brief Configure message attributes
-    //! \param [in]id : message identifier
-    //! \param [in]pass : true if playar wanna pass his turn/false if player wants replay his movements.
-    void setMessage3_(int id,bool pass);
+    //!
+    //! \param id
+    //! \param accepted
+    //! \param points
+    void setMessage3_(int id,bool accepted,int points);
 
-    //! @brief Configure message attributes
-    //! \param [in]id : message identifier
-    //! @param [in]exp_request: boolean that indicates if player wants to use expert validation
-    //! @param [in]word : Player word
-    void setMessage4_(int id,bool exp_request,string word);
+    //!
+    //! \param id
+    //! \param exp_request
+    //! \param word
+    void setMessage4_(int id,string word,int firstRow,int firstCol,bool isVertical);
+
+    //!
+    //! \param id
+    //! \param exp_request
+    //! \param word
+    void setMessage5_(int id,int winner);
 
     //! @brief Serializer Interface
     //! @return [out] :JSON of the object
@@ -99,25 +122,35 @@ public:
     /* -------------------------------------------
      *                  GETTERS
      * -------------------------------------------*/
-    const string &getWord() const {
-        return word;
-    }
+    int getId() const;
 
-    int getFirstRow() const {
-        return firstRow;
-    }
+    const string &getWord() const;
 
-    int getFirstCol() const {
-        return firstCol;
-    }
+    int getFirstRow() const;
 
-    bool getIsVertical() const {
-        return isVertical;
-    }
+    int getFirstCol() const;
 
-    int getID() const{
-        return id;
-    }
+    bool isIsVertical() const;
+
+    bool isAnswer() const;
+
+    bool isPass() const;
+
+    bool isExp_request() const;
+
+    int getPoints() const;
+
+    const string &getGameCode() const;
+
+    const string &getLetterTiles() const;
+
+    const string &getMsg() const;
+
+    int getCurrentPlayer() const;
+
+    int getWinner() const;
+
+    int getYour_Player() const;
 
     //! @brief Gives a way to visualize the message in the console
     //! @return
