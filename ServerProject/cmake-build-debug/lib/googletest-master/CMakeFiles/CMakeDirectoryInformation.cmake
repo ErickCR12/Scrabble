@@ -3,11 +3,16 @@
 
 # Relative path conversion top directories.
 <<<<<<< HEAD
+set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug")
+=======
+<<<<<<< HEAD
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject")
 set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug")
 =======
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject")
 set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug")
+>>>>>>> master
 >>>>>>> master
 
 # Force unix paths in dependencies.

@@ -51,6 +51,12 @@ SHELL = /bin/sh
 
 # The CMake executable.
 <<<<<<< HEAD
+CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
+
+# The command to remove a file.
+RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+=======
+<<<<<<< HEAD
 CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
@@ -61,11 +67,18 @@ CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
 # The command to remove a file.
 RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 >>>>>>> master
+>>>>>>> master
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
+=======
 <<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
 
@@ -77,6 +90,7 @@ CMAKE_SOURCE_DIR = /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug
 >>>>>>> master
+>>>>>>> master
 
 #=============================================================================
 # Target rules for target CMakeFiles/Scrabble.dir
@@ -87,9 +101,13 @@ CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/g
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/depend
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 <<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
+=======
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
+>>>>>>> master
 >>>>>>> master
 .PHONY : CMakeFiles/Scrabble.dir/all
 
@@ -101,6 +119,11 @@ all: CMakeFiles/Scrabble.dir/all
 # Build rule for subdir invocation for target.
 CMakeFiles/Scrabble.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 18
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Scrabble.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Scrabble.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
@@ -108,6 +131,7 @@ CMakeFiles/Scrabble.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Scrabble.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> master
 >>>>>>> master
 .PHONY : CMakeFiles/Scrabble.dir/rule
 
@@ -175,9 +199,13 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-m
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
 <<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target gmock_main"
+=======
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target gmock_main"
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target gmock_main"
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
@@ -189,6 +217,11 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 6
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
@@ -196,6 +229,7 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_bui
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule
 
@@ -222,9 +256,13 @@ lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: lib/googletest-master
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
 <<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target gmock"
+=======
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target gmock"
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target gmock"
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
@@ -236,6 +274,11 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
@@ -243,6 +286,7 @@ lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_sy
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule
 
@@ -289,9 +333,13 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/google
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 <<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=21,22 "Built target gtest_main"
+=======
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target gtest_main"
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target gtest_main"
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
@@ -303,6 +351,11 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
@@ -310,6 +363,7 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_che
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 
@@ -336,9 +390,13 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 <<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=19,20 "Built target gtest"
+=======
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target gtest"
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target gtest"
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
@@ -350,6 +408,11 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
@@ -357,6 +420,7 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_bu
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> master
 >>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
 

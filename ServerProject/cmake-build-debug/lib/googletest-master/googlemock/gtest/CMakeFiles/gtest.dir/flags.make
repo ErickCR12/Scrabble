@@ -7,8 +7,12 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wext
 CXX_DEFINES = 
 
 <<<<<<< HEAD
+CXX_INCLUDES = -I"/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googletest/include" -I"/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googletest" 
+=======
+<<<<<<< HEAD
 CXX_INCLUDES = -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest 
 =======
 CXX_INCLUDES = -I/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest/include -I/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest 
+>>>>>>> master
 >>>>>>> master
 
