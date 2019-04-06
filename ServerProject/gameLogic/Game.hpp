@@ -24,6 +24,7 @@
 #include "Board.hpp"
 #include "../SocketComunication/server_Socket.hpp"
 #include "../JSON/PlayerMessage.hpp"
+#include "../JSON/ServerMessage.hpp"
 #include <thread>
 
 using namespace std;

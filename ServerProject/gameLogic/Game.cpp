@@ -68,6 +68,10 @@ void Game::add_players() {
 
     try {
         addFirstClient();
+        ServerMessage* serv_msg= new ServerMessage();
+        serv_msg->setMessage1_(1,getGameCode(),"Hello from server");
+        string json = serv_msg->serialize();
+        sendSingleMessage(json.c_str(),getClient(0));
         cout<<">> TO JOIN THIS GAME, USE THIS CODE: "<<getGameCode()<<endl;
         while (getClientsAmt() < getMaxCap()) {
             addClients();
@@ -191,8 +195,11 @@ bool Game::validateWord(string word, int row, int col, bool isVertical) {
     if (gameDictionary->searchInDictionary(word)) {
 
         addWord(word, row, col, isVertical); //Añadir la palabra
-        //sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));//Envia el mensaje de confirmacion
-        //nextTurn(); // Setea el sgte turno
+        ServerMessage* serv_msg = new ServerMessage();
+        serv_msg->setMessage3_(3,true,10);
+        string json = serv_msg->serialize();
+        sendSingleMessage(json.c_str(),getClient(currentTurn-1));//Envia el mensaje de confirmacion
+        nextTurn(); // Setea el sgte turno
         gameBoard->printGameBoard();
 
     } else {

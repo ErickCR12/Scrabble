@@ -31,6 +31,31 @@ CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o: ../lib/rapidjson/writer.h
 
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.cpp
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../JSON/ServerMessage.hpp
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/allocators.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/document.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/encodedstream.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/encodings.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/error/error.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/biginteger.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/diyfp.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/dtoa.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/ieee754.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/itoa.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/meta.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/pow10.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/stack.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/strfunc.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/strtod.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/internal/swap.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/memorystream.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/msinttypes/inttypes.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/msinttypes/stdint.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/prettywriter.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/rapidjson.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/reader.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/stream.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/stringbuffer.h
+CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o: ../lib/rapidjson/writer.h
 
 CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o: ../SocketComunication/server_Socket.cpp
 CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o: ../SocketComunication/server_Socket.hpp
@@ -163,6 +188,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletes
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../JSON/PlayerMessage.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../SocketComunication/server_Socket.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Dictionary.hpp
@@ -216,6 +242,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../lib/googletest-master/googlet
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../JSON/PlayerMessage.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../SocketComunication/server_Socket.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Dictionary.hpp
@@ -281,6 +308,7 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/PlayerMessage.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../SocketComunication/server_Socket.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp

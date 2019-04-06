@@ -57,6 +57,7 @@ void ServerMessage::Serializer1_(Writer &writer) const{
     writer.String("gameCode");
     writer.String(gameCode.c_str());
     writer.String("msg");
+    writer.String(msg.c_str());
     writer.EndObject();
 }
 
