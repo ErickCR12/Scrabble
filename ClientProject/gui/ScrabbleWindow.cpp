@@ -10,8 +10,11 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui->setupUi(this);
     player = new Player();
     scene = new QGraphicsScene(this);
-    scene->setSceneRect(-94,-84,775,675);
+    scene->setSceneRect(0,0,580,510);
+    scene->setBackgroundBrush(QBrush(Qt::darkGreen, Qt::SolidPattern));
     QGraphicsView* view = new QGraphicsView(scene);
+    view->setInteractive(true);
+    view->setDragMode(QGraphicsView::ScrollHandDrag);
     QVBoxLayout* verticalLayout = new QVBoxLayout(ui->boardFrame);
     verticalLayout->addWidget(view);
     view->setHorizontalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );

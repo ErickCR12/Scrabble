@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1067</width>
     <height>600</height>
    </rect>
   </property>
@@ -18,13 +18,13 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>1067</width>
     <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
+    <width>1067</width>
     <height>600</height>
    </size>
   </property>
@@ -34,22 +34,22 @@
   <widget class="QFrame" name="boardFrame">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>40</x>
+     <y>40</y>
      <width>610</width>
-     <height>540</height>
+     <height>530</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
      <width>610</width>
-     <height>540</height>
+     <height>530</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
      <width>610</width>
-     <height>540</height>
+     <height>530</height>
     </size>
    </property>
    <property name="frameShape">
@@ -62,8 +62,8 @@
   <widget class="QPushButton" name="scrabbleButton">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>490</y>
+     <x>740</x>
+     <y>510</y>
      <width>141</width>
      <height>51</height>
     </rect>

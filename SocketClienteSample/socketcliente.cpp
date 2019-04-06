@@ -10,7 +10,7 @@ bool SocketCliente::connectar()
     if(descriptor < 0)
         return false;
     info.sin_family = AF_INET;
-    info.sin_addr.s_addr = inet_addr("127.0.0.1"); // To know this Ip in console: hostname -I | awk '{print $1}'
+    info.sin_addr.s_addr = inet_addr("172.18.67.117"); // To know this Ip in console: hostname -I | awk '{print $1}'
     info.sin_port = ntohs(9050);
     memset(&info.sin_zero,0,sizeof(info.sin_zero));
 
