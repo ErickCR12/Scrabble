@@ -5,6 +5,7 @@
 
 // Game Logic
 #include "gameLogic/Server.hpp"
+#include "gameLogic/Game.hpp"
 
 // gtest
 #include <gtest/gtest.h>
@@ -17,8 +18,14 @@ int main(int argc,char* argv[]) {
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
 
+    Game *game = new Game();
+
+    string JSON = "{\"id\":2,\"word\":\"asfdsfs\",\"firstRow\":0,\"firstCol\":0,\"is_Vertical\":true}";
+
+    game->recieveMessage(JSON);
+
     // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
-    //server_release();
+    // server_release();
 
     return 0;
 }

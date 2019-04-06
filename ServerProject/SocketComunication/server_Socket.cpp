@@ -120,6 +120,8 @@ void server_Socket::addFirstClient() {
         clients.push_back(data.descriptor);
         cThreads.push_back(data);
         sendSingleMessage("Game Created succesfully",data.descriptor);
+        p_Num = "Game Code is:"+code;
+        sendSingleMessage(p_Num.c_str(),data.descriptor);
         cout<<"Cantidad maxima de clientes:"<<max_cap<<endl;
         cout<<"Clientes conectados: "<<clients.size()<<endl;
     }

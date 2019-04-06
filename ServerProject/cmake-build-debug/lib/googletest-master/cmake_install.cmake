@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master
+=======
+# Install script for directory: /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master
+>>>>>>> master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +43,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+=======
+  include("/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+>>>>>>> master
 
 endif()
 

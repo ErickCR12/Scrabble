@@ -65,6 +65,8 @@ private:
     //! \return [out] If word could be added.
     bool addWord(string word,int row,int col,bool isVertical);
 
+    bool validateWord(string word, int row, int col, bool isVertical);
+
     //! Send the tiles to the players
     void send_LetterTiles();
 
@@ -76,10 +78,12 @@ private:
 
     //! Receive the message from the clients.
     //! \return
-    bool recieveMessage(string json);
+    //bool recieveMessage(string json);
 
 
 public:
+    void resetBoard(vector<vector<int>>position);
+    bool recieveMessage(string json);
 
     /* -------------------
      *  PUBLIC METHODS

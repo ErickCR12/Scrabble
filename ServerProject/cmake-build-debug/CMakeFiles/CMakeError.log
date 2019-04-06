@@ -1,4 +1,5 @@
 Determining if the pthread_create exist failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_6304e/fast"
@@ -19,6 +20,28 @@ Makefile:121: recipe for target 'cmTC_6304e/fast' failed
 make: *** [cmTC_6304e/fast] Error 2
 
 File /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+=======
+Change Dir: /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4075f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4075f.dir/build.make CMakeFiles/cmTC_4075f.dir/build
+make[1]: se entra en el directorio '/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4075f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4075f.dir/CheckSymbolExists.c.o   -c /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4075f
+/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4075f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4075f.dir/CheckSymbolExists.c.o  -o cmTC_4075f 
+CMakeFiles/cmTC_4075f.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4075f.dir/build.make:86: recipe for target 'cmTC_4075f' failed
+make[1]: *** [cmTC_4075f] Error 1
+make[1]: se sale del directorio '/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_4075f/fast' failed
+make: *** [cmTC_4075f/fast] Error 2
+
+File /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+>>>>>>> master
 /* */
 #include <pthread.h>
 
@@ -34,6 +57,7 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_afd52/fast"
@@ -51,5 +75,24 @@ make[1]: *** [cmTC_afd52] Error 1
 make[1]: Leaving directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
 Makefile:121: recipe for target 'cmTC_afd52/fast' failed
 make: *** [cmTC_afd52/fast] Error 2
+=======
+Change Dir: /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_674d3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_674d3.dir/build.make CMakeFiles/cmTC_674d3.dir/build
+make[1]: se entra en el directorio '/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_674d3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_674d3.dir/CheckFunctionExists.c.o   -c /opt/clion-2019.1/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_674d3
+/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_674d3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_674d3.dir/CheckFunctionExists.c.o  -o cmTC_674d3 -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_674d3.dir/build.make:86: recipe for target 'cmTC_674d3' failed
+make[1]: *** [cmTC_674d3] Error 1
+make[1]: se sale del directorio '/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_674d3/fast' failed
+make: *** [cmTC_674d3/fast] Error 2
+>>>>>>> master
 
 

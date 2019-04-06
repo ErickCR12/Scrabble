@@ -146,11 +146,14 @@ string PlayerMessage::serialize() {
                 break;
             }
             case 3: {
-                
+                bool pass = doc["pass"].GetBool();
+                parsedPlayer->setMessage3_(id, pass);
                 break;
             }
             case 4:{
-
+                bool exp = doc["exp_request"].GetBool();
+                string pWord = doc["word"].GetString();
+                parsedPlayer->setMessage4_(id, exp,pWord);
                 break;
             }
             default:

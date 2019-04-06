@@ -6,5 +6,9 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/include -isystem /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include -isystem /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest 
+=======
+CXX_INCLUDES = -I/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googlemock/include -isystem /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest/include -isystem /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest 
+>>>>>>> master
 
