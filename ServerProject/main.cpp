@@ -2,6 +2,9 @@
 // Libraries
 #include <iostream>
 #include <pthread.h>
+#include <map>
+#include <string>
+#include <fstream>
 
 // Game Logic
 #include "gameLogic/Server.hpp"
@@ -13,24 +16,17 @@
 
 int server_release();
 
+using namespace std;
+typedef map<const string,string> CfgMap;
+
 int main(int argc,char* argv[]) {
 
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
 
-    Game *game = new Game();
 
-    string JSON = "{\"id\":2,\"word\":\"perro\",\"firstRow\":0,\"firstCol\":0,\"is_Vertical\":false}";
-
-    game->recieveMessage(JSON);
-
-    JSON =  "{\"id\":2,\"word\":\"ceano\",\"firstRow\":1,\"firstCol\":4,\"is_Vertical\":true}";
-    game->recieveMessage(JSON);
-
-    JSON =  "{\"id\":2,\"word\":\"scuela\",\"firstRow\":2,\"firstCol\":5,\"is_Vertical\":false}";
-    game->recieveMessage(JSON);
     // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
-    // server_release();
+    server_release();
 
     return 0;
 }
@@ -59,3 +55,18 @@ int server_release(){
  * -----------------------------------------------*/
 
 // {"id":2,"word":"perro","firstRow":0,"firstCol":0,"is_Vertical":true}
+
+/*Game *game = new Game();
+
+    string JSON = "{\"id\":2,\"word\":\"perro\",\"firstRow\":0,\"firstCol\":0,\"is_Vertical\":false}";
+
+    game->recieveMessage(JSON);
+
+    JSON =  "{\"id\":2,\"word\":\"ceano\",\"firstRow\":1,\"firstCol\":4,\"is_Vertical\":true}";
+    game->recieveMessage(JSON);
+
+    JSON =  "{\"id\":2,\"word\":\"scuela\",\"firstRow\":2,\"firstCol\":5,\"is_Vertical\":false}";
+    game->recieveMessage(JSON);
+
+    JSON =  "{\"id\":2,\"word\":\"buela\",\"firstRow\":3,\"firstCol\":10,\"is_Vertical\":true}";
+    game->recieveMessage(JSON);*/

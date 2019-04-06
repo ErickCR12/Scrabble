@@ -24,9 +24,8 @@ add_executable(
         gameLogic/GameDeck.cpp  gameLogic/GameDeck.hpp
         gameLogic/Server.cpp gameLogic/Server.hpp
 
-        #SocketComunication/serverSocket.hpp
-        #SocketComunication/serverSocket.cpp
-        SocketComunication/server_Socket.hpp SocketComunication/server_Socket.cpp
+        SocketComunication/server_Socket.hpp
+        SocketComunication/server_Socket.cpp
 
         Tests/JsonTest/JSON_Test.cpp Tests/JsonTest/JSON_Test.hpp
         Tests/GameLogicTest/DictionaryTest.cpp Tests/GameLogicTest/DictionaryTest.hpp
@@ -36,7 +35,6 @@ add_executable(
         JSON/ServerMessage.cpp JSON/ServerMessage.hpp
 
 )
-
 
 target_link_libraries(Scrabble gtest gtest_main)
 target_link_libraries(Scrabble ${CMAKE_THREAD_LIBS_INIT}) # <- This line allows CLion to enable Threads

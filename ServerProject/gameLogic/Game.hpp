@@ -55,6 +55,11 @@ private:
     //! \return [out]: Game ID code. Example: Q&my4Y
     string codeGenerator();
 
+    //! Receive the message from the clients.
+    //! \return
+    //bool recieveMessage(string json);
+    bool recieveMessage(string json);
+
     //! @brief Main algorithm of the game. It is responsible for adding the words
     //! to the board, validating them, looking for possible combinations and
     //! returning their score.
@@ -65,9 +70,29 @@ private:
     //! \return [out] If word could be added.
     bool addWord(string word,int row,int col,bool isVertical);
 
+    //! Function that is responsible for executing the Word Finder algorithm,
+    //! for the search of simple or compound words.
+    //! \param word
+    //! \param row
+    //! \param col
+    //! \param isVertical
+    //! \return
     bool validateWord(string word, int row, int col, bool isVertical);
 
+    //! Check if there are any words composed in the column of the word entered.
+    //! \param word
+    //! \param row
+    //! \param col
+    //! \param isVertical
+    //! \return
     string verticalIterator(string word, int row, int col,bool isVertical);
+
+    //! Check if there are any words composed in the row of the word entered.
+    //! \param word
+    //! \param row
+    //! \param col
+    //! \param isVertical
+    //! \return
     string horizontalIterator(string word, int row, int col,bool isVertical);
 
     //! Send the tiles to the players
@@ -80,17 +105,12 @@ private:
     }
 
 
-
     //! Resets the Board if word isnt accepted
     //! \param position vector with recent positions added
     void resetBoard(int word_len,int row,int col,bool vertical);
 
 public:
 
-    //! Receive the message from the clients.
-    //! \return
-    //bool recieveMessage(string json);
-    bool recieveMessage(string json);
 
     /* -------------------
      *  PUBLIC METHODS

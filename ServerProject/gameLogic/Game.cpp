@@ -5,7 +5,7 @@
 #include "Game.hpp"
 
 // Constructor de juego: Inicializa los parametros
-Game::Game(){
+Game::Game() {
 
     // Inicializacion de los objetos del juego
     gameCode = codeGenerator();
@@ -17,9 +17,8 @@ Game::Game(){
     setCode(getGameCode());
     try {
         initSocket();
-    }catch(string ex)
-    {
-        cout << ex;
+    } catch (string ex) {
+        cout<<ex;
     }
 
 }
@@ -39,7 +38,7 @@ string Game::codeGenerator() {
     ifstream file(codePath);
 
     vector<string> fileInfo;
-    string line,code;
+    string line, code;
 
     if (file.is_open()) {
 
@@ -48,13 +47,13 @@ string Game::codeGenerator() {
         getline(file, line);
         boost::split(fileInfo, line, boost::is_any_of(",")); // Hace split sobre el texto
 
-        for (int i= 0; i < 6; i++) {
-            code+=fileInfo[rand()%fileInfo.size()];
+        for (int i = 0; i < 6; i++) {
+            code += fileInfo[rand() % fileInfo.size()];
         }
 
         file.close();
 
-    } else cout << "txt not opened.";
+    } else cout<<"txt not opened.";
 
     return code;
 }
@@ -67,10 +66,10 @@ string Game::codeGenerator() {
 
 void Game::add_players() {
 
-    try{
+    try {
         addFirstClient();
         cout<<">> TO JOIN THIS GAME, USE THIS CODE: "<<getGameCode()<<endl;
-        while(getClientsAmt()<getMaxCap()){
+        while (getClientsAmt() < getMaxCap()) {
             addClients();
         }
         /* ------------------------------------------------------
@@ -80,22 +79,21 @@ void Game::add_players() {
          * ------------------------------------------------------*/
         sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
 
-    }catch(string ex)
-    {
-        cout << ex;
+    } catch (string ex) {
+        cout<<ex;
     }
 
     start_game();
 }
 
-void Game::start_game(){
+void Game::start_game() {
 
     runServer();
-    thread play_t(&Game::play,this);
+    thread play_t(&Game::play, this);
     play_t.join();
 }
 
-void Game::msgHandler(const char* msg) {
+void Game::msgHandler(const char *msg) {
     string s_msg = msg;
     recieveMessage(s_msg);
 }
@@ -106,7 +104,7 @@ void Game::msgHandler(const char* msg) {
  *
  * ---------------------------------------------------------------------*/
 
-void Game::play(){
+void Game::play() {
 
     /*                  ESQUEMA DE EJECUCION DEL JUEGO
      * 1. Una funcion que le envie sus fichas a c/jugador y el turno actual
@@ -138,7 +136,7 @@ bool Game::recieveMessage(string json) {
     pJSON->deserealize(json.c_str());
     pJSON = pJSON->deserealize(json.c_str());
 
-    switch(pJSON->getID()){
+    switch (pJSON->getID()) {
         case 1:
             // Mensaje de confirmacion
             cout<<">> ID:1 --> CONFIRMACION"<<endl;
@@ -171,70 +169,71 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
     cout<<word.length()<<endl;
 
     // Se itera sobre la palabra para añadir cada letra al tablero
-    for(int j = (isVertical)? row:col;index < word.length();j++) {
+    for (int j = (isVertical) ? row : col; index < word.length(); j++) {
 
         string letter = "";
         letter += word[index];
         cout<<letter<<endl;
 
         // Obteniendo referencias del deck
-        cout<<"Añadiendo ficha en:"<<((isVertical)? j:row)<<((isVertical)?col:j )<<endl;
+        cout<<"Añadiendo ficha en:"<<((isVertical) ? j : row)<<((isVertical) ? col : j)<<endl;
         LetterTile *wLetter = gameDeck->getLetterFromDeck(letter);
 
         // Agregando al board
         cout<<wLetter->getLetter()<<endl;
-        gameBoard->addLetterTile((isVertical)? j:row,(isVertical)? col:j,wLetter);
+        gameBoard->addLetterTile((isVertical) ? j : row, (isVertical) ? col : j, wLetter);
         index++;
     }
 }
 
 // Este método valida las palabras
 bool Game::validateWord(string word, int row, int col, bool isVertical) {
-    if(gameDictionary->searchInDictionary(word)){
+    if (gameDictionary->searchInDictionary(word)) {
 
-        addWord(word,row,col,isVertical); //Añadir la palabra
+        addWord(word, row, col, isVertical); //Añadir la palabra
         //sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));//Envia el mensaje de confirmacion
         //nextTurn(); // Setea el sgte turno
         gameBoard->printGameBoard();
 
-    }else{
+    } else {
 
-        addWord(word,row,col,isVertical); // Añadir la palabra
+        addWord(word, row, col, isVertical); // Añadir la palabra
 
         // Iteracion vertical
-       string vert_word = verticalIterator(word,row,col,isVertical);
+        string vert_word = verticalIterator(word, row, col, isVertical);
 
-       if(gameDictionary->searchInDictionary(vert_word)) {
-           gameBoard->printGameBoard();
-           return true;
-       }
-
-       // Iteracion Horizontal
-       string hor_word = horizontalIterator(word,row,col,isVertical);
-
-       if(gameDictionary->searchInDictionary(hor_word)) {
+        if (gameDictionary->searchInDictionary(vert_word)) {
             gameBoard->printGameBoard();
             return true;
-       } else {
-           resetBoard(word.length(),row,col,isVertical);
-           cout<<"Palabra no encontrada"<<endl;
-           gameBoard->printGameBoard();
-       }
+        }
+
+        // Iteracion Horizontal
+        string hor_word = horizontalIterator(word, row, col, isVertical);
+
+        if (gameDictionary->searchInDictionary(hor_word)) {
+            gameBoard->printGameBoard();
+            return true;
+        } else {
+            resetBoard(word.length(), row, col, isVertical);
+            cout<<"Palabra no encontrada"<<endl;
+            gameBoard->printGameBoard();
+        }
     }
 }
 
 // Itera la columna en la que se posicione la palabra buscando palabras que coincidan
-string Game::verticalIterator(string word, int row, int col,bool isVertical) {
+string Game::verticalIterator(string word, int row, int col, bool isVertical) {
 
     cout<<"REVISION VERTICAL DOWN"<<endl;
 
-    string vert_coincidence = (isVertical)? word:"";
+    string vert_coincidence = (isVertical) ? word : "";
     // Comienza a recorrer desde la casilla siguiente
-    for (int itr_row = (isVertical)? row + word.length():row; itr_row < 15; itr_row++) {
+    for (int itr_row = (isVertical) ? row + word.length() : row; itr_row < 15; itr_row++) {
 
-        LetterTile* l = gameBoard->getLetterTile(itr_row,col);
-        if(l == nullptr) break;
-        else vert_coincidence+=l->getLetter(); cout<<l->getLetter()<<endl;
+        LetterTile *l = gameBoard->getLetterTile(itr_row, col);
+        if (l == nullptr) break;
+        else vert_coincidence += l->getLetter();
+        cout<<l->getLetter()<<endl;
     }
 
     cout<<"Revision VD: "<<vert_coincidence<<endl;
@@ -242,14 +241,14 @@ string Game::verticalIterator(string word, int row, int col,bool isVertical) {
     cout<<"REVISION VERTICAL UP"<<endl;
     // Comienza a recorrer desde la casilla anterior al inicio de la palabra
     string up_words = "";
-    for (int itr_row_ = row-1; itr_row_ >= 0; itr_row_--) {
+    for (int itr_row_ = row - 1; itr_row_ >= 0; itr_row_--) {
 
-        LetterTile* l = gameBoard->getLetterTile(itr_row_,col);
-        if(l == nullptr) break;
+        LetterTile *l = gameBoard->getLetterTile(itr_row_, col);
+        if (l == nullptr) break;
         else {
-            up_words+=l->getLetter();
+            up_words += l->getLetter();
             cout<<l->getLetter()<<endl;
-            vert_coincidence = up_words+vert_coincidence;
+            vert_coincidence = up_words + vert_coincidence;
         }
     }
 
@@ -260,13 +259,14 @@ string Game::verticalIterator(string word, int row, int col,bool isVertical) {
 string Game::horizontalIterator(string word, int row, int col, bool isVertical) {
     cout<<"REVISION HORIZONTAL RIGTH"<<endl;
 
-    string hor_coincidence = (isVertical)? "":word;
+    string hor_coincidence = (isVertical) ? "" : word;
     // Comienza a recorrer desde la casilla siguiente
-    for (int itr_col = (!isVertical)? col + word.length():col; itr_col < 15; itr_col++) {
+    for (int itr_col = (!isVertical) ? col + word.length() : col; itr_col < 15; itr_col++) {
 
-        LetterTile* l = gameBoard->getLetterTile(row,itr_col);
-        if(l == nullptr) break;
-        else hor_coincidence+=l->getLetter(); cout<<l->getLetter()<<endl;
+        LetterTile *l = gameBoard->getLetterTile(row, itr_col);
+        if (l == nullptr) break;
+        else hor_coincidence += l->getLetter();
+        cout<<l->getLetter()<<endl;
     }
 
     cout<<"Revision HR: "<<hor_coincidence<<endl;
@@ -274,14 +274,14 @@ string Game::horizontalIterator(string word, int row, int col, bool isVertical) 
     cout<<"REVISION HORIZONTAL LEFT"<<endl;
     // Comienza a recorrer desde la casilla anterior al inicio de la palabra
     string left_words = "";
-    for (int itr_col_ = col-1; itr_col_ >= 0; itr_col_--) {
+    for (int itr_col_ = col - 1; itr_col_ >= 0; itr_col_--) {
 
-        LetterTile* l = gameBoard->getLetterTile(row,itr_col_);
-        if(l == nullptr) break;
+        LetterTile *l = gameBoard->getLetterTile(row, itr_col_);
+        if (l == nullptr) break;
         else {
-            left_words+=l->getLetter();
+            left_words += l->getLetter();
             cout<<l->getLetter()<<endl;
-            hor_coincidence = left_words+hor_coincidence;
+            hor_coincidence = left_words + hor_coincidence;
         }
     }
 
@@ -293,10 +293,10 @@ string Game::horizontalIterator(string word, int row, int col, bool isVertical) 
 // Metodo que vuelve el Board a un estado previo si la palabra no es aceptada
 void Game::resetBoard(int size, int row, int col, bool vertical) {
     int index = 0;
-    for(int j = (vertical)? row:col;index < size;j++) {
+    for (int j = (vertical) ? row : col; index < size; j++) {
 
         // Eliminando la letra
-        gameBoard->addLetterTile((vertical)? j:row,(vertical)? col:j, nullptr);
+        gameBoard->addLetterTile((vertical) ? j : row, (vertical) ? col : j, nullptr);
         index++;
     }
 }
