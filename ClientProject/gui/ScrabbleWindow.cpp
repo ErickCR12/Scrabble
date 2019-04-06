@@ -8,10 +8,17 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui(new Ui::ScrabbleWindow)
 {
     ui->setupUi(this);
+    QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/board/boardWallpaperButtons.png");
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
+    ui->scrabbleButton->setFlat(true);
+    ui->passButton->setFlat(true);
     player = new Player();
     scene = new QGraphicsScene(this);
     scene->setSceneRect(0,0,580,510);
     scene->setBackgroundBrush(QBrush(Qt::darkGreen, Qt::SolidPattern));
+    ui->scoresFrame->setStyleSheet(" .QFrame { background-color: darkgreen }");
     QGraphicsView* view = new QGraphicsView(scene);
     view->setInteractive(true);
     view->setDragMode(QGraphicsView::ScrollHandDrag);

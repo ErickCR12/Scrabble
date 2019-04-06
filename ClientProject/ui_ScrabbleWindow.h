@@ -25,6 +25,8 @@ class Ui_ScrabbleWindow
 public:
     QFrame *boardFrame;
     QPushButton *scrabbleButton;
+    QPushButton *passButton;
+    QFrame *scoresFrame;
 
     void setupUi(QDialog *ScrabbleWindow)
     {
@@ -47,7 +49,15 @@ public:
         boardFrame->setFrameShadow(QFrame::Plain);
         scrabbleButton = new QPushButton(ScrabbleWindow);
         scrabbleButton->setObjectName(QStringLiteral("scrabbleButton"));
-        scrabbleButton->setGeometry(QRect(740, 510, 141, 51));
+        scrabbleButton->setGeometry(QRect(670, 480, 201, 61));
+        passButton = new QPushButton(ScrabbleWindow);
+        passButton->setObjectName(QStringLiteral("passButton"));
+        passButton->setGeometry(QRect(900, 450, 121, 111));
+        scoresFrame = new QFrame(ScrabbleWindow);
+        scoresFrame->setObjectName(QStringLiteral("scoresFrame"));
+        scoresFrame->setGeometry(QRect(690, 60, 311, 361));
+        scoresFrame->setFrameShape(QFrame::StyledPanel);
+        scoresFrame->setFrameShadow(QFrame::Raised);
 
         retranslateUi(ScrabbleWindow);
 
@@ -57,7 +67,8 @@ public:
     void retranslateUi(QDialog *ScrabbleWindow)
     {
         ScrabbleWindow->setWindowTitle(QApplication::translate("ScrabbleWindow", "Scrabble!", Q_NULLPTR));
-        scrabbleButton->setText(QApplication::translate("ScrabbleWindow", "Scrabble!", Q_NULLPTR));
+        scrabbleButton->setText(QString());
+        passButton->setText(QString());
     } // retranslateUi
 
 };

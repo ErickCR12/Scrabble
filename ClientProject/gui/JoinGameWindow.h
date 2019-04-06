@@ -2,6 +2,7 @@
 #define JOINGAMEWINDOW_H
 
 #include <QDialog>
+#include "socketcomunications/socketcliente.h"
 
 namespace Ui {
 class JoinGameWindow;
@@ -18,10 +19,12 @@ public:
 private slots:
 
     void on_cancelCodeButton_clicked();
-
     void on_insertCodeButton_clicked();
+    void printMensaje(QString msn);
+    void sendMensaje();
 
 private:
+    SocketCliente *conexion;
     Ui::JoinGameWindow *ui;
 };
 

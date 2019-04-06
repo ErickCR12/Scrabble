@@ -62,14 +62,43 @@
   <widget class="QPushButton" name="scrabbleButton">
    <property name="geometry">
     <rect>
-     <x>740</x>
-     <y>510</y>
-     <width>141</width>
-     <height>51</height>
+     <x>670</x>
+     <y>480</y>
+     <width>201</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>Scrabble!</string>
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="passButton">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>450</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="scoresFrame">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>60</y>
+     <width>311</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
   </widget>
  </widget>
