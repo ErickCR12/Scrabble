@@ -1,6 +1,7 @@
 #include "ScrabbleWindow.h"
 #include "ui_ScrabbleWindow.h"
 #include <iostream>
+#include <fstream>
 
 ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     QDialog(parent),
@@ -23,7 +24,7 @@ void ScrabbleWindow::createBoardFrame(QGraphicsView* view){
 
     int rectangleSize = 34;
     QRectF rect(0,0,rectangleSize,rectangleSize);
-    QBrush myBrush(Qt::darkGray, Qt::Dense5Pattern);
+    QBrush myBrush;
     int xPos = 0;
     int yPos = 0;
     for(int i = 0; i < 15; i++){
@@ -31,6 +32,9 @@ void ScrabbleWindow::createBoardFrame(QGraphicsView* view){
             QGraphicsRectItem *rItem = new QGraphicsRectItem(rect);
             scene->addItem(rItem);
             rItem->setPos(xPos,yPos);
+            string multiplier = getMultiplierFromCSV(i, j);
+            QString imagePath = QCoreApplication::applicationDirPath() + QString::fromStdString("/images/board/"+multiplier+".png");
+            myBrush.setTextureImage(QImage(imagePath));
             rItem->setBrush(myBrush);
             xPos += rectangleSize;
         }
@@ -69,6 +73,7 @@ void ScrabbleWindow::on_scrabbleButton_clicked(){
     vector<vector<int>> tilePositions = board->getWordPositions();
     vector<string> wordVector;
     string word = board->getWord();
+    if(word.size() == 0) return;
     word = word.substr(0, word.length()-1);
     boost::split(wordVector, word, boost::is_any_of(","));
     for(int i = 0; i < wordVector.size(); i++){
@@ -123,6 +128,20 @@ void ScrabbleWindow::placeWordInBoard(string word, vector<vector<int>> wordPosit
         dItem->setUndraggable();
         board->gameBoard[wordPositions[j][0]][wordPositions[j][1]] = letter;
     }
+}
+
+string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
+    string line;
+    vector<string> row;
+    ifstream multiplierFile = ifstream(QCoreApplication::applicationDirPath().toStdString() + "/gui/multiplierFile.csv");
+    if (multiplierFile.is_open()) {
+        for(int i = 0; i < rowPos+1; i++)
+            getline(multiplierFile, line);
+        boost::split(row, line, boost::is_any_of(","));
+        return row[columnPos];
+        multiplierFile.close();
+    } else cout << "File could not be opened.";
+    return 0;
 }
 
 ScrabbleWindow::~ScrabbleWindow(){
