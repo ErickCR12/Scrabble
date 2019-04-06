@@ -12,10 +12,12 @@
 #include <string.h>
 #include <string>
 #include <iostream>
+#include <fstream>
 #include <thread> // This library is chosen for its simplicity (Although using pthread is not bad)
 #include <vector>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include <boost/algorithm/string.hpp>
 
 using namespace std;
 

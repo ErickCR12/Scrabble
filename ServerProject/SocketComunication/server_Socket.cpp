@@ -21,7 +21,20 @@ bool server_Socket::createSocket() {
     socketInfo.sin_family = AF_INET;
 
     //Allows that any computer that knows the server ip connects to it
-    socketInfo.sin_addr.s_addr = inet_addr("127.0.0.1"); // To know this Ip in console: hostname -I | awk '{print $1}'
+    string ip_address;
+    string configPath = "../TextFiles/config.properties";
+    ifstream config_file(configPath);
+    vector<string> info;
+    string line;
+    if (config_file.is_open()){
+        getline(config_file,line);
+        info.clear();
+        boost::split(info,line,boost::is_any_of("="));
+        ip_address=info[1];
+        config_file.close();// Closes file.
+    } else cout << "Properties file not opened.";
+
+    socketInfo.sin_addr.s_addr = inet_addr(ip_address.c_str()); // To know this Ip in console: hostname -I | awk '{print $1}'
 
     //Indicates the server socket port. The htons only allows "small" socket ports. htonl for "big" socket port.
     socketInfo.sin_port = htons(this->port);
