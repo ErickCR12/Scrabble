@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTH
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googlemock/include" -I"/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googlemock" -isystem "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googletest/include" -isystem "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto \#1/Scrabble/ServerProject/lib/googletest-master/googletest" 
+CXX_INCLUDES = -I/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googlemock/include -I/home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googlemock -isystem /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest/include -isystem /home/oscar_araya_x/CLionProjects/Scrabble/ServerProject/lib/googletest-master/googletest 
 

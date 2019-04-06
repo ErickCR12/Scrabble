@@ -146,7 +146,7 @@ bool Game::recieveMessage(string json) {
         case 2:
             // Mensaje de enviar la palabra
             cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
-            addWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+            validateWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
             break;
         case 3:
             // Mensaje de pasar turno o jugar de nuevo
@@ -164,33 +164,56 @@ bool Game::recieveMessage(string json) {
     return true;
 }
 
+// Añade la palabra
 bool Game::addWord(string word, int row, int col, bool isVertical) {
+
+    cout<<"palabra encontrada"<<endl;
+    int index = 0;
+    cout<<word.length()<<endl;
+    for(int j = (isVertical)? row:col;index < word.length();j++) {
+
+        string letter = "";
+        letter += word[index];
+        cout<<letter<<endl;
+        cout<<"Añadiendo ficha en:"<<((isVertical)? j:row)<<((isVertical)?col:j )<<endl;
+        LetterTile *wLetter = gameDeck->getLetterFromDeck(letter);
+        cout<<wLetter->getLetter()<<endl;
+        gameBoard->addLetterTile((isVertical)? j:row,(isVertical)? col:j,wLetter);
+        index++;
+
+    }
+    sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));
+    nextTurn();
+    gameBoard->printGameBoard();
+
+}
+
+// Este método valida las palabras
+bool Game::validateWord(string word, int row, int col, bool isVertical) {
     if(gameDictionary->searchInDictionary(word)){
-        cout<<"palabra encontrada"<<endl;
-        int index = 0;
-        cout<<word.length()<<endl;
-        for(int j = (isVertical)? row:col;index < word.length();j++) {
+        addWord(word,row,col,isVertical);
 
-            string letter = "";
-            letter += word[index];
-            cout<<letter<<endl;
-            cout<<"Añadiendo ficha en:"<<((isVertical)? j:row)<<((isVertical)?col:j )<<endl;
-            LetterTile *wLetter = gameDeck->getLetterFromDeck(letter);
-            cout<<wLetter->getLetter()<<endl;
-            gameBoard->addLetterTile((isVertical)? j:row,(isVertical)? col:j,wLetter);
-            index++;
+    }else{
 
-        }
-        sendSingleMessage("Palabra_insertada",getClient(currentTurn-1));
-        nextTurn();
+        LetterTile* l = new LetterTile("a",1,1);
+        vector<vector<int>> p;
+        gameBoard->addLetterTile(2,2,l);
+        vector<int> pp;
+        pp.push_back(2);
+        pp.push_back(2);
+        p.push_back(pp);
         gameBoard->printGameBoard();
-    } else {
-        cout<<"No encontrada"<<endl;
-
-        sendSingleMessage("Palabra_incorrecta",getClient(currentTurn-1));
+        resetBoard(p);
+        gameBoard->printGameBoard();
     }
 }
 
+
+void Game::resetBoard(vector<vector<int>> position) {
+    for(int i=0;i<position.size();i++){
+        gameBoard->addLetterTile(position[i][0],position[i][1], nullptr);
+    }
+}
 
 /* ---------------------------------------------------------------------
  *
