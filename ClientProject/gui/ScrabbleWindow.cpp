@@ -78,9 +78,9 @@ void ScrabbleWindow::on_scrabbleButton_clicked(){
     boost::split(wordVector, word, boost::is_any_of(","));
     for(int i = 0; i < wordVector.size(); i++){
         vector<int> position = tilePositions[i];
-        cout <<"{" << wordVector[i] ;
-        cout << ", [" << position[0];
-        cout << ", " << position[1] << "]}" << endl;
+//        cout <<"{" << wordVector[i] ;
+//        cout << ", [" << position[0];
+//        cout << ", " << position[1] << "]}" << endl;
     }
 
     resetPlay();
@@ -92,7 +92,7 @@ void ScrabbleWindow::resetPlay(){
     vector<DraggableTile*> tiles = player->getWidgetsPlayerDeck();
     vector<vector<int>> tilePositions = board->getWordPositions();
     vector<int> actualPosition;
-    tiles[0]->printGameBoard(board);
+    //tiles[0]->printGameBoard(board);
     for(int i = 0; i < tiles.size(); i++){
         if(i<tilePositions.size()){
             actualPosition = tilePositions[i];
@@ -101,7 +101,7 @@ void ScrabbleWindow::resetPlay(){
         scene->removeItem(tiles[i]);
         delete tiles[i];
     }
-    tiles[0]->printGameBoard(board);
+    //tiles[0]->printGameBoard(board);
     board->resetWordVector();
     player->resetWidgetsDeck();
     player->resetPlayerDeck();

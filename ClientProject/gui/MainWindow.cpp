@@ -13,16 +13,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap bkgnd("/home/erickcr12/Desktop/images/background.jpeg");
-    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/mainWindow/background.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
 
-    QPixmap pixmap("/home/erickcr12/Desktop/images/logo.jpeg");
-    QIcon ButtonIcon(pixmap);
-    ui->joinGameButton->setIcon(ButtonIcon);
-    ui->joinGameButton->setIconSize(pixmap.rect().size());
+    ui->joinGameButton->setFlat(true);
+    ui->createGameButton->setFlat(true);
+
 }
 
 MainWindow::~MainWindow()
