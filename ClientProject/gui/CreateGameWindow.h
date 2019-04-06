@@ -2,6 +2,7 @@
 #define CREATEGAMEWINDOW_H
 
 #include <QDialog>
+#include <socketcomunications/socketcliente.h>
 
 namespace Ui {
 class CreateGameWindow;
@@ -17,10 +18,12 @@ public:
 
 private slots:
     void on_acceptCreationButton_clicked();
-
     void on_cancelCreationButton_clicked();
+    void printMensaje(QString msn);
+    void sendMensaje();
 
 private:
+    SocketCliente *conexion;
     Ui::CreateGameWindow *ui;
 };
 

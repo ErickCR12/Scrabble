@@ -32,7 +32,8 @@ SOURCES  += main.cpp\
             gui/JoinGameWindow.cpp \
             gui/CreateGameWindow.cpp \
             gui/DraggableTile.cpp \
-            gui/ScrabbleWindow.cpp
+            gui/ScrabbleWindow.cpp \
+            socketcomunications/socketcliente.cpp
 
 HEADERS  +=\
             clientlogic/Player.hpp\
@@ -43,7 +44,8 @@ HEADERS  +=\
             gui/JoinGameWindow.h \
             gui/CreateGameWindow.h \
             gui/DraggableTile.h \
-            gui/ScrabbleWindow.h
+            gui/ScrabbleWindow.h \
+            socketcomunications/socketcliente.h
 
 FORMS    += \
             gui/MainWindow.ui \
