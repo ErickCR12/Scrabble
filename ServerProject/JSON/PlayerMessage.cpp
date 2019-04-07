@@ -33,10 +33,12 @@ void PlayerMessage::setMessage3_(int id,bool pass) {
     this-> pass = pass;
 }
 
-void PlayerMessage::setMessage4_(int id,bool exp,string word) {
+void PlayerMessage::setMessage4_(int id,string word, int fRow,int fCol,bool is_vertical) {
     this-> id = id,
-    this-> exp_request = exp;
     this-> word = word;
+    this-> firstRow = fRow;
+    this-> firstCol = fCol;
+    this-> isVertical = is_vertical;
 }
 
 /* -------------------------------------------
@@ -86,10 +88,14 @@ void PlayerMessage::Serializer4_(Writer &writer) const{
     writer.StartObject();
     writer.String("id");
     writer.Int(id);
-    writer.String("exp_request");
-    writer.Bool(exp_request);
     writer.String("word");
     writer.String(word.c_str());
+    writer.String("firstRow");
+    writer.Int(firstRow);
+    writer.String("firstCol");
+    writer.Int(firstCol);
+    writer.String("is_Vertical");
+    writer.Bool(isVertical);
     writer.EndObject();
 }
 
@@ -151,9 +157,12 @@ string PlayerMessage::serialize() {
                 break;
             }
             case 4:{
-                bool exp = doc["exp_request"].GetBool();
                 string pWord = doc["word"].GetString();
-                parsedPlayer->setMessage4_(id, exp,pWord);
+                int pFirstRow = doc["firstRow"].GetInt();
+                int pFirstCol = doc["firstCol"].GetInt();
+                bool pVertical = doc["is_Vertical"].GetBool();
+
+                parsedPlayer->setMessage4_(id, pWord, pFirstRow, pFirstCol, pVertical);
                 break;
             }
             default:

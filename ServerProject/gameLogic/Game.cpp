@@ -83,7 +83,10 @@ void Game::add_players() {
          * ------------------------------------------------------*/
         //Envia a cada jugador sus 7 fichas iniciales
         for (int i = 0; i < clients.size(); i++) {
-            dealTiles(7,i);
+            string tiles = dealTiles(7);
+            serv_msg->setMessage2_(2, tiles.substr(0, tiles.size()-1), i);
+            string json = serv_msg->serialize();
+            sendSingleMessage(json.c_str(), clients[i]);
         }
 
     } catch (string ex) {
@@ -136,22 +139,21 @@ void Game::play() {
 }
 
 // Gives random letterTiles to all players
-void Game::dealTiles(int amountTiles,int player_index) {
-    ServerMessage *message = new ServerMessage();
+string Game::dealTiles(int amountTiles) {
+
 
     string tiles = "";
     for(int amountOfLetters = 0; amountOfLetters != amountTiles; amountOfLetters++) {
         tiles += this->gameDeck->giveRandomLetter()->getLetter() + ",";
     }
-    message->setMessage2_(2, tiles.substr(0, tiles.size()-1), player_index);
-    string json = message->serialize();
-    sendSingleMessage(json.c_str(), clients[player_index]);
+    return tiles;
 }
 
 bool Game::recieveMessage(string json) {
 
-    cout<<"Entra bien a recieveMessage y el mensaje es: "<<json<<endl;
+    //cout<<"Entra bien a recieveMessage y el mensaje es: "<<json<<endl;
     // Deserializar el mensaje
+
     PlayerMessage *pJSON = new PlayerMessage();
     pJSON->deserealize(json.c_str());
     pJSON = pJSON->deserealize(json.c_str());
@@ -169,6 +171,8 @@ bool Game::recieveMessage(string json) {
         case 3:
             // Mensaje de pasar turno o jugar de nuevo
             cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
+            if(pJSON->getPass()) nextTurn();
+            // Notify all players new turn
             break;
         case 4:
             cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
@@ -183,14 +187,14 @@ bool Game::recieveMessage(string json) {
 }
 
 // Añade la palabra
-int Game::addWord(string word, int row, int col, bool isVertical) {
+int Game::addWord(vector<string> word, int row, int col, bool isVertical) {
 
     int index = 0;
     int points = 0;
-    cout<<word.length()<<endl;
+    cout<<word.size()<<endl;
 
     // Se itera sobre la palabra para añadir cada letra al tablero
-    for (int j = (isVertical) ? row : col; index < word.length(); j++) {
+    for (int j = (isVertical) ? row : col; index < word.size(); j++) {
 
         string letter = "";
         letter += word[index];
@@ -210,16 +214,30 @@ int Game::addWord(string word, int row, int col, bool isVertical) {
 }
 
 // Este método valida las palabras
-bool Game::validateWord(string word, int row, int col, bool isVertical) {
+bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
+
     // Variable que almacena el posible puntaje de la palabra asignada
     int word_points = 0;
+
+    // Hace split a la palabra por comas ","
+    vector<string> word_vector;
+    boost::split(word_vector,recv_word,boost::is_any_of(","));
+
+    // Prepara la variable donde almacenara las fichas de reposicion
+    string word = "";
+    for(int i = 0; i < word_vector.size();i++){
+        word += word_vector[i];
+    }
+
+    string refillTiles;
 
     // 1. Si la palabra inicialmente esta en el diccionario
     if (gameDictionary->searchInDictionary(word)) {
 
-        word_points = addWord(word, row, col, isVertical); //Añadir la palabra
+        word_points = addWord(word_vector, row, col, isVertical); //Añadir la palabra
+        refillTiles = dealTiles(word_vector.size());
         ServerMessage* serv_msg = new ServerMessage();
-        serv_msg->setMessage3_(3,true,word_points);
+        serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
         nextTurn(); // Setea el sgte turno
@@ -229,16 +247,17 @@ bool Game::validateWord(string word, int row, int col, bool isVertical) {
 
     } else {
         // 2. Si no, se bucan matches en el tablero
-        word_points = addWord(word, row, col, isVertical); // Añadir la palabra
+        word_points = addWord(word_vector, row, col, isVertical); // Añadir la palabra
 
         // 3. Iteracion vertical
         string vert_word = verticalIterator(word, row, col, isVertical);
 
         // 4. Si alguna palabra se compone con una vertical, se toma esta para ser tomada
         if (gameDictionary->searchInDictionary(vert_word)) {
-
+            cout<<"Añadiendo palabra vertical"<<endl;
+            refillTiles = dealTiles(word_vector.size());
             ServerMessage* serv_msg = new ServerMessage();
-            serv_msg->setMessage3_(3,true,word_points);
+            serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
             string json = serv_msg->serialize();
 
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
@@ -253,8 +272,11 @@ bool Game::validateWord(string word, int row, int col, bool isVertical) {
 
         if (gameDictionary->searchInDictionary(hor_word)) {
             //6. Si se encuentra la palabra
+            cout<<"Añadiendo palabra horizontal"<<endl;
+
+            refillTiles = dealTiles(word_vector.size());
             ServerMessage* serv_msg = new ServerMessage();
-            serv_msg->setMessage3_(3,true,word_points);
+            serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
             string json = serv_msg->serialize();
 
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
@@ -267,7 +289,7 @@ bool Game::validateWord(string word, int row, int col, bool isVertical) {
             resetBoard(word.length(), row, col, isVertical);
             cout<<"Palabra no encontrada"<<endl;
             ServerMessage* serv_msg = new ServerMessage();
-            serv_msg->setMessage3_(3,false,0);
+            serv_msg->setMessage3_(3,false,0,"");
             string json = serv_msg->serialize();
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
 

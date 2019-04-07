@@ -69,7 +69,7 @@ private:
     //! \param col
     //! \param isVertical [int]: bool flag that indicates if the added word is vertical
     //! \return [out] If word could be added.
-    int addWord(string word,int row,int col,bool isVertical);
+    int addWord(vector<string> word,int row,int col,bool isVertical);
 
     //! Function that is responsible for executing the Word Finder algorithm,
     //! for the search of simple or compound words.
@@ -144,7 +144,7 @@ public:
     //! of LetterTiles is greater than zero
     void play();
 
-    void dealTiles(int amount,int player_index);
+    string dealTiles(int amount);
 
 
     /* ----------------------
