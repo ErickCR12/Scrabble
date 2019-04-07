@@ -25,7 +25,7 @@ private slots:
 
     void on_cancelCodeButton_clicked();
     void on_insertCodeButton_clicked();
-    void printMensaje(QString msn);
+    void receiveMessage(QString msn);
     void sendMensaje();
 
 private:

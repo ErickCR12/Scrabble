@@ -168,6 +168,24 @@ CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o
+ ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-function-mockers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-more-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-nice-strict.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-spec-builders.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-port.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-internal-utils.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-port.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-pp.h
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
  ../lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -197,23 +215,33 @@ CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodings.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/memorystream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/reader.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp
 CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.cpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
@@ -222,6 +250,24 @@ CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.cpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o
+ ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-function-mockers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-generated-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-more-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-nice-strict.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock-spec-builders.h
+ ../lib/googletest-master/googlemock/include/gmock/gmock.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-matchers.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-port.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-internal-utils.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-port.h
+ ../lib/googletest-master/googlemock/include/gmock/internal/gmock-pp.h
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
  ../lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -253,22 +299,31 @@ CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodings.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/memorystream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/reader.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp
 CMakeFiles/Scrabble.dir/main.cpp.o
  ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
  ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
@@ -318,19 +373,27 @@ CMakeFiles/Scrabble.dir/main.cpp.o
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodings.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/memorystream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/reader.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
  /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h

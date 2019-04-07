@@ -30,15 +30,15 @@ public:
     void createPlayerDeck(string letters);
     void resetPlay();
     void placeWordInBoard(string word, vector<vector<int>> wordPositions);
-    void recieveMessage(QString msg);
-    void sendMessage();
     string getMultiplierFromCSV(int rowPos, int columnPos);
     void setConexion(SocketCliente *conexion);
+    SocketCliente* getConexion();
     vector<string> sortPositions(vector<string> wordVector, bool isVertical);
 
 private slots:
     void on_scrabbleButton_clicked();
-
+    void receiveMessage(QString msg);
+    void sendMessage();
 private:
     Player *player;
     Ui::ScrabbleWindow *ui;
