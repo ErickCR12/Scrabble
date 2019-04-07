@@ -1,4 +1,4 @@
-# Install script for directory: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master
+# Install script for directory: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

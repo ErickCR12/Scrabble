@@ -250,7 +250,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         word_points = addWord(word_vector, row, col, isVertical); // Añadir la palabra
 
         // 3. Iteracion vertical
-        string vert_word = verticalIterator(word, row, col, isVertical);
+        string vert_word = verticalIterator(word,word_vector.size(), row, col, isVertical);
 
         // 4. Si alguna palabra se compone con una vertical, se toma esta para ser tomada
         if (gameDictionary->searchInDictionary(vert_word)) {
@@ -268,7 +268,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         }
 
         // 5. Si no hay palabra vertical se hace la Iteracion Horizontal
-        string hor_word = horizontalIterator(word, row, col, isVertical);
+        string hor_word = horizontalIterator(word,word_vector.size(), row, col, isVertical);
 
         if (gameDictionary->searchInDictionary(hor_word)) {
             //6. Si se encuentra la palabra
@@ -300,13 +300,13 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
 }
 
 // Itera la columna en la que se posicione la palabra buscando palabras que coincidan
-string Game::verticalIterator(string word, int row, int col, bool isVertical) {
+string Game::verticalIterator(string word,int len, int row, int col, bool isVertical) {
 
     cout<<"REVISION VERTICAL DOWN"<<endl;
 
     string vert_coincidence = (isVertical) ? word : "";
     // Comienza a recorrer desde la casilla siguiente
-    for (int itr_row = (isVertical) ? row + word.length() : row; itr_row < 15; itr_row++) {
+    for (int itr_row = (isVertical) ? row+len : row; itr_row < 15; itr_row++) {
 
         LetterTile *l = gameBoard->getLetterTile(itr_row, col);
         if (l == nullptr) break;
@@ -334,12 +334,12 @@ string Game::verticalIterator(string word, int row, int col, bool isVertical) {
     return vert_coincidence;
 }
 
-string Game::horizontalIterator(string word, int row, int col, bool isVertical) {
+string Game::horizontalIterator(string word,int len, int row, int col, bool isVertical) {
     cout<<"REVISION HORIZONTAL RIGTH"<<endl;
 
     string hor_coincidence = (isVertical) ? "" : word;
     // Comienza a recorrer desde la casilla siguiente
-    for (int itr_col = (!isVertical) ? col + word.length() : col; itr_col < 15; itr_col++) {
+    for (int itr_col = (!isVertical) ? col+len : col; itr_col < 15; itr_col++) {
 
         LetterTile *l = gameBoard->getLetterTile(row, itr_col);
         if (l == nullptr) break;
