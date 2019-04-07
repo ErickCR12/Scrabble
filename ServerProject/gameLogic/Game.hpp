@@ -86,7 +86,7 @@ private:
     //! \param col
     //! \param isVertical
     //! \return
-    string verticalIterator(string word, int row, int col,bool isVertical);
+    string verticalIterator(string word,int len, int row, int col,bool isVertical);
 
     //! Check if there are any words composed in the row of the word entered.
     //! \param word
@@ -94,7 +94,7 @@ private:
     //! \param col
     //! \param isVertical
     //! \return
-    string horizontalIterator(string word, int row, int col,bool isVertical);
+    string horizontalIterator(string word,int len, int row, int col,bool isVertical);
 
     //! Send the tiles to the players
     void send_LetterTiles();
