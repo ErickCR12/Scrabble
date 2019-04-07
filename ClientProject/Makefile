@@ -58,7 +58,7 @@ SOURCES       = main.cpp \
 		gui/CreateGameWindow.cpp \
 		gui/DraggableTile.cpp \
 		gui/ScrabbleWindow.cpp \
-		socketcomunications/socketcliente.cpp moc_MainWindow.cpp \
+		socketcomunication/socketcliente.cpp moc_MainWindow.cpp \
 		moc_JoinGameWindow.cpp \
 		moc_CreateGameWindow.cpp \
 		moc_ScrabbleWindow.cpp \
@@ -149,7 +149,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		gui/CreateGameWindow.h \
 		gui/DraggableTile.h \
 		gui/ScrabbleWindow.h \
-		socketcomunications/socketcliente.h main.cpp \
+		socketcomunication/socketcliente.h main.cpp \
 		clientlogic/Player.cpp \
 		clientlogic/Board.cpp \
 		json/PlayerMessage.cpp \
@@ -159,7 +159,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		gui/CreateGameWindow.cpp \
 		gui/DraggableTile.cpp \
 		gui/ScrabbleWindow.cpp \
-		socketcomunications/socketcliente.cpp
+		socketcomunication/socketcliente.cpp
 QMAKE_TARGET  = ClientProject
 DESTDIR       = 
 TARGET        = ClientProject
@@ -316,8 +316,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents clientlogic/Player.hpp clientlogic/Board.hpp json/PlayerMessage.hpp tests/PlayerTest.hpp gui/MainWindow.h gui/JoinGameWindow.h gui/CreateGameWindow.h gui/DraggableTile.h gui/ScrabbleWindow.h socketcomunications/socketcliente.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp clientlogic/Player.cpp clientlogic/Board.cpp json/PlayerMessage.cpp tests/PlayerTest.cpp gui/MainWindow.cpp gui/JoinGameWindow.cpp gui/CreateGameWindow.cpp gui/DraggableTile.cpp gui/ScrabbleWindow.cpp socketcomunications/socketcliente.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents clientlogic/Player.hpp clientlogic/Board.hpp json/PlayerMessage.hpp tests/PlayerTest.hpp gui/MainWindow.h gui/JoinGameWindow.h gui/CreateGameWindow.h gui/DraggableTile.h gui/ScrabbleWindow.h socketcomunication/socketcliente.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp clientlogic/Player.cpp clientlogic/Board.cpp json/PlayerMessage.cpp tests/PlayerTest.cpp gui/MainWindow.cpp gui/JoinGameWindow.cpp gui/CreateGameWindow.cpp gui/DraggableTile.cpp gui/ScrabbleWindow.cpp socketcomunication/socketcliente.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents gui/MainWindow.ui gui/JoinGameWindow.ui gui/CreateGameWindow.ui gui/ScrabbleWindow.ui $(DISTDIR)/
 
 
@@ -355,7 +355,8 @@ moc_JoinGameWindow.cpp: gui/JoinGameWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include gui/JoinGameWindow.h -o moc_JoinGameWindow.cpp
 
-moc_CreateGameWindow.cpp: gui/CreateGameWindow.h \
+moc_CreateGameWindow.cpp: socketcomunication/socketcliente.h \
+		gui/CreateGameWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include gui/CreateGameWindow.h -o moc_CreateGameWindow.cpp
 
@@ -384,9 +385,9 @@ moc_ScrabbleWindow.cpp: gui/DraggableTile.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include gui/ScrabbleWindow.h -o moc_ScrabbleWindow.cpp
 
-moc_socketcliente.cpp: socketcomunications/socketcliente.h \
+moc_socketcliente.cpp: socketcomunication/socketcliente.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
-	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include socketcomunications/socketcliente.h -o moc_socketcliente.cpp
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include socketcomunication/socketcliente.h -o moc_socketcliente.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -419,30 +420,7 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-main.o: main.cpp gui/MainWindow.h \
-		gui/ScrabbleWindow.h \
-		gui/DraggableTile.h \
-		clientlogic/Board.hpp \
-		clientlogic/Player.hpp \
-		json/PlayerMessage.hpp \
-		lib/rapidjson/prettywriter.h \
-		lib/rapidjson/writer.h \
-		lib/rapidjson/stream.h \
-		lib/rapidjson/rapidjson.h \
-		lib/rapidjson/msinttypes/stdint.h \
-		lib/rapidjson/msinttypes/inttypes.h \
-		lib/rapidjson/encodings.h \
-		lib/rapidjson/internal/meta.h \
-		lib/rapidjson/internal/stack.h \
-		lib/rapidjson/allocators.h \
-		lib/rapidjson/internal/swap.h \
-		lib/rapidjson/internal/strfunc.h \
-		lib/rapidjson/internal/dtoa.h \
-		lib/rapidjson/internal/itoa.h \
-		lib/rapidjson/internal/diyfp.h \
-		lib/rapidjson/internal/ieee754.h \
-		lib/rapidjson/stringbuffer.h \
-		tests/PlayerTest.hpp
+main.o: main.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 Player.o: clientlogic/Player.cpp clientlogic/Player.hpp \
@@ -526,7 +504,8 @@ PlayerTest.o: tests/PlayerTest.cpp tests/PlayerTest.hpp \
 MainWindow.o: gui/MainWindow.cpp gui/MainWindow.h \
 		ui_MainWindow.h \
 		gui/JoinGameWindow.h \
-		gui/CreateGameWindow.h
+		gui/CreateGameWindow.h \
+		socketcomunication/socketcliente.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o gui/MainWindow.cpp
 
 JoinGameWindow.o: gui/JoinGameWindow.cpp gui/JoinGameWindow.h \
@@ -556,6 +535,7 @@ JoinGameWindow.o: gui/JoinGameWindow.cpp gui/JoinGameWindow.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o JoinGameWindow.o gui/JoinGameWindow.cpp
 
 CreateGameWindow.o: gui/CreateGameWindow.cpp gui/CreateGameWindow.h \
+		socketcomunication/socketcliente.h \
 		ui_CreateGameWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CreateGameWindow.o gui/CreateGameWindow.cpp
 
@@ -588,8 +568,8 @@ ScrabbleWindow.o: gui/ScrabbleWindow.cpp gui/ScrabbleWindow.h \
 		ui_ScrabbleWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ScrabbleWindow.o gui/ScrabbleWindow.cpp
 
-socketcliente.o: socketcomunications/socketcliente.cpp socketcomunications/socketcliente.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o socketcliente.o socketcomunications/socketcliente.cpp
+socketcliente.o: socketcomunication/socketcliente.cpp socketcomunication/socketcliente.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o socketcliente.o socketcomunication/socketcliente.cpp
 
 moc_MainWindow.o: moc_MainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_MainWindow.o moc_MainWindow.cpp

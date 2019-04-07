@@ -2,7 +2,8 @@
 #define CREATEGAMEWINDOW_H
 
 #include <QDialog>
-#include <socketcomunications/socketcliente.h>
+#include "socketcomunication/socketcliente.h"
+#include "gui/ScrabbleWindow.h"
 
 namespace Ui {
 class CreateGameWindow;
@@ -17,14 +18,14 @@ public:
     ~CreateGameWindow();
 
 private slots:
-    void on_acceptCreationButton_clicked();
+//    void on_acceptCreationButton_clicked();
     void on_cancelCreationButton_clicked();
     void printMensaje(QString msn);
     void sendMensaje();
-
 private:
-    SocketCliente *conexion;
     Ui::CreateGameWindow *ui;
+    SocketCliente *conexion;
+    ScrabbleWindow *scrabbleWindow;
 };
 
 #endif // CREATEGAMEWINDOW_H

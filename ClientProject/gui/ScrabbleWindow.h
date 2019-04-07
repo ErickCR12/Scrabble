@@ -11,6 +11,8 @@
 #include <string>
 #include "DraggableTile.h"
 #include "clientlogic/Player.hpp"
+#include "socketcomunication/socketcliente.h"
+
 using namespace std;
 
 namespace Ui {
@@ -29,6 +31,7 @@ public:
     void resetPlay();
     void placeWordInBoard(string word, vector<vector<int>> wordPositions);
     string getMultiplierFromCSV(int rowPos, int columnPos);
+    void setConexion(SocketCliente *conexion);
 
 private slots:
     void on_scrabbleButton_clicked();
@@ -36,7 +39,8 @@ private slots:
 private:
     Player *player;
     Ui::ScrabbleWindow *ui;
-    QGraphicsScene* scene;
+    QGraphicsScene *scene;
+    SocketCliente *conexion;
 };
 
 #endif // SCRABBLEWINDOW_H

@@ -33,7 +33,7 @@ SOURCES  += main.cpp\
             gui/CreateGameWindow.cpp \
             gui/DraggableTile.cpp \
             gui/ScrabbleWindow.cpp \
-            socketcomunications/socketcliente.cpp
+            socketcomunication/socketcliente.cpp
 
 HEADERS  +=\
             clientlogic/Player.hpp\
@@ -45,7 +45,7 @@ HEADERS  +=\
             gui/CreateGameWindow.h \
             gui/DraggableTile.h \
             gui/ScrabbleWindow.h \
-            socketcomunications/socketcliente.h
+            socketcomunication/socketcliente.h
 
 FORMS    += \
             gui/MainWindow.ui \

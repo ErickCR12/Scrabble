@@ -136,7 +136,7 @@ int Player::getAmountOfLetterTiles(){
 }
 
 void Player::setAmountOfLetterTiles(int amount){
-    amountOfLetters = 0;
+    amountOfLetters = amount;
 }
 
 void Player::setPlayerName(string name){
@@ -181,4 +181,4 @@ void Player::printPositions() {
     }cout<<"NULL"<<endl;
 }
 
-#endif PLAYER_CPP
+#endif //PLAYER_CPP

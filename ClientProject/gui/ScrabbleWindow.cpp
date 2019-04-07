@@ -8,6 +8,7 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui(new Ui::ScrabbleWindow)
 {
     ui->setupUi(this);
+    this->conexion = conexion;
     QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/board/boardWallpaperButtons.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
@@ -156,4 +157,8 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
 
 ScrabbleWindow::~ScrabbleWindow(){
     delete ui;
+}
+
+void ScrabbleWindow::setConexion(SocketCliente *conexion){
+    this->conexion = conexion;
 }

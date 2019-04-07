@@ -2,7 +2,11 @@
 #define JOINGAMEWINDOW_H
 
 #include <QDialog>
-#include "socketcomunications/socketcliente.h"
+#include <QTextStream>
+#include <QMessageBox>
+#include "socketcomunication/socketcliente.h"
+#include "gui/ScrabbleWindow.h"
+
 
 namespace Ui {
 class JoinGameWindow;
@@ -24,8 +28,9 @@ private slots:
     void sendMensaje();
 
 private:
-    SocketCliente *conexion;
     Ui::JoinGameWindow *ui;
+    SocketCliente *conexion;
+    ScrabbleWindow *scrabbleWindow;
 };
 
 #endif // JOINGAMEWINDOW_H

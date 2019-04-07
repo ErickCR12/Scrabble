@@ -3,8 +3,6 @@
 #include "gui/ScrabbleWindow.h"
 #include <string>
 #include <iostream>
-#include <QMessageBox>
-#include <QTextStream>
 
 JoinGameWindow::JoinGameWindow(QWidget *parent) :
     QDialog(parent),
@@ -31,20 +29,19 @@ void JoinGameWindow::on_cancelCodeButton_clicked()
 
 void JoinGameWindow::on_insertCodeButton_clicked()
 {
-    QString qCode = ui->codeLineEdit->text();
-    string strCode = qCode.toStdString();
-    cout << strCode << endl;
-    //this->destroy();
-    //ScrabbleWindow scrabble;
-    //scrabble.setModal(true);
-    //scrabble.exec();
+//    QString qCode = ui->codeLineEdit->text();
+//    string strCode = qCode.toStdString();
+//    cout << strCode << endl;
+//    this->destroy();
+//    ScrabbleWindow scrabble;
+//    scrabble.setModal(true);
+//    scrabble.exec();
 }
 
 void JoinGameWindow::sendMensaje()
 {
     QString qCode = ui->codeLineEdit->text();
-    string strCode = qCode.toStdString();
-    conexion->setMensaje(strCode.c_str());
+    conexion->setMensaje(qCode.toStdString().c_str());
 }
 
 void JoinGameWindow::printMensaje(QString msn)
@@ -52,5 +49,5 @@ void JoinGameWindow::printMensaje(QString msn)
     QTextStream out(stdout);
     foreach(QString x, msn){
         out << x;
-    }out<<"\n";
+    }
 }
