@@ -77,7 +77,7 @@ void PlayerTest::test2() {
 //        if(ans == "N") ready = false;
 //    }
 
-    player1->sendMyWord();
+    //player1->sendMyWord();
 
 
 }

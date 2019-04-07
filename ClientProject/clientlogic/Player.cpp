@@ -88,22 +88,19 @@ void Player::resetPositions() {
 }
 
 // Prepara y envia el mensaje con la palabra construida
-bool Player::sendMyWord() {
+string Player::sendMyWord(string word, int firstRow, int firstColumn, bool isVertical) {
 
     PlayerMessage* myMessage = new PlayerMessage();
 
     // Envia como cuarto parametro la igual de las columnas, si estas son iguales,
     // entonces la palabra es vertical
-    myMessage->setMessage2_(2,myWord,positions[0],positions[1],positions[1]==positions[3]);
+    myMessage->setMessage2_(2,word,firstRow,firstColumn,isVertical);
 
     string myJSON = myMessage->serialize();
     cout<<"* JSON: "<<myJSON<<endl;
-
-    // Linea que envia el mensaje
-
     // Reinicia los atributos
     resetPositions();
-    myWord = "";
+    return myJSON;
 }
 
 /* -------------------------------------------------------------------------

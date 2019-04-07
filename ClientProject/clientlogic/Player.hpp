@@ -34,13 +34,13 @@ private:
 
 public:
 
-    //! @brief
+    //! @brief Player class constructor
     Player();
 
     // --------------------------------------
 
-    //! @brief
-    //! @param letterTile
+    //! @brief Adds the letters in the string received as a parameter to playerDeck vector attribute
+    //! @param string: letters to add to vector separated by commas
     void addLettersToPlayerDeck(string letters);
 
     //! @brief
@@ -53,8 +53,13 @@ public:
     //! @brief
     void resetPositions();
 
-    //! @brief
-    bool sendMyWord();
+    //! \brief sendMyWord
+    //! \param word
+    //! \param firstRow
+    //! \param firstColumn
+    //! \param isVertical
+    //! \return
+    string sendMyWord(string word, int firstRow, int firstColumn, bool isVertical);
 
     // ---------------------------------------
 

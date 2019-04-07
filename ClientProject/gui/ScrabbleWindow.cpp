@@ -8,8 +8,6 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui(new Ui::ScrabbleWindow)
 {
     ui->setupUi(this);
-    this->conexion = conexion;
-    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(getMessage(QString)));
     QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/board/boardWallpaperButtons.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
@@ -29,6 +27,8 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     view->setHorizontalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
     view->setVerticalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
     createBoardFrame(view);
+    this->conexion = conexion;
+    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(recieveMessage(QString)));
     //createPlayerDeck("a,b,a,c,o,ll,s");
 }
 
@@ -83,15 +83,29 @@ void ScrabbleWindow::createPlayerDeck(string letters){
 void ScrabbleWindow::on_scrabbleButton_clicked(){
     Board *board = player->getBoard();
     vector<vector<int>> tilePositions = board->getWordPositions();
-    vector<string> wordVector;
     string word = board->getWord();
+    vector<string> wordVector;
     if(word.size() == 0) return;
     word = word.substr(0, word.length()-1);
-    QTextStream out(stdout);
-    foreach(QString x, QString::fromStdString(word)){
-        out << x;
+    boost::split(wordVector, word, boost::is_any_of(","));
+    int firstCol = tilePositions[0][1];
+    int lastCol = tilePositions[tilePositions.size()-1][1];
+    bool isVertical = firstCol == lastCol;
+    wordVector = this->sortPositions(wordVector, isVertical);
+    tilePositions = board->getWordPositions();
+    word = "";
+    for(int i = 0; i < wordVector.size(); i++){
+        word += wordVector[i] + ",";
     }
+    string json = player->sendMyWord(word, tilePositions[0][0], tilePositions[0][1], isVertical);
 
+
+//    QTextStream out(stdout);
+//    for(int i = 0; i < wordVector.size(); i++){
+//        out << QString::fromStdString(wordVector[i] + "\n");
+//        out << QString::fromStdString(to_string(tilePositions[i][0]) + "\n");
+//        out << QString::fromStdString(to_string(tilePositions[i][1]) + "\n\n");
+//    }
 //    resetPlay();
 //    createPlayerDeck("a,b,a,c,o,ll,s");
 }
@@ -153,7 +167,7 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
     return 0;
 }
 
-void ScrabbleWindow::getMessage(QString msg){
+void ScrabbleWindow::recieveMessage(QString msg){
     QTextStream out(stdout);
     foreach(QString x, msg){
         out << x;
@@ -166,4 +180,24 @@ ScrabbleWindow::~ScrabbleWindow(){
 
 void ScrabbleWindow::setConexion(SocketCliente *conexion){
     this->conexion = conexion;
+}
+
+vector<string> ScrabbleWindow::sortPositions(vector<string> wordVector, bool isVertical){
+    Board *board = player->getBoard();
+    vector<vector<int>> tilePositions = board->getWordPositions();
+    int position = (isVertical) ? 0:1;
+    for(int i = 0; i < wordVector.size()-1; i++){
+        for(int j = i+1; j < wordVector.size(); j++){
+            if(tilePositions[j][position] < tilePositions[i][position]){
+                vector<int> temp = tilePositions[i];
+                tilePositions[i] = tilePositions[j];
+                tilePositions[j] = temp;
+                string tempLetter = wordVector[i];
+                wordVector[i] = wordVector[j];
+                wordVector[j] = tempLetter;
+            }
+        }
+    }
+    board->setWordPositions(tilePositions);
+    return wordVector;
 }

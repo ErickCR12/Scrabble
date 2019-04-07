@@ -30,9 +30,11 @@ public:
     void createPlayerDeck(string letters);
     void resetPlay();
     void placeWordInBoard(string word, vector<vector<int>> wordPositions);
-    void getMessage(QString msg);
+    void recieveMessage(QString msg);
+    void sendMessage();
     string getMultiplierFromCSV(int rowPos, int columnPos);
     void setConexion(SocketCliente *conexion);
+    vector<string> sortPositions(vector<string> wordVector, bool isVertical);
 
 private slots:
     void on_scrabbleButton_clicked();

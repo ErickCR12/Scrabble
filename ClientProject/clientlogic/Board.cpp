@@ -40,6 +40,10 @@ vector<vector<int>> Board::getWordPositions(){
     return wordPositions;
 }
 
+void Board::setWordPositions(vector<vector<int>> wordPositions){
+    this->wordPositions = wordPositions;
+}
+
 void Board::setWord(string word){
     this->word = word;
 }
