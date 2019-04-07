@@ -69,7 +69,7 @@ private:
     //! \param col
     //! \param isVertical [int]: bool flag that indicates if the added word is vertical
     //! \return [out] If word could be added.
-    bool addWord(string word,int row,int col,bool isVertical);
+    int addWord(string word,int row,int col,bool isVertical);
 
     //! Function that is responsible for executing the Word Finder algorithm,
     //! for the search of simple or compound words.
@@ -102,7 +102,7 @@ private:
     //! @brief Change the turn by PlayerID
     void nextTurn(){
         if(currentTurn<getMaxCap()) currentTurn++;
-        else currentTurn=1;
+        else currentTurn=0;
     }
 
 
@@ -144,7 +144,7 @@ public:
     //! of LetterTiles is greater than zero
     void play();
 
-    void dealTiles();
+    void dealTiles(int amount,int player_index);
 
 
     /* ----------------------

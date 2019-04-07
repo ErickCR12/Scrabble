@@ -81,9 +81,10 @@ void Game::add_players() {
          * escuchando pero que ya no acepte clientes sino que los
          * meta en un cola de espera!
          * ------------------------------------------------------*/
-        //sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
-        dealTiles();
-
+        //Envia a cada jugador sus 7 fichas iniciales
+        for (int i = 0; i < clients.size(); i++) {
+            dealTiles(7,i);
+        }
 
     } catch (string ex) {
         cout<<ex;
@@ -118,7 +119,7 @@ void Game::play() {
      * 3. Si totalTiles != 0 ->
      * 4. Recibe el JSON de el jugador -> lo deserializa
      */
-    currentTurn = 1;
+    currentTurn = 0;
     while (totalTiles >= 0) {
         if (totalTiles == 0) {
             // Esta parte realiza lo que sea que se haga en el ultimo turno
@@ -134,17 +135,17 @@ void Game::play() {
     closeSocket();
 }
 
-void Game::dealTiles() {
+// Gives random letterTiles to all players
+void Game::dealTiles(int amountTiles,int player_index) {
     ServerMessage *message = new ServerMessage();
-    for (int i = 0; i < clients.size(); i++) {
-        string tiles = "";
-        for(int amountOfLetters = 0; amountOfLetters != 7; amountOfLetters++) {
-            tiles += this->gameDeck->giveRandomLetter()->getLetter() + ",";
-        }
-        message->setMessage2_(2, tiles.substr(0, tiles.size()-1), i);
-        string json = message->serialize();
-        sendSingleMessage(json.c_str(), clients[i]);
+
+    string tiles = "";
+    for(int amountOfLetters = 0; amountOfLetters != amountTiles; amountOfLetters++) {
+        tiles += this->gameDeck->giveRandomLetter()->getLetter() + ",";
     }
+    message->setMessage2_(2, tiles.substr(0, tiles.size()-1), player_index);
+    string json = message->serialize();
+    sendSingleMessage(json.c_str(), clients[player_index]);
 }
 
 bool Game::recieveMessage(string json) {
@@ -182,9 +183,10 @@ bool Game::recieveMessage(string json) {
 }
 
 // Añade la palabra
-bool Game::addWord(string word, int row, int col, bool isVertical) {
+int Game::addWord(string word, int row, int col, bool isVertical) {
 
     int index = 0;
+    int points = 0;
     cout<<word.length()<<endl;
 
     // Se itera sobre la palabra para añadir cada letra al tablero
@@ -200,45 +202,77 @@ bool Game::addWord(string word, int row, int col, bool isVertical) {
 
         // Agregando al board
         cout<<wLetter->getLetter()<<endl;
+        points+=wLetter->getScore()*gameBoard->getScore((isVertical) ? j : row, (isVertical) ? col : j);
         gameBoard->addLetterTile((isVertical) ? j : row, (isVertical) ? col : j, wLetter);
         index++;
     }
+    return points;
 }
 
 // Este método valida las palabras
 bool Game::validateWord(string word, int row, int col, bool isVertical) {
+    // Variable que almacena el posible puntaje de la palabra asignada
+    int word_points = 0;
+
+    // 1. Si la palabra inicialmente esta en el diccionario
     if (gameDictionary->searchInDictionary(word)) {
 
-        addWord(word, row, col, isVertical); //Añadir la palabra
+        word_points = addWord(word, row, col, isVertical); //Añadir la palabra
         ServerMessage* serv_msg = new ServerMessage();
-        serv_msg->setMessage3_(3,true,10);
+        serv_msg->setMessage3_(3,true,word_points);
         string json = serv_msg->serialize();
-        sendSingleMessage(json.c_str(),getClient(currentTurn-1));//Envia el mensaje de confirmacion
+        sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
         nextTurn(); // Setea el sgte turno
         gameBoard->printGameBoard();
+        // NOTIFICAR A TODOS LOS JUGADORES DEL CAMBIO
+        return true;
 
     } else {
+        // 2. Si no, se bucan matches en el tablero
+        word_points = addWord(word, row, col, isVertical); // Añadir la palabra
 
-        addWord(word, row, col, isVertical); // Añadir la palabra
-
-        // Iteracion vertical
+        // 3. Iteracion vertical
         string vert_word = verticalIterator(word, row, col, isVertical);
 
+        // 4. Si alguna palabra se compone con una vertical, se toma esta para ser tomada
         if (gameDictionary->searchInDictionary(vert_word)) {
+
+            ServerMessage* serv_msg = new ServerMessage();
+            serv_msg->setMessage3_(3,true,word_points);
+            string json = serv_msg->serialize();
+
+            sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
+            nextTurn(); // Setea el sgte turno
             gameBoard->printGameBoard();
             return true;
         }
 
-        // Iteracion Horizontal
+        // 5. Si no hay palabra vertical se hace la Iteracion Horizontal
         string hor_word = horizontalIterator(word, row, col, isVertical);
 
         if (gameDictionary->searchInDictionary(hor_word)) {
+            //6. Si se encuentra la palabra
+            ServerMessage* serv_msg = new ServerMessage();
+            serv_msg->setMessage3_(3,true,word_points);
+            string json = serv_msg->serialize();
+
+            sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
+            nextTurn(); // Setea el sgte turno
             gameBoard->printGameBoard();
             return true;
+
         } else {
             resetBoard(word.length(), row, col, isVertical);
             cout<<"Palabra no encontrada"<<endl;
+            ServerMessage* serv_msg = new ServerMessage();
+            serv_msg->setMessage3_(3,false,0);
+            string json = serv_msg->serialize();
+            sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
             gameBoard->printGameBoard();
+            return false;
         }
     }
 }
