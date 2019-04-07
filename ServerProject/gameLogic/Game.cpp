@@ -81,7 +81,9 @@ void Game::add_players() {
          * escuchando pero que ya no acepte clientes sino que los
          * meta en un cola de espera!
          * ------------------------------------------------------*/
-        sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
+        //sendMessagetoAll("TODO_LISTO_PARA_COMENZAR!");
+        dealTiles();
+
 
     } catch (string ex) {
         cout<<ex;
@@ -130,6 +132,19 @@ void Game::play() {
     }
     sendMessagetoAll(">> EL JUEGO HA TERMINADO");
     closeSocket();
+}
+
+void Game::dealTiles() {
+    ServerMessage *message = new ServerMessage();
+    for (int i = 0; i < clients.size(); i++) {
+        string tiles = "";
+        for(int amountOfLetters = 0; amountOfLetters != 7; amountOfLetters++) {
+            tiles += this->gameDeck->giveRandomLetter()->getLetter() + ",";
+        }
+        message->setMessage2_(2, tiles.substr(0, tiles.size()-1), i);
+        string json = message->serialize();
+        sendSingleMessage(json.c_str(), clients[i]);
+    }
 }
 
 bool Game::recieveMessage(string json) {

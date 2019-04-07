@@ -9,7 +9,7 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->conexion = conexion;
-    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(getMessage(QString)));
+    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(recieveMessage(QString)));
     QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/board/boardWallpaperButtons.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
@@ -153,7 +153,7 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
     return 0;
 }
 
-void ScrabbleWindow::getMessage(QString msg){
+void ScrabbleWindow::recieveMessage(QString msg){
     QTextStream out(stdout);
     foreach(QString x, msg){
         out << x;

@@ -132,9 +132,9 @@ void server_Socket::addFirstClient() {
         setMaxCap(p_Num);
         clients.push_back(data.descriptor);
         cThreads.push_back(data);
-        sendSingleMessage("Game Created succesfully",data.descriptor);
+        //sendSingleMessage("Game Created succesfully",data.descriptor);
         p_Num = "Game Code is:"+code;
-        sendSingleMessage(p_Num.c_str(),data.descriptor);
+        //sendSingleMessage(p_Num.c_str(),data.descriptor);
         cout<<"Cantidad maxima de clientes:"<<max_cap<<endl;
         cout<<"Clientes conectados: "<<clients.size()<<endl;
     }
@@ -157,7 +157,7 @@ void server_Socket::addClients() {
             clients.push_back(data.descriptor);
             cThreads.push_back(data);
 
-            sendSingleMessage("Join to Game succesfully",data.descriptor);
+            //sendSingleMessage("Join to Game succesfully",data.descriptor);
             cout<<"Clientes conectados: "<<clients.size()<<endl;
         } else {
             sendSingleMessage("Wrong recv_code!",data.descriptor);

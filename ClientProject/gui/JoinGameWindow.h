@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include "socketcomunication/socketcliente.h"
 #include "gui/ScrabbleWindow.h"
+#include "json/ServerMessage.hpp"
 
 
 namespace Ui {

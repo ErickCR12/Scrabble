@@ -35,15 +35,16 @@ public:
     QFormLayout *formLayout;
     QLabel *label;
     QComboBox *amountOfPlayersComboBox;
+    QLabel *label_2;
 
     void setupUi(QDialog *CreateGameWindow)
     {
         if (CreateGameWindow->objectName().isEmpty())
             CreateGameWindow->setObjectName(QStringLiteral("CreateGameWindow"));
-        CreateGameWindow->resize(289, 140);
+        CreateGameWindow->resize(289, 198);
         horizontalLayoutWidget = new QWidget(CreateGameWindow);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(50, 70, 191, 61));
+        horizontalLayoutWidget->setGeometry(QRect(50, 130, 191, 61));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -61,7 +62,7 @@ public:
 
         formLayoutWidget = new QWidget(CreateGameWindow);
         formLayoutWidget->setObjectName(QStringLiteral("formLayoutWidget"));
-        formLayoutWidget->setGeometry(QRect(30, 20, 239, 51));
+        formLayoutWidget->setGeometry(QRect(30, 10, 239, 51));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName(QStringLiteral("formLayout"));
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -76,6 +77,9 @@ public:
 
         formLayout->setWidget(0, QFormLayout::FieldRole, amountOfPlayersComboBox);
 
+        label_2 = new QLabel(CreateGameWindow);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(30, 70, 241, 51));
 
         retranslateUi(CreateGameWindow);
 
@@ -92,6 +96,7 @@ public:
         cancelCreationButton->setText(QApplication::translate("CreateGameWindow", "Cancelar", Q_NULLPTR));
         label->setText(QApplication::translate("CreateGameWindow", "Cantidad de jugadores :", Q_NULLPTR));
         amountOfPlayersComboBox->setCurrentText(QString());
+        label_2->setText(QString());
     } // retranslateUi
 
 };

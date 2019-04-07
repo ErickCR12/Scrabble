@@ -52,29 +52,35 @@ SOURCES       = ../ClientProject/main.cpp \
 		../ClientProject/clientlogic/Player.cpp \
 		../ClientProject/clientlogic/Board.cpp \
 		../ClientProject/json/PlayerMessage.cpp \
+		../ClientProject/json/ServerMessage.cpp \
 		../ClientProject/tests/PlayerTest.cpp \
 		../ClientProject/gui/MainWindow.cpp \
 		../ClientProject/gui/JoinGameWindow.cpp \
 		../ClientProject/gui/CreateGameWindow.cpp \
 		../ClientProject/gui/DraggableTile.cpp \
-		../ClientProject/gui/ScrabbleWindow.cpp moc_MainWindow.cpp \
+		../ClientProject/gui/ScrabbleWindow.cpp \
+		../ClientProject/socketcomunication/socketcliente.cpp moc_MainWindow.cpp \
 		moc_JoinGameWindow.cpp \
 		moc_CreateGameWindow.cpp \
-		moc_ScrabbleWindow.cpp
+		moc_ScrabbleWindow.cpp \
+		moc_socketcliente.cpp
 OBJECTS       = main.o \
 		Player.o \
 		Board.o \
 		PlayerMessage.o \
+		ServerMessage.o \
 		PlayerTest.o \
 		MainWindow.o \
 		JoinGameWindow.o \
 		CreateGameWindow.o \
 		DraggableTile.o \
 		ScrabbleWindow.o \
+		socketcliente.o \
 		moc_MainWindow.o \
 		moc_JoinGameWindow.o \
 		moc_CreateGameWindow.o \
-		moc_ScrabbleWindow.o
+		moc_ScrabbleWindow.o \
+		moc_socketcliente.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -139,21 +145,25 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../ClientProject/ClientProject.pro ../ClientProject/clientlogic/Player.hpp \
 		../ClientProject/clientlogic/Board.hpp \
 		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/json/ServerMessage.hpp \
 		../ClientProject/tests/PlayerTest.hpp \
 		../ClientProject/gui/MainWindow.h \
 		../ClientProject/gui/JoinGameWindow.h \
 		../ClientProject/gui/CreateGameWindow.h \
 		../ClientProject/gui/DraggableTile.h \
-		../ClientProject/gui/ScrabbleWindow.h ../ClientProject/main.cpp \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/socketcomunication/socketcliente.h ../ClientProject/main.cpp \
 		../ClientProject/clientlogic/Player.cpp \
 		../ClientProject/clientlogic/Board.cpp \
 		../ClientProject/json/PlayerMessage.cpp \
+		../ClientProject/json/ServerMessage.cpp \
 		../ClientProject/tests/PlayerTest.cpp \
 		../ClientProject/gui/MainWindow.cpp \
 		../ClientProject/gui/JoinGameWindow.cpp \
 		../ClientProject/gui/CreateGameWindow.cpp \
 		../ClientProject/gui/DraggableTile.cpp \
-		../ClientProject/gui/ScrabbleWindow.cpp
+		../ClientProject/gui/ScrabbleWindow.cpp \
+		../ClientProject/socketcomunication/socketcliente.cpp
 QMAKE_TARGET  = ClientProject
 DESTDIR       = 
 TARGET        = ClientProject
@@ -310,8 +320,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClientProject/clientlogic/Player.hpp ../ClientProject/clientlogic/Board.hpp ../ClientProject/json/PlayerMessage.hpp ../ClientProject/tests/PlayerTest.hpp ../ClientProject/gui/MainWindow.h ../ClientProject/gui/JoinGameWindow.h ../ClientProject/gui/CreateGameWindow.h ../ClientProject/gui/DraggableTile.h ../ClientProject/gui/ScrabbleWindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClientProject/main.cpp ../ClientProject/clientlogic/Player.cpp ../ClientProject/clientlogic/Board.cpp ../ClientProject/json/PlayerMessage.cpp ../ClientProject/tests/PlayerTest.cpp ../ClientProject/gui/MainWindow.cpp ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/CreateGameWindow.cpp ../ClientProject/gui/DraggableTile.cpp ../ClientProject/gui/ScrabbleWindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClientProject/clientlogic/Player.hpp ../ClientProject/clientlogic/Board.hpp ../ClientProject/json/PlayerMessage.hpp ../ClientProject/json/ServerMessage.hpp ../ClientProject/tests/PlayerTest.hpp ../ClientProject/gui/MainWindow.h ../ClientProject/gui/JoinGameWindow.h ../ClientProject/gui/CreateGameWindow.h ../ClientProject/gui/DraggableTile.h ../ClientProject/gui/ScrabbleWindow.h ../ClientProject/socketcomunication/socketcliente.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClientProject/main.cpp ../ClientProject/clientlogic/Player.cpp ../ClientProject/clientlogic/Board.cpp ../ClientProject/json/PlayerMessage.cpp ../ClientProject/json/ServerMessage.cpp ../ClientProject/tests/PlayerTest.cpp ../ClientProject/gui/MainWindow.cpp ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/CreateGameWindow.cpp ../ClientProject/gui/DraggableTile.cpp ../ClientProject/gui/ScrabbleWindow.cpp ../ClientProject/socketcomunication/socketcliente.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../ClientProject/gui/MainWindow.ui ../ClientProject/gui/JoinGameWindow.ui ../ClientProject/gui/CreateGameWindow.ui ../ClientProject/gui/ScrabbleWindow.ui $(DISTDIR)/
 
 
@@ -338,18 +348,65 @@ benchmark: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp
+compiler_moc_header_make_all: moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp moc_socketcliente.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp
+	-$(DEL_FILE) moc_MainWindow.cpp moc_JoinGameWindow.cpp moc_CreateGameWindow.cpp moc_ScrabbleWindow.cpp moc_socketcliente.cpp
 moc_MainWindow.cpp: ../ClientProject/gui/MainWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/MainWindow.h -o moc_MainWindow.cpp
 
-moc_JoinGameWindow.cpp: ../ClientProject/gui/JoinGameWindow.h \
+moc_JoinGameWindow.cpp: ../ClientProject/socketcomunication/socketcliente.h \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/gui/DraggableTile.h \
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/gui/JoinGameWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/JoinGameWindow.h -o moc_JoinGameWindow.cpp
 
-moc_CreateGameWindow.cpp: ../ClientProject/gui/CreateGameWindow.h \
+moc_CreateGameWindow.cpp: ../ClientProject/socketcomunication/socketcliente.h \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/gui/DraggableTile.h \
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/json/ServerMessage.hpp \
+		../ClientProject/gui/CreateGameWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/CreateGameWindow.h -o moc_CreateGameWindow.cpp
 
@@ -374,9 +431,14 @@ moc_ScrabbleWindow.cpp: ../ClientProject/gui/DraggableTile.h \
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/socketcomunication/socketcliente.h \
 		../ClientProject/gui/ScrabbleWindow.h \
 		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/gui/ScrabbleWindow.h -o moc_ScrabbleWindow.cpp
+
+moc_socketcliente.cpp: ../ClientProject/socketcomunication/socketcliente.h \
+		/usr/lib/x86_64-linux-gnu/qt5/bin/moc
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ClientProject -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/6 -I/usr/include/x86_64-linux-gnu/c++/6 -I/usr/include/c++/6/backward -I/usr/lib/gcc/x86_64-linux-gnu/6/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ClientProject/socketcomunication/socketcliente.h -o moc_socketcliente.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -432,6 +494,7 @@ main.o: ../ClientProject/main.cpp ../ClientProject/gui/MainWindow.h \
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/socketcomunication/socketcliente.h \
 		../ClientProject/tests/PlayerTest.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../ClientProject/main.cpp
 
@@ -454,7 +517,8 @@ Player.o: ../ClientProject/clientlogic/Player.cpp ../ClientProject/clientlogic/P
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h \
-		../ClientProject/clientlogic/Board.hpp
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/gui/DraggableTile.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Player.o ../ClientProject/clientlogic/Player.cpp
 
 Board.o: ../ClientProject/clientlogic/Board.cpp ../ClientProject/clientlogic/Board.hpp
@@ -488,6 +552,34 @@ PlayerMessage.o: ../ClientProject/json/PlayerMessage.cpp ../ClientProject/json/P
 		../ClientProject/lib/rapidjson/error/error.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerMessage.o ../ClientProject/json/PlayerMessage.cpp
 
+ServerMessage.o: ../ClientProject/json/ServerMessage.cpp ../ClientProject/json/ServerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/lib/rapidjson/document.h \
+		../ClientProject/lib/rapidjson/reader.h \
+		../ClientProject/lib/rapidjson/encodedstream.h \
+		../ClientProject/lib/rapidjson/memorystream.h \
+		../ClientProject/lib/rapidjson/internal/strtod.h \
+		../ClientProject/lib/rapidjson/internal/biginteger.h \
+		../ClientProject/lib/rapidjson/internal/pow10.h \
+		../ClientProject/lib/rapidjson/error/error.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ServerMessage.o ../ClientProject/json/ServerMessage.cpp
+
 PlayerTest.o: ../ClientProject/tests/PlayerTest.cpp ../ClientProject/tests/PlayerTest.hpp \
 		../ClientProject/clientlogic/Player.hpp \
 		../ClientProject/json/PlayerMessage.hpp \
@@ -508,17 +600,14 @@ PlayerTest.o: ../ClientProject/tests/PlayerTest.cpp ../ClientProject/tests/Playe
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h \
-		../ClientProject/clientlogic/Board.hpp
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/gui/DraggableTile.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PlayerTest.o ../ClientProject/tests/PlayerTest.cpp
 
 MainWindow.o: ../ClientProject/gui/MainWindow.cpp ../ClientProject/gui/MainWindow.h \
-		ui_MainWindow.h \
+		../ClientProject/ui_MainWindow.h \
 		../ClientProject/gui/JoinGameWindow.h \
-		../ClientProject/gui/CreateGameWindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o ../ClientProject/gui/MainWindow.cpp
-
-JoinGameWindow.o: ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/JoinGameWindow.h \
-		ui_JoinGameWindow.h \
+		../ClientProject/socketcomunication/socketcliente.h \
 		../ClientProject/gui/ScrabbleWindow.h \
 		../ClientProject/gui/DraggableTile.h \
 		../ClientProject/clientlogic/Board.hpp \
@@ -540,11 +629,64 @@ JoinGameWindow.o: ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/J
 		../ClientProject/lib/rapidjson/internal/itoa.h \
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
-		../ClientProject/lib/rapidjson/stringbuffer.h
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/gui/CreateGameWindow.h \
+		../ClientProject/json/ServerMessage.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o ../ClientProject/gui/MainWindow.cpp
+
+JoinGameWindow.o: ../ClientProject/gui/JoinGameWindow.cpp ../ClientProject/gui/JoinGameWindow.h \
+		../ClientProject/socketcomunication/socketcliente.h \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/gui/DraggableTile.h \
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/ui_JoinGameWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o JoinGameWindow.o ../ClientProject/gui/JoinGameWindow.cpp
 
 CreateGameWindow.o: ../ClientProject/gui/CreateGameWindow.cpp ../ClientProject/gui/CreateGameWindow.h \
-		ui_CreateGameWindow.h
+		../ClientProject/socketcomunication/socketcliente.h \
+		../ClientProject/gui/ScrabbleWindow.h \
+		../ClientProject/gui/DraggableTile.h \
+		../ClientProject/clientlogic/Board.hpp \
+		../ClientProject/clientlogic/Player.hpp \
+		../ClientProject/json/PlayerMessage.hpp \
+		../ClientProject/lib/rapidjson/prettywriter.h \
+		../ClientProject/lib/rapidjson/writer.h \
+		../ClientProject/lib/rapidjson/stream.h \
+		../ClientProject/lib/rapidjson/rapidjson.h \
+		../ClientProject/lib/rapidjson/msinttypes/stdint.h \
+		../ClientProject/lib/rapidjson/msinttypes/inttypes.h \
+		../ClientProject/lib/rapidjson/encodings.h \
+		../ClientProject/lib/rapidjson/internal/meta.h \
+		../ClientProject/lib/rapidjson/internal/stack.h \
+		../ClientProject/lib/rapidjson/allocators.h \
+		../ClientProject/lib/rapidjson/internal/swap.h \
+		../ClientProject/lib/rapidjson/internal/strfunc.h \
+		../ClientProject/lib/rapidjson/internal/dtoa.h \
+		../ClientProject/lib/rapidjson/internal/itoa.h \
+		../ClientProject/lib/rapidjson/internal/diyfp.h \
+		../ClientProject/lib/rapidjson/internal/ieee754.h \
+		../ClientProject/lib/rapidjson/stringbuffer.h \
+		../ClientProject/json/ServerMessage.hpp \
+		../ClientProject/ui_CreateGameWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CreateGameWindow.o ../ClientProject/gui/CreateGameWindow.cpp
 
 DraggableTile.o: ../ClientProject/gui/DraggableTile.cpp ../ClientProject/gui/DraggableTile.h \
@@ -573,8 +715,12 @@ ScrabbleWindow.o: ../ClientProject/gui/ScrabbleWindow.cpp ../ClientProject/gui/S
 		../ClientProject/lib/rapidjson/internal/diyfp.h \
 		../ClientProject/lib/rapidjson/internal/ieee754.h \
 		../ClientProject/lib/rapidjson/stringbuffer.h \
-		ui_ScrabbleWindow.h
+		../ClientProject/socketcomunication/socketcliente.h \
+		../ClientProject/ui_ScrabbleWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ScrabbleWindow.o ../ClientProject/gui/ScrabbleWindow.cpp
+
+socketcliente.o: ../ClientProject/socketcomunication/socketcliente.cpp ../ClientProject/socketcomunication/socketcliente.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o socketcliente.o ../ClientProject/socketcomunication/socketcliente.cpp
 
 moc_MainWindow.o: moc_MainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_MainWindow.o moc_MainWindow.cpp
@@ -587,6 +733,9 @@ moc_CreateGameWindow.o: moc_CreateGameWindow.cpp
 
 moc_ScrabbleWindow.o: moc_ScrabbleWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ScrabbleWindow.o moc_ScrabbleWindow.cpp
+
+moc_socketcliente.o: moc_socketcliente.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_socketcliente.o moc_socketcliente.cpp
 
 ####### Install
 

@@ -32,11 +32,12 @@ struct dataSocketServer{
 //! Socket class. It is responsible for managing the communication on the server side.
 class server_Socket {
 
+protected:
+    vector<int> clients; //!< Vector that stores all the descriptors that are connected to this socket.
 private:
 
     int descriptor; //!< Attribute that the system returns when a new socket port is assigned
     sockaddr_in socketInfo; //!< Information of the socket type and the type of connection made with the other socket port (clients)
-    vector<int> clients; //!< Vector that stores all the descriptors that are connected to this socket.
     vector<dataSocketServer> cThreads; // vector that contains dataSocketServer. It is used to create the listenClient threads of each client.
 
     string code; //!< It indicades the code of the game

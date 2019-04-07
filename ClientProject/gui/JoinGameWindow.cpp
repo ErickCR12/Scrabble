@@ -10,11 +10,10 @@ JoinGameWindow::JoinGameWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     conexion = new SocketCliente;
-    if(!conexion->connectar())
-        QMessageBox::critical(this,"Error","Error al conectar con el servidor",QMessageBox::Ok);
-
-    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(printMensaje(QString)));
-    connect(ui->insertCodeButton,SIGNAL(clicked()),SLOT(sendMensaje()));
+    if(conexion->connectar()){
+        connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(printMensaje(QString)));
+        connect(ui->insertCodeButton,SIGNAL(clicked()),SLOT(sendMensaje()));
+    }else QMessageBox::critical(this,"Error","Error al conectar con el servidor",QMessageBox::Ok);
 }
 
 JoinGameWindow::~JoinGameWindow()
@@ -49,5 +48,14 @@ void JoinGameWindow::printMensaje(QString msn)
     QTextStream out(stdout);
     foreach(QString x, msn){
         out << x;
-    }
+    }out<<"\n";
+
+    string json = msn.toStdString();
+    ServerMessage *message = new ServerMessage();
+    message = message->deserealize(json.c_str());
+    this->destroy();
+    scrabbleWindow = new ScrabbleWindow(this->parentWidget());
+    scrabbleWindow->setConexion(conexion);
+    scrabbleWindow->show();
+    scrabbleWindow->createPlayerDeck(message->getLetterTiles());
 }

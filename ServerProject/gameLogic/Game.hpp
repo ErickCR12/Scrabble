@@ -144,6 +144,8 @@ public:
     //! of LetterTiles is greater than zero
     void play();
 
+    void dealTiles();
+
 
     /* ----------------------
      *   GETTERS & SETTERS

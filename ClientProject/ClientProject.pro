@@ -27,6 +27,7 @@ SOURCES  += main.cpp\
             clientlogic/Player.cpp\
             clientlogic/Board.cpp\
             json/PlayerMessage.cpp \
+            json/ServerMessage.cpp \
             tests/PlayerTest.cpp \
             gui/MainWindow.cpp \
             gui/JoinGameWindow.cpp \
@@ -39,6 +40,7 @@ HEADERS  +=\
             clientlogic/Player.hpp\
             clientlogic/Board.hpp\
             json/PlayerMessage.hpp \
+            json/ServerMessage.hpp \
             tests/PlayerTest.hpp \
             gui/MainWindow.h \
             gui/JoinGameWindow.h \

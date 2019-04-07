@@ -11,10 +11,11 @@ CreateGameWindow::CreateGameWindow(QWidget *parent) :
     ui(new Ui::CreateGameWindow)
 {
     ui->setupUi(this);
-    ui->amountOfPlayersComboBox->addItems({"1", "2", "3", "4"});
+    ui->amountOfPlayersComboBox->addItems({"2", "3", "4"});
     conexion = new SocketCliente;
     if(conexion->connectar()){
-        connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(printMensaje(QString)));
+        this->show();
+        connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(getMessage(QString)));
         connect(ui->acceptCreationButton,SIGNAL(clicked()),SLOT(sendMensaje()));
     }else QMessageBox::critical(this,"Error","Error al conectar con el servidor",QMessageBox::Ok);
 }
@@ -23,14 +24,6 @@ CreateGameWindow::~CreateGameWindow()
 {
     delete ui;
 }
-
-//void CreateGameWindow::on_acceptCreationButton_clicked()
-//{
-////    QString qAmount = ui->amountOfPlayersComboBox->currentText();
-////    ui->amountOfPlayersComboBox->setDisabled(true);
-////    int amountOfPlayer = qAmount.toInt();
-////    cout << "Amount of players: " << amountOfPlayer << endl;
-//}
 
 void CreateGameWindow::on_cancelCreationButton_clicked()
 {
@@ -45,15 +38,27 @@ void CreateGameWindow::sendMensaje()
     conexion->setMensaje(qAmount.toStdString().c_str());
 }
 
-void CreateGameWindow::printMensaje(QString msn)
+void CreateGameWindow::getMessage(QString msn)
 {
-    if(msn.toStdString() == "TODO_LISTO_PARA_COMENZAR!"){
-        this->hide();
-        scrabbleWindow = new ScrabbleWindow(this->parentWidget());
-        scrabbleWindow->setConexion(conexion);
-        scrabbleWindow->show();
-    }
-    else{
-
+    QTextStream out(stdout);
+    foreach(QString x, msn){
+        out << x;
+    }out<<"\n";
+    string json = msn.toStdString();
+    ServerMessage *message = new ServerMessage();
+    message = message->deserealize(json.c_str());
+    switch(message->getId()){
+        case 1:{
+            string lblStr = "Tu código de juego es: " + message->getGameCode() + "\nEspera a que inicie tu juego.";
+            ui->label_2->setText(QString::fromStdString(lblStr));
+            break;
+        }case 2:{
+        this->destroy();
+            scrabbleWindow = new ScrabbleWindow(this->parentWidget());
+            scrabbleWindow->setConexion(conexion);
+            scrabbleWindow->show();
+            scrabbleWindow->createPlayerDeck(message->getLetterTiles());
+        }default:
+            break;
     }
 }

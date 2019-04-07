@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "socketcomunication/socketcliente.h"
 #include "gui/ScrabbleWindow.h"
+#include "json/ServerMessage.hpp"
 
 namespace Ui {
 class CreateGameWindow;
@@ -18,9 +19,8 @@ public:
     ~CreateGameWindow();
 
 private slots:
-//    void on_acceptCreationButton_clicked();
     void on_cancelCreationButton_clicked();
-    void printMensaje(QString msn);
+    void getMessage(QString msn);
     void sendMensaje();
 private:
     Ui::CreateGameWindow *ui;
