@@ -181,11 +181,24 @@ bool Game::recieveMessage(string json) {
             // Mensaje de pasar turno o jugar de nuevo
             cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
             if(pJSON->getPass()){
+
+                // Pasa de turno
                 nextTurn();
+
+                // Setea un mensaje para indicar a todos los jugadores que actualicen el turno
+                ServerMessage* serv_msg = new ServerMessage();
+                serv_msg->setMessage4_(4,"",-1,-1,false,getCurrentTurn());
+                string json = serv_msg->serialize();
+                sendMessagetoAll(json);
+
             } else{
                 // Envia un mensaje para que pueda volver a jugar
+
+                //ServerMessage* serv_msg = new ServerMessage();
+                //string json = serv_msg->serialize();
+                //sendMessagetoAll(json);
+                //Llama de nuevo a validate word
             }
-            // Notify all players new turn
             break;
         case 4:
             cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
