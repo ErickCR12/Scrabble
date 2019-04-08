@@ -62,16 +62,16 @@ void server_Socket::sendSingleMessage(const char *msg, int descriptor) {
 void server_Socket::listenClient(string* bufferText,dataSocketServer inData) {
     dataSocketServer *data = (dataSocketServer*)&inData;
     while (true) {
-        char buffer[300] = {0};
+        char buffer[1024] = {0};
         //Another "blocking function". The while stops until the server receives a new message.
-        int bytes = recv(data->descriptor, buffer, 300, 0);
+        int bytes = recv(data->descriptor, buffer, 1024, 0);
         bufferText->append(buffer, bytes);
 
         if (bytes <= 0){
             close(data->descriptor);
             pthread_exit(NULL);
         }
-        if (bytes < 300) {
+        if (bytes < 1024) {
             break;
         }
     };

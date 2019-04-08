@@ -41,7 +41,7 @@ private:
      * -------------------*/
 
     string gameCode; //!< Game code to connect whit current game
-    int* playersID; //!< Array whit player ID
+    int* playersPoints; //!< Array whit player ID
     int currentTurn; //!< Current player turn
 
     GameDeck* gameDeck; //!< game LetterTile deck

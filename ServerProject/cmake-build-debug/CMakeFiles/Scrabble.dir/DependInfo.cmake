@@ -4,11 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> master
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o"
@@ -23,45 +18,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/main.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
-<<<<<<< Updated upstream
-=======
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Board.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Dictionary.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Game.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/LetterTile.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Server.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/main.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
->>>>>>> master
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -74,28 +30,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-=======
-<<<<<<< HEAD
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-=======
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
->>>>>>> master
->>>>>>> master
-=======
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
->>>>>>> Stashed changes
-=======
-  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
->>>>>>> master
   )
 
 # Fortran module output directory.
