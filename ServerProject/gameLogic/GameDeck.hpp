@@ -38,6 +38,10 @@ public:
 
     LetterTile* getLetterFromDeck(string letter);
 
+    int getAmountofLetters(){
+        return amountOfLetters;
+    }
+
     //! @brief Prints the Deck on console.
     void printDeck();
 };

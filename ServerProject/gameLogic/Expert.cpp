@@ -27,9 +27,6 @@ void Expert::sendMessage(string word) {
 
 bool Expert::getResponse() {
     string ans = "";
-    bool accepted;
-    cout<<"¿Acepta la palabra? (S/N):"<<endl;
-    cin>>ans;
-    cout<<">> Your answer is:"<<ans<<endl;
-    return ans=="S";
+    // Aqui va el app
+    return false;
 }

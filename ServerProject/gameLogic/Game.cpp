@@ -132,14 +132,15 @@ void Game::play() {
      * 4. Recibe el JSON de el jugador -> lo deserializa
      */
     currentTurn = 0;
-    while (totalTiles >= 0) {
-        if (totalTiles == 0) {
+    while (gameDeck->getAmountofLetters() >= 0) {
+        if (gameDeck->getAmountofLetters() == 0) {
             // Esta parte realiza lo que sea que se haga en el ultimo turno
+            break;
         } else {
             string mensaje;
             cin>>mensaje;
             if (mensaje == "EXIT") break;
-            //sendMessagetoAll(mensaje.c_str());
+            sendMessagetoAll(mensaje.c_str());
 
         }
     }
@@ -301,6 +302,9 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
 
         nextTurn(); // Setea el sgte turno
+        serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
+        json = serv_msg->serialize();
+        sendMessagetoAll(json);
         gameBoard->printGameBoard();
         // NOTIFICAR A TODOS LOS JUGADORES DEL CAMBIO
         return true;
@@ -325,6 +329,11 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
 
             nextTurn(); // Setea el sgte turno
+
+            serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
+            json = serv_msg->serialize();
+            sendMessagetoAll(json);
+
             gameBoard->printGameBoard();
             return true;
         }
@@ -344,6 +353,11 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
 
             nextTurn(); // Setea el sgte turno
+
+            serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
+            json = serv_msg->serialize();
+            sendMessagetoAll(json);
+
             gameBoard->printGameBoard();
             return true;
 
