@@ -552,9 +552,15 @@ iostream
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.cpp
 server_Socket.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+>>>>>>> master
 sys/socket.h
 -
 sys/types.h
@@ -580,7 +586,11 @@ arpa/inet.h
 boost/algorithm/string.hpp
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp
+>>>>>>> master
 gtest/gtest.h
 -
 gmock/gmock.h
@@ -614,11 +624,19 @@ JSON_Test.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/dataStructures/Queue.hpp
 iostream
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/dataStructures/Queue.hpp
+iostream
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.cpp
+>>>>>>> master
 iostream
 -
 vector
@@ -658,15 +676,25 @@ string
 Expert.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Expert.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Expert.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
+>>>>>>> master
 iostream
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.cpp
 Game.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 fstream
 -
 vector
@@ -674,6 +702,7 @@ vector
 boost/algorithm/string.hpp
 -
 GameDeck.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 Dictionary.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.hpp
@@ -697,6 +726,31 @@ GameDeck.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.hpp
+Expert.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
+../SocketComunication/server_Socket.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+../JSON/PlayerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.hpp
+../JSON/ServerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.hpp
+../dataStructures/Queue.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/dataStructures/Queue.hpp
+thread
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.cpp
+GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+>>>>>>> master
 fstream
 -
 vector
@@ -704,6 +758,7 @@ vector
 boost/algorithm/string.hpp
 -
 LetterTile.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.cpp
@@ -711,26 +766,51 @@ LetterTile.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.cpp
+LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+>>>>>>> master
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.cpp
+>>>>>>> master
 Server.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 ../SocketComunication/server_Socket.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
+../SocketComunication/server_Socket.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+Game.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 iostream
 -
 vector
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
+>>>>>>> master
 rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 
@@ -774,14 +854,21 @@ rapidjson.h
 intrin.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
 ../rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+>>>>>>> master
 limits
 -
 intrin.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
 itoa.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
@@ -831,11 +918,63 @@ diyfp.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
 pow10.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
+itoa.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+diyfp.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+ieee754.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+type_traits
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+../allocators.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
+swap.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+cstddef
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+../stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
+cwchar
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
+ieee754.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+biginteger.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
+diyfp.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+pow10.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
+>>>>>>> master
 climits
 -
 limits
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
 ../rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
@@ -851,6 +990,23 @@ inttypes.h
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/memorystream.h
+stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+stdint.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+inttypes.h
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+>>>>>>> master
 stdint.h
 -
 limits.h
@@ -858,16 +1014,25 @@ limits.h
 wchar.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 writer.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+writer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/writer.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+>>>>>>> master
 cstdlib
 -
 cstring
 -
 rapidjson/...
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
 string
 -
@@ -875,6 +1040,15 @@ msinttypes/stdint.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
 msinttypes/inttypes.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+string
+-
+msinttypes/stdint.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+msinttypes/inttypes.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+>>>>>>> master
 stdint.h
 -
 inttypes.h
@@ -882,7 +1056,11 @@ inttypes.h
 endian.h
 -
 rapidjson/...
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+>>>>>>> master
 cassert
 -
 
@@ -916,6 +1094,7 @@ rapidjson/error/error.h
 rapidjson/reader.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/reader.h
 error/error.h
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
@@ -949,6 +1128,41 @@ internal/itoa.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
 stringbuffer.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/error/error.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
+rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+encodings.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/encodings.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
+internal/stack.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+utility
+-
+internal/stack.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/writer.h
+stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
+internal/meta.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+internal/stack.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+internal/strfunc.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+internal/dtoa.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
+internal/itoa.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+stringbuffer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+>>>>>>> master
 new
 -
 intrin.h
@@ -960,17 +1174,29 @@ emmintrin.h
 arm_neon.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/main.cpp
+>>>>>>> master
 iostream
 -
 pthread.h
 -
 gameLogic/Server.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 gameLogic/Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
 gameLogic/Expert.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Expert.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
+gameLogic/Game.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+gameLogic/Expert.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
+>>>>>>> master
 gtest/gtest.h
 -
 gmock/gmock.h

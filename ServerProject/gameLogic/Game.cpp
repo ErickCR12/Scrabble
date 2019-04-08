@@ -216,7 +216,7 @@ bool Game::recieveMessage(string json) {
                 word += word_vector[i];
             }
 
-            //gameExpert->sendMessage(word);
+            gameExpert->sendMessage(word);
 
             // Si la palabra es aceptada por el experto, entonces se agrega al diccionario
             // y se vuelve a ejecutar el algoritmo
@@ -228,11 +228,11 @@ bool Game::recieveMessage(string json) {
                 nextTurn(); //Pasa el turno pues ya no podra seguir jugando
 
                 cout<<">> El experto a rechazado la palabra!"<<endl;
-
+                // Setea un mensaje para indicar a todos los jugadores que actualicen el turno
                 ServerMessage* serv_msg = new ServerMessage();
-                serv_msg->setMessage3_(3,false,0,"");
+                serv_msg->setMessage4_(4,"",-1,-1,false,getCurrentTurn());
                 string json = serv_msg->serialize();
-                sendSingleMessage(json.c_str(),getClient(currentTurn-1)); // Se le envia al anterior
+                sendMessagetoAll(json);
             }
             break;
         }
@@ -269,6 +269,7 @@ int Game::addWord(vector<string> word, int row, int col, bool isVertical) {
         gameBoard->addLetterTile((isVertical) ? j : row, (isVertical) ? col : j, wLetter);
         index++;
     }
+    cout<<"Palabra añadida"<<endl;
     return points;
 }
 
@@ -287,19 +288,23 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
     for(int i = 0; i < word_vector.size();i++){
         word += word_vector[i];
     }
-
+    cout<<">Incoming msg: "<<word<<endl;
     string refillTiles;
 
     // 1. Si la palabra inicialmente esta en el diccionario
     if (gameDictionary->searchInDictionary(word)) {
 
+        cout<<"Primera coincidencia"<<endl;
         word_points = addWord(word_vector, row, col, isVertical); //Añadir la palabra
+        //playersPoints[currentTurn]+=word_points;
         refillTiles = dealTiles(word_vector.size());
 
+        cout<<"Fine"<<endl;
         ServerMessage* serv_msg = new ServerMessage();
         serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
 
         nextTurn(); // Setea el sgte turno
         serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
@@ -319,6 +324,8 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         // 4. Si alguna palabra se compone con una vertical, se toma esta para ser tomada
         if (gameDictionary->searchInDictionary(vert_word)) {
             cout<<"Añadiendo palabra vertical"<<endl;
+
+            //playersPoints[currentTurn]+=word_points;
 
             refillTiles = dealTiles(word_vector.size());
 
@@ -345,7 +352,10 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             //6. Si se encuentra la palabra
             cout<<"Añadiendo palabra horizontal"<<endl;
 
+            //playersPoints[currentTurn]+=word_points;
+
             refillTiles = dealTiles(word_vector.size());
+
             ServerMessage* serv_msg = new ServerMessage();
             serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
             string json = serv_msg->serialize();

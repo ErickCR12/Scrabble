@@ -74,13 +74,13 @@ public:
      *              SERIALIZATION
      * -------------------------------------------*/
 
-    //!
+    //! Sends to Client the gameCode
     //! \param id
     //! \param gameCode
     //! \param msg
     void setMessage1_(int id,string gameCode,string msg);
 
-    //!
+    //! Send the letterTiles to the Client
     //! \param id
     //! \param tiles
     //! \param your_player
