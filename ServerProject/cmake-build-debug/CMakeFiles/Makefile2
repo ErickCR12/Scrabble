@@ -68,8 +68,8 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Target rules for target CMakeFiles/Scrabble.dir
 
 # All Build rule for target.
-CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/depend
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target Scrabble"
