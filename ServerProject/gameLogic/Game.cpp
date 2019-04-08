@@ -210,6 +210,7 @@ bool Game::recieveMessage(string json) {
             break;
     }
 
+    delete(pJSON);
     return true;
 }
 
@@ -314,11 +315,12 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
 
         } else {
             resetBoard(word.length(), row, col, isVertical);
-            cout<<"Palabra no encontrada"<<endl;
+            cout<<"Palabra no encontrada del jugador "<<getCurrentTurn()<<endl;
             ServerMessage* serv_msg = new ServerMessage();
             serv_msg->setMessage3_(3,false,0,"");
             string json = serv_msg->serialize();
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
 
             gameBoard->printGameBoard();
             return false;
