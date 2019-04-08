@@ -8,6 +8,8 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     ui(new Ui::ScrabbleWindow)
 {
     ui->setupUi(this);
+    conexion = SocketCliente::getInstance();
+    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
     QPixmap bkgnd(QCoreApplication::applicationDirPath() + "/images/board/boardWallpaperButtons.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
@@ -95,24 +97,22 @@ void ScrabbleWindow::on_scrabbleButton_clicked(){
     for(int i = 0; i < wordVector.size(); i++){
         word += wordVector[i] + ",";
     }
-    string json = player->sendMyWord(word.substr(0, word.size()-1), tilePositions[0][0], tilePositions[0][1], isVertical);
 
-    //conexion->sendMessage("{\"id\":1,\"answer\":false}");
+    string json = player->sendMyWord(word.substr(0, word.size()-1), tilePositions[0][0], tilePositions[0][1], isVertical);
     conexion->sendMessage(json.c_str());
 
-//    QTextStream out(stdout);
-//    for(int i = 0; i < wordVector.size(); i++){
-//        out << QString::fromStdString(wordVector[i] + "\n");
-//        out << QString::fromStdString(to_string(tilePositions[i][0]) + "\n");
-//        out << QString::fromStdString(to_string(tilePositions[i][1]) + "\n\n");
-//    }
-//    resetPlay();
-//    createPlayerDeck("a,b,a,c,o,ll,s");
+//    receiveMessage("{\"id\":4, \"word\":\"p,r,u,e,b,a\", \"firstRow\":0, \"firstCol\":0, \"is_Vertical\":true, \"currentPlayer\":0}");
+
+//    receiveMessage("{\"id\":3, \"accepted\":false, \"points\":0, \"letterTiles\":\"\"}");
 }
 
 void ScrabbleWindow::resetPlay(){
     Board *board = player->getBoard();
     vector<DraggableTile*> tiles = player->getWidgetsPlayerDeck();
+    string previousDeck;
+    for(int i = 0; i < tiles.size(); i++){
+        previousDeck += tiles[i]->getLetter() + ",";
+    }previousDeck = previousDeck.substr(0, previousDeck.size()-1);
     vector<vector<int>> tilePositions = board->getWordPositions();
     vector<int> actualPosition;
     for(int i = 0; i < tiles.size(); i++){
@@ -126,9 +126,14 @@ void ScrabbleWindow::resetPlay(){
     board->resetWordVector();
     player->resetWidgetsDeck();
     player->resetPlayerDeck();
+    QTextStream out(stdout);
+    foreach(QString x, QString::fromStdString(previousDeck)){
+        out << x;
+    }
+    createPlayerDeck(previousDeck);
 }
 
-void ScrabbleWindow::placeWordInBoard(string word, vector<vector<int>> wordPositions){
+void ScrabbleWindow::placeWordInBoard(string word, int firstRow, int firstCol, bool isVertical){
     vector<string> wordVector;
     DraggableTile *dItem;
     Board *board = player->getBoard();
@@ -136,18 +141,19 @@ void ScrabbleWindow::placeWordInBoard(string word, vector<vector<int>> wordPosit
     QRectF rect(0,0,rectangleSize,rectangleSize);
     QBrush q;
     boost::split(wordVector, word, boost::is_any_of(","));
-    for(int j = 0; j < wordPositions.size(); j++){
+    for(int j = 0; j < wordVector.size(); j++){
         string letter = wordVector[j];
+        board->gameBoard[firstRow][firstCol] = letter;
         dItem = new DraggableTile;
         scene->addItem(dItem);
         dItem->setRect(rect);
-        dItem->setPos(wordPositions[j][1]*34,wordPositions[j][0]*34);
+        dItem->setPos(firstCol*34,firstRow*34);
+        (isVertical) ? firstRow++:firstCol++;
         QString imagePath = QCoreApplication::applicationDirPath() + QString::fromStdString("/images/tiles/"+letter+".png");
         q.setTextureImage(QImage(imagePath));
         dItem->setBrush(q);
         dItem->setAnchorPoint(dItem->pos());
         dItem->setUndraggable();
-        board->gameBoard[wordPositions[j][0]][wordPositions[j][1]] = letter;
     }
 }
 
@@ -166,19 +172,25 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
 }
 
 void ScrabbleWindow::receiveMessage(QString msg){
-    QTextStream out(stdout);
-    out << "BBBBBBBBB\n";
-    foreach(QString x, msg){
-        out << x;
-    }
-
     string json = msg.toStdString();
     ServerMessage *message = new ServerMessage();
     message = message->deserealize(json.c_str());
-    out << QString::fromStdString(to_string(message->getId()) + "\n");
     switch(message->getId()){
-        case 3:
-            out << "CAAASE 3\n";
+        case 3:{
+            bool accepted = message->isAnswer();
+            if(!accepted){
+                resetPlay();
+            }
+            break;
+        }
+        case 4:{
+            string word = message->getWord();
+            int firstRow = message->getFirstRow();
+            int firstCol = message->getFirstCol();
+            bool isVertical = message->isIsVertical();
+            this->placeWordInBoard(word, firstRow, firstCol, isVertical);
+            break;
+        }
     }
 }
 

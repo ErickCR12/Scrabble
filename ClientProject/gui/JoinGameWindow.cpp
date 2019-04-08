@@ -9,7 +9,7 @@ JoinGameWindow::JoinGameWindow(QWidget *parent) :
     ui(new Ui::JoinGameWindow)
 {
     ui->setupUi(this);
-    conexion = new SocketCliente;
+    conexion = SocketCliente::getInstance();
     if(conexion->connectar()){
         connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
         connect(ui->insertCodeButton,SIGNAL(clicked()),SLOT(sendMensaje()));
@@ -34,28 +34,19 @@ void JoinGameWindow::sendMensaje()
 
 void JoinGameWindow::receiveMessage(QString msn)
 {
-    QTextStream out(stdout);
-    out << "AAAAAAAA\n";
-    foreach(QString x, msn){
-        out << x;
-    }out<<"\n";
-
+    if(scrabbleWindow)return;
     string json = msn.toStdString();
     ServerMessage *message = new ServerMessage();
     message = message->deserealize(json.c_str());
-    out << QString::fromStdString(to_string(message->getId()) + "\n");
     switch (message->getId()) {
         case 2:{
+            disconnect(conexion);
             scrabbleWindow = new ScrabbleWindow(this->parentWidget());
-            scrabbleWindow->setConexion(conexion);
             scrabbleWindow->show();
             scrabbleWindow->createPlayerDeck(message->getLetterTiles());
             this->destroy();
             break;
-        }case 3:
-            out << "CASE3\n";
-            break;
-        default:
+        }default:
             break;
     }
 }

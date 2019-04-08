@@ -17,10 +17,12 @@ class SocketCliente: public QObject
 {
     Q_OBJECT
 public:
-    SocketCliente();
+    static SocketCliente* getInstance();
     bool connectar();
     void sendMessage(const char *msn);
 private:
+    static SocketCliente *socketPtr;
+    SocketCliente();
     int descriptor;
     sockaddr_in info;
     static void * controlador(void *obj);

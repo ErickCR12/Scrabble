@@ -12,7 +12,7 @@ CreateGameWindow::CreateGameWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->amountOfPlayersComboBox->addItems({"2", "3", "4"});
-    conexion = new SocketCliente;
+    conexion = SocketCliente::getInstance();
     if(conexion->connectar()){
         this->show();
         connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
@@ -40,34 +40,24 @@ void CreateGameWindow::sendMensaje()
 
 void CreateGameWindow::receiveMessage(QString msn)
 {
-    QTextStream out(stdout);
-    out << "CCCCCCCC\n";
-    foreach(QString x, msn){
-        out << x;
-    }out<<"\n";
-
+    if(scrabbleWindow)return;
     string json = msn.toStdString();
     ServerMessage *message = new ServerMessage();
     message->deserealize(json.c_str());
     message = message->deserealize(json.c_str());
-    out << QString::fromStdString(to_string(message->getId()) + "\n");
     switch(message->getId()){
         case 1:{
             string lblStr = "Tu código de juego es: " + message->getGameCode() + "\nEspera a que inicie tu juego.";
             ui->label_2->setText(QString::fromStdString(lblStr));
             break;
         }case 2:{
+            disconnect(conexion);
             scrabbleWindow = new ScrabbleWindow(this->parentWidget());
-            scrabbleWindow->setConexion(conexion);
             scrabbleWindow->show();
             scrabbleWindow->createPlayerDeck(message->getLetterTiles());
             this->destroy();
             break;
-        }case 3:
-            out<<"CASE 3\n";
-            break;
-        default:
-            out<<"DEFAULT";
+        }default:
             break;
     }
 }

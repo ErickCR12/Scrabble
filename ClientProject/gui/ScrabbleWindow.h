@@ -39,7 +39,7 @@ public:
     //! \brief resetPlay method clears the words
     void resetPlay();
     //! \brief Receives the word and the positions to add this word to the graphical board
-    void placeWordInBoard(string word, vector<vector<int>> wordPositions);
+    void placeWordInBoard(string word, int firstRow, int firstCol, bool isVertical);
     //! \brief returns the multiplier read in the CSV in the specified row and column
     string getMultiplierFromCSV(int rowPos, int columnPos);
     //! \brief setter for the conexion attribute

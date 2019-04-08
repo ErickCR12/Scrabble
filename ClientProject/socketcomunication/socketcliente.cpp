@@ -4,6 +4,12 @@ SocketCliente::SocketCliente()
 {
 }
 
+SocketCliente* SocketCliente::socketPtr = nullptr;
+SocketCliente* SocketCliente::getInstance(){
+    if(!socketPtr) socketPtr = new SocketCliente();
+    return socketPtr;
+}
+
 bool SocketCliente::connectar()
 {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
@@ -27,22 +33,20 @@ bool SocketCliente::connectar()
 void * SocketCliente::controlador(void *obj)
 {
     SocketCliente *padre = (SocketCliente*)obj;
-
+    char *buffer = (char*)calloc(1024,sizeof(char));
     while (true) {
         string mensaje;
         while (1) {
-            char buffer[10] = {0};
-            int bytes = recv(padre->descriptor,buffer,10,0);
+            int bytes = recv(padre->descriptor,buffer,1024,0);
             mensaje.append(buffer,bytes);
-            if(bytes <= 0)
-            {
-                close(padre->descriptor);
-                pthread_exit(NULL);
-            }
-            if(bytes < 10)
+            if(bytes < 1024)
                 break;
         }
-        emit padre->NewMensaje(QString::fromStdString(mensaje));
+        if(mensaje != ""){
+            cout << "BUFFER: " + mensaje <<endl;
+            emit padre->NewMensaje(QString::fromStdString(mensaje));
+            memset(buffer,0,sizeof(buffer));
+        }
     }
     close(padre->descriptor);
     pthread_exit(NULL);

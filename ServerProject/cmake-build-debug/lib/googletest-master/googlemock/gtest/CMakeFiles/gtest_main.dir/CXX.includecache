@@ -296,37 +296,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> master
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
-cstdio
--
-gtest/gtest.h
-/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest/gtest.h
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
 cstdio
 -
 gtest/gtest.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest/gtest.h
-<<<<<<< Updated upstream
-=======
-/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
-cstdio
--
-gtest/gtest.h
-/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest/gtest.h
->>>>>>> master
->>>>>>> master
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master
 
