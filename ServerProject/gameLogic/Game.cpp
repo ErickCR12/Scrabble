@@ -64,18 +64,26 @@ string Game::codeGenerator() {
  *
  * ---------------------------------------------------------------------*/
 
+
+
 void Game::add_players() {
 
     try {
+        // Añade al primer cliente
         addFirstClient();
+
+        // Envia un mensaje de bienvenida con el codigo de juego
         ServerMessage* serv_msg= new ServerMessage();
         serv_msg->setMessage1_(1,getGameCode(),"Hello from server");
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(0));
         cout<<">> TO JOIN THIS GAME, USE THIS CODE: "<<getGameCode()<<endl;
+
+        // Se encarga de agregar a los demas jugadores
         while (getClientsAmt() < getMaxCap()) {
             addClients();
         }
+
         /* ------------------------------------------------------
          * En¡ esta parte seria bueno colocar un hilo que se mantenga
          * escuchando pero que ya no acepte clientes sino que los
@@ -162,6 +170,7 @@ bool Game::recieveMessage(string json) {
         case 1:
             // Mensaje de confirmacion
             cout<<">> ID:1 --> CONFIRMACION"<<endl;
+            (pJSON->getAnswer())? cout<<"DONE!"<<endl:cout<<"DENIED!"<<endl;
             break;
         case 2:
             // Mensaje de enviar la palabra
@@ -171,12 +180,30 @@ bool Game::recieveMessage(string json) {
         case 3:
             // Mensaje de pasar turno o jugar de nuevo
             cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
-            if(pJSON->getPass()) nextTurn();
-            // Notify all players new turn
+            if(pJSON->getPass()){
+
+                // Pasa de turno
+                nextTurn();
+
+                // Setea un mensaje para indicar a todos los jugadores que actualicen el turno
+                ServerMessage* serv_msg = new ServerMessage();
+                serv_msg->setMessage4_(4,"",-1,-1,false,getCurrentTurn());
+                string json = serv_msg->serialize();
+                sendMessagetoAll(json);
+
+            } else{
+                // Envia un mensaje para que pueda volver a jugar
+
+                //ServerMessage* serv_msg = new ServerMessage();
+                //string json = serv_msg->serialize();
+                //sendMessagetoAll(json);
+                //Llama de nuevo a validate word
+            }
             break;
         case 4:
             cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
             // Mensaje de pedir experto
+            // expert_request(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
             break;
         default:
             cout<<">>ID NO IDENTIFICADO "<<endl;

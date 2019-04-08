@@ -190,6 +190,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletes
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../SocketComunication/server_Socket.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.cpp
@@ -244,6 +245,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../lib/googletest-master/googlet
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../SocketComunication/server_Socket.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Game.hpp
@@ -310,6 +312,7 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../lib/googletest-master/googletest/include/
 CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/PlayerMessage.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../JSON/ServerMessage.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../SocketComunication/server_Socket.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Game.hpp

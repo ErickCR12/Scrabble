@@ -6,5 +6,9 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wext
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -isystem /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include -isystem /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest 
+=======
+CXX_INCLUDES = -isystem "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/include" -isystem "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest" 
+>>>>>>> master
 

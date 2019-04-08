@@ -21,7 +21,11 @@ int main(int argc,char* argv[]) {
     RUN_ALL_TESTS();
 
 
-    // Esta linea esta comentada para que @OscarAraya18 pueda realizar pruebas del envio de correos
+    //Esta línea es la que envía el SMS al teléfono de @OscarAraya18
+    //El archivo .py se encuente en el directorio cmake-build-debug
+    //system("python sendSms.py");
+
+
     server_release();
 
     return 0;

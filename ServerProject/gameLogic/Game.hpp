@@ -25,6 +25,7 @@
 #include "../SocketComunication/server_Socket.hpp"
 #include "../JSON/PlayerMessage.hpp"
 #include "../JSON/ServerMessage.hpp"
+#include "../dataStructures/Queue.hpp"
 #include <thread>
 
 using namespace std;
@@ -45,6 +46,8 @@ private:
     GameDeck* gameDeck; //!< game LetterTile deck
     Board* gameBoard; //!< game Board
     Dictionary* gameDictionary; //!< Reference to dictionary
+
+    Queue<int> client_Queue; //!< Queue that store extra clients that wants to play
 
 
     /* -------------------

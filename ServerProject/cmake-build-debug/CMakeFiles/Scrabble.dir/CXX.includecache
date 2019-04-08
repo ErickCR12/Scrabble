@@ -510,6 +510,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
+<<<<<<< HEAD
 ../lib/rapidjson/stringbuffer.h
 stream.h
 ../lib/rapidjson/stream.h
@@ -555,6 +556,19 @@ server_Socket.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/PlayerMessage.hpp
+iostream
+-
+../lib/rapidjson/prettywriter.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/ServerMessage.hpp
+iostream
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+>>>>>>> master
 sys/socket.h
 -
 sys/types.h
@@ -580,6 +594,7 @@ arpa/inet.h
 boost/algorithm/string.hpp
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp
 gtest/gtest.h
 -
@@ -655,6 +670,21 @@ Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Board.hpp
+LetterTile.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+GameDeck.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+gtest/gtest.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/gtest/gtest.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+string
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 fstream
 -
 vector
@@ -662,6 +692,7 @@ vector
 boost/algorithm/string.hpp
 -
 GameDeck.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 Dictionary.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.hpp
@@ -681,6 +712,23 @@ GameDeck.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+Dictionary.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+Board.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Board.hpp
+../SocketComunication/server_Socket.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+../JSON/PlayerMessage.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/PlayerMessage.hpp
+../JSON/ServerMessage.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/ServerMessage.hpp
+thread
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+>>>>>>> master
 fstream
 -
 vector
@@ -688,6 +736,7 @@ vector
 boost/algorithm/string.hpp
 -
 LetterTile.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.cpp
@@ -695,11 +744,17 @@ LetterTile.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+>>>>>>> master
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp
 Server.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
@@ -709,11 +764,19 @@ Server.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Server.hpp
+../SocketComunication/server_Socket.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+Game.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 iostream
 -
 vector
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
 rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
@@ -761,11 +824,25 @@ intrin.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
 ../rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/allocators.h
+rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/encodings.h
+rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+../rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+>>>>>>> master
 limits
 -
 intrin.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
 itoa.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
@@ -835,6 +912,55 @@ inttypes.h
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
+itoa.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+diyfp.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+ieee754.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+../rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+../rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+../rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+type_traits
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+../allocators.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/allocators.h
+swap.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+cstddef
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+../stream.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stream.h
+cwchar
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
+../rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+stdint.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+inttypes.h
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+>>>>>>> master
 stdint.h
 -
 limits.h
@@ -842,16 +968,25 @@ limits.h
 wchar.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 writer.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+writer.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/writer.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+>>>>>>> master
 cstdlib
 -
 cstring
 -
 rapidjson/...
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
 string
 -
@@ -859,6 +994,15 @@ msinttypes/stdint.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
 msinttypes/inttypes.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+string
+-
+msinttypes/stdint.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+msinttypes/inttypes.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+>>>>>>> master
 stdint.h
 -
 inttypes.h
@@ -866,6 +1010,7 @@ inttypes.h
 endian.h
 -
 rapidjson/...
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
 cassert
 -
@@ -933,6 +1078,43 @@ internal/itoa.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
 stringbuffer.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+cassert
+-
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stream.h
+rapidjson.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+encodings.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/encodings.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+stream.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stream.h
+internal/stack.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+utility
+-
+internal/stack.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/writer.h
+stream.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stream.h
+internal/meta.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+internal/stack.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+internal/strfunc.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+internal/dtoa.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
+internal/itoa.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
+stringbuffer.h
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+>>>>>>> master
 new
 -
 intrin.h
@@ -944,15 +1126,25 @@ emmintrin.h
 arm_neon.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/main.cpp
+>>>>>>> master
 iostream
 -
 pthread.h
 -
 gameLogic/Server.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 gameLogic/Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Server.hpp
+gameLogic/Game.hpp
+/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 gtest/gtest.h
 -
 gmock/gmock.h
