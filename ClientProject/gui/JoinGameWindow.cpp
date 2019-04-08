@@ -40,12 +40,13 @@ void JoinGameWindow::on_insertCodeButton_clicked()
 void JoinGameWindow::sendMensaje()
 {
     QString qCode = ui->codeLineEdit->text();
-    conexion->setMensaje(qCode.toStdString().c_str());
+    conexion->sendMessage(qCode.toStdString().c_str());
 }
 
 void JoinGameWindow::receiveMessage(QString msn)
 {
     QTextStream out(stdout);
+    out << "AAAAAAAA\n";
     foreach(QString x, msn){
         out << x;
     }out<<"\n";
@@ -53,9 +54,19 @@ void JoinGameWindow::receiveMessage(QString msn)
     string json = msn.toStdString();
     ServerMessage *message = new ServerMessage();
     message = message->deserealize(json.c_str());
-    scrabbleWindow = new ScrabbleWindow(this->parentWidget());
-    scrabbleWindow->setConexion(conexion);
-    scrabbleWindow->show();
-    scrabbleWindow->createPlayerDeck(message->getLetterTiles());
-    this->destroy();
+    out << QString::fromStdString(to_string(message->getId()) + "\n");
+    switch (message->getId()) {
+        case 2:{
+            scrabbleWindow = new ScrabbleWindow(this->parentWidget());
+            scrabbleWindow->setConexion(conexion);
+            scrabbleWindow->show();
+            scrabbleWindow->createPlayerDeck(message->getLetterTiles());
+            this->destroy();
+            break;
+        }case 3:
+            out << "CASE3\n";
+            break;
+        default:
+            break;
+    }
 }

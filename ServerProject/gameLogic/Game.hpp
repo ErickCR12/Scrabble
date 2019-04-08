@@ -159,7 +159,9 @@ public:
     string getGameCode();
 
     //! @brief Returns the current Turn PlayerID
-    int getCurrentTurn();
+    int getCurrentTurn(){
+        return this->currentTurn;
+    }
 
 };
 

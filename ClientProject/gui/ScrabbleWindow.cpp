@@ -97,6 +97,8 @@ void ScrabbleWindow::on_scrabbleButton_clicked(){
     }
     string json = player->sendMyWord(word.substr(0, word.size()-1), tilePositions[0][0], tilePositions[0][1], isVertical);
 
+    //conexion->sendMessage("{\"id\":1,\"answer\":false}");
+    conexion->sendMessage(json.c_str());
 
 //    QTextStream out(stdout);
 //    for(int i = 0; i < wordVector.size(); i++){
@@ -113,7 +115,6 @@ void ScrabbleWindow::resetPlay(){
     vector<DraggableTile*> tiles = player->getWidgetsPlayerDeck();
     vector<vector<int>> tilePositions = board->getWordPositions();
     vector<int> actualPosition;
-    //tiles[0]->printGameBoard(board);
     for(int i = 0; i < tiles.size(); i++){
         if(i<tilePositions.size()){
             actualPosition = tilePositions[i];
@@ -122,7 +123,6 @@ void ScrabbleWindow::resetPlay(){
         scene->removeItem(tiles[i]);
         delete tiles[i];
     }
-    //tiles[0]->printGameBoard(board);
     board->resetWordVector();
     player->resetWidgetsDeck();
     player->resetPlayerDeck();
@@ -167,9 +167,23 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
 
 void ScrabbleWindow::receiveMessage(QString msg){
     QTextStream out(stdout);
+    out << "BBBBBBBBB\n";
     foreach(QString x, msg){
         out << x;
     }
+
+    string json = msg.toStdString();
+    ServerMessage *message = new ServerMessage();
+    message = message->deserealize(json.c_str());
+    out << QString::fromStdString(to_string(message->getId()) + "\n");
+    switch(message->getId()){
+        case 3:
+            out << "CAAASE 3\n";
+    }
+}
+
+void ScrabbleWindow::sendMessage(){
+
 }
 
 ScrabbleWindow::~ScrabbleWindow(){
@@ -178,7 +192,7 @@ ScrabbleWindow::~ScrabbleWindow(){
 
 void ScrabbleWindow::setConexion(SocketCliente *conexion){
     this->conexion = conexion;
-    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
+    connect(this->conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
 }
 
 SocketCliente* ScrabbleWindow::getConexion(){

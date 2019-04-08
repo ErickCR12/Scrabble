@@ -12,7 +12,7 @@
 #include "DraggableTile.h"
 #include "clientlogic/Player.hpp"
 #include "socketcomunication/socketcliente.h"
-
+#include "json/ServerMessage.hpp"
 using namespace std;
 
 namespace Ui {
