@@ -15,7 +15,7 @@ CreateGameWindow::CreateGameWindow(QWidget *parent) :
     conexion = new SocketCliente;
     if(conexion->connectar()){
         this->show();
-        connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(getMessage(QString)));
+        connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
         connect(ui->acceptCreationButton,SIGNAL(clicked()),SLOT(sendMensaje()));
     }else QMessageBox::critical(this,"Error","Error al conectar con el servidor",QMessageBox::Ok);
 }
@@ -38,7 +38,7 @@ void CreateGameWindow::sendMensaje()
     conexion->setMensaje(qAmount.toStdString().c_str());
 }
 
-void CreateGameWindow::getMessage(QString msn)
+void CreateGameWindow::receiveMessage(QString msn)
 {
     QTextStream out(stdout);
     foreach(QString x, msn){
@@ -53,11 +53,11 @@ void CreateGameWindow::getMessage(QString msn)
             ui->label_2->setText(QString::fromStdString(lblStr));
             break;
         }case 2:{
-        this->destroy();
             scrabbleWindow = new ScrabbleWindow(this->parentWidget());
             scrabbleWindow->setConexion(conexion);
             scrabbleWindow->show();
             scrabbleWindow->createPlayerDeck(message->getLetterTiles());
+            this->destroy();
         }default:
             break;
     }

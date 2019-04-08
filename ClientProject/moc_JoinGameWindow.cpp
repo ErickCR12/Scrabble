@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_JoinGameWindow_t {
     QByteArrayData data[7];
-    char stringdata0[101];
+    char stringdata0[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,14 +33,14 @@ QT_MOC_LITERAL(0, 0, 14), // "JoinGameWindow"
 QT_MOC_LITERAL(1, 15, 27), // "on_cancelCodeButton_clicked"
 QT_MOC_LITERAL(2, 43, 0), // ""
 QT_MOC_LITERAL(3, 44, 27), // "on_insertCodeButton_clicked"
-QT_MOC_LITERAL(4, 72, 12), // "printMensaje"
-QT_MOC_LITERAL(5, 85, 3), // "msn"
-QT_MOC_LITERAL(6, 89, 11) // "sendMensaje"
+QT_MOC_LITERAL(4, 72, 14), // "receiveMessage"
+QT_MOC_LITERAL(5, 87, 3), // "msn"
+QT_MOC_LITERAL(6, 91, 11) // "sendMensaje"
 
     },
     "JoinGameWindow\0on_cancelCodeButton_clicked\0"
-    "\0on_insertCodeButton_clicked\0printMensaje\0"
-    "msn\0sendMensaje"
+    "\0on_insertCodeButton_clicked\0"
+    "receiveMessage\0msn\0sendMensaje"
 };
 #undef QT_MOC_LITERAL
 
@@ -80,7 +80,7 @@ void JoinGameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->on_cancelCodeButton_clicked(); break;
         case 1: _t->on_insertCodeButton_clicked(); break;
-        case 2: _t->printMensaje((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 2: _t->receiveMessage((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 3: _t->sendMensaje(); break;
         default: ;
         }

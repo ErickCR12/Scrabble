@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CreateGameWindow_t {
     QByteArrayData data[6];
-    char stringdata0[77];
+    char stringdata0[81];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,13 @@ static const qt_meta_stringdata_CreateGameWindow_t qt_meta_stringdata_CreateGame
 QT_MOC_LITERAL(0, 0, 16), // "CreateGameWindow"
 QT_MOC_LITERAL(1, 17, 31), // "on_cancelCreationButton_clicked"
 QT_MOC_LITERAL(2, 49, 0), // ""
-QT_MOC_LITERAL(3, 50, 10), // "getMessage"
-QT_MOC_LITERAL(4, 61, 3), // "msn"
-QT_MOC_LITERAL(5, 65, 11) // "sendMensaje"
+QT_MOC_LITERAL(3, 50, 14), // "receiveMessage"
+QT_MOC_LITERAL(4, 65, 3), // "msn"
+QT_MOC_LITERAL(5, 69, 11) // "sendMensaje"
 
     },
     "CreateGameWindow\0on_cancelCreationButton_clicked\0"
-    "\0getMessage\0msn\0sendMensaje"
+    "\0receiveMessage\0msn\0sendMensaje"
 };
 #undef QT_MOC_LITERAL
 
@@ -75,7 +75,7 @@ void CreateGameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_cancelCreationButton_clicked(); break;
-        case 1: _t->getMessage((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 1: _t->receiveMessage((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 2: _t->sendMensaje(); break;
         default: ;
         }

@@ -20,7 +20,7 @@ public:
 
 private slots:
     void on_cancelCreationButton_clicked();
-    void getMessage(QString msn);
+    void receiveMessage(QString msn);
     void sendMensaje();
 private:
     Ui::CreateGameWindow *ui;

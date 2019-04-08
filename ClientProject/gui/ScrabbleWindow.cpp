@@ -27,8 +27,6 @@ ScrabbleWindow::ScrabbleWindow(QWidget *parent) :
     view->setHorizontalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
     view->setVerticalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
     createBoardFrame(view);
-    this->conexion = conexion;
-    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(recieveMessage(QString)));
     //createPlayerDeck("a,b,a,c,o,ll,s");
 }
 
@@ -97,7 +95,7 @@ void ScrabbleWindow::on_scrabbleButton_clicked(){
     for(int i = 0; i < wordVector.size(); i++){
         word += wordVector[i] + ",";
     }
-    string json = player->sendMyWord(word, tilePositions[0][0], tilePositions[0][1], isVertical);
+    string json = player->sendMyWord(word.substr(0, word.size()-1), tilePositions[0][0], tilePositions[0][1], isVertical);
 
 
 //    QTextStream out(stdout);
@@ -167,7 +165,7 @@ string ScrabbleWindow::getMultiplierFromCSV(int rowPos, int columnPos) {
     return 0;
 }
 
-void ScrabbleWindow::recieveMessage(QString msg){
+void ScrabbleWindow::receiveMessage(QString msg){
     QTextStream out(stdout);
     foreach(QString x, msg){
         out << x;
@@ -180,6 +178,11 @@ ScrabbleWindow::~ScrabbleWindow(){
 
 void ScrabbleWindow::setConexion(SocketCliente *conexion){
     this->conexion = conexion;
+    connect(conexion,SIGNAL(NewMensaje(QString)),SLOT(receiveMessage(QString)));
+}
+
+SocketCliente* ScrabbleWindow::getConexion(){
+    return conexion;
 }
 
 vector<string> ScrabbleWindow::sortPositions(vector<string> wordVector, bool isVertical){
