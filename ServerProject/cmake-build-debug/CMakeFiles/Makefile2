@@ -50,6 +50,7 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
@@ -57,10 +58,13 @@ CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
 RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< Updated upstream
 =======
 CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
 
@@ -68,11 +72,14 @@ CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
 RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 >>>>>>> master
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
 
@@ -80,10 +87,13 @@ CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
+<<<<<<< Updated upstream
 =======
 CMAKE_SOURCE_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject"
 
@@ -91,6 +101,8 @@ CMAKE_SOURCE_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabb
 CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug"
 >>>>>>> master
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
 
 #=============================================================================
 # Target rules for target CMakeFiles/Scrabble.dir
@@ -100,6 +112,7 @@ CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/g
 CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/depend
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
 =======
@@ -109,6 +122,9 @@ CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/g
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
 >>>>>>> master
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Scrabble"
+>>>>>>> Stashed changes
 .PHONY : CMakeFiles/Scrabble.dir/all
 
 # Include target in all.
@@ -118,6 +134,7 @@ all: CMakeFiles/Scrabble.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Scrabble.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 18
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Scrabble.dir/all
@@ -133,6 +150,11 @@ CMakeFiles/Scrabble.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
 >>>>>>> master
 >>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 18
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Scrabble.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : CMakeFiles/Scrabble.dir/rule
 
 # Convenience name for target.
@@ -198,6 +220,7 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-m
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target gmock_main"
 =======
@@ -207,6 +230,9 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=17,18 "Built target gmock_main"
 >>>>>>> master
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target gmock_main"
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -216,6 +242,7 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 6
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
@@ -231,6 +258,11 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_bui
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
 >>>>>>> master
 >>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -255,6 +287,7 @@ clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target gmock"
 =======
@@ -264,6 +297,9 @@ lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: lib/googletest-master
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=15,16 "Built target gmock"
 >>>>>>> master
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target gmock"
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -273,6 +309,7 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
@@ -288,6 +325,11 @@ lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_sy
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
 >>>>>>> master
 >>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -332,6 +374,7 @@ lib/googletest-master/googlemock/gtest/preinstall:
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=21,22 "Built target gtest_main"
 =======
@@ -341,6 +384,9 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/google
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=21,22 "Built target gtest_main"
 >>>>>>> master
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target gtest_main"
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -350,6 +396,7 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
@@ -365,6 +412,11 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_che
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
 >>>>>>> master
 >>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -389,6 +441,7 @@ clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=19,20 "Built target gtest"
 =======
@@ -398,6 +451,9 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=19,20 "Built target gtest"
 >>>>>>> master
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target gtest"
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -407,6 +463,7 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
@@ -422,6 +479,11 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_bu
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
 >>>>>>> master
 >>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -52,3 +53,9 @@
 -- Build files have been written to: /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug
 >>>>>>> master
 >>>>>>> master
+=======
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
+>>>>>>> Stashed changes

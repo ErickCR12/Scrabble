@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 # Install script for directory: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject
 =======
@@ -7,6 +8,9 @@
 # Install script for directory: /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject
 >>>>>>> master
 >>>>>>> master
+=======
+# Install script for directory: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
+>>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,6 +51,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   include("/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 =======
@@ -56,6 +61,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 >>>>>>> master
 >>>>>>> master
+=======
+  include("/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+>>>>>>> Stashed changes
 
 endif()
 
@@ -67,6 +75,7 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 file(WRITE "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
 =======
@@ -76,4 +85,7 @@ file(WRITE "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cm
 file(WRITE "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
 >>>>>>> master
 >>>>>>> master
+=======
+file(WRITE "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

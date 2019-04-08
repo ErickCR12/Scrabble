@@ -22,6 +22,7 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+<<<<<<< Updated upstream
 <<<<<<< HEAD
  /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
 =======
@@ -31,3 +32,6 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.
  /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
 >>>>>>> master
 >>>>>>> master
+=======
+ /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
+>>>>>>> Stashed changes

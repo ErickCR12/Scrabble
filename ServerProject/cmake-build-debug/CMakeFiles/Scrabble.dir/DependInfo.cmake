@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
@@ -20,6 +21,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/main.cpp" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o"
@@ -33,6 +36,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o"
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o"
   "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp" "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
+<<<<<<< Updated upstream
 =======
   "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/PlayerMessage.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/ServerMessage.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
@@ -49,6 +53,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/main.cpp" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o"
 >>>>>>> master
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -61,6 +67,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
@@ -73,6 +80,10 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
 >>>>>>> master
 >>>>>>> master
+=======
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+>>>>>>> Stashed changes
   )
 
 # Fortran module output directory.

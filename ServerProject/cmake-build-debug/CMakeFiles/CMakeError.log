@@ -25,6 +25,7 @@ make: *** [cmTC_caadf/fast] Error 2
 
 
 Determining if the pthread_create exist failed with the following output:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
@@ -39,26 +40,29 @@ Linking C executable cmTC_75040
 CMakeFiles/cmTC_75040.dir/CheckSymbolExists.c.o: En la función `main':
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_74278/fast"
-/usr/bin/make -f CMakeFiles/cmTC_74278.dir/build.make CMakeFiles/cmTC_74278.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_fac40/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fac40.dir/build.make CMakeFiles/cmTC_fac40.dir/build
 make[1]: Entering directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o   -c /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_74278
-/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74278.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o  -o cmTC_74278 
-CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_fac40.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fac40.dir/CheckSymbolExists.c.o   -c /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fac40
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fac40.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fac40.dir/CheckSymbolExists.c.o  -o cmTC_fac40 
+CMakeFiles/cmTC_fac40.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_74278.dir/build.make:86: recipe for target 'cmTC_74278' failed
-make[1]: *** [cmTC_74278] Error 1
+CMakeFiles/cmTC_fac40.dir/build.make:86: recipe for target 'cmTC_fac40' failed
+make[1]: *** [cmTC_fac40] Error 1
 make[1]: Leaving directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_74278/fast' failed
-make: *** [cmTC_74278/fast] Error 2
+Makefile:121: recipe for target 'cmTC_fac40/fast' failed
+make: *** [cmTC_fac40/fast] Error 2
 
 File /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+<<<<<<< Updated upstream
 =======
 Change Dir: /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
@@ -86,6 +90,8 @@ File /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/
 File /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 >>>>>>> master
 >>>>>>> master
+=======
+>>>>>>> Stashed changes
 /* */
 #include <pthread.h>
 
@@ -101,6 +107,7 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
@@ -121,21 +128,24 @@ Makefile:121: recipe for target 'cmTC_a5d40/fast' failed
 make: *** [cmTC_a5d40/fast] Error 2
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fca01/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fca01.dir/build.make CMakeFiles/cmTC_fca01.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e7b2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7b2c.dir/build.make CMakeFiles/cmTC_e7b2c.dir/build
 make[1]: Entering directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_fca01
-/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fca01.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o  -o cmTC_fca01 -lpthreads 
+Building C object CMakeFiles/cmTC_e7b2c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e7b2c.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e7b2c
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7b2c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e7b2c.dir/CheckFunctionExists.c.o  -o cmTC_e7b2c -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_fca01.dir/build.make:86: recipe for target 'cmTC_fca01' failed
-make[1]: *** [cmTC_fca01] Error 1
+CMakeFiles/cmTC_e7b2c.dir/build.make:86: recipe for target 'cmTC_e7b2c' failed
+make[1]: *** [cmTC_e7b2c] Error 1
 make[1]: Leaving directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+<<<<<<< Updated upstream
 Makefile:121: recipe for target 'cmTC_fca01/fast' failed
 make: *** [cmTC_fca01/fast] Error 2
 =======
@@ -158,5 +168,9 @@ Makefile:121: recipe for target 'cmTC_e55af/fast' failed
 make: *** [cmTC_e55af/fast] Error 2
 >>>>>>> master
 >>>>>>> master
+=======
+Makefile:121: recipe for target 'cmTC_e7b2c/fast' failed
+make: *** [cmTC_e7b2c/fast] Error 2
+>>>>>>> Stashed changes
 
 
