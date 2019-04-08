@@ -51,7 +51,7 @@ int server_release(){
  *                  END OF CODE ZONE
  * -----------------------------------------------*/
 
-// {"id":2,"word":"perro","firstRow":0,"firstCol":0,"is_Vertical":true}
+// {"id":2,"word":"p,e,rr,o","firstRow":0,"firstCol":0,"is_Vertical":true}
 
 /*Game *game = new Game();
 
