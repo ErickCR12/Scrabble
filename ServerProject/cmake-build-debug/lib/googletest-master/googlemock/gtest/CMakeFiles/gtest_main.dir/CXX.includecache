@@ -296,13 +296,17 @@ cxxabi.h
 acxx_demangle.h
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> master
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc
 cstdio
 -
 gtest/gtest.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest/gtest.h
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -323,4 +327,6 @@ gtest/gtest.h
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 

@@ -12,6 +12,7 @@ var searchData=
   ['getlettertile',['getLetterTile',['../classNode.html#a577f19764c52a6a226c3022df4e2c2ad',1,'Node::getLetterTile()'],['../classBoard.html#a7439daf7d9eddda2f7f19f9a8ebab213',1,'Board::getLetterTile()']]],
   ['getmemoryreference',['getMemoryReference',['../classCollector.html#a6c91c066eaad60c6afd280e4926b604a',1,'Collector']]],
   ['getnextnode',['getNextNode',['../classNode.html#a252eb809510850542d97c8138e7f2a3c',1,'Node']]],
+  ['getresponse',['getResponse',['../classExpert.html#a37ea3056a21218602c48b4074e940253',1,'Expert']]],
   ['getscore',['getScore',['../classBoard.html#aca698dcf8467b910f04115b3be4ffb47',1,'Board::getScore()'],['../classLetterTile.html#acba11d5a08e02e4475c76d46814b9990',1,'LetterTile::getScore()']]],
   ['giverandomletter',['giveRandomLetter',['../classGameDeck.html#a51937706680241aca06a5f8f3b03bd44',1,'GameDeck']]]
 ];

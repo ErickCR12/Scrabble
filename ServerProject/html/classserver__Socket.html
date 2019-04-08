@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classserver__Socket-members.html">List of all members</a>  </div>
@@ -113,12 +114,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxCap</b> ()</td><
 <tr class="memitem:a7910c748e5f58f590bf13ddf6bae9639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#a7910c748e5f58f590bf13ddf6bae9639">sendMessagetoAll</a> (string msg)</td></tr>
 <tr class="memdesc:a7910c748e5f58f590bf13ddf6bae9639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that is responsible for sending messages to all connected clients.  <a href="#a7910c748e5f58f590bf13ddf6bae9639">More...</a><br /></td></tr>
 <tr class="separator:a7910c748e5f58f590bf13ddf6bae9639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="memItemLeft" align="right" valign="top"><a id="ade123b700ac68e54f9d8c9eed45ef4d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#ade123b700ac68e54f9d8c9eed45ef4d7">sendSingleMessage</a> (const char *msg, int <a class="el" href="classserver__Socket.html#ac70813a4718099eed831b13ccd2efa05">descriptor</a>)</td></tr>
+<tr class="memdesc:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to a specific customer. <br /></td></tr>
+<tr class="separator:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fae4f4592f9c314a613a7f2408ea1c0"><td class="memItemLeft" align="right" valign="top"><a id="a9fae4f4592f9c314a613a7f2408ea1c0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getClientsAmt</b> ()</td></tr>
 <tr class="separator:a9fae4f4592f9c314a613a7f2408ea1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05829867878e5442e986007b3b087bc"><td class="memItemLeft" align="right" valign="top"><a id="ac05829867878e5442e986007b3b087bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCode</b> (string <a class="el" href="classserver__Socket.html#a3a07dad5f757dfdd3a50ad49c6d9bc6f">code</a>)</td></tr>
 <tr class="separator:ac05829867878e5442e986007b3b087bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7bf965e59ea4c9c376b6e65ada054c"><td class="memItemLeft" align="right" valign="top"><a id="aee7bf965e59ea4c9c376b6e65ada054c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getClient</b> (int index)</td></tr>
+<tr class="separator:aee7bf965e59ea4c9c376b6e65ada054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b97dfa44b50f970f88b6537370b44a6"><td class="memItemLeft" align="right" valign="top"><a id="a6b97dfa44b50f970f88b6537370b44a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeSocket</b> ()</td></tr>
+<tr class="separator:a6b97dfa44b50f970f88b6537370b44a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae48c5818bf82f364091753c6ca81df1c"><td class="memItemLeft" align="right" valign="top"><a id="ae48c5818bf82f364091753c6ca81df1c"></a>
+vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#ae48c5818bf82f364091753c6ca81df1c">clients</a></td></tr>
+<tr class="memdesc:ae48c5818bf82f364091753c6ca81df1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector that stores all the descriptors that are connected to this socket. <br /></td></tr>
+<tr class="separator:ae48c5818bf82f364091753c6ca81df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -126,10 +144,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ad64bd619f404d0242eb2c84330b3e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9ae7ad70ce1d6cbd4ed210764a5c56e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#aa9ae7ad70ce1d6cbd4ed210764a5c56e">connectWithClients</a> ()</td></tr>
 <tr class="separator:aa9ae7ad70ce1d6cbd4ed210764a5c56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="memItemLeft" align="right" valign="top"><a id="ade123b700ac68e54f9d8c9eed45ef4d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#ade123b700ac68e54f9d8c9eed45ef4d7">sendSingleMessage</a> (const char *msg, int <a class="el" href="classserver__Socket.html#ac70813a4718099eed831b13ccd2efa05">descriptor</a>)</td></tr>
-<tr class="memdesc:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to a specific customer. <br /></td></tr>
-<tr class="separator:ade123b700ac68e54f9d8c9eed45ef4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7de222c005b6de220c199b753c102d"><td class="memItemLeft" align="right" valign="top"><a id="a1d7de222c005b6de220c199b753c102d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#a1d7de222c005b6de220c199b753c102d">listenClient</a> (string *bufferText, <a class="el" href="structdataSocketServer.html">dataSocketServer</a> data)</td></tr>
 <tr class="memdesc:a1d7de222c005b6de220c199b753c102d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that handles a listening loop to the client for receiving messages. <br /></td></tr>
@@ -151,10 +165,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#aff9e21db7291da8a5ce02d5897f08b8c">socketInfo</a></td></tr>
 <tr class="memdesc:aff9e21db7291da8a5ce02d5897f08b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information of the socket type and the type of connection made with the other socket port (clients) <br /></td></tr>
 <tr class="separator:aff9e21db7291da8a5ce02d5897f08b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48c5818bf82f364091753c6ca81df1c"><td class="memItemLeft" align="right" valign="top"><a id="ae48c5818bf82f364091753c6ca81df1c"></a>
-vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserver__Socket.html#ae48c5818bf82f364091753c6ca81df1c">clients</a></td></tr>
-<tr class="memdesc:ae48c5818bf82f364091753c6ca81df1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector that stores all the descriptors that are connected to this socket. <br /></td></tr>
-<tr class="separator:ae48c5818bf82f364091753c6ca81df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c7d3742f9a17c513fc997a4fb6b4b2"><td class="memItemLeft" align="right" valign="top"><a id="a24c7d3742f9a17c513fc997a4fb6b4b2"></a>
 vector&lt; <a class="el" href="structdataSocketServer.html">dataSocketServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cThreads</b></td></tr>
 <tr class="separator:a24c7d3742f9a17c513fc997a4fb6b4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>

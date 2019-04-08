@@ -37,91 +37,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="Fixed minor bug in Dictionary.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="584465e7-1e19-4eca-8d18-69a5a49cdf15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/SocketComunication/server_Socket.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/Tests/JsonTest/JSON_Test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/GameDeck.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/LetterTile.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Scrabble" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Scrabble" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Scrabble.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/Scrabble.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/libgtest_maind.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/lib/libgtestd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerProject/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ServerProject/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -152,20 +76,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerProject/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="295">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="e#142#166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,8 +130,9 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="“erickCR12” &lt;erick.cr12@outlook.com&gt;" />
+        <option value="OscarAraya1" />
         <option value="OscarAraya18" />
+        <option value="“erickCR12” &lt;erick.cr12@outlook.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -210,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Objects/Board.cpp" />
         <option value="$PROJECT_DIR$/Objects/Board.hpp" />
         <option value="$PROJECT_DIR$/gamelogic/Player.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
@@ -261,13 +191,14 @@
         <option value="$PROJECT_DIR$/gameLogic/Dictionary.cpp" />
         <option value="$PROJECT_DIR$/ServerProject/sendSms.py" />
         <option value="$PROJECT_DIR$/ServerProject/main.cpp" />
+        <option value="$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="242" />
-    <option name="y" value="299" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="222" />
+    <option name="y" value="231" />
     <option name="width" value="1024" />
     <option name="height" value="733" />
   </component>
@@ -423,7 +354,7 @@
       <workItem from="1553582514591" duration="3156000" />
       <workItem from="1553723051408" duration="41000" />
       <workItem from="1554526617385" duration="99000" />
-      <workItem from="1554684470501" duration="422000" />
+      <workItem from="1554684470501" duration="6283000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1552247329625</created>
@@ -537,11 +468,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553123124879</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Ya se puede pasar por parámetro lo que se quiere enviar al experto en palabras">
+      <created>1554694056823</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554694056824</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143347000" />
+    <option name="totallyTimeSpent" value="149208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,7 +491,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="733" extended-state="7" />
+    <frame x="0" y="-1" width="1366" height="733" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50246304" side_tool="true" weight="0.3128788" />
@@ -627,7 +565,9 @@
     <MESSAGE value="Created test in main for player methods" />
     <MESSAGE value="Included a GameDeck attribute in Board. Changed directories names." />
     <MESSAGE value="Fixed minor bug in Dictionary." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed minor bug in Dictionary." />
+    <MESSAGE value="Implementación de una parte del experto en palabras" />
+    <MESSAGE value="Ya se puede pasar por parámetro lo que se quiere enviar al experto en palabras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya se puede pasar por parámetro lo que se quiere enviar al experto en palabras" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/1.puml" />
@@ -679,17 +619,23 @@
     <entry file="file://$PROJECT_DIR$/gameLogic/Game.cpp" />
     <entry file="file://$PROJECT_DIR$/gameLogic/Dictionary.hpp" />
     <entry file="file://$PROJECT_DIR$/gameLogic/Dictionary.cpp" />
-    <entry file="file://$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py">
+    <entry file="file://$PROJECT_DIR$/ServerProject/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="295">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#142#166#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServerProject/main.cpp">
+    <entry file="file://$PROJECT_DIR$/ServerProject/cmake-build-debug/sendSms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="124" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

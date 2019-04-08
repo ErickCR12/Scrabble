@@ -612,6 +612,7 @@ absl/debugging/symbolize.h
 absl/strings/str_cat.h
 ../lib/googletest-master/googletest/src/absl/strings/str_cat.h
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest-all.cc
@@ -642,6 +643,9 @@ src/gtest-typed-test.cc
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest-all.cc
 >>>>>>> master
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest-all.cc
+>>>>>>> master
 gtest/gtest.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest/gtest.h
 src/gtest.cc
@@ -659,12 +663,14 @@ src/gtest-printers.cc
 src/gtest-test-part.cc
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/src/gtest-test-part.cc
 src/gtest-typed-test.cc
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/src/src/gtest-typed-test.cc
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/googletest-master/googletest/src/src/gtest-typed-test.cc
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['test1',['test1',['../classJSON__Test.html#a505ee7da63d2aa058a40541ff7180bdb',1,'JSON_Test']]],
-  ['transcode',['Transcode',['../structTranscoder.html#a0ea2edfe35784ebf1063921d2bd5fb66',1,'Transcoder']]]
+  ['tostring',['toString',['../classPlayerMessage.html#af50c5bdc9396fa0bd23448acffa27991',1,'PlayerMessage::toString()'],['../classServerMessage.html#a2006d6684b1e2d29a729196a18d19da4',1,'ServerMessage::toString()']]]
 ];

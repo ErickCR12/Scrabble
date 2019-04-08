@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o"
   "CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o"
   "CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
+  "CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o"
   "Scrabble.pdb"
   "Scrabble"
 )

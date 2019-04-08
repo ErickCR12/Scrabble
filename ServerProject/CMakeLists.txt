@@ -34,7 +34,7 @@ add_executable(
         JSON/PlayerMessage.cpp JSON/PlayerMessage.hpp
         JSON/ServerMessage.cpp JSON/ServerMessage.hpp
 
-)
+        gameLogic/Expert.cpp gameLogic/Expert.hpp)
 
 target_link_libraries(Scrabble gtest gtest_main)
 target_link_libraries(Scrabble ${CMAKE_THREAD_LIBS_INIT}) # <- This line allows CLion to enable Threads

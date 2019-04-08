@@ -167,6 +167,9 @@ CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o: ../gameLogic/Dictionary.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o: ../gameLogic/GameDeck.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.o: ../gameLogic/LetterTile.hpp
 
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o: ../gameLogic/Expert.cpp
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o: ../gameLogic/Expert.hpp
+
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -193,6 +196,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../SocketComunication/server_Socke
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Dictionary.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Expert.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.cpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/Game.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Game.cpp.o: ../gameLogic/GameDeck.hpp
@@ -248,6 +252,7 @@ CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../SocketComunication/server_Soc
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Dictionary.hpp
+CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Expert.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/Game.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/GameDeck.hpp
 CMakeFiles/Scrabble.dir/gameLogic/Server.cpp.o: ../gameLogic/LetterTile.hpp
@@ -315,6 +320,7 @@ CMakeFiles/Scrabble.dir/main.cpp.o: ../SocketComunication/server_Socket.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../dataStructures/Queue.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Board.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Dictionary.hpp
+CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Expert.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/Game.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/GameDeck.hpp
 CMakeFiles/Scrabble.dir/main.cpp.o: ../gameLogic/LetterTile.hpp

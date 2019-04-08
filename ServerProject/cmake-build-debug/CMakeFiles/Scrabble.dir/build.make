@@ -34,12 +34,16 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
 RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -58,17 +62,23 @@ RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -87,6 +97,8 @@ CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabb
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Scrabble.dir/depend.make
@@ -99,6 +111,7 @@ include CMakeFiles/Scrabble.dir/flags.make
 
 CMakeFiles/Scrabble.dir/main.cpp.o: CMakeFiles/Scrabble.dir/flags.make
 CMakeFiles/Scrabble.dir/main.cpp.o: ../main.cpp
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scrabble.dir/main.cpp.o"
@@ -278,6 +291,10 @@ CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scrabble.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/main.cpp.o -c "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/main.cpp"
 >>>>>>> master
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Scrabble.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/main.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/main.cpp"
+>>>>>>> master
 
 CMakeFiles/Scrabble.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/main.cpp.i"
@@ -441,14 +458,29 @@ CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.i: cmake_force
 
 CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s"
-<<<<<<< HEAD
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.cpp" -o CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
+<<<<<<< HEAD
 =======
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/JSON/ServerMessage.cpp" -o CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.s
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o: CMakeFiles/Scrabble.dir/flags.make
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o: ../gameLogic/Expert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.cpp"
+
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.cpp" > CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.i
+
+CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.cpp" -o CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.s
+>>>>>>> master
 
 # Object files for target Scrabble
 Scrabble_OBJECTS = \
@@ -464,7 +496,8 @@ Scrabble_OBJECTS = \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o" \
 "CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o" \
 "CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o" \
-"CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o"
+"CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o" \
+"CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o"
 
 # External object files for target Scrabble
 Scrabble_EXTERNAL_OBJECTS =
@@ -482,11 +515,13 @@ Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/DictionaryTest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/Tests/GameLogicTest/Board_gtest.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/JSON/PlayerMessage.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/JSON/ServerMessage.cpp.o
+Scrabble: CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o
 Scrabble: CMakeFiles/Scrabble.dir/build.make
 Scrabble: lib/libgtestd.a
 Scrabble: lib/libgtest_maind.a
 Scrabble: lib/libgtestd.a
 Scrabble: CMakeFiles/Scrabble.dir/link.txt
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Scrabble"
@@ -500,6 +535,9 @@ Scrabble: CMakeFiles/Scrabble.dir/link.txt
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Scrabble"
 >>>>>>> Stashed changes
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Scrabble"
+>>>>>>> master
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Scrabble.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -512,6 +550,7 @@ CMakeFiles/Scrabble.dir/clean:
 .PHONY : CMakeFiles/Scrabble.dir/clean
 
 CMakeFiles/Scrabble.dir/depend:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" --color=$(COLOR)
@@ -525,5 +564,8 @@ CMakeFiles/Scrabble.dir/depend:
 =======
 	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake --color=$(COLOR)
 >>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/Scrabble.dir/DependInfo.cmake" --color=$(COLOR)
+>>>>>>> master
 .PHONY : CMakeFiles/Scrabble.dir/depend
 

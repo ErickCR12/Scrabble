@@ -6,10 +6,13 @@
 // Game Logic
 #include "gameLogic/Server.hpp"
 #include "gameLogic/Game.hpp"
+#include "gameLogic/Expert.hpp"
 
 // gtest
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+
+#include <string>
 
 int server_release();
 
@@ -19,12 +22,6 @@ int main(int argc,char* argv[]) {
 
     testing::InitGoogleTest(&argc,argv);
     RUN_ALL_TESTS();
-
-
-    //Esta línea es la que envía el SMS al teléfono de @OscarAraya18
-    //El archivo .py se encuente en el directorio cmake-build-debug
-    //system("python sendSms.py");
-
 
     server_release();
 

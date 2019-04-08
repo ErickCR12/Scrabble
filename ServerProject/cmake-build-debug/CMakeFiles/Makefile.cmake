@@ -25,6 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../lib/googletest-master/googletest/cmake/gtest.pc.in"
   "../lib/googletest-master/googletest/cmake/gtest_main.pc.in"
   "../lib/googletest-master/googletest/cmake/internal_utils.cmake"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
@@ -66,6 +67,8 @@ set(CMAKE_MAKEFILE_DEPENDS
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
+>>>>>>> master
+=======
 >>>>>>> master
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompiler.cmake.in"
@@ -167,6 +170,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/Platform/UnixPaths.cmake"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/ProcessorCount.cmake"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/WriteBasicConfigVersionFile.cmake"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -275,6 +279,8 @@ set(CMAKE_MAKEFILE_DEPENDS
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
   )
 
 # The corresponding makefile is:

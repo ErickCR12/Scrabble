@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['client_5fqueue',['client_Queue',['../classGame.html#ae643ca6b5794bcb0d91214b101d699a0',1,'Game']]],
   ['clients',['clients',['../classserver__Socket.html#ae48c5818bf82f364091753c6ca81df1c',1,'server_Socket']]],
   ['code',['code',['../classserver__Socket.html#a3a07dad5f757dfdd3a50ad49c6d9bc6f',1,'server_Socket']]],
   ['collector',['collector',['../classCollector.html#af22193712ba45a4a86b71588178522db',1,'Collector']]],

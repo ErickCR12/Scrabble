@@ -22,6 +22,7 @@
 #include "GameDeck.hpp"
 #include "Dictionary.hpp"
 #include "Board.hpp"
+#include "Expert.hpp"
 #include "../SocketComunication/server_Socket.hpp"
 #include "../JSON/PlayerMessage.hpp"
 #include "../JSON/ServerMessage.hpp"
@@ -46,6 +47,7 @@ private:
     GameDeck* gameDeck; //!< game LetterTile deck
     Board* gameBoard; //!< game Board
     Dictionary* gameDictionary; //!< Reference to dictionary
+    Expert* gameExpert;
 
     Queue<int> client_Queue; //!< Queue that store extra clients that wants to play
 
@@ -100,7 +102,9 @@ private:
     string horizontalIterator(string word,int len, int row, int col,bool isVertical);
 
     //! Send the tiles to the players
-    void send_LetterTiles();
+    //! \param amount How many letterTiles needs the player
+    //! \return the string w/letterTiles
+    string dealTiles(int amount);
 
     //! @brief Change the turn by PlayerID
     void nextTurn(){
@@ -146,8 +150,6 @@ public:
     //! Function that keeps the game active as long as the amount
     //! of LetterTiles is greater than zero
     void play();
-
-    string dealTiles(int amount);
 
 
     /* ----------------------

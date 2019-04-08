@@ -6,6 +6,220 @@
 
 #IncludeRegexTransform: 
 
+../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
+errno.h
+-
+algorithm
+-
+functional
+-
+memory
+-
+string
+-
+type_traits
+-
+utility
+-
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
+limits.h
+-
+memory
+-
+ostream
+-
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+gtest/gtest.h
+../lib/googletest-master/googlemock/include/gmock/gtest/gtest.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
+gmock/gmock-generated-function-mockers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-function-mockers.h
+gmock/internal/gmock-pp.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-pp.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-generated-actions.h
+memory
+-
+utility
+-
+gmock/gmock-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-actions.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+gmock/internal/custom/gmock-generated-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/custom/gmock-generated-actions.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-generated-function-mockers.h
+functional
+-
+utility
+-
+gmock/gmock-spec-builders.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-generated-matchers.h
+iterator
+-
+sstream
+-
+string
+-
+utility
+-
+vector
+-
+gmock/gmock-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-matchers.h
+math.h
+-
+algorithm
+-
+initializer_list
+-
+iterator
+-
+limits
+-
+memory
+-
+ostream
+-
+sstream
+-
+string
+-
+type_traits
+-
+utility
+-
+vector
+-
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+gtest/gtest.h
+../lib/googletest-master/googlemock/include/gmock/gtest/gtest.h
+gmock/internal/custom/gmock-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/custom/gmock-matchers.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h
+algorithm
+-
+type_traits
+-
+gmock/gmock-generated-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-actions.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-more-matchers.h
+gmock/gmock-generated-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-matchers.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-nice-strict.h
+gmock/gmock-spec-builders.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-spec-builders.h
+map
+-
+memory
+-
+set
+-
+sstream
+-
+string
+-
+utility
+-
+vector
+-
+gmock/gmock-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-actions.h
+gmock/gmock-cardinalities.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-cardinalities.h
+gmock/gmock-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+gtest/gtest.h
+../lib/googletest-master/googlemock/include/gmock/gtest/gtest.h
+stdexcept
+-
+
+../lib/googletest-master/googlemock/include/gmock/gmock.h
+gmock/gmock-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-actions.h
+gmock/gmock-cardinalities.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-cardinalities.h
+gmock/gmock-function-mocker.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-function-mocker.h
+gmock/gmock-generated-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-actions.h
+gmock/gmock-generated-function-mockers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-function-mockers.h
+gmock/gmock-generated-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-matchers.h
+gmock/gmock-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
+gmock/gmock-more-actions.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-more-actions.h
+gmock/gmock-more-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-more-matchers.h
+gmock/gmock-nice-strict.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-nice-strict.h
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-matchers.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-port.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/gmock-internal-utils.h
+stdio.h
+-
+ostream
+-
+string
+-
+type_traits
+-
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/internal/gmock/internal/gmock-port.h
+gtest/gtest.h
+../lib/googletest-master/googlemock/include/gmock/internal/gtest/gtest.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/gmock-port.h
+assert.h
+-
+stdlib.h
+-
+iostream
+-
+gtest/internal/gtest-port.h
+../lib/googletest-master/googlemock/include/gmock/internal/gtest/internal/gtest-port.h
+gmock/internal/custom/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/internal/gmock/internal/custom/gmock-port.h
+
+../lib/googletest-master/googlemock/include/gmock/internal/gmock-pp.h
+
 ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -296,6 +510,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.hpp
@@ -303,6 +518,8 @@ acxx_demangle.h
 <<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 ../lib/rapidjson/stringbuffer.h
 stream.h
 ../lib/rapidjson/stream.h
@@ -313,38 +530,39 @@ utility
 internal/stack.h
 ../lib/rapidjson/internal/stack.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/PlayerMessage.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.cpp
 PlayerMessage.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/PlayerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.hpp
 ../lib/rapidjson/prettywriter.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 ../lib/rapidjson/stringbuffer.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
 ../lib/rapidjson/document.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/document.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/PlayerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/PlayerMessage.hpp
 iostream
 -
 ../lib/rapidjson/prettywriter.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/ServerMessage.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.cpp
 ServerMessage.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/ServerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.hpp
 ../lib/rapidjson/prettywriter.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 ../lib/rapidjson/stringbuffer.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
 ../lib/rapidjson/document.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/document.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/JSON/ServerMessage.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.hpp
 iostream
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.cpp
 server_Socket.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
@@ -360,15 +578,20 @@ iostream
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/JSON/ServerMessage.hpp
 iostream
 -
-
-<<<<<<< HEAD
+=======
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+>>>>>>> master
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 sys/socket.h
 -
 sys/types.h
@@ -394,6 +617,7 @@ arpa/inet.h
 boost/algorithm/string.hpp
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/dataStructures/Queue.hpp
@@ -406,44 +630,55 @@ iostream
 =======
 >>>>>>> Stashed changes
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/Board_gtest.cpp
+>>>>>>> master
 gtest/gtest.h
 -
 gmock/gmock.h
 -
 ../../gameLogic/Board.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.hpp
 ../../gameLogic/LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.cpp
 DictionaryTest.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.hpp
 ../../gameLogic/Dictionary.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 ../../gameLogic/GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/GameLogicTest/DictionaryTest.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.cpp
 ../../lib/rapidjson/document.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/document.h
 ../../lib/rapidjson/writer.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/writer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/writer.h
 ../../rapidjson/stringbuffer.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/rapidjson/stringbuffer.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/rapidjson/stringbuffer.h
 iostream
 -
 JSON_Test.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/Tests/JsonTest/JSON_Test.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/dataStructures/Queue.hpp
 iostream
 -
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/dataStructures/Queue.hpp
+iostream
+-
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.cpp
+>>>>>>> master
 iostream
 -
 vector
@@ -453,21 +688,21 @@ fstream
 boost/algorithm/string.hpp
 -
 Board.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.hpp
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Board.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.hpp
 LetterTile.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
 GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 gtest/gtest.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/gtest/gtest.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/gtest/gtest.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.cpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.cpp
 Dictionary.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 GameDeck.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 fstream
 -
 iostream
@@ -475,14 +710,15 @@ iostream
 bits/stdc++.h
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Dictionary.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 string
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.cpp
-Game.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.cpp
+Expert.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
 <<<<<<< Updated upstream
 =======
@@ -497,20 +733,26 @@ gtest/gtest.h
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 string
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
+iostream
+>>>>>>> master
 -
 
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.cpp
 Game.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/Game.hpp
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 fstream
 -
 vector
@@ -518,6 +760,7 @@ vector
 boost/algorithm/string.hpp
 -
 GameDeck.hpp
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
@@ -550,10 +793,15 @@ GameDeck.hpp
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 >>>>>>> master
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+>>>>>>> master
 Dictionary.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Dictionary.hpp
 Board.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Board.hpp
+Expert.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
 ../SocketComunication/server_Socket.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 ../JSON/PlayerMessage.hpp
@@ -565,14 +813,20 @@ Board.hpp
 thread
 -
 
-<<<<<<< HEAD
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.cpp
+GameDeck.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.hpp
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/gameLogic/GameDeck.hpp
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 fstream
 -
 vector
@@ -580,6 +834,7 @@ vector
 boost/algorithm/string.hpp
 -
 LetterTile.hpp
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
@@ -605,11 +860,21 @@ LetterTile.hpp
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.cpp
+LetterTile.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/LetterTile.hpp
+>>>>>>> master
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
@@ -618,34 +883,49 @@ iostream
 =======
 >>>>>>> Stashed changes
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.cpp
+>>>>>>> master
 Server.hpp
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 ../SocketComunication/server_Socket.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
 Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
+../SocketComunication/server_Socket.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/SocketComunication/server_Socket.hpp
+Game.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+>>>>>>> master
 iostream
 -
 vector
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
+>>>>>>> master
 rapidjson.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/document.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/document.h
 reader.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/reader.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/reader.h
 internal/meta.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
 internal/strfunc.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strfunc.h
 memorystream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/memorystream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/memorystream.h
 encodedstream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
 new
 -
 limits
@@ -655,26 +935,27 @@ iterator
 utility
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
 stream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
 memorystream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/memorystream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/memorystream.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodings.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/encodings.h
 rapidjson.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/error/error.h
 ../rapidjson.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
 ../rapidjson.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 intrin.h
 -
 
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
 ../rapidjson.h
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
@@ -689,21 +970,26 @@ rapidjson.h
 rapidjson.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 
+=======
+>>>>>>> master
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
 ../rapidjson.h
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 limits
 -
 intrin.h
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
@@ -784,6 +1070,9 @@ inttypes.h
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
 >>>>>>> master
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/dtoa.h
+>>>>>>> master
 itoa.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
 diyfp.h
@@ -805,6 +1094,10 @@ ieee754.h
 type_traits
 -
 
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
+../rapidjson.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
 ../allocators.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
@@ -819,9 +1112,27 @@ cstddef
 cwchar
 -
 
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
+ieee754.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/ieee754.h
+biginteger.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/biginteger.h
+diyfp.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/diyfp.h
+pow10.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/pow10.h
+climits
+-
+limits
+-
+
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/swap.h
 ../rapidjson.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/memorystream.h
+stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
 stdint.h
@@ -829,14 +1140,16 @@ stdint.h
 inttypes.h
 -
 
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 stdint.h
 -
 limits.h
@@ -844,6 +1157,7 @@ limits.h
 wchar.h
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
@@ -860,22 +1174,28 @@ writer.h
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
 >>>>>>> master
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/prettywriter.h
+>>>>>>> master
 writer.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/writer.h
 
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson.h
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 cstdlib
 -
 cstring
 -
 rapidjson/...
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
@@ -894,19 +1214,24 @@ msinttypes/inttypes.h
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
 >>>>>>> master
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+>>>>>>> master
 string
 -
 msinttypes/stdint.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/stdint.h
 msinttypes/inttypes.h
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/msinttypes/inttypes.h
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 stdint.h
 -
 inttypes.h
@@ -914,6 +1239,7 @@ inttypes.h
 endian.h
 -
 rapidjson/...
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
@@ -922,22 +1248,25 @@ rapidjson/...
 =======
 >>>>>>> Stashed changes
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/...
+>>>>>>> master
 cassert
 -
 
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/reader.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/reader.h
 allocators.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/allocators.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/allocators.h
 stream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
 encodedstream.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/encodedstream.h
 internal/meta.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/meta.h
 internal/stack.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/stack.h
 internal/strtod.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/strtod.h
 limits
 -
 intrin.h
@@ -951,10 +1280,11 @@ arm_neon.h
 stdexcept
 -
 rapidjson/error/error.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/error/error.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/error/error.h
 rapidjson/reader.h
-/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/rapidjson/reader.h
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/rapidjson/reader.h
 error/error.h
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/error/error.h
 
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/rapidjson/stream.h
@@ -994,6 +1324,9 @@ stringbuffer.h
 >>>>>>> master
 cassert
 -
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/error/error.h
+>>>>>>> master
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stream.h
 rapidjson.h
@@ -1025,14 +1358,16 @@ internal/dtoa.h
 internal/itoa.h
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/internal/itoa.h
 stringbuffer.h
-<<<<<<< HEAD
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
+<<<<<<< HEAD
 =======
 /home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/lib/rapidjson/stringbuffer.h
 >>>>>>> master
 >>>>>>> master
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 new
 -
 intrin.h
@@ -1044,6 +1379,7 @@ emmintrin.h
 arm_neon.h
 -
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
@@ -1051,17 +1387,29 @@ arm_neon.h
 =======
 >>>>>>> Stashed changes
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/main.cpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/main.cpp
+>>>>>>> master
 iostream
 -
 pthread.h
 -
 gameLogic/Server.hpp
+<<<<<<< HEAD
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Server.hpp
 gameLogic/Game.hpp
 /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/gameLogic/Game.hpp
+=======
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Server.hpp
+gameLogic/Game.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Game.hpp
+gameLogic/Expert.hpp
+/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/Expert.hpp
+>>>>>>> master
 gtest/gtest.h
 -
 gmock/gmock.h
 -
+string
+-
 
->>>>>>> master
