@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['server',['Server',['../classServer.html',1,'']]],
-  ['server_5fsocket',['server_Socket',['../classserver__Socket.html',1,'']]],
-  ['servermessage',['ServerMessage',['../classServerMessage.html',1,'']]]
+  ['queue',['Queue',['../classQueue.html',1,'']]],
+  ['queue_3c_20int_20_3e',['Queue&lt; int &gt;',['../classQueue.html',1,'']]]
 ];

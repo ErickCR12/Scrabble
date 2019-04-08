@@ -12,6 +12,7 @@ Game::Game() {
     gameDictionary = Dictionary::getDictionaryInstance();
     gameBoard = new Board();
     gameDeck = new GameDeck();
+    gameExpert = new Expert();
 
     // INICIALIZACION DEL SOCKET
     setCode(getGameCode());
@@ -138,7 +139,7 @@ void Game::play() {
             string mensaje;
             cin>>mensaje;
             if (mensaje == "EXIT") break;
-            sendMessagetoAll(mensaje.c_str());
+            //sendMessagetoAll(mensaje.c_str());
 
         }
     }
@@ -157,9 +158,14 @@ string Game::dealTiles(int amountTiles) {
     return tiles;
 }
 
+/* --------------------------------------------
+ *              WORD FINDER ALGORITHM
+ * --------------------------------------------*/
+
+// 1. Funcion que maneja los mensajes segun su ID
+
 bool Game::recieveMessage(string json) {
 
-    //cout<<"Entra bien a recieveMessage y el mensaje es: "<<json<<endl;
     // Deserializar el mensaje
 
     PlayerMessage *pJSON = new PlayerMessage();
@@ -167,17 +173,19 @@ bool Game::recieveMessage(string json) {
     pJSON = pJSON->deserealize(json.c_str());
 
     switch (pJSON->getID()) {
-        case 1:
+        case 1:{
             // Mensaje de confirmacion
             cout<<">> ID:1 --> CONFIRMACION"<<endl;
             (pJSON->getAnswer())? cout<<"DONE!"<<endl:cout<<"DENIED!"<<endl;
             break;
-        case 2:
+        }
+        case 2:{
             // Mensaje de enviar la palabra
             cout<<">> ID:2 --> AÑADIR PALABRA"<<endl;
             validateWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
             break;
-        case 3:
+        }
+        case 3:{
             // Mensaje de pasar turno o jugar de nuevo
             cout<<">> ID:3 --> PASS/PLAY AGAIN"<<endl;
             if(pJSON->getPass()){
@@ -191,20 +199,42 @@ bool Game::recieveMessage(string json) {
                 string json = serv_msg->serialize();
                 sendMessagetoAll(json);
 
-            } else{
-                // Envia un mensaje para que pueda volver a jugar
-
-                //ServerMessage* serv_msg = new ServerMessage();
-                //string json = serv_msg->serialize();
-                //sendMessagetoAll(json);
-                //Llama de nuevo a validate word
             }
+            // Si no, puede volver a jugar
             break;
-        case 4:
+        }
+        case 4:{
             cout<<">> ID:4 --> CONSULTAR AL EXPERTO"<<endl;
             // Mensaje de pedir experto
-            // expert_request(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+
+            vector<string> word_vector;
+            boost::split(word_vector,pJSON->getWord(),boost::is_any_of(","));
+
+            string word = "";
+            for(int i = 0; i < word_vector.size();i++){
+                word += word_vector[i];
+            }
+
+            //gameExpert->sendMessage(word);
+
+            // Si la palabra es aceptada por el experto, entonces se agrega al diccionario
+            // y se vuelve a ejecutar el algoritmo
+            if(gameExpert->getResponse()){
+                gameDictionary->writeInDictionary(word);
+                validateWord(pJSON->getWord(), pJSON->getFirstRow(), pJSON->getFirstCol(), pJSON->getIsVertical());
+            } else {
+                // Si no se le envia el mensaje de rechazo
+                nextTurn(); //Pasa el turno pues ya no podra seguir jugando
+
+                cout<<">> El experto a rechazado la palabra!"<<endl;
+
+                ServerMessage* serv_msg = new ServerMessage();
+                serv_msg->setMessage3_(3,false,0,"");
+                string json = serv_msg->serialize();
+                sendSingleMessage(json.c_str(),getClient(currentTurn-1)); // Se le envia al anterior
+            }
             break;
+        }
         default:
             cout<<">>ID NO IDENTIFICADO "<<endl;
             break;
@@ -241,7 +271,7 @@ int Game::addWord(vector<string> word, int row, int col, bool isVertical) {
     return points;
 }
 
-// Este método valida las palabras
+// 2. Este método valida las palabras
 bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
 
     // Variable que almacena el posible puntaje de la palabra asignada
@@ -264,10 +294,12 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
 
         word_points = addWord(word_vector, row, col, isVertical); //Añadir la palabra
         refillTiles = dealTiles(word_vector.size());
+
         ServerMessage* serv_msg = new ServerMessage();
         serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+
         nextTurn(); // Setea el sgte turno
         gameBoard->printGameBoard();
         // NOTIFICAR A TODOS LOS JUGADORES DEL CAMBIO
@@ -283,7 +315,9 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         // 4. Si alguna palabra se compone con una vertical, se toma esta para ser tomada
         if (gameDictionary->searchInDictionary(vert_word)) {
             cout<<"Añadiendo palabra vertical"<<endl;
+
             refillTiles = dealTiles(word_vector.size());
+
             ServerMessage* serv_msg = new ServerMessage();
             serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
             string json = serv_msg->serialize();
@@ -316,11 +350,11 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         } else {
             resetBoard(word.length(), row, col, isVertical);
             cout<<"Palabra no encontrada del jugador "<<getCurrentTurn()<<endl;
+
             ServerMessage* serv_msg = new ServerMessage();
             serv_msg->setMessage3_(3,false,0,"");
             string json = serv_msg->serialize();
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
-
 
             gameBoard->printGameBoard();
             return false;

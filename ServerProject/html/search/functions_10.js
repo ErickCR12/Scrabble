@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['validate',['Validate',['../structTranscoder.html#a8a64aa837f7962894a99f63232472543',1,'Transcoder']]]
+  ['validateword',['validateWord',['../classGame.html#a947faea64013e0246017cdf0924afdb5',1,'Game']]],
+  ['verticaliterator',['verticalIterator',['../classGame.html#a69206abba44e8720b6394b4d9c1ec3ea',1,'Game']]]
 ];

@@ -39,47 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-<<<<<<< HEAD
 CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
 RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
-=======
-<<<<<<< HEAD
-CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
-
-# The command to remove a file.
-RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
-=======
-CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
-
-# The command to remove a file.
-RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
->>>>>>> master
->>>>>>> master
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
-=======
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
-=======
-CMAKE_SOURCE_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject"
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug"
->>>>>>> master
->>>>>>> master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,43 +59,19 @@ CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabb
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
->>>>>>> master
->>>>>>> master
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -134,15 +82,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
->>>>>>> master
->>>>>>> master
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -163,76 +103,32 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-=======
-<<<<<<< HEAD
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-=======
-	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
->>>>>>> master
->>>>>>> master
 .PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
-=======
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/progress.marks"
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
->>>>>>> master
->>>>>>> master
 .PHONY : all
 
 # The main clean target
@@ -541,6 +437,33 @@ gameLogic/Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Dictionary.cpp.s
 .PHONY : gameLogic/Dictionary.cpp.s
 
+gameLogic/Expert.o: gameLogic/Expert.cpp.o
+
+.PHONY : gameLogic/Expert.o
+
+# target to build an object file
+gameLogic/Expert.cpp.o:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.o
+.PHONY : gameLogic/Expert.cpp.o
+
+gameLogic/Expert.i: gameLogic/Expert.cpp.i
+
+.PHONY : gameLogic/Expert.i
+
+# target to preprocess a source file
+gameLogic/Expert.cpp.i:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.i
+.PHONY : gameLogic/Expert.cpp.i
+
+gameLogic/Expert.s: gameLogic/Expert.cpp.s
+
+.PHONY : gameLogic/Expert.s
+
+# target to generate assembly for a file
+gameLogic/Expert.cpp.s:
+	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/gameLogic/Expert.cpp.s
+.PHONY : gameLogic/Expert.cpp.s
+
 gameLogic/Game.o: gameLogic/Game.cpp.o
 
 .PHONY : gameLogic/Game.o
@@ -717,6 +640,9 @@ help:
 	@echo "... gameLogic/Dictionary.o"
 	@echo "... gameLogic/Dictionary.i"
 	@echo "... gameLogic/Dictionary.s"
+	@echo "... gameLogic/Expert.o"
+	@echo "... gameLogic/Expert.i"
+	@echo "... gameLogic/Expert.s"
 	@echo "... gameLogic/Game.o"
 	@echo "... gameLogic/Game.i"
 	@echo "... gameLogic/Game.s"

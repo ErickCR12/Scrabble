@@ -59,12 +59,665 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classServerMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ServerMessage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<hr/>The documentation for this class was generated from the following file:<ul>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a315d203295ce33f809d0e81bb8da16a6"><td class="memItemLeft" align="right" valign="top"><a id="a315d203295ce33f809d0e81bb8da16a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a315d203295ce33f809d0e81bb8da16a6">ServerMessage</a> ()</td></tr>
+<tr class="memdesc:a315d203295ce33f809d0e81bb8da16a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class Constructor. <br /></td></tr>
+<tr class="separator:a315d203295ce33f809d0e81bb8da16a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36263c3cd37dd3249d0e3cf162761a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#ac36263c3cd37dd3249d0e3cf162761a9">setMessage1_</a> (int id, string gameCode, string msg)</td></tr>
+<tr class="separator:ac36263c3cd37dd3249d0e3cf162761a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ea384056d49a4034f81d813f581289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a00ea384056d49a4034f81d813f581289">setMessage2_</a> (int id, string tiles, int your_player)</td></tr>
+<tr class="separator:a00ea384056d49a4034f81d813f581289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe59deb94c2efd3ea193a2ad9bf8311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#abbe59deb94c2efd3ea193a2ad9bf8311">setMessage3_</a> (int id, bool accepted, int points, string tiles)</td></tr>
+<tr class="separator:abbe59deb94c2efd3ea193a2ad9bf8311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93535cd0df8431294e7165b3e25c120d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a93535cd0df8431294e7165b3e25c120d">setMessage4_</a> (int id, string word, int firstRow, int firstCol, bool isVertical, int currentTurn)</td></tr>
+<tr class="separator:a93535cd0df8431294e7165b3e25c120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a8b0f64b8d16d32f5f7de124bc2db5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a00a8b0f64b8d16d32f5f7de124bc2db5">setMessage5_</a> (int id, int winner)</td></tr>
+<tr class="separator:a00a8b0f64b8d16d32f5f7de124bc2db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01669bc1bff921bf53bc2b1ba3631013"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a01669bc1bff921bf53bc2b1ba3631013">serialize</a> ()</td></tr>
+<tr class="memdesc:a01669bc1bff921bf53bc2b1ba3631013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializer Interface.  <a href="#a01669bc1bff921bf53bc2b1ba3631013">More...</a><br /></td></tr>
+<tr class="separator:a01669bc1bff921bf53bc2b1ba3631013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa57f59edf124092aa8b5c685bd80cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classServerMessage.html">ServerMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#adaa57f59edf124092aa8b5c685bd80cd">deserealize</a> (const char *json)</td></tr>
+<tr class="memdesc:adaa57f59edf124092aa8b5c685bd80cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse JSON into <a class="el" href="classPlayerMessage.html" title="Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to Player Massage. ">PlayerMessage</a>.  <a href="#adaa57f59edf124092aa8b5c685bd80cd">More...</a><br /></td></tr>
+<tr class="separator:adaa57f59edf124092aa8b5c685bd80cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607c180b8a92bc20592da5eb5ed8e2db"><td class="memItemLeft" align="right" valign="top"><a id="a607c180b8a92bc20592da5eb5ed8e2db"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> () const</td></tr>
+<tr class="separator:a607c180b8a92bc20592da5eb5ed8e2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830985b02545ac16108bcd6a59cac854"><td class="memItemLeft" align="right" valign="top"><a id="a830985b02545ac16108bcd6a59cac854"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getWord</b> () const</td></tr>
+<tr class="separator:a830985b02545ac16108bcd6a59cac854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877fd8db6ec0c7427fc9ba50298b9275"><td class="memItemLeft" align="right" valign="top"><a id="a877fd8db6ec0c7427fc9ba50298b9275"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstRow</b> () const</td></tr>
+<tr class="separator:a877fd8db6ec0c7427fc9ba50298b9275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fde546454ba6affb35ae2681c6305c0"><td class="memItemLeft" align="right" valign="top"><a id="a4fde546454ba6affb35ae2681c6305c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstCol</b> () const</td></tr>
+<tr class="separator:a4fde546454ba6affb35ae2681c6305c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18986acad4e8951c416e8e5da408f329"><td class="memItemLeft" align="right" valign="top"><a id="a18986acad4e8951c416e8e5da408f329"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIsVertical</b> () const</td></tr>
+<tr class="separator:a18986acad4e8951c416e8e5da408f329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61aa5eb974d7e9fd3309737b57666b17"><td class="memItemLeft" align="right" valign="top"><a id="a61aa5eb974d7e9fd3309737b57666b17"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAnswer</b> () const</td></tr>
+<tr class="separator:a61aa5eb974d7e9fd3309737b57666b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb350067f109855318e3e3264d6e879"><td class="memItemLeft" align="right" valign="top"><a id="a4cb350067f109855318e3e3264d6e879"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPass</b> () const</td></tr>
+<tr class="separator:a4cb350067f109855318e3e3264d6e879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5f370942e15b5d7fbace0bca61b38d"><td class="memItemLeft" align="right" valign="top"><a id="afd5f370942e15b5d7fbace0bca61b38d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isExp_request</b> () const</td></tr>
+<tr class="separator:afd5f370942e15b5d7fbace0bca61b38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309b5f969ee2c30de1cf80392afd02ca"><td class="memItemLeft" align="right" valign="top"><a id="a309b5f969ee2c30de1cf80392afd02ca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getPoints</b> () const</td></tr>
+<tr class="separator:a309b5f969ee2c30de1cf80392afd02ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c52f3267a35b7fdb42ca542a29a2cac"><td class="memItemLeft" align="right" valign="top"><a id="a6c52f3267a35b7fdb42ca542a29a2cac"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getGameCode</b> () const</td></tr>
+<tr class="separator:a6c52f3267a35b7fdb42ca542a29a2cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bad4c8e0fe4b3a6455b161714ff14c"><td class="memItemLeft" align="right" valign="top"><a id="a74bad4c8e0fe4b3a6455b161714ff14c"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLetterTiles</b> () const</td></tr>
+<tr class="separator:a74bad4c8e0fe4b3a6455b161714ff14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1831525e4eebbbb1fa1549dd58e25fd2"><td class="memItemLeft" align="right" valign="top"><a id="a1831525e4eebbbb1fa1549dd58e25fd2"></a>
+const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMsg</b> () const</td></tr>
+<tr class="separator:a1831525e4eebbbb1fa1549dd58e25fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af109c77055a9a607288d43fd19bbfe81"><td class="memItemLeft" align="right" valign="top"><a id="af109c77055a9a607288d43fd19bbfe81"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentPlayer</b> () const</td></tr>
+<tr class="separator:af109c77055a9a607288d43fd19bbfe81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a1b6612bccab7585e9a1e3763365c5"><td class="memItemLeft" align="right" valign="top"><a id="ad7a1b6612bccab7585e9a1e3763365c5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getWinner</b> () const</td></tr>
+<tr class="separator:ad7a1b6612bccab7585e9a1e3763365c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad891fca6c711c295bfbd43d645f1cfa5"><td class="memItemLeft" align="right" valign="top"><a id="ad891fca6c711c295bfbd43d645f1cfa5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getYour_Player</b> () const</td></tr>
+<tr class="separator:ad891fca6c711c295bfbd43d645f1cfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2006d6684b1e2d29a729196a18d19da4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a2006d6684b1e2d29a729196a18d19da4">toString</a> ()</td></tr>
+<tr class="memdesc:a2006d6684b1e2d29a729196a18d19da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a way to visualize the message in the console.  <a href="#a2006d6684b1e2d29a729196a18d19da4">More...</a><br /></td></tr>
+<tr class="separator:a2006d6684b1e2d29a729196a18d19da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a68f9dd2e90c690e29286adef4f3d8a8a"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:a68f9dd2e90c690e29286adef4f3d8a8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a68f9dd2e90c690e29286adef4f3d8a8a">Serializer1_</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:a68f9dd2e90c690e29286adef4f3d8a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a68f9dd2e90c690e29286adef4f3d8a8a">More...</a><br /></td></tr>
+<tr class="separator:a68f9dd2e90c690e29286adef4f3d8a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3cbab7f14a7c325305489532aa9bd2"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:a0b3cbab7f14a7c325305489532aa9bd2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a0b3cbab7f14a7c325305489532aa9bd2">Serializer2_</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:a0b3cbab7f14a7c325305489532aa9bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a0b3cbab7f14a7c325305489532aa9bd2">More...</a><br /></td></tr>
+<tr class="separator:a0b3cbab7f14a7c325305489532aa9bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964cfc748a97aae6479df7a195487d7b"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:a964cfc748a97aae6479df7a195487d7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a964cfc748a97aae6479df7a195487d7b">Serializer3_</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:a964cfc748a97aae6479df7a195487d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a964cfc748a97aae6479df7a195487d7b">More...</a><br /></td></tr>
+<tr class="separator:a964cfc748a97aae6479df7a195487d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84939ef8e30acf4aa86bdfd484ad1aff"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:a84939ef8e30acf4aa86bdfd484ad1aff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classServerMessage.html#a84939ef8e30acf4aa86bdfd484ad1aff">Serializer4_</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:a84939ef8e30acf4aa86bdfd484ad1aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#a84939ef8e30acf4aa86bdfd484ad1aff">More...</a><br /></td></tr>
+<tr class="separator:a84939ef8e30acf4aa86bdfd484ad1aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54cb378829b718c4821297d93420799"><td class="memTemplParams" colspan="2">template&lt;typename Writer &gt; </td></tr>
+<tr class="memitem:aa54cb378829b718c4821297d93420799"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classServerMessage.html#aa54cb378829b718c4821297d93420799">Serializer5_</a> (Writer &amp;writer) const</td></tr>
+<tr class="memdesc:aa54cb378829b718c4821297d93420799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method responsible for serializing the object to JSON.  <a href="#aa54cb378829b718c4821297d93420799">More...</a><br /></td></tr>
+<tr class="separator:aa54cb378829b718c4821297d93420799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad7e395d51c342459560018482ab7a5e1"><td class="memItemLeft" align="right" valign="top"><a id="ad7e395d51c342459560018482ab7a5e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="separator:ad7e395d51c342459560018482ab7a5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac638f30e94572b44f4314cbc34afd1"><td class="memItemLeft" align="right" valign="top"><a id="acac638f30e94572b44f4314cbc34afd1"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>word</b></td></tr>
+<tr class="separator:acac638f30e94572b44f4314cbc34afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31792b17c8738558c83aff521bbc9bb"><td class="memItemLeft" align="right" valign="top"><a id="ad31792b17c8738558c83aff521bbc9bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>firstRow</b></td></tr>
+<tr class="separator:ad31792b17c8738558c83aff521bbc9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59411658df11c4adf19de3aadacc1e2"><td class="memItemLeft" align="right" valign="top"><a id="af59411658df11c4adf19de3aadacc1e2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>firstCol</b></td></tr>
+<tr class="separator:af59411658df11c4adf19de3aadacc1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc9f9b9f60e9ae830cd8e2064544c41"><td class="memItemLeft" align="right" valign="top"><a id="accc9f9b9f60e9ae830cd8e2064544c41"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVertical</b></td></tr>
+<tr class="separator:accc9f9b9f60e9ae830cd8e2064544c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab404f583a0054752a6c7d465b3a36efc"><td class="memItemLeft" align="right" valign="top"><a id="ab404f583a0054752a6c7d465b3a36efc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>answer</b></td></tr>
+<tr class="separator:ab404f583a0054752a6c7d465b3a36efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa082f4f0b46606779f1b9dfb71581dfd"><td class="memItemLeft" align="right" valign="top"><a id="aa082f4f0b46606779f1b9dfb71581dfd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>points</b></td></tr>
+<tr class="separator:aa082f4f0b46606779f1b9dfb71581dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2c29a6a822de07bc92eee9f8fff31f"><td class="memItemLeft" align="right" valign="top"><a id="a1f2c29a6a822de07bc92eee9f8fff31f"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>gameCode</b></td></tr>
+<tr class="separator:a1f2c29a6a822de07bc92eee9f8fff31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2850bfcb8d92bfeda20806c517c41f"><td class="memItemLeft" align="right" valign="top"><a id="aca2850bfcb8d92bfeda20806c517c41f"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>letterTiles</b></td></tr>
+<tr class="separator:aca2850bfcb8d92bfeda20806c517c41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac12aeeeaefa89f9e83157854c25ff77"><td class="memItemLeft" align="right" valign="top"><a id="aac12aeeeaefa89f9e83157854c25ff77"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>msg</b></td></tr>
+<tr class="separator:aac12aeeeaefa89f9e83157854c25ff77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649c320f023e1ad7560fa4e3864d3566"><td class="memItemLeft" align="right" valign="top"><a id="a649c320f023e1ad7560fa4e3864d3566"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentPlayer</b></td></tr>
+<tr class="separator:a649c320f023e1ad7560fa4e3864d3566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fa2ff1d81c0aa17715884e72f25c1f"><td class="memItemLeft" align="right" valign="top"><a id="a52fa2ff1d81c0aa17715884e72f25c1f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>winner</b></td></tr>
+<tr class="separator:a52fa2ff1d81c0aa17715884e72f25c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f45b6521e4832733da4994000f0c652"><td class="memItemLeft" align="right" valign="top"><a id="a1f45b6521e4832733da4994000f0c652"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>your_Player</b></td></tr>
+<tr class="separator:a1f45b6521e4832733da4994000f0c652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adaa57f59edf124092aa8b5c685bd80cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa57f59edf124092aa8b5c685bd80cd">&#9670;&nbsp;</a></span>deserealize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classServerMessage.html">ServerMessage</a> * ServerMessage::deserealize </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse JSON into <a class="el" href="classPlayerMessage.html" title="Message class, responsible for sending the word selected by the player to the server. This class serialized JSON and Parse to Player Massage. ">PlayerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01669bc1bff921bf53bc2b1ba3631013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01669bc1bff921bf53bc2b1ba3631013">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerMessage::serialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializer Interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>[out] :JSON of the object </dd></dl>
+
+</div>
+</div>
+<a id="a68f9dd2e90c690e29286adef4f3d8a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f9dd2e90c690e29286adef4f3d8a8a">&#9670;&nbsp;</a></span>Serializer1_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::Serializer1_ </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="section note"><dt>Note</dt><dd>CONFIRM </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0b3cbab7f14a7c325305489532aa9bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3cbab7f14a7c325305489532aa9bd2">&#9670;&nbsp;</a></span>Serializer2_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::Serializer2_ </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="section note"><dt>Note</dt><dd>SEND WORD </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a964cfc748a97aae6479df7a195487d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964cfc748a97aae6479df7a195487d7b">&#9670;&nbsp;</a></span>Serializer3_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::Serializer3_ </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="section note"><dt>Note</dt><dd>PASS/PLAY_AGAIN </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84939ef8e30acf4aa86bdfd484ad1aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84939ef8e30acf4aa86bdfd484ad1aff">&#9670;&nbsp;</a></span>Serializer4_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::Serializer4_ </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="section note"><dt>Note</dt><dd>EXPERT_REQUEST </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa54cb378829b718c4821297d93420799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54cb378829b718c4821297d93420799">&#9670;&nbsp;</a></span>Serializer5_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Writer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::Serializer5_ </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method responsible for serializing the object to JSON. </p>
+<dl class="section note"><dt>Note</dt><dd>EXPERT_REQUEST </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac36263c3cd37dd3249d0e3cf162761a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac36263c3cd37dd3249d0e3cf162761a9">&#9670;&nbsp;</a></span>setMessage1_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::setMessage1_ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>gameCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">gameCode</td><td></td></tr>
+    <tr><td class="paramname">msg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00ea384056d49a4034f81d813f581289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ea384056d49a4034f81d813f581289">&#9670;&nbsp;</a></span>setMessage2_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::setMessage2_ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>your_player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">tiles</td><td></td></tr>
+    <tr><td class="paramname">your_player</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbe59deb94c2efd3ea193a2ad9bf8311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe59deb94c2efd3ea193a2ad9bf8311">&#9670;&nbsp;</a></span>setMessage3_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::setMessage3_ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>accepted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tiles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">accepted</td><td></td></tr>
+    <tr><td class="paramname">points</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93535cd0df8431294e7165b3e25c120d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93535cd0df8431294e7165b3e25c120d">&#9670;&nbsp;</a></span>setMessage4_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::setMessage4_ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>word</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>firstRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>firstCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isVertical</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currentTurn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UPDATE </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">exp_request</td><td></td></tr>
+    <tr><td class="paramname">word</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00a8b0f64b8d16d32f5f7de124bc2db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a8b0f64b8d16d32f5f7de124bc2db5">&#9670;&nbsp;</a></span>setMessage5_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ServerMessage::setMessage5_ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>winner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">exp_request</td><td></td></tr>
+    <tr><td class="paramname">word</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2006d6684b1e2d29a729196a18d19da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2006d6684b1e2d29a729196a18d19da4">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerMessage::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gives a way to visualize the message in the console. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>JSON/<a class="el" href="ServerMessage_8hpp_source.html">ServerMessage.hpp</a></li>
+<li>JSON/ServerMessage.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
