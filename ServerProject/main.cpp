@@ -11,6 +11,8 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+#include <string>
+
 int server_release();
 
 using namespace std;
@@ -21,9 +23,20 @@ int main(int argc,char* argv[]) {
     RUN_ALL_TESTS();
 
 
+
     //Esta línea es la que envía el SMS al teléfono de @OscarAraya18
     //El archivo .py se encuente en el directorio cmake-build-debug
-    //system("python sendSms.py");
+
+
+    const char* requestedWord = "Assfsd";
+    const char* defaultMessage = "python sendSms.py ";
+
+    string completeMessage = defaultMessage;
+    completeMessage += requestedWord;
+
+    const char* sendCommand = completeMessage.c_str();
+
+    //system(sendCommand);
 
 
     server_release();
