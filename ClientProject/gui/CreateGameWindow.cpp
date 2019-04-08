@@ -35,18 +35,22 @@ void CreateGameWindow::sendMensaje()
 {
     QString qAmount = ui->amountOfPlayersComboBox->currentText();
     ui->amountOfPlayersComboBox->setDisabled(true);
-    conexion->setMensaje(qAmount.toStdString().c_str());
+    conexion->sendMessage(qAmount.toStdString().c_str());
 }
 
 void CreateGameWindow::receiveMessage(QString msn)
 {
     QTextStream out(stdout);
+    out << "CCCCCCCC\n";
     foreach(QString x, msn){
         out << x;
     }out<<"\n";
+
     string json = msn.toStdString();
     ServerMessage *message = new ServerMessage();
+    message->deserealize(json.c_str());
     message = message->deserealize(json.c_str());
+    out << QString::fromStdString(to_string(message->getId()) + "\n");
     switch(message->getId()){
         case 1:{
             string lblStr = "Tu código de juego es: " + message->getGameCode() + "\nEspera a que inicie tu juego.";
@@ -58,7 +62,12 @@ void CreateGameWindow::receiveMessage(QString msn)
             scrabbleWindow->show();
             scrabbleWindow->createPlayerDeck(message->getLetterTiles());
             this->destroy();
-        }default:
+            break;
+        }case 3:
+            out<<"CASE 3\n";
+            break;
+        default:
+            out<<"DEFAULT";
             break;
     }
 }

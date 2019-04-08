@@ -25,7 +25,6 @@ private:
 
     bool answer;
     bool pass;
-    bool exp_request;
 
 
     //! @brief Method responsible for serializing the object to JSON
@@ -65,12 +64,12 @@ public:
      *              SERIALIZATION
      * -------------------------------------------*/
 
-    //! @brief Configure message attributes
+    //! @brief Configure message attributes for confirm something
     //! \param [in]id : message identifier
     //! \param [in]answer :  true/false
     void setMessage1_(int id,bool answer);
 
-    //! @brief Configure message attributes
+    //! @brief Configure message attributes for send a word
     //! \param [in]id : message identifier
     //! @param [in]word : Player word
     //! @param [in]fRow : Row of the first LetterTile
@@ -79,14 +78,16 @@ public:
 
     //! @brief Configure message attributes
     //! \param [in]id : message identifier
-    //! \param [in]pass : true if playar wanna pass his turn/false if player wants replay his movements.
+    //! \param [in]pass : true if player wanna pass his turn/false if player wants replay his movements.
     void setMessage3_(int id,bool pass);
 
-    //! @brief Configure message attributes
+    //! @brief Configure message attributes for an expert_request
     //! \param [in]id : message identifier
-    //! @param [in]exp_request: boolean that indicates if player wants to use expert validation
-    //! @param [in]word : Player word
-    void setMessage4_(int id,bool exp_request,string word);
+    //! \param word
+    //! \param fRow
+    //! \param fCol
+    //! \param vertical
+    void setMessage4_(int id,string word,int fRow,int fCol,bool vertical);
 
     //! @brief Serializer Interface
     //! @return [out] :JSON of the object
@@ -122,6 +123,14 @@ public:
 
     int getID() const{
         return id;
+    }
+
+    bool getPass() const{
+        return pass;
+    }
+
+    bool getAnswer() const{
+        return answer;
     }
 
     //! @brief Gives a way to visualize the message in the console

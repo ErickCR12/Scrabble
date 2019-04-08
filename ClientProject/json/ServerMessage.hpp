@@ -20,8 +20,6 @@ class ServerMessage {
     bool isVertical;
 
     bool answer;
-    bool pass;
-    bool exp_request;
 
     int points;
     string gameCode;
@@ -92,13 +90,13 @@ public:
     //! \param id
     //! \param accepted
     //! \param points
-    void setMessage3_(int id,bool accepted,int points);
+    void setMessage3_(int id,bool accepted,int points,string tiles);
 
-    //!
+    //! UPDATE
     //! \param id
     //! \param exp_request
     //! \param word
-    void setMessage4_(int id,string word,int firstRow,int firstCol,bool isVertical);
+    void setMessage4_(int id,string word,int firstRow,int firstCol,bool isVertical,int currentTurn);
 
     //!
     //! \param id
