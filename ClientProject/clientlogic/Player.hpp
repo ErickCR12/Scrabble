@@ -43,54 +43,56 @@ public:
     //! @param string: letters to add to vector separated by commas
     void addLettersToPlayerDeck(string letters);
 
-    //! @brief
-    //! @param position
-    //! @param row
-    //! @param col
-    //! @return
+    //! @brief adds the tile in position to my word, in the row and column specified
+    //! @param position: position in playerDeck of tile to add
+    //! @param row where to add letter
+    //! @param col where to add letter
     void addLetterToWord(int position,int row,int col);
 
-    //! @brief
+    //! @brief resets the positions array.
     void resetPositions();
 
-    //! \brief sendMyWord
-    //! \param word
-    //! \param firstRow
-    //! \param firstColumn
-    //! \param isVertical
-    //! \return
+    //! \brief sendMyWord function creates a JSON to send the word created.
+    //! \param word: created word to send
+    //! \param firstRow: first row position of letter
+    //! \param firstColumn: first column position of letter
+    //! \param isVertical: indicates if the word is vertical or horizontal
+    //! \return returns string in JSON format
     string sendMyWord(string word, int firstRow, int firstColumn, bool isVertical);
 
     // ---------------------------------------
 
-    //! @brief
+    //! @brief getter for playerDeck attribute
     vector<string> getPlayerDeck();
 
-    //! @brief
+    //! @brief getter for score attribute
     int getScore();
 
-    //! @brief
+    //! @brief setter for score attribute
     //! @param score
     void setScore(int score);
 
-    //! @brief
-    //! @param scoreToAdd
+    //! @brief adds the integer received to the actual score attribute
     void addScore(int scoreToAdd);
 
-    //! @brief
+    //! @brief getter for amountOfLetterTiles attribute
     int getAmountOfLetterTiles();
+    //! \brief setter for amountOfLetterTiles attribute
     void setAmountOfLetterTiles(int amount);
-
+    //! \brief setterfor playerName attribute
     void setPlayerName(string name);
-
+    //! \brief getter for playerName attribute
     string getPlayerName();
-
+    //! \brief getter for board attribute
     Board* getBoard();
 
+    //! \brief getter for widgetsPlayerDeck attribute
     vector<DraggableTile*> getWidgetsPlayerDeck();
-
+    //! \brief add a new DraggableTile to the widgetsPlayerDeck attribute
     void addWidgetToDeck(DraggableTile* tile);
+    //! \brief cleans the playerDeck vector attribute
     void resetPlayerDeck();
+    //! \brief cleans the widgetDeck vector attribute
     void resetWidgetsDeck();
 
 //    //! @brief
