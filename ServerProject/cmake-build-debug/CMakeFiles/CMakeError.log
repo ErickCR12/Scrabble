@@ -1,50 +1,24 @@
-Detecting C [-std=c11] compiler features failed to compile with the following output:
-Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_e47ea/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e47ea.dir/build.make CMakeFiles/cmTC_e47ea.dir/build
-make[1]: se entra en el directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-make[1]: *** No hay ninguna regla para construir el objetivo '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto\', necesario para 'CMakeFiles/cmTC_e47ea.dir/feature_tests.c.o'.  Alto.
-make[1]: se sale del directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_e47ea/fast' failed
-make: *** [cmTC_e47ea/fast] Error 2
-
-
-
-Detecting CXX [-std=c++1z] compiler features failed to compile with the following output:
-Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_9580c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9580c.dir/build.make CMakeFiles/cmTC_9580c.dir/build
-make[1]: se entra en el directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-make[1]: *** No hay ninguna regla para construir el objetivo '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto\', necesario para 'CMakeFiles/cmTC_9580c.dir/feature_tests.cxx.o'.  Alto.
-make[1]: se sale del directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_9580c/fast' failed
-make: *** [cmTC_9580c/fast] Error 2
-
-
-
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2403e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2403e.dir/build.make CMakeFiles/cmTC_2403e.dir/build
-make[1]: se entra en el directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2403e.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2403e.dir/CheckSymbolExists.c.o   -c "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
-Linking C executable cmTC_2403e
-/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2403e.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2403e.dir/CheckSymbolExists.c.o  -o cmTC_2403e 
-CMakeFiles/cmTC_2403e.dir/CheckSymbolExists.c.o: En la función `main':
-CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+Run Build Command:"/usr/bin/make" "cmTC_74278/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74278.dir/build.make CMakeFiles/cmTC_74278.dir/build
+make[1]: Entering directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o   -c /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_74278
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74278.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o  -o cmTC_74278 
+CMakeFiles/cmTC_74278.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_2403e.dir/build.make:86: recipe for target 'cmTC_2403e' failed
-make[1]: *** [cmTC_2403e] Error 1
-make[1]: se sale del directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_2403e/fast' failed
-make: *** [cmTC_2403e/fast] Error 2
+CMakeFiles/cmTC_74278.dir/build.make:86: recipe for target 'cmTC_74278' failed
+make[1]: *** [cmTC_74278] Error 1
+make[1]: Leaving directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_74278/fast' failed
+make: *** [cmTC_74278/fast] Error 2
 
-File /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -60,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ef5e9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ef5e9.dir/build.make CMakeFiles/cmTC_ef5e9.dir/build
-make[1]: se entra en el directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ef5e9.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ef5e9.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ef5e9
-/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef5e9.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ef5e9.dir/CheckFunctionExists.c.o  -o cmTC_ef5e9 -lpthreads 
-/usr/bin/ld: no se puede encontrar -lpthreads
+Run Build Command:"/usr/bin/make" "cmTC_fca01/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fca01.dir/build.make CMakeFiles/cmTC_fca01.dir/build
+make[1]: Entering directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o   -c /opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fca01
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fca01.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fca01.dir/CheckFunctionExists.c.o  -o cmTC_fca01 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ef5e9.dir/build.make:86: recipe for target 'cmTC_ef5e9' failed
-make[1]: *** [cmTC_ef5e9] Error 1
-make[1]: se sale del directorio '/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_ef5e9/fast' failed
-make: *** [cmTC_ef5e9/fast] Error 2
+CMakeFiles/cmTC_fca01.dir/build.make:86: recipe for target 'cmTC_fca01' failed
+make[1]: *** [cmTC_fca01] Error 1
+make[1]: Leaving directory '/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fca01/fast' failed
+make: *** [cmTC_fca01/fast] Error 2
 
 

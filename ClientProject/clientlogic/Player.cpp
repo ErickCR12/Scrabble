@@ -97,9 +97,9 @@ string Player::sendMyWord(string word, int firstRow, int firstColumn, bool isVer
     myMessage->setMessage2_(2,word,firstRow,firstColumn,isVertical);
 
     string myJSON = myMessage->serialize();
+    delete(myMessage);
     cout<<"* JSON: "<<myJSON<<endl;
-    // Reinicia los atributos
-    resetPositions();
+
     return myJSON;
 }
 

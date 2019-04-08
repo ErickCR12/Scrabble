@@ -28,16 +28,20 @@ void ServerMessage::setMessage2_(int id, string tiles, int your_player) {
     this-> your_Player = your_player;
 }
 
-void ServerMessage::setMessage3_(int id, bool accepted, int points) {
+void ServerMessage::setMessage3_(int id, bool accepted, int points, string tiles) {
     this-> id = id,
     this-> answer = accepted;
     this-> points = points;
+    this-> letterTiles = tiles;
 }
 
-void ServerMessage::setMessage4_(int id, string word,int firstRow,int firstCol,bool isVertical) {
-    this-> id = id,
-    this-> exp_request = exp_request;
+void ServerMessage::setMessage4_(int id, string word,int firstRow,int firstCol,bool isVertical,int currentPlayer) {
+    this-> id = id;
     this-> word = word;
+    this-> firstRow = firstRow;
+    this-> firstCol = firstCol;
+    this-> isVertical = isVertical;
+    this-> currentPlayer = currentPlayer;
 }
 
 void ServerMessage::setMessage5_(int id, int winner) {
@@ -83,6 +87,8 @@ void ServerMessage::Serializer3_(Writer &writer) const{
     writer.Bool(answer);
     writer.String("points");
     writer.Int(points);
+    writer.String("letterTiles");
+    writer.String(letterTiles.c_str());
     writer.EndObject();
 }
 
@@ -99,6 +105,8 @@ void ServerMessage::Serializer4_(Writer &writer) const{
     writer.Int(firstCol);
     writer.String("is_Vertical");
     writer.Bool(isVertical);
+    writer.String("currentPlayer");
+    writer.Int(currentPlayer);
     writer.EndObject();
 }
 
@@ -167,7 +175,8 @@ ServerMessage* ServerMessage::deserealize(const char* json) {
         case 3: {
             bool accepted = doc["accepted"].GetBool();
             int points = doc["points"].GetInt();
-            parsedPlayer->setMessage3_(id, accepted,points);
+            string letterTiles = doc["letterTiles"].GetString();
+            parsedPlayer->setMessage3_(id, accepted,points,letterTiles);
             break;
         }
         case 4:{
@@ -175,8 +184,9 @@ ServerMessage* ServerMessage::deserealize(const char* json) {
             int pFirstRow = doc["firstRow"].GetInt();
             int pFirstCol = doc["firstCol"].GetInt();
             bool pVertical = doc["is_Vertical"].GetBool();
+            int currentPlayer = doc["currentPlayer"].GetInt();
 
-            parsedPlayer->setMessage4_(id, pWord, pFirstRow, pFirstCol, pVertical);
+            parsedPlayer->setMessage4_(id, pWord, pFirstRow, pFirstCol, pVertical,currentPlayer);
             break;
         }
         case 5:{
@@ -224,14 +234,6 @@ bool ServerMessage::isIsVertical() const {
 
 bool ServerMessage::isAnswer() const {
     return answer;
-}
-
-bool ServerMessage::isPass() const {
-    return pass;
-}
-
-bool ServerMessage::isExp_request() const {
-    return exp_request;
 }
 
 int ServerMessage::getPoints() const {

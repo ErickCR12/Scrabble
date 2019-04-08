@@ -19,7 +19,7 @@ class SocketCliente: public QObject
 public:
     SocketCliente();
     bool connectar();
-    void setMensaje(const char *msn);
+    void sendMessage(const char *msn);
 private:
     int descriptor;
     sockaddr_in info;
