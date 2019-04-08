@@ -305,8 +305,10 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
         cout<<"Primer msj"<<endl;
+
         using namespace std::chrono_literals;
         this_thread::sleep_for(5s);
+
         nextTurn(); // Setea el sgte turno
         serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
         json = serv_msg->serialize();
