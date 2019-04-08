@@ -39,19 +39,71 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
 RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
+
+# The command to remove a file.
+RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< Updated upstream
+=======
+CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
+
+# The command to remove a file.
+RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
+>>>>>>> master
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
+<<<<<<< Updated upstream
+=======
+CMAKE_SOURCE_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug"
+>>>>>>> master
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +111,133 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/local/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +253,23 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> master
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -116,7 +280,23 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> master
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -126,14 +306,54 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks"
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks"
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/CMakeFiles/progress.marks"
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+>>>>>>> master
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/clean
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/clean
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/clean
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/clean
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/clean
+>>>>>>> master
 .PHONY : clean
 
 # The main clean target
@@ -143,17 +363,65 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> master
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/preinstall
+>>>>>>> master
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> master
 .PHONY : depend
 
 # Help Target
@@ -179,6 +447,22 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> master
 .PHONY : cmake_check_build_system
 

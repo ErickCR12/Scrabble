@@ -39,19 +39,71 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_COMMAND = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
 RM = /opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
+
+# The command to remove a file.
+RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
+<<<<<<< Updated upstream
+=======
+CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
+
+# The command to remove a file.
+RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
+>>>>>>> master
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> master
 CMAKE_SOURCE_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+CMAKE_SOURCE_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug
+<<<<<<< Updated upstream
+=======
+CMAKE_SOURCE_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug"
+>>>>>>> master
+>>>>>>> master
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,31 +111,111 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+>>>>>>> master
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -104,7 +236,23 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+>>>>>>> master
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -115,25 +263,97 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+<<<<<<< HEAD
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+=======
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
+>>>>>>> master
+=======
+	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> Stashed changes
+=======
+	/opt/clion-2018.3.2/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+>>>>>>> master
 .PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks"
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks"
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/CMakeFiles 0
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/progress.marks"
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/CMakeFiles" 0
+>>>>>>> master
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/clean
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/clean
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/clean
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/clean
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/clean
+>>>>>>> master
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +363,86 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> master
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/preinstall
+>>>>>>> master
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> master
 .PHONY : depend
 
 # Convenience name for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+>>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -168,12 +452,44 @@ gtest_main: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rul
 
 # fast build rule for target.
 gtest_main/fast:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+>>>>>>> master
 .PHONY : gtest_main/fast
 
 # Convenience name for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+>>>>>>> master
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -183,7 +499,23 @@ gtest: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+>>>>>>> master
 .PHONY : gtest/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
@@ -192,7 +524,23 @@ src/gtest-all.o: src/gtest-all.cc.o
 
 # target to build an object file
 src/gtest-all.cc.o:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+>>>>>>> master
 .PHONY : src/gtest-all.cc.o
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -201,7 +549,23 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+>>>>>>> master
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -210,7 +574,23 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+>>>>>>> master
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.o: src/gtest_main.cc.o
@@ -219,7 +599,23 @@ src/gtest_main.o: src/gtest_main.cc.o
 
 # target to build an object file
 src/gtest_main.cc.o:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+>>>>>>> master
 .PHONY : src/gtest_main.cc.o
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -228,7 +624,23 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+>>>>>>> master
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -237,7 +649,23 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+>>>>>>> master
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -271,6 +699,22 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+<<<<<<< HEAD
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd "/home/oscar_araya_x/Escritorio/GitKraken Repositories/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> master
+>>>>>>> master
+=======
+	cd /home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> Stashed changes
+=======
+	cd "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> master
 .PHONY : cmake_check_build_system
 

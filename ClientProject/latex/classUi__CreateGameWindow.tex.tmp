@@ -1,0 +1,50 @@
+\hypertarget{classUi__CreateGameWindow}{}\section{Ui\+\_\+\+Create\+Game\+Window Class Reference}
+\label{classUi__CreateGameWindow}\index{Ui\+\_\+\+Create\+Game\+Window@{Ui\+\_\+\+Create\+Game\+Window}}
+
+
+Inheritance diagram for Ui\+\_\+\+Create\+Game\+Window\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_af6e30b3be768eabcb420bd94623a0c18}\label{classUi__CreateGameWindow_af6e30b3be768eabcb420bd94623a0c18}} 
+void {\bfseries setup\+Ui} (Q\+Dialog $\ast$Create\+Game\+Window)
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a4776862e36cc23295c692576d29d32cd}\label{classUi__CreateGameWindow_a4776862e36cc23295c692576d29d32cd}} 
+void {\bfseries retranslate\+Ui} (Q\+Dialog $\ast$Create\+Game\+Window)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a49f1828fdf828ecdcfbc26b0b7c43933}\label{classUi__CreateGameWindow_a49f1828fdf828ecdcfbc26b0b7c43933}} 
+Q\+Widget $\ast$ {\bfseries horizontal\+Layout\+Widget}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a522e53f5ec9ec6a26e74aa2275cafc46}\label{classUi__CreateGameWindow_a522e53f5ec9ec6a26e74aa2275cafc46}} 
+Q\+H\+Box\+Layout $\ast$ {\bfseries horizontal\+Layout}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a079fdcf152e561cc478ec7e90b08d7d7}\label{classUi__CreateGameWindow_a079fdcf152e561cc478ec7e90b08d7d7}} 
+Q\+Push\+Button $\ast$ {\bfseries accept\+Creation\+Button}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_adcf3ec8bdf96690f87e6f81dcd383591}\label{classUi__CreateGameWindow_adcf3ec8bdf96690f87e6f81dcd383591}} 
+Q\+Push\+Button $\ast$ {\bfseries cancel\+Creation\+Button}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a94025985b402c9e68fd4d3483781410c}\label{classUi__CreateGameWindow_a94025985b402c9e68fd4d3483781410c}} 
+Q\+Widget $\ast$ {\bfseries form\+Layout\+Widget}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_acc1fd4a7bc2bd9d533edce17ffbc496f}\label{classUi__CreateGameWindow_acc1fd4a7bc2bd9d533edce17ffbc496f}} 
+Q\+Form\+Layout $\ast$ {\bfseries form\+Layout}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_aa913ad0d4943625abd886f1846ac383f}\label{classUi__CreateGameWindow_aa913ad0d4943625abd886f1846ac383f}} 
+Q\+Label $\ast$ {\bfseries label}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a4b63f0372ef1babea51cf61e110a847a}\label{classUi__CreateGameWindow_a4b63f0372ef1babea51cf61e110a847a}} 
+Q\+Combo\+Box $\ast$ {\bfseries amount\+Of\+Players\+Combo\+Box}
+\item 
+\mbox{\Hypertarget{classUi__CreateGameWindow_a7bb0d8e91805ddd847aa44110a16aebc}\label{classUi__CreateGameWindow_a7bb0d8e91805ddd847aa44110a16aebc}} 
+Q\+Label $\ast$ {\bfseries label\+\_\+2}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ui\+\_\+\+Create\+Game\+Window.\+h\end{DoxyCompactItemize}

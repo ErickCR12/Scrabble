@@ -26,17 +26,6 @@ void JoinGameWindow::on_cancelCodeButton_clicked()
     this->destroy();
 }
 
-void JoinGameWindow::on_insertCodeButton_clicked()
-{
-//    QString qCode = ui->codeLineEdit->text();
-//    string strCode = qCode.toStdString();
-//    cout << strCode << endl;
-//    this->destroy();
-//    ScrabbleWindow scrabble;
-//    scrabble.setModal(true);
-//    scrabble.exec();
-}
-
 void JoinGameWindow::sendMensaje()
 {
     QString qCode = ui->codeLineEdit->text();
