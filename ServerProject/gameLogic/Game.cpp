@@ -307,7 +307,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         cout<<"Primer msj"<<endl;
 
         using namespace std::chrono_literals;
-        this_thread::sleep_for(5s);
+        this_thread::sleep_for(4s);
 
         nextTurn(); // Setea el sgte turno
         serv_msg->setMessage4_(4,recv_word,row,col,isVertical,getCurrentTurn());
