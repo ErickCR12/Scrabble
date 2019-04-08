@@ -82,8 +82,8 @@ CMAKE_BINARY_DIR = "/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructur
 # Target rules for target CMakeFiles/Scrabble.dir
 
 # All Build rule for target.
-CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/Scrabble.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/depend
 	$(MAKE) -f CMakeFiles/Scrabble.dir/build.make CMakeFiles/Scrabble.dir/build
 <<<<<<< HEAD

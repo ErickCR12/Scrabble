@@ -744,6 +744,8 @@ Expert.hpp
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/dataStructures/Queue.hpp
 thread
 -
+chrono
+-
 
 /home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/gameLogic/GameDeck.cpp
 GameDeck.hpp
