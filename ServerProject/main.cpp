@@ -31,12 +31,13 @@ int main(int argc,char* argv[]) {
     const char* requestedWord = "Assfsd";
     const char* defaultMessage = "python sendSms.py ";
 
+
     string completeMessage = defaultMessage;
     completeMessage += requestedWord;
 
     const char* sendCommand = completeMessage.c_str();
 
-    //system(sendCommand);
+    system(sendCommand);
 
 
     server_release();
