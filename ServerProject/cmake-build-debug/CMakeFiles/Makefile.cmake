@@ -11,11 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
-<<<<<<< HEAD
-=======
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
->>>>>>> master
   "../lib/googletest-master/CMakeLists.txt"
   "../lib/googletest-master/googlemock/CMakeLists.txt"
   "../lib/googletest-master/googlemock/cmake/gmock.pc.in"
@@ -25,40 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../lib/googletest-master/googletest/cmake/gtest.pc.in"
   "../lib/googletest-master/googletest/cmake/gtest_main.pc.in"
   "../lib/googletest-master/googletest/cmake/internal_utils.cmake"
-<<<<<<< HEAD
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCInformation.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXInformation.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeDependentOption.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeFindCodeBlocks.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeGenericSystem.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeInitializeConfigs.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeLanguageInformation.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakePackageConfigHelpers.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeSystemSpecificInformation.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckIncludeFile.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckLibraryExists.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckSymbolExists.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU-C.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU-CXX.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindPackageMessage.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindPythonInterp.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/FindThreads.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/GNUInstallDirs.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU-C.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU-CXX.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/Platform/UnixPaths.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/ProcessorCount.cmake"
-  "/opt/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/WriteBasicConfigVersionFile.cmake"
-=======
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompiler.cmake.in"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c"
@@ -159,7 +122,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/Platform/UnixPaths.cmake"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/ProcessorCount.cmake"
   "/opt/clion-2018.3.2/bin/cmake/linux/share/cmake-3.13/Modules/WriteBasicConfigVersionFile.cmake"
->>>>>>> master
   )
 
 # The corresponding makefile is:
@@ -170,14 +132,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-<<<<<<< HEAD
-=======
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
->>>>>>> master
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"

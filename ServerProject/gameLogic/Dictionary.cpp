@@ -38,6 +38,7 @@ void Dictionary::writeInDictionary(string word) {
     if(dictionaryFile.is_open()) {
         dictionaryFile << word + "\n";
         dictionaryFile.close();
+        cout << "Word added into dictionary!"<<endl;
     }else cout << "Couldn't write in file";
 }
 

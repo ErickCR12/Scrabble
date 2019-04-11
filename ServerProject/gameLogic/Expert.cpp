@@ -28,5 +28,5 @@ void Expert::sendMessage(string word) {
 bool Expert::getResponse() {
     string ans = "";
     // Aqui va el app
-    return false;
+    return true;
 }

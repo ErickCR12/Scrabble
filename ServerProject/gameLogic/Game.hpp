@@ -109,7 +109,7 @@ private:
 
     //! @brief Change the turn by PlayerID
     void nextTurn(){
-        if(currentTurn<getMaxCap()) currentTurn++;
+        if(currentTurn<getMaxCap()-1) currentTurn++;
         else currentTurn=0;
     }
 

@@ -8,20 +8,6 @@
 		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googlemock\cmake\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-<<<<<<< HEAD
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock_main">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
-=======
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -34,21 +20,10 @@
 			<Target title="gmock_main">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
@@ -57,24 +32,12 @@
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock_main/fast">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -84,21 +47,10 @@
 			<Target title="gmock_main/fast">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
@@ -107,24 +59,12 @@
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -134,21 +74,10 @@
 			<Target title="gmock">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
@@ -157,24 +86,12 @@
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gmock/fast">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -184,21 +101,10 @@
 			<Target title="gmock/fast">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googlemock"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
@@ -207,24 +113,12 @@
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
@@ -234,43 +128,22 @@
 			<Target title="gtest_main">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main/fast">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -280,43 +153,22 @@
 			<Target title="gtest_main/fast">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -326,43 +178,22 @@
 			<Target title="gtest">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest/fast">
-				<Option output="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -372,81 +203,22 @@
 			<Target title="gtest/fast">
 				<Option output="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
->>>>>>> master
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-<<<<<<< HEAD
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-=======
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
->>>>>>> master
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
-					<Build command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-		</Build>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/src/gmock-all.cc">
-			<Option target="gmock"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/src/gmock_main.cc">
-			<Option target="gmock_main"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest-all.cc">
-			<Option target="gtest"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/src/gtest_main.cc">
-			<Option target="gtest_main"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/cmake/gmock.pc.in">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/cmake/Config.cmake.in">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/cmake/gtest.pc.in">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
-			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/erickcr12/Documents/AyEDII/Proyectos/Scrabble/ServerProject/lib/googletest-master/googletest/cmake/internal_utils.cmake">
-=======
 					<Build command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/esteban/Documentos/TEC/1S\ 2019/Algoritomos\ y\ estructuras\ de\ datos\ II/4.\ Proyectos/Proyecto\ #1/Scrabble/ServerProject/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -494,7 +266,6 @@
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 		<Unit filename="/home/esteban/Documentos/TEC/1S 2019/Algoritomos y estructuras de datos II/4. Proyectos/Proyecto #1/Scrabble/ServerProject/lib/googletest-master/googletest/cmake/internal_utils.cmake">
->>>>>>> master
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 	</Project>

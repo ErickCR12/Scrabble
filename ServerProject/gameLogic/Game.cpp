@@ -8,6 +8,7 @@
 Game::Game() {
 
     // Inicializacion de los objetos del juego
+    playersPoints = (int*) calloc(4,sizeof(int));
     gameCode = codeGenerator();
     gameDictionary = Dictionary::getDictionaryInstance();
     gameBoard = new Board();
@@ -90,6 +91,7 @@ void Game::add_players() {
          * escuchando pero que ya no acepte clientes sino que los
          * meta en un cola de espera!
          * ------------------------------------------------------*/
+
         //Envia a cada jugador sus 7 fichas iniciales
         for (int i = 0; i < clients.size(); i++) {
             string tiles = dealTiles(7);
@@ -270,6 +272,7 @@ int Game::addWord(vector<string> word, int row, int col, bool isVertical) {
         index++;
     }
     cout<<"Palabra añadida"<<endl;
+    // delete(pJSON);
     return points;
 }
 
@@ -296,7 +299,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
 
         cout<<"Primera coincidencia"<<endl;
         word_points = addWord(word_vector, row, col, isVertical); //Añadir la palabra
-        //playersPoints[currentTurn]+=word_points;
+        playersPoints[currentTurn]+=word_points;
         refillTiles = dealTiles(word_vector.size());
 
         cout<<"Fine"<<endl;
@@ -304,7 +307,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         serv_msg->setMessage3_(3,true,word_points,refillTiles.substr(0, refillTiles.size()-1));
         string json = serv_msg->serialize();
         sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
-        cout<<"Primer msj"<<endl;
+        cout<<"Puntos player "<<currentTurn<<":"<<playersPoints[currentTurn]<<endl;
 
         using namespace std::chrono_literals;
         this_thread::sleep_for(4s);
@@ -328,7 +331,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
         if (gameDictionary->searchInDictionary(vert_word)) {
             cout<<"Añadiendo palabra vertical"<<endl;
 
-            //playersPoints[currentTurn]+=word_points;
+            playersPoints[currentTurn]+=word_points;
 
             refillTiles = dealTiles(word_vector.size());
 
@@ -337,6 +340,10 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             string json = serv_msg->serialize();
 
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+            cout<<"Puntos player "<<currentTurn<<":"<<playersPoints[currentTurn]<<endl;
+
+            using namespace std::chrono_literals;
+            this_thread::sleep_for(4s);
 
             nextTurn(); // Setea el sgte turno
 
@@ -355,7 +362,7 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             //6. Si se encuentra la palabra
             cout<<"Añadiendo palabra horizontal"<<endl;
 
-            //playersPoints[currentTurn]+=word_points;
+            playersPoints[currentTurn]+=word_points;
 
             refillTiles = dealTiles(word_vector.size());
 
@@ -364,6 +371,10 @@ bool Game::validateWord(string recv_word, int row, int col, bool isVertical) {
             string json = serv_msg->serialize();
 
             sendSingleMessage(json.c_str(),getClient(currentTurn));//Envia el mensaje de confirmacion
+            cout<<"Puntos player "<<currentTurn<<":"<<playersPoints[currentTurn]<<endl;
+
+            using namespace std::chrono_literals;
+            this_thread::sleep_for(4s);
 
             nextTurn(); // Setea el sgte turno
 
